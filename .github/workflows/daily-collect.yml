@@ -1,0 +1,35 @@
+name: Daily collect
+
+on:
+  schedule:
+    # 06:00 UTC = 08:00 Budapest (CEST, summer) / 07:00 Budapest (CET, winter).
+    # GitHub Actions cron lateness is usually 5-15 minutes, which is fine here.
+    - cron: '0 6 * * *'
+  # Allow manual trigger from the Actions tab for ad-hoc runs / debugging.
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily collection
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_ARTICLES_DB_ID: ${{ secrets.NOTION_ARTICLES_DB_ID }}
+          NOTION_ISSUES_DB_ID: ${{ secrets.NOTION_ISSUES_DB_ID }}
+        run: python -m scripts.daily_collect

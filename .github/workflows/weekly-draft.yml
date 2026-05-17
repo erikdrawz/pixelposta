@@ -1,0 +1,44 @@
+name: Weekly draft
+
+# Manual trigger only. The brief schedules this for Friday morning, but the
+# editor decides exactly when to run it — usually after curating Selected
+# articles in Notion on Thursday evening.
+on:
+  workflow_dispatch:
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate weekly draft
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_ARTICLES_DB_ID: ${{ secrets.NOTION_ARTICLES_DB_ID }}
+          NOTION_ISSUES_DB_ID: ${{ secrets.NOTION_ISSUES_DB_ID }}
+        run: python -m scripts.generate_draft
+
+      # The draft is the actual deliverable — surface it as a downloadable
+      # artifact so the editor can grab it from the run page.
+      - name: Upload draft as artifact
+        if: always()  # upload even on partial failure (e.g. some fetch errors)
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-draft
+          path: drafts/draft-*.md
+          if-no-files-found: warn
+          retention-days: 30
