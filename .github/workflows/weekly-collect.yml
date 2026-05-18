@@ -1,10 +1,15 @@
-name: Daily collect
+name: Weekly collect
 
 on:
   schedule:
-    # 06:00 UTC = 08:00 Budapest (CEST, summer) / 07:00 Budapest (CET, winter).
+    # Fridays 06:00 UTC. This is:
+    #   - Thursday 23:00 PDT (US west coast, late Thursday evening — captures the
+    #     full US Thursday news cycle including late-day announcements)
+    #   - Friday 02:00 EDT (US east coast, early morning)
+    #   - Friday 08:00 Budapest (CEST, summer) / 07:00 Budapest (CET, winter)
+    # The editor curates Friday, draft generation runs Friday too, publish same day.
     # GitHub Actions cron lateness is usually 5-15 minutes, which is fine here.
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * 5'
   # Allow manual trigger from the Actions tab for ad-hoc runs / debugging.
   workflow_dispatch:
 
@@ -26,10 +31,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run daily collection
+      - name: Run news collection
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_ARTICLES_DB_ID: ${{ secrets.NOTION_ARTICLES_DB_ID }}
           NOTION_ISSUES_DB_ID: ${{ secrets.NOTION_ISSUES_DB_ID }}
-        run: python -m scripts.daily_collect
+        run: python -m scripts.news_collector

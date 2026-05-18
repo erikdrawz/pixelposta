@@ -1,13 +1,13 @@
-"""Daily collection pipeline: RSS → dedup → Haiku pre-filter → Notion.
+"""News collection pipeline: RSS → dedup → Haiku pre-filter → Notion.
 
-This is what GitHub Actions will eventually run on a morning cron, but for
-now it's a manually-invoked script so you can vet quality before going live.
+Runs weekly via GitHub Actions (weekly-collect.yml) on Friday morning UTC,
+and can also be invoked manually for ad-hoc runs or debugging.
 
 Usage:
-    python -m scripts.daily_collect --dry-run             # full pipeline, but no Notion writes
-    python -m scripts.daily_collect --dry-run --max 20    # cap to 20 new articles
-    python -m scripts.daily_collect --max 30              # actually write up to 30 includes to Notion
-    python -m scripts.daily_collect                       # full run, everything new goes to Notion
+    python -m scripts.news_collector --dry-run             # full pipeline, but no Notion writes
+    python -m scripts.news_collector --dry-run --max 20    # cap to 20 new articles
+    python -m scripts.news_collector --max 30              # actually write up to 30 includes to Notion
+    python -m scripts.news_collector                       # full run, everything new goes to Notion
 
 Failure isolation: a single bad article (Haiku error, Notion 400, etc.) is
 logged and skipped, not allowed to break the whole run.
@@ -31,7 +31,7 @@ from src.models import CollectedArticle
 from src.notion_client import ArticlePayload, NotionArticles
 
 
-logger = logging.getLogger("daily_collect")
+logger = logging.getLogger("news_collector")
 
 
 def _interleave_by_source(articles: list[CollectedArticle]) -> list[CollectedArticle]:
@@ -71,8 +71,8 @@ def main() -> int:
         help="skip articles from this source (e.g. --exclude-source RPS). Repeat for multiple.",
     )
     parser.add_argument(
-        "--max-age-days", type=int, default=14, metavar="N",
-        help="drop articles whose published date is older than N days (default: 14). 0 disables.",
+        "--max-age-days", type=int, default=7, metavar="N",
+        help="drop articles whose published date is older than N days (default: 7). 0 disables.",
     )
     parser.add_argument(
         "--verbose", action="store_true",

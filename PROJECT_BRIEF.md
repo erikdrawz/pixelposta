@@ -38,7 +38,7 @@ Generate a weekly Hungarian-language gaming newsletter for Substack, modeled on 
 heti-vagolap-gaming/
 ├── .github/
 │   └── workflows/
-│       ├── daily-collect.yml      # daily cron — collect + pre-filter
+│       ├── weekly-collect.yml     # weekly cron (Fri 06:00 UTC) — collect + pre-filter
 │       ├── weekly-draft.yml       # manual trigger — generate full draft
 │       └── weekly-sweep.yml       # Sunday cron — archive untouched articles
 ├── src/

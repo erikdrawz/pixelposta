@@ -56,13 +56,13 @@ python -m scripts.smoke_notion
 
 ## Running the pipeline
 
-**Daily collection** — RSS → dedup → Haiku pre-filter → Notion. Default age cutoff
-is 14 days, default reads every source:
+**News collection** — RSS → dedup → Haiku pre-filter → Notion. Default age cutoff
+is 7 days, default reads every source:
 
 ```bash
-python -m scripts.daily_collect                          # full live run
-python -m scripts.daily_collect --dry-run --max 30       # safe preview
-python -m scripts.daily_collect --exclude-source RPS     # skip a source
+python -m scripts.news_collector                          # full live run
+python -m scripts.news_collector --dry-run --max 30       # safe preview
+python -m scripts.news_collector --exclude-source RPS     # skip a source
 ```
 
 **Weekly draft** — reads Status=Selected from Notion, fetches each article
@@ -85,9 +85,9 @@ python -m scripts.preview_releases --today 2026-05-22     # any reference date
 
 Two workflows live in `.github/workflows/`:
 
-- **`daily-collect.yml`** — runs every day at **06:00 UTC** (08:00 Budapest summer / 07:00 winter)
-  and also on manual trigger. Pulls from RSS, runs the Haiku pre-filter, writes
-  new articles to Notion.
+- **`weekly-collect.yml`** — runs every Friday at **06:00 UTC** (08:00 Budapest summer / 07:00 winter;
+  Thursday 23:00 PDT US west coast — captures the full Thursday US news cycle) and also on manual
+  trigger. Pulls from RSS, runs the Haiku pre-filter, writes new articles to Notion.
 - **`weekly-draft.yml`** — manual trigger only. Generates the weekly Markdown
   draft and uploads it as a downloadable artifact on the run page.
 
@@ -104,7 +104,7 @@ Required GitHub Secrets (Settings → Secrets and variables → Actions):
 
 ```
 .
-├── .github/workflows/        # daily-collect.yml, weekly-draft.yml
+├── .github/workflows/        # weekly-collect.yml, weekly-draft.yml
 ├── src/
 │   ├── collectors/           # rss_sources.py, vgc_releases.py
 │   ├── prompts/              # filter_prompt.md, translator_prompt.md, release_picker_prompt.md
@@ -117,7 +117,7 @@ Required GitHub Secrets (Settings → Secrets and variables → Actions):
 │   ├── translator.py         # Sonnet HU rewrite
 │   └── web_fetcher.py        # trafilatura article-body extraction
 ├── scripts/
-│   ├── daily_collect.py      # end-to-end daily pipeline
+│   ├── news_collector.py     # end-to-end collection pipeline
 │   ├── generate_draft.py     # weekly draft generator
 │   ├── preview_releases.py   # release-table iteration helper
 │   ├── smoke_collect.py
