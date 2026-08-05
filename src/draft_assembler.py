@@ -83,14 +83,14 @@ def assemble_markdown(
     if releases is None:
         lines.append("> _[PLACEHOLDER — release snapshot nem futott le.]_")
     else:
-        lines.extend(_format_release_table(releases.this_week))
+        lines.extend(_format_release_list(releases.this_week))
     lines.append("")
     lines.append("## Jövő heti megjelenések")
     lines.append("")
     if releases is None:
         lines.append("> _[PLACEHOLDER — release snapshot nem futott le.]_")
     else:
-        lines.extend(_format_release_table(releases.next_week))
+        lines.extend(_format_release_list(releases.next_week))
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -101,14 +101,20 @@ def assemble_markdown(
     return "\n".join(lines)
 
 
-def _format_release_table(releases: list[ReleaseEntry]) -> list[str]:
+def _format_release_list(releases: list[ReleaseEntry]) -> list[str]:
     if not releases:
         return ["> _Ezen a héten nincs kiemelt megjelenés._"]
-    lines = ["| Cím | Platform | Dátum |", "|---|---|---|"]
-    for r in sorted(releases, key=lambda x: x.release_date):
+    lines: list[str] = []
+    for i, r in enumerate(sorted(releases, key=lambda x: x.release_date)):
+        if i > 0:
+            lines.append("")
         platforms = ", ".join(r.platforms)
-        date_str = _format_hu_date(r.release_date)
-        lines.append(f"| {r.title} | {platforms} | {date_str} |")
+        # Standalone line — start with capital month. `_format_hu_date` returns
+        # lowercase ("július 7.") which is correct inside a sentence but reads
+        # oddly on its own row.
+        date_str = _format_hu_date(r.release_date).capitalize()
+        lines.append(r.title)
+        lines.append(f"{date_str} - {platforms}")
     return lines
 
 

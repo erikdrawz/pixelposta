@@ -17,7 +17,7 @@ from datetime import date
 from dotenv import load_dotenv
 
 from src.collectors.vgc_releases import fetch_release_schedule
-from src.draft_assembler import _format_hu_date, _format_release_table
+from src.draft_assembler import _format_hu_date, _format_release_list
 from src.release_picker import HaikuReleasePicker
 
 
@@ -42,12 +42,12 @@ def main() -> int:
     snapshot = picker.pick(schedule_text, today=today)
 
     print(f"## Heti megjelenések ({_format_hu_date(snapshot.this_week_range[0])} – {_format_hu_date(snapshot.this_week_range[1])})\n")
-    for line in _format_release_table(snapshot.this_week):
+    for line in _format_release_list(snapshot.this_week):
         print(line)
     print()
 
     print(f"## Jövő heti megjelenések ({_format_hu_date(snapshot.next_week_range[0])} – {_format_hu_date(snapshot.next_week_range[1])})\n")
-    for line in _format_release_table(snapshot.next_week):
+    for line in _format_release_list(snapshot.next_week):
         print(line)
     print()
 

@@ -28,6 +28,9 @@ RSS_FEEDS: dict[str, str] = {
     "DigitalFoundry": "https://www.digitalfoundry.net/feed",
     "TheVerge": "https://www.theverge.com/rss/notepad-microsoft-newsletter/index.xml",
     "ThisWeekInVideoGames": "https://thisweekinvideogames.com/feed/",
+    # Main feed carries Windows/Microsoft + gaming mixed; Haiku pre-filter drops
+    # the non-gaming items. Section-specific gaming feed does not exist.
+    "WindowsCentral": "https://www.windowscentral.com/feeds.xml",
 }
 
 # Several sites (e.g., ThisWeekInVideoGames behind Cloudflare) reject feedparser's
