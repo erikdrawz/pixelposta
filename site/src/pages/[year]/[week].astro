@@ -36,7 +36,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 const { issue, prev } = Astro.props;
-const { year, week, date, title, standfirst, cover, intro, outro, signature } = issue.data;
+const { year, week, date, title, standfirst, cover, outro, signature } = issue.data;
 const counts = issueCounts(issue);
 
 // Category sections keep the fixed order; articles keep frontmatter order
@@ -59,7 +59,6 @@ const rovatok: Rovat[] = [
   ...(hasAjanlo ? [{ id: 'ajanlo', name: 'Ajánló', count: `${counts.ajanlo} játék` }] : []),
 ];
 
-const introParas = paragraphs(intro);
 const outroParas = paragraphs(outro);
 
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
@@ -113,20 +112,6 @@ const jsonLd = {
 
   {/* ---------- GAMING ---------- */}
   <div class="panel" id="gaming" role="tabpanel" aria-labelledby="tab-gaming" tabindex="0">
-    {
-      introParas.length > 0 && (
-        <div class="lead-block">
-          <div class="wrap">
-            <div class="lead prose">
-              {introParas.map((p) => (
-                <p>{p}</p>
-              ))}
-            </div>
-          </div>
-        </div>
-      )
-    }
-
     {
       /* Bands alternate across the sections actually rendered, so a missing
          category never leaves two plain sections adjacent. */
@@ -338,17 +323,6 @@ const jsonLd = {
   }
   .back:hover {
     color: var(--accent);
-  }
-
-  /* Symmetric: the band that follows supplies its own inner padding, but its
-     background makes the boundary visible, so the intro needs its own breathing
-     room underneath rather than butting up against the colour change. */
-  .lead-block {
-    padding: 44px 0;
-  }
-  .lead {
-    font-size: var(--text-lead);
-    line-height: 1.65;
   }
 
   .outro-section {

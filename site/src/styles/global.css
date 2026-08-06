@@ -129,6 +129,14 @@ section {
   text-transform: uppercase;
   text-decoration: none;
 }
+/* In dark mode a near-white pill reads as a flat highlight and fights the warm
+   palette, so the primary action takes the accent instead. Dark ink on amber
+   keeps the label well clear of contrast minimums. */
+[data-theme='dark'] .btn {
+  background: var(--accent);
+  color: var(--bg);
+}
+
 .btn:hover {
   opacity: 0.87;
 }
@@ -274,7 +282,7 @@ section {
   border-bottom-color: var(--accent);
 }
 
-/* Editor prose — intro, outro and article bodies are plain paragraphs. */
+/* Editor prose — the outro and article bodies are plain paragraphs. */
 .prose {
   max-width: var(--measure);
 }

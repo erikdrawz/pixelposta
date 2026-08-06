@@ -12,14 +12,6 @@ standfirst: >-
   legkülönösebb játéka viszont egy kézzel hímzett szláv népmese-platformer.
 cover: ./cover.jpg
 
-intro: |
-  A 30. héten végre voltak jó hírek is, szóval igyekeztem azokkal kezdeni!
-  Szerencsére videójátékokból továbbra sincs hiány, szóval bőven van miről
-  olvasgatni is.
-
-  Ezen a héten a Bethesda tett le egy komolyabb bejelentéscsomagot az asztalra,
-  de a hét legkülönösebb játéka egyértelműen egy kézzel hímzett platformer.
-
 outro: |
   Ennyi volt a 30. hét. A Scarlet Deer Innt én magam is felraktam a
   kívánságlistámra, nem is annyira a történet miatt, hanem mert öt év hímzés van

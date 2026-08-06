@@ -9,10 +9,6 @@ standfirst: >-
   Switch 2 árcsökkentés és egy stúdióbezárás.
 cover: ./cover.jpg
 
-intro: |
-  Volt egy olyan pillanat a hét közepén, amikor komolyan elgondolkodtam, hogy
-  lesz-e egyáltalán miről írni. Aztán szerda délután történt minden egyszerre.
-
 outro: |
   Jövő héten a Bethesda tart egy bejelentést, szóval elvileg lesz miből
   válogatni. Addig is jó játékot.

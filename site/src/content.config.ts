@@ -39,8 +39,9 @@ const issues = defineCollection({
       // editor wants to override it.
       readingMinutes: z.number().optional(),
 
-      // Editor-written, Gaming rovat only. Blank lines separate paragraphs.
-      intro: z.string().default(''),
+      // Editor-written, Hírek rovat only. Blank lines separate paragraphs.
+      // There is deliberately no `intro`: the newsletter opens with one, the
+      // site does not — the standfirst already does that job here.
       outro: z.string().default(''),
       signature: z.string().default('— Erik · Pixelposta'),
 

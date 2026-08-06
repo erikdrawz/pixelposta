@@ -60,7 +60,9 @@ is left for the editor:
 3. Drop article images in named `<slug>.jpg`, using the article's own `slug`
    from the frontmatter. No frontmatter change needed. A missing file just
    means no image, never an error. Aim for about three images per ten articles.
-4. Write `intro` and `outro`. Blank lines separate paragraphs.
+4. Write the `outro`. Blank lines separate paragraphs. There is no `intro` on
+   the site — the newsletter opens with one, but here the standfirst already
+   does that job and a second opener reads as filler.
 5. Fill in `ajanlo` — title, genre, description, and the Steam `appid`. Capsule
    art is fetched from Steam by appid; if the appid is wrong the card renders
    without art rather than showing a broken image.

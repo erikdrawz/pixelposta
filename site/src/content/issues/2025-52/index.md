@@ -10,10 +10,6 @@ standfirst: >-
   hogy a legjobb játékot négyen csinálták egy padlásszobában.
 cover: ./cover.jpg
 
-intro: |
-  Utolsó szám az évben, szóval nem hírekkel jövök, hanem azzal, ami megmaradt.
-  Rövid lesz, ünnepek vannak.
-
 outro: |
   Köszönöm, hogy egész évben olvastatok. Januárban ugyanitt, ugyanabban a
   formában folytatjuk.

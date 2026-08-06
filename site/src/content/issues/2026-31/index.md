@@ -22,9 +22,6 @@ standfirst: >-
   a Nintendo pedig két olyan Virtual Boy címet ad ki, amely annak idején sosem
   jelent meg.
 
-intro: |
-  Lássuk, mik történtek a gaming világban, miközben mi a hőséggel küzdünk!
-
 outro: |
   Ha eljutottál a gyűjtemény végéig, akkor természetesen jár a platina
   achievement!

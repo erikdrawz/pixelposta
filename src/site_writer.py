@@ -9,7 +9,7 @@ draft on the same week:
 
 * the pipeline owns `year`, `week`, `date`, `articles` and the release tables,
   and refreshes them on every run;
-* the editor owns `intro`, `outro`, `signature`, `ajanlo`, `cover` and each
+* the editor owns `outro`, `signature`, `ajanlo`, `cover` and each
   article's `imageCredit` — these are read back out of the existing file and
   carried forward untouched;
 * `title` and `standfirst` are generated only when the file does not already
@@ -35,7 +35,9 @@ logger = logging.getLogger(__name__)
 DEFAULT_SITE_ROOT = Path("site")
 
 #: Fields the editor fills in by hand and the pipeline must never overwrite.
-EDITOR_OWNED = ("intro", "outro", "signature", "ajanlo", "cover")
+#: No `intro`: the site does not render one, so writing it would put a field in
+#: the file that silently does nothing.
+EDITOR_OWNED = ("outro", "signature", "ajanlo", "cover")
 
 DEFAULT_SIGNATURE = "— Erik · Pixelposta"
 
@@ -56,7 +58,7 @@ HEADER_COMMENT = """\
 #
 # The pipeline refreshes: year, week, date, articles, releases.
 # It preserves anything you write into: title, standfirst,
-# intro, outro, signature, ajanlo, cover, and each article's imageCredit.
+# outro, signature, ajanlo, cover, and each article's imageCredit.
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
@@ -182,7 +184,6 @@ def build_frontmatter(
     # Carry the editor's fields forward verbatim.
     if existing.get("cover"):
         data["cover"] = existing["cover"]
-    data["intro"] = _LiteralStr(existing.get("intro") or "")
     data["outro"] = _LiteralStr(existing.get("outro") or "")
     data["signature"] = existing.get("signature") or DEFAULT_SIGNATURE
 

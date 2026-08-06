@@ -100,7 +100,7 @@ def test_editor_fields_are_preserved_on_regeneration(tmp_path):
     original = path.read_text(encoding="utf-8")
     edited = (
         original.replace("title: Generált cím", "title: Kézzel írt cím")
-        .replace('intro: ""', "intro: |\n  Bevezető.\n")
+        .replace('outro: ""', "outro: |\n  Zárás.\n")
         .replace("ajanlo: []", "ajanlo:\n- title: Outer Wilds\n  genre: X\n  appid: 1\n  description: Y\n")
     )
     # Attach a credit to the first article by slug.
@@ -117,7 +117,8 @@ def test_editor_fields_are_preserved_on_regeneration(tmp_path):
     data = read_existing(path)
 
     assert data["title"] == "Kézzel írt cím"        # editor's headline wins
-    assert data["intro"].strip() == "Bevezető."
+    assert data["outro"].strip() == "Zárás."
+    assert "intro" not in data  # the site does not render one
     assert data["ajanlo"][0]["title"] == "Outer Wilds"
     assert data["articles"][0]["imageCredit"] == "Kép: X"
     assert len(data["articles"]) == 3               # machine field refreshed

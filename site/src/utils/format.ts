@@ -66,8 +66,8 @@ function countWords(text: string): number {
 export function readingMinutes(issue: Issue): number {
   if (issue.data.readingMinutes !== undefined) return issue.data.readingMinutes;
 
-  const { intro, outro, articles, ajanlo } = issue.data;
-  let words = countWords(intro) + countWords(outro);
+  const { outro, articles, ajanlo } = issue.data;
+  let words = countWords(outro);
   for (const a of articles) {
     words += countWords(a.title) + countWords(a.body) + countWords(a.kiemelt ?? '');
   }
