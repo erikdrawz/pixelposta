@@ -59,7 +59,7 @@ def assemble_markdown(
     lines: list[str] = []
     lines.append(f"# {year}. {week_number}. hét")
     lines.append("")
-    lines.append("> _[INTRO — a szerkesztő írja kézzel: 3-4 mondatos heti bevezető.]_")
+    lines.append("> _[INTRO: a szerkesztő írja kézzel, 3-4 mondatos heti bevezető.]_")
     lines.append("")
 
     for category in CATEGORY_ORDER:
@@ -81,22 +81,22 @@ def assemble_markdown(
     lines.append("## Heti megjelenések")
     lines.append("")
     if releases is None:
-        lines.append("> _[PLACEHOLDER — release snapshot nem futott le.]_")
+        lines.append("> _[PLACEHOLDER: release snapshot nem futott le.]_")
     else:
         lines.extend(_format_release_list(releases.this_week))
     lines.append("")
     lines.append("## Jövő heti megjelenések")
     lines.append("")
     if releases is None:
-        lines.append("> _[PLACEHOLDER — release snapshot nem futott le.]_")
+        lines.append("> _[PLACEHOLDER: release snapshot nem futott le.]_")
     else:
         lines.extend(_format_release_list(releases.next_week))
     lines.append("")
     lines.append("---")
     lines.append("")
-    lines.append("> _[OUTRO — a szerkesztő írja kézzel: záró gondolatok.]_")
+    lines.append("> _[OUTRO: a szerkesztő írja kézzel, záró gondolatok.]_")
     lines.append("")
-    lines.append("— _Pixelposta_")
+    lines.append("– _Pixelposta_")
     lines.append("")
     return "\n".join(lines)
 

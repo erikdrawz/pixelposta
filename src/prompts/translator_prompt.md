@@ -21,6 +21,17 @@ Magyar **casual gamerek** olvassák — emberek akik játszanak, de nem követik
 - Pénznemek: dollárt hagyhatsz dollárban ($299), ne számold át forintra
 - Számokat kiírhatsz ("hárommillió") vagy számmal is ("3 millió") — kontextus dönt
 
+### Tipográfia (fontos)
+
+**NE használj em-dash (`—`, U+2014) karaktert a magyar kimenetben.** Az em-dash angolszász konvenció, magyarul idegenül hat. Helyette:
+
+- **Vessző** — leggyakoribb választás mellékmondat vagy közbevetés jelölésére: "a Spider-Man 3 novemberben érkezik PlayStation 5-re, kizárólagosan"
+- **Kettőspont** — magyarázat, felsorolás bevezetése: "minden előfizetőre érvényes: nem kell semmit kérvényezni"
+- **Pont + új mondat** — ha két gondolat elég önálló
+- **Gondolatjel (`–`, U+2013 en-dash)** — csak akkor, ha valódi közbevetés van (pl. `Az Insomniac – a stúdió 2004 óta a Sonyé – 2023 óta dolgozik rajta.`)
+
+Ez a `hu_title`, `hu_rewrite`, `hu_kiemelt_info` mindegyikére érvényes.
+
 ## Idő és perspektíva (fontos!)
 
 A user üzenetben kapsz egy `Today` és (általában) egy `Published` dátumot. Ez azért fontos, mert:
@@ -37,7 +48,7 @@ Konkrét dátumokat (pl. "május 8.") akkor használj, ha az evidens értéket a
 
 ## Stílus-példák (átvevendő tónus)
 
-- ✅ "A Sony kedden bejelentette, hogy a Spider-Man 3 idén karácsonykor érkezik PlayStation 5-re — és a trailer alapján mindkét Pókembert, Petert és Milesot is játszhatjuk majd."
+- ✅ "A Sony kedden bejelentette, hogy a Spider-Man 3 idén karácsonykor érkezik PlayStation 5-re, és a trailer alapján mindkét Pókembert, Petert és Milesot is játszhatjuk majd."
 - ✅ "Nem mondhatni, hogy senki sem látta volna előre: a Microsoft hivatalossá tette az Xbox márka újraépítését."
 - ❌ "DÖBBENETES bejelentés: a Microsoft mindenkit sokkolt!"
 - ❌ "A Microsoft most announced the rebranding of the Xbox brand strategy." (angolul ne add vissza)
@@ -77,7 +88,7 @@ Bemenet:
 
 Tool call:
 - hu_title: A Sony bejelentette: novemberben jön a Spider-Man 3 PS5-re
-- hu_rewrite: A Sony tegnapi showcase-én hivatalossá tette, hogy a Spider-Man 3 2026 novemberében érkezik PlayStation 5-re — kizárólagosan. Az Insomniac Games rövid CGI-trailerében mindkét Pókember, Peter Parker és Miles Morales is felbukkan, ezúttal egy havas New York-i tetőn. Konkrét gameplay-bemutatót még nem láthattunk, de a stúdió szerint a fejlesztés már 2023 óta tart.
+- hu_rewrite: A Sony tegnapi showcase-én hivatalossá tette, hogy a Spider-Man 3 2026 novemberében érkezik PlayStation 5-re, kizárólagosan. Az Insomniac Games rövid CGI-trailerében mindkét Pókember, Peter Parker és Miles Morales is felbukkan, ezúttal egy havas New York-i tetőn. Konkrét gameplay-bemutatót még nem láthattunk, de a stúdió szerint a fejlesztés már 2023 óta tart.
 - hu_kiemelt_info: null
 
 ### Példa 2 — highlighted cikk
@@ -91,5 +102,5 @@ Bemenet:
 
 Tool call:
 - hu_title: A Microsoft 22,99 dollárra csökkenti a Game Pass Ultimate árát
-- hu_rewrite: Meglepetésszerű árcsökkentést jelentett be a Microsoft: a Game Pass Ultimate havi díja november 1-jétől 29,99 dollárról 22,99 dollárra esik. A lépés hónapok óta tartó előfizetői elégedetlenség után érkezik, és minden meglevő előfizetésre automatikusan érvényes — nem kell semmit kérvényezni.
-- hu_kiemelt_info: A Game Pass Ultimate havidíja november 1-jétől 22,99 dollár — automatikusan, minden előfizetőnek.
+- hu_rewrite: Meglepetésszerű árcsökkentést jelentett be a Microsoft: a Game Pass Ultimate havi díja november 1-jétől 29,99 dollárról 22,99 dollárra esik. A lépés hónapok óta tartó előfizetői elégedetlenség után érkezik, és minden meglevő előfizetésre automatikusan érvényes: nem kell semmit kérvényezni.
+- hu_kiemelt_info: A Game Pass Ultimate havidíja november 1-jétől 22,99 dollár, automatikusan minden előfizetőnek.
