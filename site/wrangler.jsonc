@@ -1,0 +1,14 @@
+{
+  // Static-assets-only Worker. There is deliberately no "main" field: the site
+  // is fully prerendered, so there is no Worker code and nothing runs per
+  // request — Cloudflare just serves the built files from the edge.
+  "name": "pixelposta",
+  "compatibility_date": "2026-08-06",
+  "assets": {
+    // Relative to this file, which lives in site/ — the build root.
+    "directory": "./dist",
+    // Serve our own Hungarian 404 page instead of Cloudflare's default for
+    // unknown routes.
+    "not_found_handling": "404-page"
+  }
+}
