@@ -1,0 +1,92 @@
+---
+// Every page carries a subscribe block with id="hirlevel", so this is always
+// an in-page jump — it never pulls the reader off the issue they are reading.
+---
+
+<nav>
+  <div class="nav-in">
+    <a class="wordmark" href="/">PIXEL<span>POSTA</span></a>
+    <a class="nav-issue" href="#hirlevel">Hírlevél</a>
+    <button class="toggle" id="theme-toggle" type="button" aria-label="Téma váltása">◐</button>
+  </div>
+</nav>
+
+<script is:inline>
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const el = document.documentElement;
+    const next = el.dataset.theme === 'dark' ? 'light' : 'dark';
+    el.dataset.theme = next;
+    try {
+      localStorage.setItem('pp-theme', next);
+    } catch (e) {
+      /* private mode — the toggle still works for this page view */
+    }
+  });
+</script>
+
+<style>
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    height: var(--nav-h);
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav-in {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 var(--pad);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .wordmark {
+    font-family: var(--font-pixel);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    text-decoration: none;
+    margin-right: auto;
+    line-height: 1;
+  }
+  .wordmark span {
+    color: var(--accent);
+  }
+  .nav-issue {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-decoration: none;
+  }
+  .nav-issue:hover {
+    color: var(--accent);
+  }
+  .toggle {
+    width: 31px;
+    height: 31px;
+    border-radius: 999px;
+    border: 1px solid var(--rule-strong);
+    background: transparent;
+    color: var(--ink-muted);
+    cursor: pointer;
+    font-size: 13px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+  .toggle:hover {
+    color: var(--ink);
+    border-color: var(--ink-muted);
+  }
+  @media (max-width: 520px) {
+    .nav-issue {
+      display: none;
+    }
+  }
+</style>

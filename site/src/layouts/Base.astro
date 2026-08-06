@@ -1,0 +1,107 @@
+---
+// Self-hosted fonts. Archivo, Literata and JetBrains Mono all carry full
+// Latin Extended-A, which is what Hungarian needs — ő and ű included.
+// Silkscreen has neither, so only its Latin subset is loaded: it is used for
+// the wordmark and the footer mark, both pure ASCII, and nowhere else.
+import '@fontsource-variable/archivo/wght.css';
+import '@fontsource-variable/literata/opsz.css';
+import '@fontsource-variable/jetbrains-mono/wght.css';
+import '@fontsource/silkscreen/latin-700.css';
+
+import '../styles/tokens.css';
+import '../styles/global.css';
+
+import Nav from '../components/Nav.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Resolved image src. Made absolute against `site` for Open Graph. */
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+}
+
+const { title, description, ogImage, ogType = 'website' } = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImageUrl = ogImage ? new URL(ogImage, Astro.site).href : undefined;
+
+// Cloudflare Web Analytics. Cookieless and no-op until the token is set —
+// see site/README.md for where to find it.
+const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
+---
+
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Pixelposta" />
+    <meta property="og:locale" content="hu_HU" />
+    {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+    <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
+
+    <meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171512" media="(prefers-color-scheme: dark)" />
+
+    {/* Runs before first paint so the chosen theme never flashes. */}
+    <script is:inline>
+      (function () {
+        try {
+          var stored = localStorage.getItem('pp-theme');
+          var theme =
+            stored ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+
+    {beaconToken && (
+      <script
+        is:inline
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={`{"token": "${beaconToken}"}`}
+      />
+    )}
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Ugrás a tartalomra</a>
+    <Nav />
+    <main id="main">
+      <slot />
+    </main>
+    <footer>
+      <div class="foot-mark">PIXELPOSTA · {new Date().getFullYear()}</div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  footer {
+    padding: 44px 0 70px;
+    text-align: center;
+  }
+  .foot-mark {
+    font-family: var(--font-pixel);
+    font-weight: 700;
+    font-size: var(--text-micro);
+    color: var(--ink-muted);
+    opacity: 0.55;
+    letter-spacing: 0.04em;
+  }
+</style>

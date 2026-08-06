@@ -1,0 +1,93 @@
+---
+import { Image } from 'astro:assets';
+import KiemeltPanel from './KiemeltPanel.astro';
+import { paragraphs } from '../utils/format';
+
+interface Props {
+  title: string;
+  body: string;
+  source: string;
+  url: string;
+  kiemelt?: string;
+  image?: ImageMetadata;
+  imageCredit?: string;
+}
+
+const { title, body, source, url, kiemelt, image, imageCredit } = Astro.props;
+
+// Block order is fixed: headline → Kiemelt → body → image → source.
+// An article with both a Kiemelt panel and an image is the densest block
+// allowed; aim for roughly three images per ten articles.
+const paras = paragraphs(body);
+---
+
+<article>
+  {/* h3, not h2 — the category section head above it is the h2. */}
+  <h3>{title}</h3>
+
+  {kiemelt && <KiemeltPanel text={kiemelt} />}
+
+  {paras.map((p) => <p>{p}</p>)}
+
+  {
+    image && (
+      <figure>
+        <Image
+          src={image}
+          alt={title}
+          widths={[400, 780, 1160]}
+          sizes="(max-width: 820px) 100vw, 780px"
+          format="webp"
+          loading="lazy"
+        />
+        {imageCredit && <figcaption>{imageCredit}</figcaption>}
+      </figure>
+    )
+  }
+
+  <a class="src" href={url} target="_blank" rel="noopener">Eredeti cikk → {source}</a>
+</article>
+
+<style>
+  article {
+    max-width: var(--measure);
+    padding-bottom: 38px;
+    margin-bottom: 38px;
+    border-bottom: 1px solid var(--rule);
+  }
+  article:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h2);
+    line-height: 1.24;
+    letter-spacing: -0.014em;
+    margin: 0 0 14px;
+  }
+  article p {
+    margin: 0 0 18px;
+  }
+  figure {
+    margin: 0 0 22px;
+  }
+  figure :global(img) {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 1px solid var(--rule-strong);
+    display: block;
+  }
+  figcaption {
+    font-family: var(--font-mono);
+    font-size: var(--text-micro);
+    letter-spacing: 0.04em;
+    color: var(--ink-muted);
+    opacity: 0.75;
+    margin-top: 9px;
+  }
+</style>

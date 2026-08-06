@@ -1,0 +1,112 @@
+---
+export interface Rovat {
+  id: string;
+  name: string;
+  count: string;
+}
+
+interface Props {
+  rovatok: Rovat[];
+}
+
+const { rovatok } = Astro.props;
+---
+
+{/* Styled as a contents index — name plus count — rather than as website tabs. */}
+<div class="rovat-shell">
+  <div class="rovat-bar">
+    <div class="rovat-in" role="tablist" aria-label="Rovatok">
+      {
+        rovatok.map((r, i) => (
+          <button
+            class:list={['rovat', { 'is-active': i === 0 }]}
+            type="button"
+            role="tab"
+            id={`tab-${r.id}`}
+            aria-controls={r.id}
+            aria-selected={i === 0 ? 'true' : 'false'}
+            tabindex={i === 0 ? 0 : -1}
+            data-panel={r.id}
+          >
+            <span class="rovat-name">{r.name}</span>
+            <span class="rovat-count">{r.count}</span>
+          </button>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .rovat-shell {
+    position: sticky;
+    top: var(--nav-h);
+    z-index: 40;
+  }
+  .rovat-bar {
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--rule-strong);
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .rovat-in {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 var(--pad);
+    display: flex;
+  }
+  .rovat {
+    flex: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 6px 13px;
+    text-align: left;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    font-family: var(--font-mono);
+    color: var(--ink-muted);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: color 0.18s ease;
+  }
+  .rovat-name {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .rovat-count {
+    font-size: 10.5px;
+    letter-spacing: 0.05em;
+    opacity: 0.62;
+  }
+  .rovat:hover {
+    color: var(--ink);
+  }
+  .rovat:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -3px;
+  }
+  .rovat.is-active {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+  }
+  .rovat.is-active .rovat-count {
+    color: var(--accent);
+    opacity: 1;
+  }
+  @media (max-width: 560px) {
+    .rovat {
+      padding: 12px 4px 11px;
+    }
+    .rovat-name {
+      font-size: 10px;
+      letter-spacing: 0.06em;
+    }
+    .rovat-count {
+      font-size: 9.5px;
+    }
+  }
+</style>

@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Nincs ilyen oldal · Pixelposta" description="A keresett oldal nem található.">
+  <section class="notfound">
+    <div class="wrap">
+      <p class="eyebrow">404</p>
+      <h1>Ez az oldal nincs meg</h1>
+      <p class="lead">
+        Lehet, hogy elgépelted a címet, vagy a szám azóta másik hétre került. Az összes eddigi
+        szám egy kattintásra van.
+      </p>
+      <a class="btn" href="/">Összes szám →</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .notfound {
+    padding: 80px 0 40px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 0 0 18px;
+  }
+  .lead {
+    font-size: var(--text-lead);
+    line-height: 1.65;
+    max-width: var(--measure);
+    margin: 0 0 28px;
+    color: var(--ink-muted);
+  }
+</style>

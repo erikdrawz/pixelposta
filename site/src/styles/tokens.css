@@ -1,0 +1,49 @@
+/* Design tokens.
+ *
+ * Two values per accent because contrast requirements flip with the
+ * background. Categories deliberately get no colour of their own — they are
+ * uppercase mono labels in --ink-muted. Budget roughly four amber moments per
+ * viewport; past that, something should be --ink-muted instead.
+ */
+
+:root {
+  --bg: #FBF9F4;
+  --bg-band: #F2EEE5;
+  --surface: #FFFFFF;
+  --ink: #17150F;
+  --ink-muted: #6B6459;
+  --rule: rgba(23, 21, 15, 0.08);
+  --rule-strong: rgba(23, 21, 15, 0.14);
+  --accent: #B8801F;
+  --mark: #A63A28;
+
+  --font-display: 'Archivo Variable', system-ui, sans-serif;
+  --font-body: 'Literata Variable', Georgia, serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+  --font-pixel: 'Silkscreen', var(--font-mono);
+
+  --measure: 68ch;
+  --radius: 10px;
+  --pad: clamp(20px, 5vw, 40px);
+  --nav-h: 55px;
+
+  /* Type scale — see brief section 6. */
+  --text-issue: clamp(2.6rem, 6.5vw, 4.2rem);
+  --text-h2: 1.42rem;
+  --text-body: 17px;
+  --text-lead: 1.17rem;
+  --text-meta: 12.5px;
+  --text-micro: 11px;
+}
+
+[data-theme='dark'] {
+  --bg: #171512;
+  --bg-band: #1E1B17;
+  --surface: #211D18;
+  --ink: #F4EFE4;
+  --ink-muted: #9A9287;
+  --rule: rgba(244, 239, 228, 0.10);
+  --rule-strong: rgba(244, 239, 228, 0.18);
+  --accent: #D9A63F;
+  --mark: #C4523B;
+}

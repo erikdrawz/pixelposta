@@ -1,0 +1,38 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  cover?: ImageMetadata;
+  /** Alt text. Empty when the cover sits inside a link that already names the issue. */
+  alt?: string;
+  /** Wordmark shown when there is no cover image. */
+  mark?: string;
+  /** Second line of the generated mark, e.g. "2026 · 30. HÉT". */
+  submark?: string;
+  /** Rendered widths for the responsive srcset. */
+  widths?: number[];
+  sizes?: string;
+}
+
+const {
+  cover,
+  alt = '',
+  mark = 'PP',
+  submark,
+  widths = [340, 700, 1040],
+  sizes = '(max-width: 820px) 100vw, 780px',
+} = Astro.props;
+---
+
+<div class="cover">
+  {
+    cover ? (
+      <Image src={cover} alt={alt} widths={widths} sizes={sizes} format="webp" loading="lazy" />
+    ) : (
+      <div class="cover-mark" aria-hidden="true">
+        {mark}
+        {submark && <em>{submark}</em>}
+      </div>
+    )
+  }
+</div>

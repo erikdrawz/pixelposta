@@ -1,0 +1,72 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Cover from './Cover.astro';
+import { formatHuDateShort, issueCounts, issueUrl, weekLabel } from '../utils/format';
+
+interface Props {
+  issue: CollectionEntry<'issues'>;
+  /** Beyond the archive's initial cut — hidden until "további számok" is clicked. */
+  extra?: boolean;
+}
+
+const { issue, extra = false } = Astro.props;
+const { year, week, date, title, standfirst, cover } = issue.data;
+const counts = issueCounts(issue);
+---
+
+<a
+  class="issue-row"
+  href={issueUrl(issue)}
+  hidden={extra}
+  data-archive-extra={extra ? '' : undefined}
+>
+  <Cover
+    cover={cover}
+    mark="PP"
+    submark={`${week}. HÉT`}
+    widths={[168, 336]}
+    sizes="(max-width: 600px) 280px, 168px"
+  />
+  <div>
+    <div class="row-week">{weekLabel(year, week)}</div>
+    <h3 class="row-title">{title}</h3>
+    <p class="row-desc">{standfirst}</p>
+    <div class="row-meta">
+      <span>{formatHuDateShort(date)}</span><i>·</i>
+      <span>{counts.articles} hír</span><i>·</i>
+      <span>{counts.minutes} perc</span>
+    </div>
+  </div>
+</a>
+
+<style>
+  .issue-row {
+    display: grid;
+    grid-template-columns: 168px 1fr;
+    gap: 24px;
+    align-items: start;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: inherit;
+  }
+  .issue-row:last-of-type {
+    border-bottom: none;
+  }
+  .issue-row:hover .row-title {
+    color: var(--accent);
+  }
+  .issue-row:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  @media (max-width: 600px) {
+    .issue-row {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .issue-row :global(.cover) {
+      max-width: 280px;
+    }
+  }
+</style>

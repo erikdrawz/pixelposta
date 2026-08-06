@@ -1,0 +1,312 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { CATEGORIES } from '../../content.config';
+import Base from '../../layouts/Base.astro';
+import ArticleBlock from '../../components/ArticleBlock.astro';
+import GemCard from '../../components/GemCard.astro';
+import PrevIssue from '../../components/PrevIssue.astro';
+import ReleaseTable from '../../components/ReleaseTable.astro';
+import RovatBar, { type Rovat } from '../../components/RovatBar.astro';
+import SectionHead from '../../components/SectionHead.astro';
+import SubscribeBlock from '../../components/SubscribeBlock.astro';
+import { articleImage } from '../../utils/images';
+import {
+  formatHuDate,
+  issueCounts,
+  paragraphs,
+  sortIssues,
+  weekLabel,
+} from '../../utils/format';
+
+interface Props {
+  issue: CollectionEntry<'issues'>;
+  /** Undefined on the oldest issue. */
+  prev?: CollectionEntry<'issues'>;
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const issues = sortIssues(await getCollection('issues'));
+  return issues.map((issue, i) => ({
+    params: { year: String(issue.data.year), week: String(issue.data.week) },
+    // Sorted newest first, so the next entry is the previous issue.
+    props: { issue, prev: issues[i + 1] },
+  }));
+};
+
+const { issue, prev } = Astro.props;
+const { year, week, date, title, standfirst, cover, intro, outro, signature } = issue.data;
+const counts = issueCounts(issue);
+
+// Category sections keep the fixed order; articles keep frontmatter order
+// within a category (the pipeline writes them by relevance, descending).
+const sections = CATEGORIES.map((category) => ({
+  category,
+  articles: issue.data.articles.filter((a) => a.category === category),
+})).filter((s) => s.articles.length > 0);
+
+const hasReleases = counts.releases > 0;
+const hasAjanlo = counts.ajanlo > 0;
+
+const rovatok: Rovat[] = [
+  { id: 'gaming', name: 'Gaming', count: `${counts.articles} hír` },
+  ...(hasReleases
+    ? [{ id: 'megjelenesek', name: 'Megjelenések', count: `${counts.releases} cím` }]
+    : []),
+  ...(hasAjanlo ? [{ id: 'ajanlo', name: 'Ajánló', count: `${counts.ajanlo} játék` }] : []),
+];
+
+const introParas = paragraphs(intro);
+const outroParas = paragraphs(outro);
+---
+
+<Base
+  title={`${title} · Pixelposta`}
+  description={standfirst}
+  ogImage={cover?.src}
+  ogType="article"
+>
+  <header class="masthead">
+    <div class="wrap">
+      <a class="back" href="/">← Összes szám</a>
+      <p class="eyebrow">{weekLabel(year, week)}</p>
+      <h1>{title}</h1>
+      <div class="byline">
+        {formatHuDate(date)} · {counts.articles} hír · {counts.minutes} perc olvasás
+      </div>
+    </div>
+  </header>
+
+  <RovatBar rovatok={rovatok} />
+
+  {/* ---------- GAMING ---------- */}
+  <div class="panel" id="gaming" role="tabpanel" aria-labelledby="tab-gaming" tabindex="0">
+    {
+      introParas.length > 0 && (
+        <div class="lead-block">
+          <div class="wrap">
+            <div class="lead prose">
+              {introParas.map((p) => (
+                <p>{p}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      )
+    }
+
+    {
+      /* Bands alternate across the sections actually rendered, so a missing
+         category never leaves two plain sections adjacent. */
+      sections.map(({ category, articles }, i) => (
+        <div class:list={[{ band: i % 2 === 0 }]}>
+          <section>
+            <div class="wrap">
+              <SectionHead label={category} count={`${articles.length} hír`} />
+              {articles.map((a) => (
+                <ArticleBlock
+                  title={a.title}
+                  body={a.body}
+                  source={a.source}
+                  url={a.url}
+                  kiemelt={a.kiemelt}
+                  image={articleImage(issue.id, a.slug)}
+                  imageCredit={a.imageCredit}
+                />
+              ))}
+            </div>
+          </section>
+        </div>
+      ))
+    }
+
+    {
+      outroParas.length > 0 && (
+        <section class="outro-section">
+          <div class="wrap prose">
+            <SectionHead label="Zárás" />
+            {outroParas.map((p) => (
+              <p>{p}</p>
+            ))}
+            <div class="sig">{signature}</div>
+          </div>
+        </section>
+      )
+    }
+  </div>
+
+  {/* ---------- MEGJELENÉSEK ---------- */}
+  {
+    hasReleases && (
+      <div class="panel" id="megjelenesek" role="tabpanel" aria-labelledby="tab-megjelenesek" tabindex="0" hidden>
+        <div class="band">
+          <section>
+            <div class="wrap">
+              <SectionHead label="Megjelenések" count={`${counts.releases} cím`} />
+              <div class="rel-grid">
+                <ReleaseTable heading="Heti megjelenések" releases={issue.data.releasesThisWeek} />
+                <ReleaseTable
+                  heading="Jövő heti megjelenések"
+                  releases={issue.data.releasesNextWeek}
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    )
+  }
+
+  {/* ---------- AJÁNLÓ ---------- */}
+  {
+    hasAjanlo && (
+      <div class="panel" id="ajanlo" role="tabpanel" aria-labelledby="tab-ajanlo" tabindex="0" hidden>
+        <div class="band">
+          <section>
+            <div class="wrap">
+              <SectionHead label="Ajánló" count={`${counts.ajanlo} játék`} />
+              {issue.data.ajanlo.map((g) => (
+                <GemCard title={g.title} genre={g.genre} description={g.description} appid={g.appid} />
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
+    )
+  }
+
+  {prev && <PrevIssue issue={prev} />}
+
+  {/* Issue-level, below the panels: whoever just finished reading an issue is
+      the likeliest subscriber, and it gives the nav's Hírlevél link an
+      in-page target on this route too. */}
+  <section id="hirlevel">
+    <div class="wrap">
+      <SubscribeBlock />
+    </div>
+  </section>
+</Base>
+
+{/* Without JS every panel stays visible, so no content is unreachable. */}
+<noscript>
+  <style>
+    .panel[hidden] {
+      display: block !important;
+    }
+    .rovat-shell {
+      display: none;
+    }
+  </style>
+</noscript>
+
+<script is:inline>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.rovat'));
+    var panels = Array.prototype.slice.call(document.querySelectorAll('.panel'));
+    if (!tabs.length) return;
+
+    function activate(id, updateHash) {
+      if (!panels.some(function (p) { return p.id === id; })) return false;
+
+      tabs.forEach(function (t) {
+        var on = t.dataset.panel === id;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+      });
+      panels.forEach(function (p) {
+        p.hidden = p.id !== id;
+      });
+      // replaceState, not location.hash: keeps rovatok linkable and countable
+      // in analytics without pushing history entries or jumping the scroll.
+      if (updateHash) history.replaceState(null, '', '#' + id);
+      return true;
+    }
+
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () {
+        activate(tab.dataset.panel, true);
+      });
+      tab.addEventListener('keydown', function (e) {
+        var step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!step) return;
+        e.preventDefault();
+        var next = tabs[(i + step + tabs.length) % tabs.length];
+        next.focus();
+        activate(next.dataset.panel, true);
+      });
+    });
+
+    activate(location.hash.slice(1), false);
+    window.addEventListener('hashchange', function () {
+      activate(location.hash.slice(1), false);
+    });
+  })();
+</script>
+
+<style>
+  .masthead {
+    padding: 60px 0 0;
+  }
+  .masthead h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-issue);
+    line-height: 0.96;
+    letter-spacing: -0.032em;
+    margin: 0 0 20px;
+  }
+  .byline {
+    font-family: var(--font-mono);
+    font-size: var(--text-meta);
+    color: var(--ink-muted);
+    letter-spacing: 0.03em;
+    margin-bottom: 34px;
+  }
+  .back {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-decoration: none;
+    margin-bottom: 26px;
+    display: inline-block;
+  }
+  .back:hover {
+    color: var(--accent);
+  }
+
+  .lead-block {
+    padding: 44px 0 6px;
+  }
+  .lead {
+    font-size: var(--text-lead);
+    line-height: 1.65;
+  }
+
+  .outro-section {
+    padding-top: 0;
+  }
+  .sig {
+    font-family: var(--font-mono);
+    font-size: var(--text-meta);
+    letter-spacing: 0.04em;
+    color: var(--ink-muted);
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .rel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  @media (max-width: 720px) {
+    .rel-grid {
+      grid-template-columns: 1fr;
+      gap: 44px;
+    }
+  }
+</style>

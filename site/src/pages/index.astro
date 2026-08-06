@@ -1,0 +1,181 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import IssueHero from '../components/IssueHero.astro';
+import IssueRow from '../components/IssueRow.astro';
+import SectionHead from '../components/SectionHead.astro';
+import SubscribeBlock from '../components/SubscribeBlock.astro';
+import { sortIssues } from '../utils/format';
+
+const issues = sortIssues(await getCollection('issues'));
+const [latest, ...earlier] = issues;
+
+if (!latest) {
+  throw new Error(
+    'No issues found in src/content/issues — the landing page has nothing to show.',
+  );
+}
+
+/**
+ * How many archive rows show before the reveal button.
+ *
+ * The archive is the page's second job; the subscribe block is its first. Six
+ * rows signal a real back catalogue without pushing the CTA more than about
+ * two screens down. One button then reveals everything — batching would make
+ * someone genuinely browsing click over and over.
+ */
+const INITIAL_ROWS = 6;
+
+// Group by year, newest first, marking each row against the global cut so a
+// year straddling the boundary still splits correctly.
+type Row = { issue: (typeof earlier)[number]; extra: boolean };
+const byYear: { year: number; rows: Row[] }[] = [];
+earlier.forEach((issue, i) => {
+  const row: Row = { issue, extra: i >= INITIAL_ROWS };
+  const group = byYear.at(-1);
+  if (group?.year === issue.data.year) group.rows.push(row);
+  else byYear.push({ year: issue.data.year, rows: [row] });
+});
+
+const extraCount = Math.max(0, earlier.length - INITIAL_ROWS);
+const description = latest.data.standfirst;
+---
+
+<Base
+  title="Pixelposta — heti magyar gaming hírlevél"
+  description={description}
+  ogImage={latest.data.cover?.src}
+>
+  <IssueHero issue={latest} />
+
+  {
+    earlier.length > 0 && (
+      <div class="band archive">
+        <section>
+          <div class="wrap">
+            <SectionHead label="Korábbi számok" count={`${earlier.length} szám`} />
+            {byYear.map(({ year, rows }) => {
+              // A year whose every row is past the cut would otherwise render
+              // as a heading with nothing under it.
+              const yearHidden = rows.every((r) => r.extra);
+              return (
+                <>
+                  <div
+                    class="year-rule"
+                    hidden={yearHidden}
+                    data-archive-extra={yearHidden ? '' : undefined}
+                  >
+                    <span>{year}</span>
+                  </div>
+                  {rows.map(({ issue, extra }) => (
+                    <IssueRow issue={issue} extra={extra} />
+                  ))}
+                </>
+              );
+            })}
+
+            {
+              extraCount > 0 && (
+                <div class="archive-more">
+                  <button type="button" id="archive-more" aria-expanded="false">
+                    További számok ({extraCount}) ↓
+                  </button>
+                </div>
+              )
+            }
+          </div>
+        </section>
+      </div>
+    )
+  }
+
+  <section id="hirlevel">
+    <div class="wrap">
+      <SubscribeBlock />
+    </div>
+  </section>
+</Base>
+
+{/* Without JS the whole archive is there and the button is pointless. The
+    display values are restated explicitly: `revert` would roll back to the UA
+    stylesheet, where `[hidden]` is itself `display: none`. */}
+<noscript>
+  <style>
+    .issue-row[data-archive-extra] {
+      display: grid !important;
+    }
+    .year-rule[data-archive-extra] {
+      display: flex !important;
+    }
+    .archive-more {
+      display: none;
+    }
+  </style>
+</noscript>
+
+<script is:inline>
+  (function () {
+    var btn = document.getElementById('archive-more');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('[data-archive-extra]').forEach(function (el) {
+        el.hidden = false;
+      });
+      btn.setAttribute('aria-expanded', 'true');
+      btn.parentElement.hidden = true;
+    });
+  })();
+</script>
+
+<style>
+  .archive {
+    margin-top: 56px;
+  }
+  .year-rule {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 26px;
+  }
+  .year-rule span {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.12em;
+    color: var(--ink-muted);
+    opacity: 0.7;
+  }
+  .year-rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+  /* Each year group restarts the row list, so the last row of a group keeps
+     its rule while the last row overall does not. */
+  .year-rule:not(:nth-of-type(1)) {
+    margin-top: 34px;
+  }
+
+  /* Reads as the foot of the list rather than as a call to action — the one
+     amber moment down here belongs to the subscribe block below. */
+  .archive-more {
+    border-top: 1px solid var(--rule-strong);
+    margin-top: 4px;
+  }
+  .archive-more button {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px 0 4px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .archive-more button:hover {
+    color: var(--accent);
+  }
+</style>

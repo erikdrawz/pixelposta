@@ -2,7 +2,16 @@
 
 Weekly Hungarian-language gaming newsletter, automated curation pipeline with human-in-the-loop editing.
 
-See [PROJECT_BRIEF.md](PROJECT_BRIEF.md) and [NOTION_SCHEMA.md](NOTION_SCHEMA.md) for the full design.
+Two delivery surfaces, independent of each other so a problem with one never blocks the other:
+
+- **Substack** (`pixelposta.substack.com`) — the newsletter, distribution
+- **The website** (`pixelposta.com`) — the archive and reading surface, built from [`site/`](site/)
+
+One repo for both, because `weekly-draft.yml` commits the generated issue file with the built-in
+`GITHUB_TOKEN` — no cross-repo PAT to create, rotate, or have silently expire.
+
+See [PROJECT_BRIEF.md](PROJECT_BRIEF.md), [NOTION_SCHEMA.md](NOTION_SCHEMA.md) and
+[site/README.md](site/README.md) for the full design.
 
 ## Setup
 
@@ -66,11 +75,33 @@ python -m scripts.news_collector --exclude-source RPS     # skip a source
 ```
 
 **Weekly draft** — reads Status=Selected from Notion, fetches each article
-in full, Sonnet rewrites it in Hungarian, assembles a Markdown draft including
-the VGC release tables. Does not modify Notion (preview mode):
+in full, Sonnet rewrites it in Hungarian, picks the VGC release tables, generates
+the issue headline, and writes **two** outputs. Does not modify Notion (preview mode):
 
 ```bash
-python -m scripts.generate_draft                          # writes drafts/draft-YYYY-MM-DD.md
+python -m scripts.generate_draft
+```
+
+| Output | Purpose |
+|---|---|
+| `drafts/draft-YYYY-MM-DD.md` | flat prose, paste into Substack |
+| `site/src/content/issues/YYYY-WW/index.md` | structured, committed for the website |
+
+Useful flags: `--no-site` (Substack markdown only), `--year 2026 --week 30`
+(backfill a specific week), `--out PATH`, `--verbose`.
+
+Re-running on the same week is safe. The pipeline refreshes the fields it owns
+(`articles`, release tables, `date`) and preserves everything the editor writes
+by hand — `intro`, `outro`, `signature`, `ajanlo`, `cover`, per-article
+`imageCredit`, and `title`/`standfirst` once they have been edited. See
+[`src/site_writer.py`](src/site_writer.py).
+
+**Site writer smoke test** — exercise the content file without any API calls,
+then point the Astro build at the result:
+
+```bash
+python -m scripts.smoke_site_writer            # writes a fake issue to site/
+python -m scripts.smoke_site_writer --clean    # removes it again
 ```
 
 **Release table preview** — iterate on the release picker alone without
@@ -88,8 +119,9 @@ Two workflows live in `.github/workflows/`:
 - **`weekly-collect.yml`** — runs every Friday at **06:00 UTC** (08:00 Budapest summer / 07:00 winter;
   Thursday 23:00 PDT US west coast — captures the full Thursday US news cycle) and also on manual
   trigger. Pulls from RSS, runs the Haiku pre-filter, writes new articles to Notion.
-- **`weekly-draft.yml`** — manual trigger only. Generates the weekly Markdown
-  draft and uploads it as a downloadable artifact on the run page.
+- **`weekly-draft.yml`** — manual trigger only. Generates both outputs: uploads the
+  Substack draft as a downloadable artifact on the run page, and commits the site
+  content file straight to `main` (needs `permissions: contents: write`, already set).
 
 Required GitHub Secrets (Settings → Secrets and variables → Actions):
 
@@ -107,27 +139,35 @@ Required GitHub Secrets (Settings → Secrets and variables → Actions):
 ├── .github/workflows/        # weekly-collect.yml, weekly-draft.yml
 ├── src/
 │   ├── collectors/           # rss_sources.py, vgc_releases.py
-│   ├── prompts/              # filter_prompt.md, translator_prompt.md, release_picker_prompt.md
+│   ├── prompts/              # filter, translator, release_picker, issue_title
 │   ├── deduplicator.py       # URL dedup
-│   ├── draft_assembler.py    # markdown assembly
+│   ├── draft_assembler.py    # Substack markdown assembly
 │   ├── filter.py             # Haiku pre-filter
+│   ├── issue_title.py        # Sonnet issue headline + standfirst
 │   ├── models.py             # CollectedArticle / SelectedArticle / ReleaseEntry
 │   ├── notion_client.py      # Articles DB read/write (2025 data-sources API)
 │   ├── release_picker.py     # Haiku release table picker
+│   ├── site_writer.py        # site/src/content/issues/YYYY-WW/index.md
+│   ├── slugify.py            # Hungarian-aware slugs (ő→o, ű→u)
 │   ├── translator.py         # Sonnet HU rewrite
 │   └── web_fetcher.py        # trafilatura article-body extraction
 ├── scripts/
 │   ├── news_collector.py     # end-to-end collection pipeline
-│   ├── generate_draft.py     # weekly draft generator
+│   ├── generate_draft.py     # weekly draft generator (both outputs)
 │   ├── preview_releases.py   # release-table iteration helper
 │   ├── smoke_collect.py
 │   ├── smoke_filter.py
 │   ├── smoke_notion.py
+│   ├── smoke_site_writer.py  # site content file, no API calls
 │   ├── check_notion_schema.py
 │   └── debug_notion_ids.py
+├── site/                     # Astro website — Cloudflare Pages builds from here
 ├── drafts/                   # gitignored — generated drafts live here
 └── tests/
 ```
+
+The brief calls the Python half `pipeline/`; it stayed `src/` so the rename would not
+churn every import and both workflows for no behavioural gain.
 
 ## Status
 
@@ -139,6 +179,11 @@ Required GitHub Secrets (Settings → Secrets and variables → Actions):
 - [x] Draft generator (Sonnet 4.6) with temporal awareness
 - [x] Release picker (Haiku) + Markdown tables in the draft
 - [x] GitHub Actions: daily collect (cron) + weekly draft (manual)
+- [x] Issue title + standfirst generator (Sonnet 4.6, loud fallback)
+- [x] Site content writer with Hungarian-aware slugs and editor-field preservation
+- [x] Astro website in `site/` — landing, issue pages, three rovatok, light/dark
+- [ ] Cloudflare Pages connected + `pixelposta.com` DNS
+- [ ] Backfill the five issues already published on Patreon
 - [ ] Forbes / Bloomberg collectors (need Google News API or scraping fallback)
 - [ ] Weekly sweep (Sunday: Status=New → Archived after 7 days)
 - [ ] Monthly cleanup (delete Archived/Passed older than 30 days)

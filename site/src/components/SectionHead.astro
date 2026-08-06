@@ -1,0 +1,23 @@
+---
+interface Props {
+  label: string;
+  count?: string;
+}
+
+const { label, count } = Astro.props;
+---
+
+<div class="sec-head">
+  <div class="pips" aria-hidden="true"><i class="pip"></i><i class="pip"></i><i class="pip"></i></div>
+  <h2 class="sec-label">{label}</h2>
+  {count && <div class="sec-count">{count}</div>}
+</div>
+
+<style>
+  /* The section label is a real heading here, so reset the h2 defaults that
+     global.css sets for article headlines. */
+  .sec-label {
+    margin: 0;
+    font-weight: 500;
+  }
+</style>

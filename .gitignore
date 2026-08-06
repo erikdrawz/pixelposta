@@ -13,3 +13,8 @@ venv/
 
 # Generated newsletter drafts — work artifacts, not source
 drafts/
+
+# Astro site
+site/node_modules/
+site/dist/
+site/.astro/

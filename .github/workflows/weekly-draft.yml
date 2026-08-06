@@ -6,6 +6,12 @@ name: Weekly draft
 on:
   workflow_dispatch:
 
+# Needed by the commit step below. The site content file is committed with the
+# built-in GITHUB_TOKEN, which is the reason the pipeline and the site live in
+# one repo — no cross-repo PAT to create, rotate, or have silently expire.
+permissions:
+  contents: write
+
 jobs:
   draft:
     runs-on: ubuntu-latest
@@ -32,13 +38,29 @@ jobs:
           NOTION_ISSUES_DB_ID: ${{ secrets.NOTION_ISSUES_DB_ID }}
         run: python -m scripts.generate_draft
 
-      # The draft is the actual deliverable — surface it as a downloadable
-      # artifact so the editor can grab it from the run page.
-      - name: Upload draft as artifact
-        if: always()  # upload even on partial failure (e.g. some fetch errors)
+      # The Substack draft is a work artifact, not source — it stays out of git
+      # and comes down from the run page instead.
+      - name: Upload Substack draft as artifact
+        if: always() # upload even on partial failure (e.g. some fetch errors)
         uses: actions/upload-artifact@v4
         with:
           name: weekly-draft
           path: drafts/draft-*.md
           if-no-files-found: warn
           retention-days: 30
+
+      # The site content file IS source. Commit it so the editor only has to
+      # pull, drop images in, and push.
+      - name: Commit site content
+        if: always()
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain site/src/content/issues)" ]; then
+            echo "No site content changes to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/src/content/issues
+          git commit -m "Add generated issue content for $(date -u +%G-W%V)"
+          git push

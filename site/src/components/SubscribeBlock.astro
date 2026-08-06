@@ -1,0 +1,43 @@
+---
+const SUBSTACK_URL = 'https://pixelposta.substack.com';
+---
+
+<div class="sub">
+  <div class="sub-label">Heti egyszer</div>
+  <h2>Kapd meg e-mailben, hétvégente</h2>
+  <p>
+    Ugyanaz a szám, ugyanabban a formában, egyenesen a postafiókodba. Spam nincs, leiratkozás egy
+    kattintás.
+  </p>
+  <a class="btn" href={SUBSTACK_URL} target="_blank" rel="noopener">Feliratkozom →</a>
+</div>
+
+<style>
+  .sub {
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius);
+    padding: 28px 30px;
+    max-width: var(--measure);
+  }
+  .sub-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-micro);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 11px;
+  }
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -0.015em;
+    margin: 0 0 10px;
+  }
+  p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    color: var(--ink-muted);
+  }
+</style>

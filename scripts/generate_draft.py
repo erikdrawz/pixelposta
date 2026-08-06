@@ -1,18 +1,25 @@
 """Generate a weekly newsletter draft from Notion's Selected articles.
 
-Pipeline: Notion read → trafilatura full-text fetch → Sonnet rewrite →
-markdown assemble → write file.
+Pipeline: Notion read → trafilatura full-text fetch → Sonnet rewrite → VGC
+release snapshot → issue headline → two outputs.
 
-This is the Friday-morning step from the brief, but in PREVIEW mode: it does
-NOT update article statuses to Published, does NOT create an Issues row, and
-does NOT touch VGC release tables. Those come later — for now it's a safe
-loop you can re-run as many times as you want against the same Selected set
-while iterating on the prompt.
+Two outputs, deliberately independent so a problem with one cannot take the
+other down:
+
+    drafts/draft-YYYY-MM-DD.md                     flat markdown, paste into Substack
+    site/src/content/issues/YYYY-WW/index.md       structured, committed for the site
+
+Still PREVIEW mode against Notion: it does NOT update article statuses to
+Published and does NOT create an Issues row, so it stays a safe loop you can
+re-run against the same Selected set. Re-running also preserves the fields the
+editor owns in an existing index.md — see src/site_writer.py.
 
 Usage:
-    python -m scripts.generate_draft                       # writes to drafts/draft-YYYY-MM-DD.md
-    python -m scripts.generate_draft --out custom.md       # custom output path
-    python -m scripts.generate_draft --verbose             # show cache stats / per-article timing
+    python -m scripts.generate_draft                       # both outputs
+    python -m scripts.generate_draft --no-site             # Substack markdown only
+    python -m scripts.generate_draft --out custom.md       # custom markdown path
+    python -m scripts.generate_draft --year 2026 --week 30 # backfill a specific week
+    python -m scripts.generate_draft --verbose             # cache stats / per-article timing
 """
 from __future__ import annotations
 
@@ -27,8 +34,10 @@ from dotenv import load_dotenv
 
 from src.collectors.vgc_releases import VgcFetchError, fetch_release_schedule
 from src.draft_assembler import DraftEntry, assemble_markdown
+from src.issue_title import SonnetIssueTitler, fallback_for
 from src.notion_client import NotionArticles
 from src.release_picker import HaikuReleasePicker, ReleasePickError, ReleaseSnapshot
+from src.site_writer import DEFAULT_SITE_ROOT, write_issue
 from src.translator import RewriteParseError, SonnetTranslator
 from src.web_fetcher import FetchError, fetch_article_text
 
@@ -47,6 +56,22 @@ def main() -> int:
     parser.add_argument(
         "--verbose", action="store_true",
         help="show DEBUG logging (incl. Sonnet cache stats)",
+    )
+    parser.add_argument(
+        "--site-root", type=Path, default=DEFAULT_SITE_ROOT, metavar="PATH",
+        help=f"Astro site root (default: {DEFAULT_SITE_ROOT})",
+    )
+    parser.add_argument(
+        "--no-site", action="store_true",
+        help="skip the site content file, only write the Substack markdown",
+    )
+    parser.add_argument(
+        "--week", type=int, default=None, metavar="N",
+        help="ISO week to file the issue under (default: this week)",
+    )
+    parser.add_argument(
+        "--year", type=int, default=None, metavar="YYYY",
+        help="ISO year to file the issue under (default: this year)",
     )
     args = parser.parse_args()
 
@@ -126,22 +151,70 @@ def main() -> int:
     except Exception as e:
         logger.error("release snapshot crashed: %s: %s — falling back to placeholder", type(e).__name__, e)
 
-    # 4. Assemble markdown.
-    markdown = assemble_markdown(entries, today=today, releases=releases)
+    iso_year, iso_week, _ = today.isocalendar()
+    year = args.year if args.year is not None else iso_year
+    week = args.week if args.week is not None else iso_week
 
-    # 4. Write file.
+    # 4. Assemble the Substack markdown.
+    markdown = assemble_markdown(
+        entries, today=today, week_number=week, year=year, releases=releases
+    )
+
     out_path = args.out
     if out_path is None:
         DEFAULT_OUT_DIR.mkdir(exist_ok=True)
         out_path = DEFAULT_OUT_DIR / f"draft-{today.isoformat()}.md"
     out_path.write_text(markdown, encoding="utf-8")
 
+    # 5. Headline + site content file. Neither can fail the run: the Substack
+    # draft above is already on disk and is the thing that must ship.
+    site_path = None
+    if not args.no_site:
+        logger.info("step 5: generating issue title and site content file")
+        try:
+            titler = SonnetIssueTitler()
+            issue_title = titler.generate(entries, year=year, week=week)
+        except Exception as e:
+            logger.error(
+                "ISSUE TITLE FAILED to initialise (%s: %s) — using fallback headline",
+                type(e).__name__, e,
+            )
+            issue_title = fallback_for(year, week)
+
+        if issue_title.is_fallback:
+            logger.error(
+                "issue headline is the fallback %r — write a real one in index.md",
+                issue_title.title,
+            )
+        else:
+            logger.info("issue title: %s", issue_title.title)
+
+        try:
+            site_path = write_issue(
+                entries,
+                issue_title,
+                year=year,
+                week=week,
+                releases=releases,
+                site_root=args.site_root,
+            )
+        except Exception as e:
+            logger.error(
+                "SITE FILE FAILED (%s: %s) — the Substack draft at %s is unaffected",
+                type(e).__name__, e, out_path,
+            )
+
     print(f"\n--- Draft generation report ---")
+    print(f"  Issue:           {year}. {week}. hét")
     print(f"  Selected:        {len(selected)}")
     print(f"  Rewritten:       {len(entries)}")
     print(f"  Fetch failures:  {len(fetch_failures)}")
     print(f"  Rewrite failures:{len(rewrite_failures)}")
-    print(f"  Output file:     {out_path}")
+    print(f"  Substack draft:  {out_path}")
+    if site_path is not None:
+        print(f"  Site content:    {site_path}")
+    elif not args.no_site:
+        print(f"  Site content:    FAILED — see the log above")
     if fetch_failures or rewrite_failures:
         print("\n  Failed URLs:")
         for url, reason in fetch_failures + rewrite_failures:

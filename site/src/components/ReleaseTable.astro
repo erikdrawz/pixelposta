@@ -1,0 +1,100 @@
+---
+interface Release {
+  title: string;
+  platform: string;
+  date: string;
+}
+
+interface Props {
+  heading: string;
+  releases: Release[];
+}
+
+const { heading, releases } = Astro.props;
+---
+
+<div>
+  <h3 class="rel-title">{heading}</h3>
+  {
+    releases.length === 0 ? (
+      <p class="rel-empty">Ezen a héten nincs kiemelt megjelenés.</p>
+    ) : (
+      <table>
+        <thead>
+          <tr>
+            <th>Cím</th>
+            <th>Platform</th>
+            <th>Dátum</th>
+          </tr>
+        </thead>
+        <tbody>
+          {releases.map((r) => (
+            <tr>
+              <td>{r.title}</td>
+              <td class="meta platform">{r.platform}</td>
+              <td class="meta date">{r.date}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )
+  }
+</div>
+
+<style>
+  .rel-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+  }
+  .rel-empty {
+    color: var(--ink-muted);
+    font-size: 0.96rem;
+    margin: 0;
+  }
+  /* Hairlines plus padding, not boxes. */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-align: left;
+    padding: 0 0 10px;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  td {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  td:first-child {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.94rem;
+    padding-right: 14px;
+  }
+  td.meta {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--ink-muted);
+  }
+  /* Platform lists get long ("PC, PS5, Switch") and the columns are narrow at
+     two-up, so this one wraps rather than colliding with the date. */
+  td.platform {
+    padding-right: 12px;
+  }
+  td.date {
+    white-space: nowrap;
+  }
+  tr:last-child td {
+    border-bottom: none;
+  }
+</style>

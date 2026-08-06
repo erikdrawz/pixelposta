@@ -1,0 +1,42 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<aside class="kiemelt">
+  <div class="kiemelt-label">⚡ Kiemelt info</div>
+  <p>{text}</p>
+</aside>
+
+<style>
+  /* Deliberately outside the theme system: this panel stays dark in both
+     themes so it always reads as a different register. It is also the only
+     place --mark appears anywhere on the site, and that exclusivity is the
+     whole point — don't reuse these colours elsewhere. */
+  .kiemelt {
+    background: #171512;
+    color: #f4efe4;
+    border-left: 3px solid var(--mark);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin: 0 0 20px;
+  }
+  .kiemelt-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-micro);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c4523b;
+    margin-bottom: 9px;
+  }
+  .kiemelt p {
+    margin: 0;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    color: #f4efe4;
+  }
+</style>

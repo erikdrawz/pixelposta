@@ -1,0 +1,93 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Cover from './Cover.astro';
+import { formatHuDate, issueCounts, issueUrl, weekLabel } from '../utils/format';
+
+interface Props {
+  issue: CollectionEntry<'issues'>;
+}
+
+const { issue } = Astro.props;
+const { year, week, date, title, standfirst, cover } = issue.data;
+const url = issueUrl(issue);
+const counts = issueCounts(issue);
+---
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Legfrissebb szám · {weekLabel(year, week)}</p>
+
+    <a class="hero-link" href={url}>
+      <Cover
+        cover={cover}
+        alt={`${title} — borító`}
+        mark="PIXELPOSTA"
+        submark={`${year} · ${week}. HÉT`}
+      />
+      <h1>{title}</h1>
+    </a>
+
+    <p class="hero-lead">{standfirst}</p>
+
+    <div class="hero-meta">
+      <span>{formatHuDate(date)}</span><i>·</i>
+      <span>{counts.articles} hír</span><i>·</i>
+      <span>{counts.releases} megjelenés</span><i>·</i>
+      <span>{counts.ajanlo} ajánló</span><i>·</i>
+      <span>{counts.minutes} perc</span>
+    </div>
+
+    <a class="btn" href={url}>Olvasom →</a>
+  </div>
+</header>
+
+<style>
+  .hero {
+    padding: 56px 0 0;
+  }
+  .hero-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .hero-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: var(--radius);
+  }
+  .hero-link :global(.cover) {
+    transition: border-color 0.18s ease;
+  }
+  .hero-link:hover :global(.cover) {
+    border-color: var(--accent);
+  }
+  .hero-link:hover h1 {
+    color: var(--accent);
+  }
+  h1 {
+    transition: color 0.18s ease;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.4rem, 6vw, 3.9rem);
+    line-height: 0.97;
+    letter-spacing: -0.032em;
+    margin: 26px 0 18px;
+  }
+  .hero-lead {
+    font-size: 1.14rem;
+    line-height: 1.62;
+    max-width: var(--measure);
+    margin: 0 0 26px;
+    color: var(--ink);
+  }
+  .hero-meta {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--ink-muted);
+    margin-bottom: 28px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+</style>
