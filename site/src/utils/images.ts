@@ -14,6 +14,9 @@ const modules = import.meta.glob<{ default: ImageMetadata }>(
 /** Filename stems that are never article images. */
 const RESERVED = new Set(['cover']);
 
+/** Ajánló capsule art is committed as `ajanlo-<appid>.jpg`. */
+const AJANLO_PREFIX = 'ajanlo-';
+
 const byIssue = new Map<string, Map<string, ImageMetadata>>();
 
 for (const [path, mod] of Object.entries(modules)) {
@@ -33,5 +36,18 @@ for (const [path, mod] of Object.entries(modules)) {
 
 /** The image for one article, or undefined when the editor didn't add one. */
 export function articleImage(issueId: string, slug: string): ImageMetadata | undefined {
+  if (slug.startsWith(AJANLO_PREFIX)) return undefined;
   return byIssue.get(issueId)?.get(slug);
+}
+
+/**
+ * Committed capsule art for an ajánló entry, or undefined.
+ *
+ * Steam's asset URLs used to be derivable from the appid alone, but newer
+ * store items sit behind a per-asset content hash that cannot be guessed —
+ * and new indie titles are exactly what this section features. So the art is
+ * committed alongside the issue, keyed on appid.
+ */
+export function gemImage(issueId: string, appid: number): ImageMetadata | undefined {
+  return byIssue.get(issueId)?.get(`${AJANLO_PREFIX}${appid}`);
 }

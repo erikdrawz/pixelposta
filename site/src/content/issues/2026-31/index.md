@@ -2,22 +2,20 @@
 # Backfilled by hand from the e-mail edition of 2026/31.
 #
 # TODO before publishing:
-#   - `url` on every article points at the source's homepage, not the actual
-#     article. Replace with the real links from the original issue.
 #   - `category` is inferred (the e-mail edition has no category headings).
 #     Reassign anything that looks wrong.
 #   - `title` and `standfirst` are written to the pipeline's rules, since the
 #     e-mail only had "Pixelposta - 2026. 31. hét". Overwrite freely.
 #
-# To add the cover: drop cover.jpg into this folder and uncomment the line
-# below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
-#
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
+#
+# Ajánló capsule art: drop ajanlo-<appid>.jpg into this folder. Same deal, no
+# frontmatter change needed.
 year: 2026
 week: 31
 date: '2026-08-01'
+cover: ./cover.jpg
 title: Zelda-remake az élen, és két kiadatlan Virtual Boy játék
 standfirst: >-
   A Zelda: Ocarina of Time remake lett az év legjobban várt játéka a GTA 6 után,
@@ -40,7 +38,7 @@ articles:
       A Zelda: Ocarina of Time remake az idei év leginkább várt játéka a GTA 6
       után
     source: TheGameBusiness
-    url: https://www.thegamebusiness.com
+    url: https://www.thegamebusiness.com/p/the-legend-of-zelda-ocarina-of-time
     body: >-
       A TheGameBusiness több adatforrást, trailerstatisztikákat, sajtófigyelmet,
       IGN és Steam kívánságlistákat összesítve megnézte, melyek az idei
@@ -55,7 +53,7 @@ articles:
     category: Játékhírek
     title: Kingdom Come Salvation lehet a Warhorse következő középkori RPG-je
     source: RPS
-    url: https://www.rockpapershotgun.com/news
+    url: https://www.rockpapershotgun.com/kingdom-come-salvation-could-be-warhorses-next-medieval-history-rpg-if-this-eu-trademark-filing-turns-out-to-be-the-genuine-article
     body: >-
       A Kingdom Come: Deliverance 2 fejlesztői, a Warhorse Studios már májusban
       megerősítették, hogy egy új Kingdom Come-játékon dolgoznak, és múlt héten
@@ -70,7 +68,7 @@ articles:
     category: Stúdió & Üzlet
     title: 'A Capcom pénzügyi jelentése: a Resident Evil Requiem elérte a 8 milliót'
     source: ThisWeekInVideoGames
-    url: https://thisweekinvideogames.com/news/
+    url: https://thisweekinvideogames.com/news/resident-evil-requiem-sales-pass-8-million-pragmata-passes-2-5-million-capcom-confirms
     body: >-
       A Capcom néhány napja közzétette a 2026-os pénzügyi év első negyedéves
       jelentését, és a számok igen erősek: az árbevétel 54,7%-kal nőtt éves
@@ -86,7 +84,7 @@ articles:
       Egykori BioWare-fejlesztők bemutatták a The Eventide természetfeletti
       detektívjátékot
     source: RPS
-    url: https://www.rockpapershotgun.com/news
+    url: https://www.rockpapershotgun.com/the-case-of-the-golden-idol-style-deduction-meets-the-x-files-former-bioware-devs-unveil-supernatural-detective-game-the-eventide
     body: >-
       A Studio Reset, amelyet egykori Mass Effect- és Dragon Age-es fejlesztők
       alapítottak, néhány napja lerántotta a leplet a The Eventide-ról. A
@@ -103,7 +101,7 @@ articles:
       A Morrowind mostantól böngészőből is játszható egy nyílt forráskódú
       projekt jóvoltából
     source: DigitalFoundry
-    url: https://www.digitalfoundry.net/news
+    url: https://www.digitalfoundry.net/news/2026/07/the-elder-scrolls-morrowind-is-now-playable-in-browser-thanks-to-a-clever-dev-and-an-open-source-project
     body: >-
       Egy Dumpster_Buddy nevű fejlesztő néhány napja közzétette az OpenMW-Web
       projektet, amivel a 2002-es The Elder Scrolls: Morrowind egyszerűen
@@ -117,7 +115,7 @@ articles:
     category: Játékhírek
     title: Jön a Thimbleweed Park 2, 2028-ban érkezik a klasszikus kaland folytatása
     source: NintendoLife
-    url: https://www.nintendolife.com
+    url: https://www.nintendolife.com/news/2026/07/delightful-point-and-click-murder-mystery-thimbleweed-park-is-getting-a-sequel
     body: >-
       Ron Gilbert és Gary Winnick, a Maniac Mansion legendás alkotói két napja
       bejelentették, hogy a Thimbleweed Park kap egy folytatást, a Steam-oldalon
@@ -133,7 +131,7 @@ articles:
       A Nintendo Switch Online-hoz jön a Super Mario Sunshine és két soha ki nem
       adott Virtual Boy játék
     source: VGC
-    url: https://www.videogameschronicle.com
+    url: https://www.videogameschronicle.com/news/major-nintendo-switch-update-adds-mario-sunshine-and-unreleased-virtual-boy-games/
     body: >-
       A Nintendo bejelentette, hogy augusztus 13-án a Super Mario Sunshine
       felkerül a Switch 2 GameCube-klasszikusai közé, ez az első alkalom, hogy a
@@ -147,7 +145,7 @@ articles:
     category: Játékhírek
     title: 'Feltámadt a törölt DLC: az Age of Empires III Baltic Powers szeptemberben jön'
     source: RPS
-    url: https://www.rockpapershotgun.com/news
+    url: https://www.rockpapershotgun.com/surprise-age-of-empires-3-definitive-editions-baltic-powers-expansion-has-re-emerged-from-the-annals-of-cancelled-dlc-history-will-come-out-in-september
     body: >-
       Az Age of Empires III: Definitive Edition Baltic Powers kiegészítője 2025
       elején törölt DLC-ként vonult be a történelemkönyvekbe, most viszont
@@ -160,7 +158,7 @@ articles:
     category: Játékhírek
     title: 'A Marvel Tokon: Fighting Souls bétája PC-n teljesítményproblémákba futott'
     source: RPS
-    url: https://www.rockpapershotgun.com/news
+    url: https://www.rockpapershotgun.com/marvel-tokon-fighting-souls-open-beta-beaten-and-bashed-by-pc-performance-issues-arc-system-works-apologise-for-the-impact-this-has-had-on-your-experience
     body: >-
       Az Arc System Works Marvel Tokon: Fighting Souls nyílt bétája múlt hétvégén
       zárult le, de PC-n korántsem ment simán: a játékosok tömege futott bele
@@ -173,7 +171,7 @@ articles:
     category: Játékhírek
     title: A Splatoon Raiders vezeti a japán eladási listát, közel 475 ezer példánnyal
     source: VGC
-    url: https://www.videogameschronicle.com
+    url: https://www.videogameschronicle.com/news/splatoon-raiders-tops-the-japan-physical-charts-as-mario-kart-world-and-tomodachi-life-pass-major-milestones/
     body: >-
       A július 23-án megjelent Splatoon Raiders rögtön az első hétvégéjén
       474 684 fizikai példányt adott el Japánban, és magabiztosan vezeti a
@@ -187,7 +185,7 @@ articles:
     category: Hardware
     title: A Valve közzétette a Steam Machine 3D-s CAD fájljait hobbyistáknak
     source: DigitalFoundry
-    url: https://www.digitalfoundry.net/news
+    url: https://www.digitalfoundry.net/news/2026/07/valve-releases-steam-machine-cad-files-under-creative-commons-license-is-the-gamecube-handle-finally-possible
     body: >-
       Néhány napja a Valve Creative Commons licenc alatt kiadta a Steam Machine
       külső burkolatának CAD-fájljait, így bárki készíthet saját előlapot vagy
@@ -200,7 +198,7 @@ articles:
     category: Stúdió & Üzlet
     title: A Double Fine a függetlenedés után azonnal leépítette a csapat negyedét
     source: RPS
-    url: https://www.rockpapershotgun.com/news
+    url: https://www.rockpapershotgun.com/after-gaining-independence-from-xbox-double-fine-are-laying-off-a-quarter-of-their-staff
     body: >-
       Alig néhány héttel azután, hogy a Double Fine visszanyerte függetlenségét
       az Xboxtól, Tim Schafer stúdiója múlt héten bejelentette: 23 főt, a teljes
@@ -213,7 +211,7 @@ articles:
     category: Játékhírek
     title: Ingyenes PC-verziót kapsz Ubisoft Xbox-játékaidhoz
     source: DigitalFoundry
-    url: https://www.digitalfoundry.net/news
+    url: https://www.digitalfoundry.net/news/2026/07/microsoft-starts-offering-free-pc-versions-of-your-ubisoft-games-on-xbox
     body: >-
       A Microsoft és az Ubisoft néhány napja indított egy „konzolról PC-re”
       programot: ha valakinek digitálisan megvan egy Ubisoft-játék Xboxon, most
@@ -227,7 +225,7 @@ articles:
     category: Stúdió & Üzlet
     title: Az Xbox bevétele 7%-ot esett, a vezetők 2027-re ígérnek fordulópontot
     source: RPS
-    url: https://www.rockpapershotgun.com/news
+    url: https://www.rockpapershotgun.com/our-business-did-not-grow-with-our-audience-post-layoffs-xbox-execs-are-trying-to-sell-a-gaming-division-bounce-back-by-summer-2027
     body: >-
       A Microsoft két napja tette közzé legújabb pénzügyi eredményeit, amelyek
       szerint az Xbox divízió bevétele 1,7 milliárd dollárral, 7%-kal csökkent
@@ -244,7 +242,7 @@ articles:
       A Sony szerint a fizikai lemezek kivezetése nem fogja hátrányosan érinteni
       az üzletet
     source: ThisWeekInVideoGames
-    url: https://thisweekinvideogames.com/news/
+    url: https://thisweekinvideogames.com/news/playstation-sony-interactive-q1-fy2026-investor-call-q-and-a-physical-discs/
     body: >-
       A Sony pénzügyi igazgatója, Lin Tao tegnap, a cég negyedéves befektetői
       tájékoztatóján reagált a PS5-játékok fizikai lemezgyártásának 2028
@@ -260,7 +258,7 @@ articles:
       Az EA vezérigazgatója 38,6 millió dollárt keresett abban az évben, amikor
       a Battlefield 6 csapatát leépítették
     source: YahooFinance
-    url: https://finance.yahoo.com
+    url: https://finance.yahoo.com/markets/stocks/articles/ea-ceo-earned-38-6m-193000334.html
     body: >-
       Andrew Wilson, az Electronic Arts vezérigazgatója a 2026-os pénzügyi évben
       38,6 millió dollárt keresett, 8%-kal többet, mint egy évvel korábban, és
@@ -277,7 +275,7 @@ articles:
     category: Játékhírek
     title: Az Xbox műszaki igazgatója bocsánatot kért a 12 órás szolgáltatáskiesés miatt
     source: ThisWeekInVideoGames
-    url: https://thisweekinvideogames.com/news/
+    url: https://thisweekinvideogames.com/news/xbox-cto-apologises-for-unacceptable-downtime/
     body: >-
       Július 27-én közel 12 órán át nem lehetett normálisan bejelentkezni az
       Xboxra, játékkönyvtárakat megjeleníteni vagy játékokat elindítani, a
@@ -293,7 +291,7 @@ articles:
       Egy Dragon Age remaster-trilógia jó ötlet lenne, de senki sem ért a régi
       motorokhoz
     source: RPS
-    url: https://www.rockpapershotgun.com/news
+    url: https://www.rockpapershotgun.com/dragon-age-origins-wasnt-the-most-attractive-game-biowares-old-series-producer-still-thinks-a-da-remaster-trilogy-is-worth-it-but-the-knowhow-isnt-there
     body: >-
       Mark Darrah, a Dragon Age egykori sorozatproducere szerint egy
       remaster-trilógia jól eladna, még úgy is, hogy az Origins már annak idején
@@ -308,7 +306,7 @@ articles:
     category: Stúdió & Üzlet
     title: Az Xbox, az Amazon és a Netflix próbálja újraéleszteni a játékstreaminget
     source: TheGameBusiness
-    url: https://www.thegamebusiness.com
+    url: https://www.thegamebusiness.com/p/xbox-amazon-and-netflix-try-to-make
     body: >-
       Egyszerre mozdult meg három nagy szereplő a játékstreaming piacon. Az Xbox
       egy hirdetésalapú modellt tesztel: az Xbox Insiders ingyen streamelhetik a
@@ -324,7 +322,7 @@ articles:
       Az Assassin's Creed Black Flag Resynced 3,5 millió példányt adott el két
       hét alatt
     source: ThisWeekInVideoGames
-    url: https://thisweekinvideogames.com/news/
+    url: https://thisweekinvideogames.com/news/ubisoft-q1-fy-2026-2027-earnings-report-assassins-creed-black-flag-resynced-physical-games-remarks/
     body: >-
       Az Ubisoft múlt heti negyedéves jelentése szerint a Black Flag Resynced
       július 9-i megjelenése után mindössze két héttel már 3,5 millió eladott

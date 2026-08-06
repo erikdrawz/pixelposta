@@ -10,7 +10,7 @@ import ReleaseTable from '../../components/ReleaseTable.astro';
 import RovatBar, { type Rovat } from '../../components/RovatBar.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import SubscribeBlock from '../../components/SubscribeBlock.astro';
-import { articleImage } from '../../utils/images';
+import { articleImage, gemImage } from '../../utils/images';
 import { SITE_NAME, SUBSTACK_URL } from '../../consts';
 import {
   formatHuDate,
@@ -192,7 +192,13 @@ const jsonLd = {
             <div class="wrap">
               <SectionHead label="Ajánló" count={`${counts.ajanlo} játék`} />
               {issue.data.ajanlo.map((g) => (
-                <GemCard title={g.title} genre={g.genre} description={g.description} appid={g.appid} />
+                <GemCard
+                  title={g.title}
+                  genre={g.genre}
+                  description={g.description}
+                  appid={g.appid}
+                  image={gemImage(issue.id, g.appid)}
+                />
               ))}
             </div>
           </section>
