@@ -49,7 +49,9 @@ const hasReleases = counts.releases > 0;
 const hasAjanlo = counts.ajanlo > 0;
 
 const rovatok: Rovat[] = [
-  { id: 'gaming', name: 'Gaming', count: `${counts.articles} hír` },
+  // The panel id stays `gaming` so existing #gaming links keep working; only
+  // the visible label is Hungarian.
+  { id: 'gaming', name: 'Hírek', count: `${counts.articles} hír` },
   ...(hasReleases
     ? [{ id: 'megjelenesek', name: 'Megjelenések', count: `${counts.releases} cím` }]
     : []),
@@ -205,6 +207,26 @@ const outroParas = paragraphs(outro);
     var panels = Array.prototype.slice.call(document.querySelectorAll('.panel'));
     if (!tabs.length) return;
 
+    var masthead = document.querySelector('.masthead');
+    var nav = document.querySelector('nav');
+
+    /**
+     * Scroll offset that puts the start of the rovat content just below the
+     * sticky nav.
+     *
+     * Measured from the bottom of the masthead, not from the rovat bar
+     * itself: the bar is `position: sticky`, and once stuck its `offsetTop`
+     * follows the scroll instead of reporting its static layout position,
+     * which makes it useless as a reference point. The masthead is in normal
+     * flow and sits immediately above the bar, so its bottom edge is the same
+     * position and is stable at any scroll offset.
+     */
+    function contentTop() {
+      if (!masthead) return 0;
+      var bottom = masthead.getBoundingClientRect().bottom + window.scrollY;
+      return Math.max(0, Math.round(bottom - (nav ? nav.offsetHeight : 0)));
+    }
+
     function activate(id, updateHash) {
       if (!panels.some(function (p) { return p.id === id; })) return false;
 
@@ -217,6 +239,17 @@ const outroParas = paragraphs(outro);
       panels.forEach(function (p) {
         p.hidden = p.id !== id;
       });
+
+      // Panels differ a lot in height, so carrying the old scroll offset into
+      // a new one either strands the reader mid-article or, on a short panel,
+      // lets the browser clamp them to the bottom of the document. Snap back
+      // to the start of the content — but only when they had already scrolled
+      // past it, so switching tabs from the top of the page does not jolt.
+      var top = contentTop();
+      if (window.scrollY > top) {
+        window.scrollTo({ top: top, behavior: 'instant' });
+      }
+
       // replaceState, not location.hash: keeps rovatok linkable and countable
       // in analytics without pushing history entries or jumping the scroll.
       if (updateHash) history.replaceState(null, '', '#' + id);
@@ -277,8 +310,11 @@ const outroParas = paragraphs(outro);
     color: var(--accent);
   }
 
+  /* Symmetric: the band that follows supplies its own inner padding, but its
+     background makes the boundary visible, so the intro needs its own breathing
+     room underneath rather than butting up against the colour change. */
   .lead-block {
-    padding: 44px 0 6px;
+    padding: 44px 0;
   }
   .lead {
     font-size: var(--text-lead);
