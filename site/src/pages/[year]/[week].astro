@@ -101,7 +101,9 @@ const jsonLd = {
     <div class="wrap">
       <a class="back" href="/">← Összes szám</a>
       <p class="eyebrow">{weekLabel(year, week)}</p>
-      <h1>{title}</h1>
+      {/* TRIAL: visible issue title switched off — see IssueHero.astro. */}
+      {/* <h1>{title}</h1> */}
+      <h1 class="visually-hidden">{title}</h1>
       <div class="byline">
         {formatHuDate(date)} · {counts.articles} hír · {counts.minutes} perc olvasás
       </div>

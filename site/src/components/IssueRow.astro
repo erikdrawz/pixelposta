@@ -29,8 +29,10 @@ const counts = issueCounts(issue);
   />
   <div>
     <div class="row-week">{weekLabel(year, week)}</div>
-    <h3 class="row-title">{title}</h3>
-    <p class="row-desc">{standfirst}</p>
+    {/* TRIAL: visible issue title switched off — see IssueHero.astro. */}
+    {/* <h3 class="row-title">{title}</h3> */}
+    <h3 class="visually-hidden">{title}</h3>
+    <p class="row-desc row-desc-lead">{standfirst}</p>
     <div class="row-meta">
       <span>{formatHuDateShort(date)}</span><i>·</i>
       <span>{counts.articles} hír</span><i>·</i>
@@ -53,8 +55,16 @@ const counts = issueCounts(issue);
   .issue-row:last-of-type {
     border-bottom: none;
   }
-  .issue-row:hover .row-title {
+  .issue-row:hover .row-title,
+  .issue-row:hover .row-desc-lead {
     color: var(--accent);
+  }
+  /* TRIAL: with the title hidden this is the row's headline, so it takes the
+     ink colour rather than the muted one. Revert with the title. */
+  .row-desc-lead {
+    color: var(--ink);
+    font-size: 1.02rem;
+    transition: color 0.18s ease;
   }
   .issue-row:focus-visible {
     outline: 2px solid var(--accent);

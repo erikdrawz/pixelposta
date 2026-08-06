@@ -26,8 +26,10 @@ const { year, week, title, standfirst, cover } = issue.data;
       />
       <div>
         <div class="row-week">{weekLabel(year, week)}</div>
-        <h3 class="row-title">{title}</h3>
-        <p class="row-desc prev-desc">{standfirst}</p>
+        {/* TRIAL: visible issue title switched off — see IssueHero.astro. */}
+        {/* <h3 class="row-title">{title}</h3> */}
+        <h3 class="visually-hidden">{title}</h3>
+        <p class="row-desc prev-desc prev-desc-lead">{standfirst}</p>
       </div>
       <div class="prev-arrow" aria-hidden="true">→</div>
     </a>
@@ -63,8 +65,15 @@ const { year, week, title, standfirst, cover } = issue.data;
   .prev:hover {
     border-color: var(--accent);
   }
-  .prev:hover .row-title {
+  .prev:hover .row-title,
+  .prev:hover .prev-desc-lead {
     color: var(--accent);
+  }
+  /* TRIAL: see IssueRow.astro. */
+  .prev-desc-lead {
+    color: var(--ink);
+    font-size: 1.02rem;
+    transition: color 0.18s ease;
   }
   .prev:focus-visible {
     outline: 2px solid var(--accent);
