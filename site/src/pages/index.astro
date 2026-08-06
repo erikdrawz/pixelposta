@@ -6,6 +6,7 @@ import IssueRow from '../components/IssueRow.astro';
 import SectionHead from '../components/SectionHead.astro';
 import SubscribeBlock from '../components/SubscribeBlock.astro';
 import { sortIssues } from '../utils/format';
+import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SUBSTACK_URL } from '../consts';
 
 const issues = sortIssues(await getCollection('issues'));
 const [latest, ...earlier] = issues;
@@ -38,13 +39,32 @@ earlier.forEach((issue, i) => {
 });
 
 const extraCount = Math.max(0, earlier.length - INITIAL_ROWS);
-const description = latest.data.standfirst;
+
+const siteUrl = new URL('/', Astro.site).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  alternateName: SITE_TITLE,
+  url: siteUrl,
+  description: SITE_DESCRIPTION,
+  inLanguage: 'hu-HU',
+  publisher: {
+    '@type': 'Organization',
+    name: SITE_NAME,
+    url: siteUrl,
+    sameAs: [SUBSTACK_URL],
+  },
+};
 ---
 
 <Base
-  title="Pixelposta — heti magyar gaming hírlevél"
-  description={description}
-  ogImage={latest.data.cover?.src}
+  title={SITE_TITLE}
+  description={SITE_DESCRIPTION}
+  ogImage={latest.data.cover}
+  ogImageAlt={`${latest.data.title} borítója`}
+  jsonLd={jsonLd}
 >
   <IssueHero issue={latest} />
 

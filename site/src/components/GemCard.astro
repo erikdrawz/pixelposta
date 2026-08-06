@@ -39,7 +39,9 @@ const storeUrl = `https://store.steampowered.com/app/${appid}/`;
     />
   </div>
 
-  <a class="src" href={storeUrl} target="_blank" rel="noopener">Steam →</a>
+  <p class="src-line">
+    <a class="src" href={storeUrl} target="_blank" rel="noopener">Steam →</a>
+  </p>
 </div>
 
 <style>
@@ -83,6 +85,9 @@ const storeUrl = `https://store.steampowered.com/app/${appid}/`;
   }
   .gem p {
     margin: 0 0 20px;
+  }
+  .gem p.src-line {
+    margin: 0;
   }
   .capsule {
     aspect-ratio: 616 / 353;

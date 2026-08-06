@@ -16,15 +16,34 @@ import Nav from '../components/Nav.astro';
 interface Props {
   title: string;
   description: string;
-  /** Resolved image src. Made absolute against `site` for Open Graph. */
-  ogImage?: string;
+  /** The cover itself, so its real dimensions can be declared. Made absolute
+   *  against `site` for Open Graph. */
+  ogImage?: ImageMetadata;
+  /** Alt text for the Open Graph image. */
+  ogImageAlt?: string;
   ogType?: 'website' | 'article';
+  /** ISO date — emitted as article:published_time on issue pages. */
+  publishedTime?: string;
+  /** schema.org structured data, serialised into a ld+json block. */
+  jsonLd?: Record<string, unknown>;
 }
 
-const { title, description, ogImage, ogType = 'website' } = Astro.props;
+const {
+  title,
+  description,
+  ogImage,
+  ogImageAlt,
+  ogType = 'website',
+  publishedTime,
+  jsonLd,
+} = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const ogImageUrl = ogImage ? new URL(ogImage, Astro.site).href : undefined;
+const ogImageUrl = ogImage ? new URL(ogImage.src, Astro.site).href : undefined;
+
+// `</script>` inside a JSON string would close the block early; escaping the
+// angle bracket is the standard guard for inline ld+json.
+const jsonLdText = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : undefined;
 
 // Cloudflare Web Analytics. Cookieless and no-op until the token is set —
 // see site/README.md for where to find it.
@@ -42,14 +61,34 @@ const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     <title>{title}</title>
     <meta name="description" content={description} />
 
+    {/* Default is index,follow; stated explicitly so the image-preview
+        directive rides along — without it Google may only show a thumbnail. */}
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="Pixelposta" />
     <meta property="og:locale" content="hu_HU" />
-    {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+    {
+      ogImage && ogImageUrl && (
+        <>
+          <meta property="og:image" content={ogImageUrl} />
+          {/* Read off the actual asset, not assumed: the editor commits covers
+              at whatever size they have, and a wrong box makes previews
+              reflow or crop badly. */}
+          <meta property="og:image:width" content={String(ogImage.width)} />
+          <meta property="og:image:height" content={String(ogImage.height)} />
+          <meta property="og:image:alt" content={ogImageAlt ?? title} />
+          <meta name="twitter:image" content={ogImageUrl} />
+        </>
+      )
+    }
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
     <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
+
+    {jsonLdText && <script type="application/ld+json" is:inline set:html={jsonLdText} />}
 
     <meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#171512" media="(prefers-color-scheme: dark)" />

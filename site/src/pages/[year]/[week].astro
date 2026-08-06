@@ -11,6 +11,7 @@ import RovatBar, { type Rovat } from '../../components/RovatBar.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import SubscribeBlock from '../../components/SubscribeBlock.astro';
 import { articleImage } from '../../utils/images';
+import { SITE_NAME, SUBSTACK_URL } from '../../consts';
 import {
   formatHuDate,
   issueCounts,
@@ -60,13 +61,42 @@ const rovatok: Rovat[] = [
 
 const introParas = paragraphs(intro);
 const outroParas = paragraphs(outro);
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const siteUrl = new URL('/', Astro.site).href;
+const publisher = {
+  '@type': 'Organization',
+  name: SITE_NAME,
+  url: siteUrl,
+  sameAs: [SUBSTACK_URL],
+};
+
+// Article rather than NewsArticle: this is a weekly roundup, and NewsArticle
+// carries Google News expectations the site does not currently meet.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: standfirst,
+  datePublished: date,
+  inLanguage: 'hu-HU',
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  ...(cover ? { image: new URL(cover.src, Astro.site).href } : {}),
+  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: siteUrl },
+  author: publisher,
+  publisher,
+};
 ---
 
 <Base
   title={`${title} · Pixelposta`}
   description={standfirst}
-  ogImage={cover?.src}
+  ogImage={cover}
+  ogImageAlt={`${title} borítója`}
   ogType="article"
+  publishedTime={date}
+  jsonLd={jsonLd}
 >
   <header class="masthead">
     <div class="wrap">

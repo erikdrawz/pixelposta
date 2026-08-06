@@ -45,7 +45,12 @@ const paras = paragraphs(body);
     )
   }
 
-  <a class="src" href={url} target="_blank" rel="noopener">Eredeti cikk → {source}</a>
+  {/* Wrapped in a <p> rather than sitting bare inside <article>: a lone inline
+      element at block level reads as maximally link-dense to content
+      extractors like Safari Reader, which drop it. */}
+  <p class="src-line">
+    <a class="src" href={url} target="_blank" rel="noopener">Eredeti cikk → {source}</a>
+  </p>
 </article>
 
 <style>
@@ -70,6 +75,10 @@ const paras = paragraphs(body);
   }
   article p {
     margin: 0 0 18px;
+  }
+  /* The source line is a block for extractors' sake, not for spacing. */
+  article p.src-line {
+    margin: 0;
   }
   figure {
     margin: 0 0 22px;
