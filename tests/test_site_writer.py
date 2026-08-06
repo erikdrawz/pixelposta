@@ -72,21 +72,24 @@ def test_kiemelt_present_only_when_set():
     assert "kiemelt" not in data["articles"][1]
 
 
-def test_releases_are_shortened_and_date_sorted():
+def test_releases_merge_into_one_date_sorted_list():
     data = build_frontmatter(
         [make_entry("Cikk")], TITLE, year=2026, week=31, releases=make_releases()
     )
-    assert data["releasesThisWeek"] == [
+    # Both windows flattened into one list, ordered by real date rather than by
+    # the "MM.DD" display strings, which would sort wrongly across a year end.
+    assert data["releases"] == [
         {"title": "Earlier Game", "platform": "PC, XSX", "date": "07.28"},
         {"title": "Later Game", "platform": "PS5", "date": "07.30"},
+        {"title": "Next Game", "platform": "Switch 2", "date": "08.04"},
     ]
-    assert data["releasesNextWeek"][0]["platform"] == "Switch 2"
+    assert "releasesThisWeek" not in data
+    assert "releasesNextWeek" not in data
 
 
-def test_no_releases_gives_empty_tables():
+def test_no_releases_gives_an_empty_list():
     data = build_frontmatter([make_entry("Cikk")], TITLE, year=2026, week=30, releases=None)
-    assert data["releasesThisWeek"] == []
-    assert data["releasesNextWeek"] == []
+    assert data["releases"] == []
 
 
 def test_editor_fields_are_preserved_on_regeneration(tmp_path):

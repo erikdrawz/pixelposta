@@ -41,12 +41,15 @@ def main() -> int:
     picker = HaikuReleasePicker()
     snapshot = picker.pick(schedule_text, today=today)
 
-    print(f"## Heti megjelenések ({_format_hu_date(snapshot.this_week_range[0])} – {_format_hu_date(snapshot.this_week_range[1])})\n")
+    # Both outputs now render a single combined list; the two windows below are
+    # the picker's internal selection buckets, shown separately here so you can
+    # see how the spread came out.
+    print(f"## Window 1 ({_format_hu_date(snapshot.this_week_range[0])} – {_format_hu_date(snapshot.this_week_range[1])})\n")
     for line in _format_release_list(snapshot.this_week):
         print(line)
     print()
 
-    print(f"## Jövő heti megjelenések ({_format_hu_date(snapshot.next_week_range[0])} – {_format_hu_date(snapshot.next_week_range[1])})\n")
+    print(f"## Window 2 ({_format_hu_date(snapshot.next_week_range[0])} – {_format_hu_date(snapshot.next_week_range[1])})\n")
     for line in _format_release_list(snapshot.next_week):
         print(line)
     print()

@@ -164,7 +164,7 @@ articles:
       nyugati piacra szánt címek gyorsabb lokalizációját célozza, és a bejelentés
       szerint a stúdiók önállósága nem változik.
 
-releasesThisWeek:
+releases:
   - title: Scarlet Deer Inn
     platform: PC
     date: '07.21'
@@ -177,8 +177,6 @@ releasesThisWeek:
   - title: Pixel Cafe
     platform: Switch
     date: '07.25'
-
-releasesNextWeek:
   - title: Grounded 2
     platform: PC, XSX
     date: '07.29'
@@ -191,7 +189,6 @@ releasesNextWeek:
   - title: Deadlock
     platform: PC
     date: '08.02'
-
 ajanlo:
   - title: Return of the Obra Dinn
     genre: Nyomozós

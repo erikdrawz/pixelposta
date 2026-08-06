@@ -78,19 +78,14 @@ def assemble_markdown(
             lines.pop()
         lines.append("")
 
-    lines.append("## Heti megjelenések")
+    # A single combined list — the newsletter and the site both stopped
+    # splitting these into current and next week.
+    lines.append("## Megjelenések")
     lines.append("")
     if releases is None:
         lines.append("> _[PLACEHOLDER: release snapshot nem futott le.]_")
     else:
-        lines.extend(_format_release_list(releases.this_week))
-    lines.append("")
-    lines.append("## Jövő heti megjelenések")
-    lines.append("")
-    if releases is None:
-        lines.append("> _[PLACEHOLDER: release snapshot nem futott le.]_")
-    else:
-        lines.extend(_format_release_list(releases.next_week))
+        lines.extend(_format_release_list([*releases.this_week, *releases.next_week]))
     lines.append("")
     lines.append("---")
     lines.append("")

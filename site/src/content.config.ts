@@ -57,8 +57,11 @@ const issues = defineCollection({
         }),
       ),
 
-      releasesThisWeek: z.array(releaseSchema).default([]),
-      releasesNextWeek: z.array(releaseSchema).default([]),
+      // One flat list, rendered in the order written. Deliberately not sorted
+      // here: the values are display strings like "08.04", which sort wrongly
+      // across a year boundary. The pipeline sorts by real dates before
+      // formatting, so authored order is already correct.
+      releases: z.array(releaseSchema).default([]),
 
       ajanlo: z
         .array(

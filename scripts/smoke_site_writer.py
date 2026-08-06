@@ -23,7 +23,10 @@ from src.release_picker import ReleaseSnapshot, week_ranges_for
 from src.site_writer import issue_dir, write_issue
 from src.translator import RewriteResult
 
-YEAR, WEEK = 2026, 31
+# A year that can never be a real issue. This script's --clean does an rmtree
+# on the issue folder, so it must not be able to name one the editor owns:
+# pointing it at a plausible year/week once destroyed a hand-written issue.
+YEAR, WEEK = 1999, 1
 
 
 def _entry(title_hu, category, score, source, url, kiemelt=None):
@@ -62,6 +65,11 @@ def main() -> int:
     directory = issue_dir(YEAR, WEEK, args.site_root)
 
     if args.clean:
+        # Belt and braces on top of the sentinel year: refuse to delete anything
+        # that is not the folder this script itself writes.
+        if directory.name != f"{YEAR}-{WEEK:02d}":
+            print(f"refusing to delete {directory}: not this script's issue folder")
+            return 1
         if directory.exists():
             shutil.rmtree(directory)
             print(f"removed {directory}")

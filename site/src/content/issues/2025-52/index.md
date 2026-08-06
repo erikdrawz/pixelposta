@@ -58,7 +58,6 @@ articles:
       hírciklust kaptak, aztán jött a következő bejelentés. Érdemes néha
       visszanézni, kik tűntek el az év során.
 
-releasesThisWeek: []
-releasesNextWeek: []
+releases: []
 ajanlo: []
 ---

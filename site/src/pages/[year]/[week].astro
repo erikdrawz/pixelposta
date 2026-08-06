@@ -175,13 +175,7 @@ const jsonLd = {
           <section>
             <div class="wrap">
               <SectionHead label="Megjelenések" count={`${counts.releases} cím`} />
-              <div class="rel-grid">
-                <ReleaseTable heading="Heti megjelenések" releases={issue.data.releasesThisWeek} />
-                <ReleaseTable
-                  heading="Jövő heti megjelenések"
-                  releases={issue.data.releasesNextWeek}
-                />
-              </div>
+              <ReleaseTable releases={issue.data.releases} />
             </div>
           </section>
         </div>
@@ -364,15 +358,4 @@ const jsonLd = {
     border-top: 1px solid var(--rule);
   }
 
-  .rel-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-  @media (max-width: 720px) {
-    .rel-grid {
-      grid-template-columns: 1fr;
-      gap: 44px;
-    }
-  }
 </style>

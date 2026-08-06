@@ -68,7 +68,7 @@ articles:
       a modding természetes fejlődése, mások szerint egyszerű engedély nélküli
       másolás. A Nexus Mods egyelőre nem foglalt állást.
 
-releasesThisWeek:
+releases:
   - title: Tempest Rising
     platform: PC
     date: '07.15'
@@ -78,8 +78,6 @@ releasesThisWeek:
   - title: Dosa Divas
     platform: PC, Switch
     date: '07.18'
-
-releasesNextWeek:
   - title: Scarlet Deer Inn
     platform: PC
     date: '07.21'
@@ -89,7 +87,6 @@ releasesNextWeek:
   - title: Killing Floor 3
     platform: PC, PS5, XSX
     date: '07.24'
-
 ajanlo:
   - title: Outer Wilds
     genre: Felfedezős

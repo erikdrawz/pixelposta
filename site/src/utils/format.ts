@@ -87,7 +87,7 @@ export interface IssueCounts {
 export function issueCounts(issue: Issue): IssueCounts {
   return {
     articles: issue.data.articles.length,
-    releases: issue.data.releasesThisWeek.length + issue.data.releasesNextWeek.length,
+    releases: issue.data.releases.length,
     ajanlo: issue.data.ajanlo.length,
     minutes: readingMinutes(issue),
   };

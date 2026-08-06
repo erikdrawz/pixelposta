@@ -6,15 +6,13 @@ interface Release {
 }
 
 interface Props {
-  heading: string;
   releases: Release[];
 }
 
-const { heading, releases } = Astro.props;
+const { releases } = Astro.props;
 ---
 
 <div>
-  <h3 class="rel-title">{heading}</h3>
   {
     releases.length === 0 ? (
       <p class="rel-empty">Ezen a héten nincs kiemelt megjelenés.</p>
@@ -42,13 +40,6 @@ const { heading, releases } = Astro.props;
 </div>
 
 <style>
-  .rel-title {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.05rem;
-    margin: 0 0 16px;
-    letter-spacing: -0.01em;
-  }
   .rel-empty {
     color: var(--ink-muted);
     font-size: 0.96rem;
