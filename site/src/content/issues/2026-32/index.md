@@ -19,6 +19,7 @@ title: EA elkelt 55 milliárdért, a Devolver tőzsdét vált
 standfirst: 'A szaúdi PIF vezette konzorcium lezárta az EA felvásárlását, miközben a Devolver
   Digital épp az ellenkező utat választja: öt év után kivonul a londoni tőzsdéről.'
 draft: false
+cover: ./cover.jpg
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -113,13 +114,6 @@ articles:
     Az eredeti Quake idén ünnepli a 30. születésnapját, és a MachineGames nem ment el szó nélkül mellette: ma megjelent a Quake: Dawn of the Machine, egy teljesen új, ingyenes epizód az 1996-os klasszikushoz. A kiegészítő 19 pályát, titkokat, új zenei anyagot és egy friss Deathmatch-térképet tartalmaz, és elérhető Xbox, PlayStation, Switch, Steam és Microsoft Store verziókon is, minden extra költség nélkül.
   source: VGC
   url: https://www.videogameschronicle.com/news/new-free-quake-campaign-from-machinegames-available-now-for-the-30th-anniversary/
-- slug: a-switch-2-tullepte-a-23-millios-eladast-a-nintendo-szerint
-  category: Hardware
-  title: A Switch 2 túllépte a 23 milliós eladást, a Nintendo szerint a számok rendben vannak
-  body: |
-    A Nintendo legfrissebb pénzügyi jelentése szerint a Switch 2 eddig 23,68 millió példányban kelt el, ezzel már a GameCube-ot is maga mögé utasította. Az első negyedévben 3,82 millió konzolt adtak el, ami éves szinten 34,4%-os visszaesés, de a Nintendo hangsúlyozza: az eredeti Switch-hez képest az elfogadási ütem így is kedvezőbb. A csökkenés részben a tavalyi rekordrajtnak, részben a japán áremelésnek tudható be. Szeptembertől a nyugati piacokon is drágább lesz a konzol.
-  source: NintendoLife
-  url: https://www.nintendolife.com/news/2026/08/switch-2-surpasses-23-million-units-as-nintendo-claims-sales-remain-solid
 - slug: a-harom-legnagyobb-ram-gyarto-2027-es-keszletet-is-eladta
   category: Hardware
   title: A három legnagyobb RAM-gyártó 2027-es készletét is eladta már
@@ -177,9 +171,9 @@ articles:
     A Capcom nemrég közzétett pénzügyi gyorsjelentőjének Q&A részéből kiderült: az eladásaik körülbelül 90%-a már digitális formában történik, így a fizikai játékpiac zsugorodása a céget nem különösebben érinti. Ez némi kontextust ad a Sony januárban bejelentett döntéséhez is, miszerint 2028-tól leállítja a PS5-lemezek gyártását. A Capcomnak egyébként jól megy: a Resident Evil Requiem és a Pragmata is felülmúlta az eladási várakozásokat, szeptember 4-én pedig az Onimusha: Way of the Sword is megjelenik.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/08/capcom-isnt-fussed-about-a-potential-all-digital-future
-  - slug: a-sony-figyelmeztet
+- slug: a-sony-figyelmeztet
   category: Stúdió & Üzlet
-  title: A Sony figyelmezteti a lemezolvasós PS5 vevőit: 2028-ban vége a fizikai játékoknak
+  title: 'A Sony figyelmezteti a lemezolvasós PS5 vevőit: 2028-ban vége a fizikai játékoknak'
   body: |
     A Sony komolyan veszi a fizikai játékok 2028 januári gyártásleállítását: a lemezolvasós PS5-konzolok dobozán már megjelent egy új figyelmeztető felirat, amelyet a boltokban kapható példányokon fedeztek fel játékosok. A vállalat legutóbbi eredménybeszámolóján sem volt hajlandó visszakozni a döntéstől.
   source: PushSquare
@@ -205,7 +199,7 @@ ajanlo:
     description: >-
       A Spiritstead egy könnyed városépítős játék. Cseppenj egy csendes, elvarázsolt világba, ahol az emberek és a mágikus szellemek együttműködnek. Vedd kezedbe az irányítást, és állítsd munkába a falusiakat: építsd fel az otthonaikat, biztosítsd a megélhetésüket, és tedd gyönyörűvé a falut menet közben.
       
-- title: Anomaly President
+  - title: Anomaly President
     genre: Akció Roguelike
     appid: 3156330
     description: >-
