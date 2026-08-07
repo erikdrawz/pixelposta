@@ -18,7 +18,7 @@ date: '2026-08-08'
 title: EA elkelt 55 milliárdért, a Devolver tőzsdét vált
 standfirst: 'A szaúdi PIF vezette konzorcium lezárta az EA felvásárlását, miközben a Devolver
   Digital épp az ellenkező utat választja: öt év után kivonul a londoni tőzsdéről.'
-draft: false
+draft: true
 outro: ""
 signature: — Erik · Pixelposta
 articles:
