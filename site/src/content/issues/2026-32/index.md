@@ -18,7 +18,7 @@ date: '2026-08-08'
 title: EA elkelt 55 milliárdért, a Devolver tőzsdét vált
 standfirst: 'A szaúdi PIF vezette konzorcium lezárta az EA felvásárlását, miközben a Devolver
   Digital épp az ellenkező utat választja: öt év után kivonul a londoni tőzsdéről.'
-draft: true
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -177,6 +177,13 @@ articles:
     A Capcom nemrég közzétett pénzügyi gyorsjelentőjének Q&A részéből kiderült: az eladásaik körülbelül 90%-a már digitális formában történik, így a fizikai játékpiac zsugorodása a céget nem különösebben érinti. Ez némi kontextust ad a Sony januárban bejelentett döntéséhez is, miszerint 2028-tól leállítja a PS5-lemezek gyártását. A Capcomnak egyébként jól megy: a Resident Evil Requiem és a Pragmata is felülmúlta az eladási várakozásokat, szeptember 4-én pedig az Onimusha: Way of the Sword is megjelenik.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/08/capcom-isnt-fussed-about-a-potential-all-digital-future
+  - slug: a-sony-figyelmeztet
+  category: Stúdió & Üzlet
+  title: A Sony figyelmezteti a lemezolvasós PS5 vevőit: 2028-ban vége a fizikai játékoknak
+  body: |
+    A Sony komolyan veszi a fizikai játékok 2028 januári gyártásleállítását: a lemezolvasós PS5-konzolok dobozán már megjelent egy új figyelmeztető felirat, amelyet a boltokban kapható példányokon fedeztek fel játékosok. A vállalat legutóbbi eredménybeszámolóján sem volt hajlandó visszakozni a döntéstől.
+  source: PushSquare
+  url: https://www.pushsquare.com/news/2026/08/disc-based-ps5s-now-warn-buyers-about-the-impending-death-of-physical-games
 releases:
 - title: Wild Blue Skies
   platform: PS5, Xbox, PC
@@ -190,5 +197,23 @@ releases:
 - title: The Sinking City 2
   platform: PC, PS5, Xbox
   date: '08.18'
-ajanlo: []
+
+ajanlo:
+  - title: Spiritstead
+    genre: Stratégia
+    appid: 3501540
+    description: >-
+      A Spiritstead egy könnyed városépítős játék. Cseppenj egy csendes, elvarázsolt világba, ahol az emberek és a mágikus szellemek együttműködnek. Vedd kezedbe az irányítást, és állítsd munkába a falusiakat: építsd fel az otthonaikat, biztosítsd a megélhetésüket, és tedd gyönyörűvé a falut menet közben.
+      
+- title: Anomaly President
+    genre: Akció Roguelike
+    appid: 3156330
+    description: >-
+      Ebben az elnöki akció-roguelike játékban nappal gyűjtsd a szavazatokat és indulj az elnökválasztáson, éjjel pedig változz harcossá, hogy leszámolj az ellenségeiddel! Sajátíts el egyedi képességeket, hogy kardmesterré, kiber-mágussá vagy bármi mássá válj a kettő között, és döntsd meg a könyörtelen elnök hatalmát!
+
+  - title: 'ReStory: Chill Electronics Repairs'
+    genre: Job Szimulátor
+    appid: 3812600
+    description: >-
+      Vezess egy hangulatos elektronikai szervizt a 2000-es évek közepének Tokiójában! Fejleszd a vállalkozásodat ikonikus videojáték-konzolok, mobiltelefonok, zenelejátszók és más nosztalgikus eszközök gondos helyreállításával. Beszélgess az ügyfelekkel, hallgasd meg a történeteiket, és lásd, hogyan befolyásolják a döntéseid az ő életüket és a boltod jövőjét.
 ---
