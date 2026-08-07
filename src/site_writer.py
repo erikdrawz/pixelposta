@@ -37,7 +37,7 @@ DEFAULT_SITE_ROOT = Path("site")
 #: Fields the editor fills in by hand and the pipeline must never overwrite.
 #: No `intro`: the site does not render one, so writing it would put a field in
 #: the file that silently does nothing.
-EDITOR_OWNED = ("outro", "signature", "ajanlo", "cover")
+EDITOR_OWNED = ("outro", "signature", "ajanlo", "cover", "draft")
 
 DEFAULT_SIGNATURE = "— Erik · Pixelposta"
 
@@ -179,6 +179,12 @@ def build_frontmatter(
         "date": saturday_of(year, week).isoformat(),
         "title": existing.get("title") or issue_title.title,
         "standfirst": existing.get("standfirst") or issue_title.standfirst,
+        # True on a newly generated issue so it lands in the repo without going
+        # live. Whatever is already in the file wins, so re-running the draft on
+        # a week that has been published cannot quietly pull it back off the
+        # site. `.get("draft", True)` rather than `or True`: a stored False is
+        # falsy and would otherwise be overwritten by the default.
+        "draft": bool(existing.get("draft", True)),
     }
 
     # Carry the editor's fields forward verbatim.

@@ -99,3 +99,17 @@ export function sortIssues(issues: Issue[]): Issue[] {
     (a, b) => b.data.year - a.data.year || b.data.week - a.data.week,
   );
 }
+
+/**
+ * Every issue the site should render, newest first.
+ *
+ * Drafts are dropped from production builds but kept in `astro dev`, so an
+ * issue can be checked with its cover and article images in place before the
+ * flag is flipped. This is the single place that decision is made — both the
+ * landing page and the issue routes go through it, so a draft cannot leak
+ * into one of them by being fetched directly.
+ */
+export function publishedIssues(issues: Issue[]): Issue[] {
+  const visible = import.meta.env.PROD ? issues.filter((i) => !i.data.draft) : issues;
+  return sortIssues(visible);
+}

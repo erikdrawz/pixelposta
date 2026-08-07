@@ -50,8 +50,10 @@ anything else that tracks.
 
 ## Adding an issue
 
-The pipeline writes `src/content/issues/YYYY-WW/index.md` and commits it. What
-is left for the editor:
+The pipeline writes `src/content/issues/YYYY-WW/index.md` and commits it with
+`draft: true`, so the file lands in the repo **without going live**. It is
+invisible on the production site — no page, no archive row, no sitemap entry —
+until you say otherwise.
 
 1. `git pull`
 2. Drop `cover.jpg` into the issue folder, then **uncomment the `cover:` line**
@@ -68,7 +70,14 @@ is left for the editor:
    without art rather than showing a broken image.
 6. Adjust `title` and `standfirst` if you want. Once you change them, later
    pipeline runs leave them alone.
-7. Commit and push.
+7. Run `npm run dev` and open the issue. Drafts **are** rendered locally, so
+   this is where you check the cover, the article images and the ajánló cards
+   before anyone else sees them.
+8. Set `draft: false`, then commit and push. That one word is the publish
+   button.
+
+Re-running the weekly draft on a week you have already published will not pull
+it back off the site — `draft` is preserved like `title` and `ajanlo`.
 
 Images are committed at whatever size you have; Astro crops to 16:9 and emits
 responsive WebP at build time. Don't resize by hand.

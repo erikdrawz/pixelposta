@@ -21,6 +21,7 @@ standfirst: >-
   A Zelda: Ocarina of Time remake lett az év legjobban várt játéka a GTA 6 után,
   a Nintendo pedig két olyan Virtual Boy címet ad ki, amely annak idején sosem
   jelent meg.
+draft: false
 
 outro: |
   Ha eljutottál a gyűjtemény végéig, akkor természetesen jár a platina

@@ -35,6 +35,14 @@ const issues = defineCollection({
       standfirst: z.string(),
       cover: image().optional(),
 
+      // The publish gate. The pipeline writes `true` on a newly generated
+      // issue so it lands in the repo without going live; flip it to `false`
+      // once the cover, article images and ajánló block are in. Drafts are
+      // filtered out of production builds entirely — no route, no archive row,
+      // no sitemap entry — but stay visible in `npm run dev` so the issue can
+      // be checked with its images before it is published.
+      draft: z.boolean().default(false),
+
       // Computed at build from the prose when absent. Present only if the
       // editor wants to override it.
       readingMinutes: z.number().optional(),

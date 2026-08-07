@@ -151,3 +151,30 @@ def test_read_existing_on_garbage_falls_back(tmp_path):
     bad = tmp_path / "index.md"
     bad.write_text("---\n: : not valid yaml : :\n---\n", encoding="utf-8")
     assert read_existing(bad) == {}
+
+
+def test_new_issues_arrive_as_drafts(tmp_path):
+    write_issue([make_entry("Cikk")], TITLE, year=2026, week=40, site_root=tmp_path)
+    path = tmp_path / "src" / "content" / "issues" / "2026-40" / "index.md"
+    assert read_existing(path)["draft"] is True
+
+
+def test_regenerating_does_not_unpublish_a_live_issue(tmp_path):
+    """The nastiest failure mode this flag could have.
+
+    `existing.get("draft") or True` would evaluate a stored False as falsy and
+    silently pull a published issue back off the site on the next draft run.
+    """
+    write_issue([make_entry("Cikk")], TITLE, year=2026, week=40, site_root=tmp_path)
+    path = tmp_path / "src" / "content" / "issues" / "2026-40" / "index.md"
+    path.write_text(
+        path.read_text(encoding="utf-8").replace("draft: true", "draft: false"),
+        encoding="utf-8",
+    )
+
+    write_issue(
+        [make_entry("Cikk"), make_entry("Másik")], TITLE, year=2026, week=40, site_root=tmp_path
+    )
+    data = read_existing(path)
+    assert data["draft"] is False, "a published issue must not be pulled back to draft"
+    assert len(data["articles"]) == 2, "machine-owned fields should still refresh"

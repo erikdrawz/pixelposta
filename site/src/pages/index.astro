@@ -5,10 +5,10 @@ import IssueHero from '../components/IssueHero.astro';
 import IssueRow from '../components/IssueRow.astro';
 import SectionHead from '../components/SectionHead.astro';
 import SubscribeBlock from '../components/SubscribeBlock.astro';
-import { sortIssues } from '../utils/format';
+import { publishedIssues } from '../utils/format';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SUBSTACK_URL } from '../consts';
 
-const issues = sortIssues(await getCollection('issues'));
+const issues = publishedIssues(await getCollection('issues'));
 const [latest, ...earlier] = issues;
 
 if (!latest) {
