@@ -10,6 +10,7 @@ import '@fontsource/silkscreen/latin-700.css';
 
 import '../styles/tokens.css';
 import '../styles/global.css';
+import '../styles/skins.css';
 
 import Nav from '../components/Nav.astro';
 
@@ -93,18 +94,36 @@ const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     <meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#171512" media="(prefers-color-scheme: dark)" />
 
-    {/* Runs before first paint so the chosen theme never flashes. */}
+    {/* Runs before first paint so the chosen skin never flashes. Sets both
+        axes: data-theme is always present, data-skin only for the costumes. */}
     <script is:inline>
       (function () {
+        var SKINS = {
+          light: { theme: 'light' },
+          dark: { theme: 'dark' },
+          '98': { theme: 'light', skin: '98' },
+          xp: { theme: 'light', skin: 'xp' },
+          winamp: { theme: 'dark', skin: 'winamp' },
+          nostromo: { theme: 'dark', skin: 'nostromo' },
+        };
+        var el = document.documentElement;
+        var id;
         try {
-          var stored = localStorage.getItem('pp-theme');
-          var theme =
-            stored ||
-            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-          document.documentElement.dataset.theme = theme;
+          id = localStorage.getItem('pp-skin');
+          if (!id) {
+            // Carry over the choice made before skins existed.
+            var legacy = localStorage.getItem('pp-theme');
+            if (legacy === 'dark' || legacy === 'light') id = legacy;
+          }
         } catch (e) {
-          document.documentElement.dataset.theme = 'light';
+          /* private mode — fall through to the system preference */
         }
+        if (!SKINS[id]) {
+          id = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        el.dataset.theme = SKINS[id].theme;
+        if (SKINS[id].skin) el.dataset.skin = SKINS[id].skin;
+        el.dataset.skinId = id;
       })();
     </script>
 

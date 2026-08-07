@@ -1,27 +1,134 @@
 ---
-// Every page carries a subscribe block with id="hirlevel", so this is always
-// an in-page jump — it never pulls the reader off the issue they are reading.
+// The skin picker replaces the old light/dark toggle. Világos and Sötét are the
+// editorial defaults; the rest are optional costumes defined in styles/skins.css.
+//
+// Each entry pins a theme as well as a skin, so anything a skin does not
+// explicitly restyle still lands on a coherent palette.
+const SKINS = [
+  { id: 'light', label: 'Világos' },
+  { id: 'dark', label: 'Sötét' },
+  { id: '98', label: 'Win98' },
+  { id: 'xp', label: 'WinXP' },
+  { id: 'winamp', label: 'Winamp' },
+  { id: 'nostromo', label: 'Nostromo' },
+];
 ---
 
 <nav>
   <div class="nav-in">
     <a class="wordmark" href="/">PIXEL<span>POSTA</span></a>
     <a class="nav-issue" href="#hirlevel">Hírlevél</a>
-    <button class="toggle" id="theme-toggle" type="button" aria-label="Téma váltása">◐</button>
+
+    {/* Window chrome — decorative, only visible in the desktop skins. */}
+    <div class="winbtns" aria-hidden="true"><i>_</i><i>□</i><i>✕</i></div>
+
+    <div class="skinpick">
+      <button
+        class="toggle"
+        id="skin-trigger"
+        type="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="skin-menu"
+        aria-label="Stílus váltása"
+      >
+        <span class="sk-swatch" aria-hidden="true"></span>
+        <span class="sk-label" aria-hidden="true"></span>
+        <span class="sk-caret" aria-hidden="true">▾</span>
+      </button>
+
+      <div class="skinmenu" id="skin-menu" role="menu" aria-label="Stílus" hidden>
+        {
+          SKINS.map((s) => (
+            <button role="menuitemradio" aria-checked="false" data-skin-id={s.id} type="button">
+              <span class:list={['sk-swatch', `sk-sw-${s.id}`]} aria-hidden="true" />
+              {s.label}
+              <span class="sk-tick" aria-hidden="true">
+                ✓
+              </span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
   </div>
 </nav>
 
 <script is:inline>
-  document.getElementById('theme-toggle')?.addEventListener('click', () => {
-    const el = document.documentElement;
-    const next = el.dataset.theme === 'dark' ? 'light' : 'dark';
-    el.dataset.theme = next;
-    try {
-      localStorage.setItem('pp-theme', next);
-    } catch (e) {
-      /* private mode — the toggle still works for this page view */
+  (function () {
+    // Mirrors the table in the no-FOUC script in Base.astro. Kept in both
+    // places on purpose: that one must run in <head> before any markup exists,
+    // this one needs the nav to be parsed.
+    var SKINS = {
+      light: { theme: 'light' },
+      dark: { theme: 'dark' },
+      '98': { theme: 'light', skin: '98' },
+      xp: { theme: 'light', skin: 'xp' },
+      winamp: { theme: 'dark', skin: 'winamp' },
+      nostromo: { theme: 'dark', skin: 'nostromo' },
+    };
+
+    var el = document.documentElement;
+    var trigger = document.getElementById('skin-trigger');
+    var menu = document.getElementById('skin-menu');
+    if (!trigger || !menu) return;
+    var items = Array.prototype.slice.call(menu.querySelectorAll('[data-skin-id]'));
+
+    function mark(id) {
+      items.forEach(function (b) {
+        b.setAttribute('aria-checked', b.dataset.skinId === id ? 'true' : 'false');
+      });
     }
-  });
+
+    function apply(id) {
+      var s = SKINS[id];
+      if (!s) return;
+      el.dataset.theme = s.theme;
+      if (s.skin) el.dataset.skin = s.skin;
+      else delete el.dataset.skin;
+      el.dataset.skinId = id;
+      mark(id);
+      try {
+        localStorage.setItem('pp-skin', id);
+      } catch (e) {
+        /* private mode — the choice still applies for this page view */
+      }
+    }
+
+    function open() {
+      menu.hidden = false;
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+    function close() {
+      menu.hidden = true;
+      trigger.setAttribute('aria-expanded', 'false');
+    }
+
+    mark(el.dataset.skinId || 'light');
+
+    trigger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      menu.hidden ? open() : close();
+    });
+
+    items.forEach(function (b) {
+      b.addEventListener('click', function () {
+        apply(b.dataset.skinId);
+        close();
+        trigger.focus();
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!menu.hidden && !menu.contains(e.target) && e.target !== trigger) close();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !menu.hidden) {
+        close();
+        trigger.focus();
+      }
+    });
+  })();
 </script>
 
 <style>
@@ -68,16 +175,12 @@
     color: var(--accent);
   }
   .toggle {
-    width: 31px;
-    height: 31px;
     border-radius: 999px;
     border: 1px solid var(--rule-strong);
     background: transparent;
     color: var(--ink-muted);
     cursor: pointer;
     font-size: 13px;
-    display: grid;
-    place-items: center;
     flex-shrink: 0;
   }
   .toggle:hover {
