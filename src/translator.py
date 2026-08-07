@@ -84,7 +84,15 @@ class SonnetTranslator:
         full_text: str,
         *,
         today: date | None = None,
+        from_summary: bool = False,
     ) -> RewriteResult:
+        """Rewrite one article.
+
+        `from_summary` marks that `full_text` is the short feed blurb rather
+        than the article body, because the page was behind a bot challenge.
+        The prompt is told, so it writes only what the blurb supports instead
+        of padding to hit the word count.
+        """
         if today is None:
             today = date.today()
         response = self.client.messages.create(
@@ -99,7 +107,12 @@ class SonnetTranslator:
             ],
             tools=[REWRITE_TOOL],
             tool_choice={"type": "tool", "name": TOOL_NAME},
-            messages=[{"role": "user", "content": _format_user_message(article, full_text, today)}],
+            messages=[
+                {
+                    "role": "user",
+                    "content": _format_user_message(article, full_text, today, from_summary),
+                }
+            ],
         )
 
         usage = response.usage
@@ -123,7 +136,9 @@ class SonnetTranslator:
         return _parse_tool_input(tool_block.input, article.highlighted)
 
 
-def _format_user_message(article: SelectedArticle, full_text: str, today: date) -> str:
+def _format_user_message(
+    article: SelectedArticle, full_text: str, today: date, from_summary: bool = False
+) -> str:
     lines = [
         f"Today: {today.isoformat()}",
     ]
@@ -139,10 +154,20 @@ def _format_user_message(article: SelectedArticle, full_text: str, today: date) 
         f"Source: {article.source}",
         f"URL: {article.url}",
         f"highlighted: {'true' if article.highlighted else 'false'}",
-        "",
-        "Full text:",
-        full_text,
     ])
+    if from_summary:
+        lines.extend([
+            "",
+            "FIGYELEM: a cikk teljes szövege nem elérhető, csak az alábbi rövid "
+            "RSS-összefoglaló. Kizárólag az ebben szereplő tényekre támaszkodj. "
+            "Ha ez kevesebb, mint 60-80 szónyi tartalomhoz elég, írj rövidebbet: "
+            "inkább legyen 35-40 szó, mint kitalált részlet.",
+            "",
+            "RSS-összefoglaló:",
+            full_text,
+        ])
+    else:
+        lines.extend(["", "Full text:", full_text])
     return "\n".join(lines)
 
 

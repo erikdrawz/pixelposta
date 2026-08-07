@@ -18,6 +18,7 @@ The central pool. Every article ever collected lives here, with status driving i
 | `Category` | Select | Játékhírek / Hardware / AI & Gaming / Stúdió & Üzlet | Pre-filter (Haiku) |
 | `Relevance score` | Number | 1-5 relevance rating | Pre-filter (Haiku) |
 | `HU summary` | Text | 2-sentence Hungarian summary for quick scanning | Pre-filter (Haiku) |
+| `RSS summary` | Text | Original feed blurb, kept as a fallback when the article page is behind a bot challenge at draft time | Collector |
 | `Status` | Select | New / Selected / Published / Passed / Archived | Editor + system |
 | `Issue` | Relation → Issues | Which issue this went into (set when Published) | Draft generator |
 | `Highlighted` | Checkbox | Editor flag: should get "Kiemelt info" callout | Editor |

@@ -15,7 +15,9 @@ logged and skipped, not allowed to break the whole run.
 from __future__ import annotations
 
 import argparse
+import html
 import logging
+import re
 import sys
 import time
 from datetime import date
@@ -32,6 +34,17 @@ from src.notion_client import ArticlePayload, NotionArticles
 
 
 logger = logging.getLogger("news_collector")
+
+# Feed blurbs arrive as HTML fragments. Strip to plain text before storing, so
+# the value is readable in Notion and clean when it is fed to Sonnet.
+_TAG_RE = re.compile(r"<[^>]+>")
+_SCRIPT_RE = re.compile(r"<(script|style).*?</\1>", re.S | re.I)
+
+
+def _plain_text(raw: str) -> str:
+    if not raw:
+        return ""
+    return " ".join(html.unescape(_TAG_RE.sub(" ", _SCRIPT_RE.sub("", raw))).split())
 
 
 def _interleave_by_source(articles: list[CollectedArticle]) -> list[CollectedArticle]:
@@ -196,6 +209,7 @@ def main() -> int:
                     relevance_score=result.relevance_score,
                     hu_summary=result.hu_summary,
                     filter_reasoning=result.filter_reasoning,
+                    rss_summary=_plain_text(article.summary),
                 )
                 notion.create_article(payload)
                 written += 1

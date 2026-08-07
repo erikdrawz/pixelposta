@@ -33,6 +33,7 @@ ARTICLES_EXPECTED: list[tuple[str, str]] = [
     (ArticleProp.CATEGORY, "select"),
     (ArticleProp.RELEVANCE_SCORE, "number"),
     (ArticleProp.HU_SUMMARY, "rich_text"),
+    (ArticleProp.RSS_SUMMARY, "rich_text"),
     (ArticleProp.STATUS, "select"),
     (ArticleProp.HIGHLIGHTED, "checkbox"),
     (ArticleProp.FULL_HU_TRANSLATION, "rich_text"),

@@ -30,6 +30,7 @@ class ArticleProp:
     CATEGORY = "Category"
     RELEVANCE_SCORE = "Relevance score"
     HU_SUMMARY = "HU summary"
+    RSS_SUMMARY = "RSS summary"
     STATUS = "Status"
     HIGHLIGHTED = "Highlighted"
     FULL_HU_TRANSLATION = "Full HU translation"
@@ -73,6 +74,10 @@ class ArticlePayload:
     relevance_score: int
     hu_summary: str
     filter_reasoning: str
+    #: The original feed blurb, kept because several sources sit behind a bot
+    #: challenge that blocks the article page at draft time. This is then the
+    #: only text available to write from. Empty when the feed carried none.
+    rss_summary: str = ""
 
     def __post_init__(self) -> None:
         if self.source not in SOURCE_OPTIONS:
@@ -150,6 +155,7 @@ class NotionArticles:
             ArticleProp.CATEGORY: {"select": {"name": payload.category}},
             ArticleProp.RELEVANCE_SCORE: {"number": payload.relevance_score},
             ArticleProp.HU_SUMMARY: _rich_text(payload.hu_summary),
+            ArticleProp.RSS_SUMMARY: _rich_text(payload.rss_summary),
             ArticleProp.FILTER_REASONING: _rich_text(payload.filter_reasoning),
             ArticleProp.STATUS: {"select": {"name": "New"}},
         }
@@ -209,6 +215,7 @@ def _parse_selected(page: dict) -> SelectedArticle:
         category=_read_select(props.get(ArticleProp.CATEGORY)) or "",
         relevance_score=_read_number(props.get(ArticleProp.RELEVANCE_SCORE)) or 0,
         hu_summary=_read_rich_text(props.get(ArticleProp.HU_SUMMARY)),
+        rss_summary=_read_rich_text(props.get(ArticleProp.RSS_SUMMARY)),
         filter_reasoning=_read_rich_text(props.get(ArticleProp.FILTER_REASONING)),
         highlighted=bool((props.get(ArticleProp.HIGHLIGHTED) or {}).get("checkbox", False)),
     )

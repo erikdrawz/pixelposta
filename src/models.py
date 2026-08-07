@@ -33,6 +33,9 @@ class SelectedArticle:
     hu_summary: str
     filter_reasoning: str
     highlighted: bool
+    #: Original feed blurb. The draft falls back to this when the article page
+    #: is behind a bot challenge — see scripts/generate_draft.py.
+    rss_summary: str = ""
 
 
 @dataclass(frozen=True)

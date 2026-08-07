@@ -46,6 +46,12 @@ logger = logging.getLogger("generate_draft")
 
 DEFAULT_OUT_DIR = Path("drafts")
 
+# Minimum feed-summary length worth handing to Sonnet when the article page is
+# blocked. Measured across the live feeds: NintendoLife runs ~540 chars, which
+# yields an honest 60-80 word rewrite; VGC runs ~78 ("Dawn of the Machine is
+# available now"), which does not. 350 sits between the two.
+MIN_FALLBACK_CHARS = 350
+
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -95,22 +101,42 @@ def main() -> int:
     entries: list[DraftEntry] = []
     fetch_failures: list[tuple[str, str]] = []
     rewrite_failures: list[tuple[str, str]] = []
+    summary_fallbacks: list[str] = []
     started = time.time()
     today = date.today()
 
     for i, article in enumerate(selected, 1):
         logger.info("[%d/%d] %s [%s, score=%d]", i, len(selected), article.title[:70], article.category, article.relevance_score)
 
+        # NintendoLife, VGC and DigitalFoundry sit behind a Cloudflare bot
+        # challenge that 403s the article page. Their feeds still work, so fall
+        # back to the blurb captured at collection time — but only when there
+        # is enough of it. Below the threshold the model would be padding
+        # rather than rewriting, and the prompt forbids inventing detail.
+        from_summary = False
         try:
             full_text = fetch_article_text(article.url)
             logger.debug("  fetched %d chars from %s", len(full_text), article.url)
         except FetchError as e:
-            logger.error("  fetch failed: %s", e)
-            fetch_failures.append((article.url, str(e)))
-            continue
+            fallback = (article.rss_summary or "").strip()
+            if len(fallback) >= MIN_FALLBACK_CHARS:
+                logger.warning(
+                    "  page fetch failed (%s) — falling back to the %d-char feed summary",
+                    type(e).__name__, len(fallback),
+                )
+                full_text = fallback
+                from_summary = True
+                summary_fallbacks.append(article.url)
+            else:
+                logger.error(
+                    "  fetch failed and feed summary is only %d chars (need %d): %s",
+                    len(fallback), MIN_FALLBACK_CHARS, e,
+                )
+                fetch_failures.append((article.url, str(e)))
+                continue
 
         try:
-            result = translator.rewrite(article, full_text, today=today)
+            result = translator.rewrite(article, full_text, today=today, from_summary=from_summary)
         except RewriteParseError as e:
             logger.error("  rewrite parse error: %s", e)
             rewrite_failures.append((article.url, str(e)))
@@ -208,6 +234,7 @@ def main() -> int:
     print(f"  Issue:           {year}. {week}. hét")
     print(f"  Selected:        {len(selected)}")
     print(f"  Rewritten:       {len(entries)}")
+    print(f"  From feed blurb: {len(summary_fallbacks)}  (page blocked, rewritten from the RSS summary)")
     print(f"  Fetch failures:  {len(fetch_failures)}")
     print(f"  Rewrite failures:{len(rewrite_failures)}")
     print(f"  Substack draft:  {out_path}")
@@ -215,13 +242,29 @@ def main() -> int:
         print(f"  Site content:    {site_path}")
     elif not args.no_site:
         print(f"  Site content:    FAILED — see the log above")
+    if summary_fallbacks:
+        print("\n  Rewritten from the feed summary — worth a closer read:")
+        for url in summary_fallbacks:
+            print(f"    {url}")
+
     if fetch_failures or rewrite_failures:
         print("\n  Failed URLs:")
         for url, reason in fetch_failures + rewrite_failures:
             print(f"    {url}")
             print(f"      → {reason}")
+        # Surfaced as annotations on the run page, so a partial failure is
+        # visible without having to open the log.
+        for url, _ in fetch_failures + rewrite_failures:
+            print(f"::warning title=Article dropped from the draft::{url}")
 
-    return 0 if not (fetch_failures or rewrite_failures) else 1
+    # A red run should mean "there is no draft", not "some articles are
+    # missing". Several sources sit behind a bot challenge that returns 403 on
+    # every fetch, so partial failure is now the normal case — exiting non-zero
+    # on it painted every run red and buried the runs that genuinely broke.
+    if not entries:
+        print("\nNo articles could be rewritten — nothing usable was produced.")
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
