@@ -60,14 +60,14 @@ articles:
   url: https://www.videogameschronicle.com/news/more-zelda-movie-cast-members-reported-including-sam-neill-and-the-actor-playing-ganondorf/
 - slug: nintendo-osszerakta-a-switch-2-kozelgo-third-party
   category: Játékhírek
-  title: Nintendo összerakta a Switch 2 közelgő third-party játéklistáját
+  title: A Nintendo összerakta a Switch 2 közelgő third-party játéklistáját
   body: |
     A Nintendo legfrissebb pénzügyi tájékoztatójában közzétette a Switch 2 második félévének third-party felhozatalát. A lista elég erős: augusztusban érkezik az Elden Ring: Tarnished Edition és a Metal Gear Solid: Master Collection Vol. 2, októberben a Call of Duty: Modern Warfare 4 és a Dragon's Dogma 2: Dark Arisen, novemberben pedig a Metaphor: ReFantazio. A 2027-es kínálatba a Final Fantasy VII Revelation és a Resident Evil Veronica is bekerült.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/08/nintendo-highlights-multiple-major-third-party-releases-for-switch-2-in-2026-and-beyond
 - slug: az-ubisoft-bejelentette-a-kovetkezo-ghost-recon-jatekot-a
   category: Játékhírek
-  title: Az Ubisoft bejelentette a következő Ghost Recon játékot a sorozat 25. születésnapján
+  title: A Ubisoft bejelentette a következő Ghost Recon játékot a sorozat 25. születésnapján
   body: |
     A Ghost Recon sorozat 25. évfordulóján az Ubisoft belengette a következő részt: egy zárt tesztelési programon keresztül lehet majd kipróbálni, és ígéret szerint "hiteles katonai történetmeséléssel" érkezik. Az ünneplés részeként a Ghost Recon: Wildlands egy nagyobb frissítést kap, visszatér a Predator-küldetés, és új tartalmak is jönnek. Ráadásul a 2012-es Ghost Recon: Future Soldier ingyen átvehető Ubisoft Connecten, de csak augusztus 13-ig.
   source: RPS
@@ -95,7 +95,7 @@ articles:
   url: https://www.windowscentral.com/gaming/xbox/confirmed-xbox-platinum-completion-achievements-are-coming-later-this-year
 - slug: a-black-ops-es-black-ops-2-ps-portok-ket-het-alatt-11
   category: Játékhírek
-  title: A Black Ops és Black Ops 2 PS-portok két hét alatt 11 millió példányt adtak el
+  title: Black Ops és Black Ops 2 PS-portok: két hét alatt 11 millió példányt adtak el
   body: |
     Az Alinea Analytics piacelemző cég becslései szerint a Call of Duty: Black Ops és Black Ops 2 PlayStation 4/5-ös portjai július 9-i megjelenésük óta összesen több mint 11 millió példányban keltek el, és nagyjából 435 millió dolláros bevételt termeltek. A Black Ops 2 egyedül 8,2 millió eladással vezette a júliusi PlayStation-eladási listát. Összehasonlításképpen: az ugyanaznap megjelent Assassin's Creed Black Flag Resynced "csak" 1,6 millió példányt hozott.
   source: ThisWeekInVideoGames
@@ -147,7 +147,7 @@ articles:
   title: A Roblox 9 milliárd dollárt törölt a tőzsdén azzal, hogy kevésbé agresszív játékokat
     ajánl
   body: |
-    A Roblox megváltoztatta az ajánlóalgoritmusát: a platform mostantól a hosszabb megtartást célzó játékokat tolja előre, nem a rövid távon legtöbbet kereső, agresszívan monetizált vírusos játékokat. A Wall Street nem fogadta lelkesen a döntést: a részvények közel 27 százalékot estek, és a cég piaci értékéből nagyjából 9 milliárd dollár párolgott el. A napi aktív felhasználók száma 123 millióra csökkent, különösen a 13 év alatti korosztálynál apadt a költés.
+    A Roblox megváltoztatta az ajánlóalgoritmusát: a platform mostantól a hosszabb megtartást célzó játékokat tolja előre, nem a rövid távon legtöbbet kereső, agresszívan monetizált játékokat. A Wall Street nem fogadta lelkesen a döntést: a részvények közel 27 százalékot estek, és a cég piaci értékéből nagyjából 9 milliárd dollár párolgott el. A napi aktív felhasználók száma 123 millióra csökkent, különösen a 13 év alatti korosztálynál apadt a költés.
   source: RPS
   url: https://www.rockpapershotgun.com/roblox-causes-wall-street-value-estimators-to-cry-themselves-a-9-billion-puddle-as-a-result-of-pushing-less-kids-towards-aggressively-monetised-viral-games
 - slug: elbocsatasok-soportek-vegig-a-halo-studiosban-a-campaign
