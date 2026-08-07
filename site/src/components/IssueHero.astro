@@ -1,14 +1,14 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import Cover from './Cover.astro';
-import { formatHuDate, issueCounts, issueUrl, weekLabel } from '../utils/format';
+import { issueCounts, issueUrl, weekLabel } from '../utils/format';
 
 interface Props {
   issue: CollectionEntry<'issues'>;
 }
 
 const { issue } = Astro.props;
-const { year, week, date, title, standfirst, cover } = issue.data;
+const { year, week, title, standfirst, cover } = issue.data;
 const url = issueUrl(issue);
 const counts = issueCounts(issue);
 ---
@@ -28,12 +28,12 @@ const counts = issueCounts(issue);
           Delete the .visually-hidden h1 and uncomment this to restore. */}
       {/* <h1>{title}</h1> */}
       <h1 class="visually-hidden">{title}</h1>
+      {/* Inside the link: with the title hidden this is the hero's headline,
+          so it should be clickable and highlight on hover like an IssueRow. */}
+      <p class="hero-lead">{standfirst}</p>
     </a>
 
-    <p class="hero-lead">{standfirst}</p>
-
     <div class="hero-meta">
-      <span>{formatHuDate(date)}</span><i>·</i>
       <span>{counts.articles} hír</span><i>·</i>
       <span>{counts.releases} megjelenés</span><i>·</i>
       <span>{counts.ajanlo} ajánló</span><i>·</i>
@@ -64,7 +64,8 @@ const counts = issueCounts(issue);
   .hero-link:hover :global(.cover) {
     border-color: var(--accent);
   }
-  .hero-link:hover h1 {
+  .hero-link:hover h1,
+  .hero-link:hover .hero-lead {
     color: var(--accent);
   }
   h1 {
@@ -83,6 +84,7 @@ const counts = issueCounts(issue);
     /* TRIAL: the hidden h1 used to supply this top gap under the cover. */
     margin: 26px 0;
     color: var(--ink);
+    transition: color 0.18s ease;
   }
   .hero-meta {
     font-family: var(--font-mono);

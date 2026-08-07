@@ -12,13 +12,7 @@ import SectionHead from '../../components/SectionHead.astro';
 import SubscribeBlock from '../../components/SubscribeBlock.astro';
 import { articleImage, gemImage } from '../../utils/images';
 import { SITE_NAME, SUBSTACK_URL } from '../../consts';
-import {
-  formatHuDate,
-  issueCounts,
-  paragraphs,
-  sortIssues,
-  weekLabel,
-} from '../../utils/format';
+import { issueCounts, paragraphs, sortIssues, weekLabel } from '../../utils/format';
 
 interface Props {
   issue: CollectionEntry<'issues'>;
@@ -104,9 +98,6 @@ const jsonLd = {
       {/* TRIAL: visible issue title switched off — see IssueHero.astro. */}
       {/* <h1>{title}</h1> */}
       <h1 class="visually-hidden">{title}</h1>
-      <div class="byline">
-        {formatHuDate(date)} · {counts.articles} hír · {counts.minutes} perc olvasás
-      </div>
     </div>
   </header>
 
@@ -295,8 +286,13 @@ const jsonLd = {
 </script>
 
 <style>
+  /* TRIAL: tightened once the title, standfirst and byline came out — the old
+     spacing was sized around an h1 that is no longer there. */
   .masthead {
-    padding: 60px 0 0;
+    padding: 34px 0 0;
+  }
+  .masthead .eyebrow {
+    margin-bottom: 26px;
   }
   .masthead h1 {
     font-family: var(--font-display);
@@ -306,13 +302,6 @@ const jsonLd = {
     letter-spacing: -0.032em;
     margin: 0 0 20px;
   }
-  .byline {
-    font-family: var(--font-mono);
-    font-size: var(--text-meta);
-    color: var(--ink-muted);
-    letter-spacing: 0.03em;
-    margin-bottom: 34px;
-  }
   .back {
     font-family: var(--font-mono);
     font-size: 11.5px;
@@ -320,7 +309,7 @@ const jsonLd = {
     text-transform: uppercase;
     color: var(--ink-muted);
     text-decoration: none;
-    margin-bottom: 26px;
+    margin-bottom: 18px;
     display: inline-block;
   }
   .back:hover {
@@ -329,6 +318,9 @@ const jsonLd = {
 
   .outro-section {
     padding-top: 0;
+    /* Trimmed from the default 58px: the signature rule already closes the
+       section off, so the full band spacing read as a gap rather than a break. */
+    padding-bottom: 20px;
   }
   .sig {
     font-family: var(--font-mono);

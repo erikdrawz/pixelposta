@@ -14,7 +14,8 @@ const { year, week, title, standfirst, cover } = issue.data;
 {/* Issue-level, so it stays visible in every rovat. */}
 <div class="prev-wrap">
   <div class="wrap">
-    <div class="prev-label">Előző szám</div>
+    {/* Rendered uppercase by CSS — written in sentence case here. */}
+    <div class="prev-label">Előző heti Pixelposta</div>
 
     <a class="prev" href={issueUrl(issue)}>
       <Cover
@@ -40,7 +41,9 @@ const { year, week, title, standfirst, cover } = issue.data;
 
 <style>
   .prev-wrap {
-    padding: 52px 0 12px;
+    /* The outro section above contributes its own bottom padding, so this only
+       needs to make up the difference. */
+    padding: 34px 0 12px;
   }
   .prev-label {
     font-family: var(--font-mono);
