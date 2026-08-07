@@ -8,7 +8,7 @@ title: Az év, amit senki nem tippelt volna meg januárban
 standfirst: >-
   Két nagy stúdió tűnt el, egy kézikonzol lett az év meglepetése, és kiderült,
   hogy a legjobb játékot négyen csinálták egy padlásszobában.
-draft: false
+draft: true
 cover: ./cover.jpg
 
 outro: |
