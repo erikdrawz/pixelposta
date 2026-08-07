@@ -37,6 +37,7 @@ The central pool. Every article ever collected lives here, with status driving i
 - `DigitalFoundry`
 - `TheVerge`
 - `ThisWeekInVideoGames`
+- `WindowsCentral`
 
 ### Category options
 

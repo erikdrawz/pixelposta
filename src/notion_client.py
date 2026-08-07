@@ -40,9 +40,13 @@ class ArticleProp:
 
 # Valid select option values — kept in code so we fail at the boundary, not at
 # Notion's API with a vaguer error.
+# Must stay a superset of RSS_FEEDS' keys in src/collectors/rss_sources.py.
+# tests/test_sources.py enforces that, because the two drifting apart only
+# shows up eight minutes into a live collection run.
 SOURCE_OPTIONS = frozenset({
     "RPS", "NintendoLife", "VGC", "GameDiscover", "TheGameBusiness",
     "Forbes", "Bloomberg", "DigitalFoundry", "TheVerge", "ThisWeekInVideoGames",
+    "WindowsCentral",
 })
 CATEGORY_OPTIONS = frozenset({"Játékhírek", "Hardware", "AI & Gaming", "Stúdió & Üzlet"})
 STATUS_OPTIONS = frozenset({"New", "Selected", "Published", "Passed", "Archived"})

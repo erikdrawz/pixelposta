@@ -181,18 +181,22 @@ def main() -> int:
     else:
         logger.info("step 4: writing %d articles to Notion", len(included))
         for article, result in included:
-            payload = ArticlePayload(
-                title=article.title,
-                source=article.source,
-                url=article.url,
-                published_at=article.published_at,
-                collected_at=today,
-                category=result.category,
-                relevance_score=result.relevance_score,
-                hu_summary=result.hu_summary,
-                filter_reasoning=result.filter_reasoning,
-            )
+            # Payload construction is inside the try on purpose: it validates
+            # source/category/score and raises. Left outside, one unknown value
+            # aborted the whole run after the filtering was already paid for,
+            # stranding the remaining articles unwritten.
             try:
+                payload = ArticlePayload(
+                    title=article.title,
+                    source=article.source,
+                    url=article.url,
+                    published_at=article.published_at,
+                    collected_at=today,
+                    category=result.category,
+                    relevance_score=result.relevance_score,
+                    hu_summary=result.hu_summary,
+                    filter_reasoning=result.filter_reasoning,
+                )
                 notion.create_article(payload)
                 written += 1
             except Exception as e:
