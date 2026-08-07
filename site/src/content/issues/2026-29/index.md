@@ -7,7 +7,7 @@ title: Nyári csend, aztán három bejelentés egy nap alatt
 standfirst: >-
   Két hétig nem történt semmi, majd szerdán egyszerre jött a Silksong dátum, egy
   Switch 2 árcsökkentés és egy stúdióbezárás.
-draft: false
+draft: true
 cover: ./cover.jpg
 
 outro: |

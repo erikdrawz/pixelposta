@@ -10,7 +10,7 @@ title: Fallout mindenhol, és egy hímzett szláv népmese
 standfirst: >-
   A Bethesda egyszerre több nagy bejelentést tett a Fallout körül, a hét
   legkülönösebb játéka viszont egy kézzel hímzett szláv népmese-platformer.
-draft: false
+draft: true
 cover: ./cover.jpg
 
 outro: |

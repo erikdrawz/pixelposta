@@ -85,7 +85,7 @@ articles:
   category: Játékhírek
   title: A Big Walk azt szimulálja, milyen elveszni a barátaidtól egy túrán
   body: |
-    A House House multiplayer túrázós játéka, a Big Walk első ránézésre a Peak-szerű "barátos" co-op játékok közé sorolható, de jóval alaposabban kimunkált náluk: évek fejlesztési munka áll mögötte. A közelségi hangchat szándékosan szűk sugarú, így egy kis sziklakiszögellés is elég, hogy csendben maradj a társaid nélkül. A játék lényege pont ez: megtalálni, hogyan jutnak vissza egymáshoz az emberek, jelzőfáklyákkal, adóállomásokkal és pingvinfejű karakterek pislogó szemével.
+    A House House multiplayer túrázós játéka, a Big Walk első ránézésre a Peak-szerű "barátos" co-op játékok közé sorolható, de jóval alaposabban kimunkált náluk: évek fejlesztési munkája áll mögötte. A közelségi hangchat szándékosan szűk sugarú, így egy kis sziklakiszögellés is elég, hogy csendben maradj a társaid nélkül. A játék lényege pont ez: megtalálni, hogyan jutnak vissza egymáshoz az emberek, jelzőfáklyákkal, adóállomásokkal és pingvinfejű karakterek pislogó szemével.
   source: RPS
   url: https://www.rockpapershotgun.com/big-walk-simulates-the-strange-childlike-sensation-of-being-unexpectedly-separated-from-your-friends-and-the-joy-and-relief-of-finding-your-way-back
   imageCredit: 'Kép: House House & Panic'
