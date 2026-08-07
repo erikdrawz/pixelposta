@@ -22,112 +22,173 @@ draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
-- slug: a-baldur-s-gate-3-mostantol-xbox-play-anywhere-cim-es
+- slug: a-baldur-s-gate-3-negy-napja-xbox-play-anywhere-cim-lett-30
   category: Játékhírek
-  title: A Baldur's Gate 3 mostantól Xbox Play Anywhere cím, és néhány napja 30% kedvezménnyel
-    is kapható
+  title: A Baldur's Gate 3 négy napja Xbox Play Anywhere cím lett, 30% kedvezménnyel
   body: |
-    A Larian Studios néhány napja meglepetésszerű frissítést adott ki a Baldur's Gate 3 Xbox-verziójához: a játék mostantól Xbox Play Anywhere támogatással rendelkezik, ami azt jelenti, hogy egyetlen vásárlással játszható Xbox Series X|S konzolon, Windows PC-n, Xbox Cloud Gaminggel és kézikonzolokon, például az Xbox Allyn is. Az alkalom tiszteletére a Larian 30%-os kedvezményt is bevezetett, igaz, csak korlátozott ideig.
+    A Larian Studios néhány napja meglepetésfrissítést adott ki a Baldur's Gate 3 Xbox-verziójához: a játék mostantól Xbox Play Anywhere-támogatással érkezik, ami azt jelenti, hogy egyetlen vásárlással Xbox Series X|S-en, Windows PC-n, felhős streaminggel és kézikonzolokon, például az Xbox Ally-n is játszható. Az ünneplés részeként a Larian korlátozott ideig 30%-os kedvezményt is bevezetett az Xbox-os verzióra.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/xbox-play-anywhere-secures-its-biggest-win-yet-with-baldurs-gate-3-and-it-being-30-percent-off-is-just-icing-on-the-cake
-- slug: a-gta-vi-bovitett-elozetese-eloszor-netflixen-lesz-lathato
+- slug: elozetesen-kiprobaltak-az-onimusha-way-of-the-sword-ot-es
   category: Játékhírek
-  title: A GTA VI bővített előzetese először Netflixen lesz látható
+  title: 'Előzetesen kipróbálták az Onimusha: Way of the Sword-ot, és nagyon ígéretes'
   body: |
-    A Rockstar Games bejelentette, hogy augusztus 27-én élőben mutatja be a GTA VI: An Extended Look című összeállítást, amely várhatóan először enged bepillantást a játékmenetbe. Szokatlan módon az adás először kizárólag Netflixen érhető el, és csak hat órával később kerül fel a Rockstar saját weboldalára és YouTube-csatornájára. Az eddigi két trailer, a 2023-as és a 2025-ös, csupán in-game cinematicsot mutatott.
+    A NintendoLife újságírója közel három órát töltött a Capcom új akciójátékával, az Onimusha: Way of the Sword-dal, PlayStation 5-ön és Nintendo Switch 2-n egyaránt. A preview szerint a harcrendszer nehézsúlyos, de rendkívül kielégítő: a parry, a láncos kivégzések és a lélekgyűjtés mind jól megvalósított mechanika. A Switch 2-s verzió teljesítménye is stabilnak tűnik, apróbb fizikai hibáktól eltekintve. A játék szeptember 4-én jelenik meg.
+  source: NintendoLife
+  url: https://www.nintendolife.com/previews/onimusha-way-of-the-sword-is-capcoms-next-banger
+- slug: xbox-360-as-jatekok-jonnek-pc-re-kezikonzolokra-es-a
+  category: Játékhírek
+  title: Xbox 360-as játékok jönnek PC-re, kézikonzolokra és a Project Helixre
+  body: |
+    A The Verge kiszivárgott fejlesztői dokumentumokra hivatkozva számolt be arról, hogy a Microsoft Xbox 360-as játékokat is elérhetővé tenne visszafelé kompatibilitás keretében PC-n, kézikonzolokon és a következő generációs Project Helix konzolon, várhatóan 2027 és 2028 között. Az eredeti Xbox-játékok PC-s megjelenése október 2026-ra datálódik. Emellett a lemez-digitális program is körvonalazódik: aki Xbox-lemezt helyez a gépbe, digitális licencet kap a játékhoz, ami az összes bejelentkezett eszközén elérhető lesz.
+  source: DigitalFoundry
+  url: https://www.digitalfoundry.net/news/2026/08/report-microsoft-to-bring-xbox-360-games-to-xbox-pcs-handhelds-and-project-helix
+- slug: a-gta-vi-reszletes-bemutatoja-eloszor-netflixen-lesz-lathato
+  category: Játékhírek
+  title: A GTA VI részletes bemutatója először Netflixen lesz látható
+  body: |
+    A Rockstar Games bejelentette, hogy augusztus 27-én egy bővebb GTA VI-bemutatót közvetít, de szokatlan módon a műsor nem YouTube-on vagy a Rockstar weboldalán debütál először, hanem a Netflixen. A streaming-premiert hat órával később követi az ingyenes közzététel. Az eddigi két trailer, 2023 decemberéből és 2025 májusából, csak játékon belüli mozgóképeket mutatott, ezért sokan remélik, hogy ezúttal végre valódi gameplay-felvételt is láthatunk.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/netflix-honored-to-be-premiering-gta-vi-extended-look-broadcast/
-- slug: uj-ghost-recon-jatek-keszul-a-wildlands-frissitest-kap-a
+- slug: ujabb-zelda-filmszereplok-derultek-ki-koztuk-sam-neill-es
   category: Játékhírek
-  title: Új Ghost Recon játék készül, a Wildlands frissítést kap, a Future Soldier pedig ingyenes
+  title: Újabb Zelda-filmszereplők derültek ki, köztük Sam Neill és Ganondorf alakítója
   body: |
-    A Ghost Recon sorozat 25. születésnapja alkalmából az Ubisoft egyszerre több bejelentést tett. A legfontosabb: tényleg készül egy új Ghost Recon játék, amelynek zárt tesztelésére hamarosan lehet majd jelentkezni egy insider programon keresztül. Emellett a 2017-es Ghost Recon: Wildlands komoly frissítést kap, grafikailag is megújul, és visszatér a Predator-küldetés is. A 2012-es Ghost Recon: Future Soldier pedig augusztus 13-ig ingyenesen igényelhető Ubisoft Connecten, bár a többijátékos szervereket 2021-ben lekapcsolták.
+    A Deadline szerint a The Legend of Zelda mozifilmben Ganondorfot az ausztrál Uli Latukefu játssza, aki több képre szóló szerződést is aláírt, ami trilógiára utal. Sam Neill, aki a múlt hónapban hunyt el, szintén szerepel a filmben, és mivel a forgatás áprilisban zárult, ez valószínűleg az utolsó nagyvásznon látható alakítása. Impa szerepét Dichen Lachman (Severance) kapja, a film 2027. április 30-án kerül mozikba.
+  source: VGC
+  url: https://www.videogameschronicle.com/news/more-zelda-movie-cast-members-reported-including-sam-neill-and-the-actor-playing-ganondorf/
+- slug: nintendo-osszerakta-a-switch-2-kozelgo-third-party
+  category: Játékhírek
+  title: Nintendo összerakta a Switch 2 közelgő third-party játéklistáját
+  body: |
+    A Nintendo legfrissebb pénzügyi tájékoztatójában közzétette a Switch 2 második félévének third-party felhozatalát. A lista elég erős: augusztusban érkezik az Elden Ring: Tarnished Edition és a Metal Gear Solid: Master Collection Vol. 2, októberben a Call of Duty: Modern Warfare 4 és a Dragon's Dogma 2: Dark Arisen, novemberben pedig a Metaphor: ReFantazio. A 2027-es kínálatba a Final Fantasy VII Revelation és a Resident Evil Veronica is bekerült.
+  source: NintendoLife
+  url: https://www.nintendolife.com/news/2026/08/nintendo-highlights-multiple-major-third-party-releases-for-switch-2-in-2026-and-beyond
+- slug: az-ubisoft-bejelentette-a-kovetkezo-ghost-recon-jatekot-a
+  category: Játékhírek
+  title: Az Ubisoft bejelentette a következő Ghost Recon játékot a sorozat 25. születésnapján
+  body: |
+    A Ghost Recon sorozat 25. évfordulóján az Ubisoft belengette a következő részt: egy zárt tesztelési programon keresztül lehet majd kipróbálni, és ígéret szerint "hiteles katonai történetmeséléssel" érkezik. Az ünneplés részeként a Ghost Recon: Wildlands egy nagyobb frissítést kap, visszatér a Predator-küldetés, és új tartalmak is jönnek. Ráadásul a 2012-es Ghost Recon: Future Soldier ingyen átvehető Ubisoft Connecten, de csak augusztus 13-ig.
   source: RPS
   url: https://www.rockpapershotgun.com/credible-military-storytelling-ubisoft-announce-playtests-for-new-ghost-recon-game-alongside-a-sizeable-wildlands-update-and-a-future-soldier-giveaway
-- slug: a-200-dollaros-jatek-ami-majdnem-1-3-millio-dollart-hozott
+- slug: egy-18-eves-fejleszto-majdnem-1-3-millio-dollart-keresett
   category: Játékhírek
-  title: A 200 dolláros játék, ami majdnem 1,3 millió dollárt hozott – de mégsem
+  title: Egy 18 éves fejlesztő majdnem 1,3 millió dollárt keresett egy $200-os játékkal
   body: |
-    Michael Major, egy 18 éves fejlesztő néhány hónapja feltöltött a Steamre egy "This Game Costs 200 Dollars" nevű játékot, ami pontosan annyiba kerül, amennyit a neve ígér: $200, vagyis a Steam által engedélyezett maximális ár. A játék nem csinál szinte semmit, de egyszer csak azt látta, hogy 6717 eladással 1,3 millió dollár gyűlt össze rajta. A csattanó: 6707 visszatérítési kérelmet nyújtottak be, 6705-öt Kínából, a játékot meg sem nyitva. Végül kb. 2000 dollárral maradt.
+    Michael Major, a 18 éves indie fejlesztő néhány hónapja feltöltötte Steamre a This Game Costs 200 Dollars nevű játékát, ami pontosan annyiba kerül, amennyit a neve ígér: $200, ez ugyanis a platform árlimitje. Aztán egy nap azt látta, hogy a játék 6717 eladással 1,3 millió dollárt termelt. A csattanó: 6705 vásárló, szinte mind Kínából, azonnal vissza is kérte a pénzét, sokuk anélkül, hogy egyszer is megnyitotta volna a játékot. Végül Major valamivel több mint $2000-t tarthatott meg.
   source: RPS
   url: https://www.rockpapershotgun.com/this-game-costs-200-dollars-is-a-game-that-really-does-cost-200-doesnt-look-very-good-and-almost-made-its-dev-13-million
-- slug: a-big-walk-arrol-szol-milyen-elveszni-a-barataid-kozott
+- slug: a-big-walk-azt-szimulalja-milyen-elveszni-a-barataidtol-egy
   category: Játékhírek
-  title: A Big Walk arról szól, milyen elveszni a barátaid között
+  title: A Big Walk azt szimulálja, milyen elveszni a barátaidtól egy túrán
   body: |
-    A House House multiplayer túrázós játéka, a Big Walk első ránézésre egy újabb "friendslop" co-op cucc, de annál jóval átgondoltabb. A közelségi hangchat szándékosan szűkre van szabva: elég egy szikla mögé lépni, és máris csendbe borulsz. Az elveszés itt nem kudarc, hanem az élmény szerves része. A játék tele van hangra épülő rejtvényekkel, titokzatos felfedezni valókkal, és azokkal az apró momentumokkal, amikor végre megint rátalálsz a csapatodra.
+    A House House multiplayer túrázós játéka, a Big Walk első ránézésre a Peak-szerű "barátos" co-op játékok közé sorolható, de jóval alaposabban kimunkált náluk: évek fejlesztési munka áll mögötte. A közelségi hangchat szándékosan szűk sugarú, így egy kis sziklakiszögellés is elég, hogy csendben maradj a társaid nélkül. A játék lényege pont ez: megtalálni, hogyan jutnak vissza egymáshoz az emberek, jelzőfáklyákkal, adóállomásokkal és pingvinfejű karakterek pislogó szemével.
   source: RPS
   url: https://www.rockpapershotgun.com/big-walk-simulates-the-strange-childlike-sensation-of-being-unexpectedly-separated-from-your-friends-and-the-joy-and-relief-of-finding-your-way-back
-- slug: az-xbox-iden-bevezeti-a-playstation-platina-trofeajahoz
+- slug: jon-az-xbox-platina-achievement-iden-erkezik-a-100-os
   category: Játékhírek
-  title: Az Xbox idén bevezeti a PlayStation platina-trófeájához hasonló rendszert
+  title: 'Jön az Xbox "platina" achievement: idén érkezik a 100%-os teljesítés jutalma'
   body: |
-    Asha Sharma, az Xbox vezérigazgatója két napja megerősítette: idén érkezik az Xbox saját "platina" rendszere, amely az összes achievement megszerzéséért járna jutalomként. Ez az egyik legtöbbet kért funkció volt a közösség részéről, hiszen a PlayStation platina-trófeájával ellentétben az Xboxon eddig semmi sem jelezte, ha egy játékos teljesítette a teljes, 1000 gamerscore-os listát. A pontos működési részletek egyelőre nem ismertek.
+    Asha Sharma, az Xbox vezérigazgatója két napja megerősítette: idén érkezik a PlayStation platina trófeájához hasonló "platina" achievement rendszer Xboxra. Eddig hiába gyűjtötted össze egy játék összes achievementjét, semmi nem jelzett vissza a teljes teljesítésért. A pontos részletek még nem tiszták, például hogy az 1000 gamerscore elérése jelenti-e majd a feltételt, de a fejlesztés már folyamatban van.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/xbox/confirmed-xbox-platinum-completion-achievements-are-coming-later-this-year
 - slug: a-black-ops-es-black-ops-2-ps-portok-ket-het-alatt-11
   category: Játékhírek
-  title: A Black Ops és Black Ops 2 PS-portok két hét alatt 11 milliót adtak el
+  title: A Black Ops és Black Ops 2 PS-portok két hét alatt 11 millió példányt adtak el
   body: |
-    Az Alinea Analytics piacelemző cég becslései szerint a Call of Duty: Black Ops és Black Ops 2 júliusi PlayStation 4/5-ös portjai összesen több mint 11 millió példányban keltek el, és nagyjából 435 millió dolláros bevételt termeltek. A Black Ops 2 port egymagában 8,2 millióval vezette a júliusi PS eladási listát, míg a Black Ops körülbelül 3 millió példánynál járt. A két játék PS3-as eredetije a konzol hírhedt emuláció-ellenessége miatt eddig modern gépeken szinte elérhetetlen volt.
+    Az Alinea Analytics piacelemző cég becslései szerint a Call of Duty: Black Ops és Black Ops 2 PlayStation 4/5-ös portjai július 9-i megjelenésük óta összesen több mint 11 millió példányban keltek el, és nagyjából 435 millió dolláros bevételt termeltek. A Black Ops 2 egyedül 8,2 millió eladással vezette a júliusi PlayStation-eladási listát. Összehasonlításképpen: az ugyanaznap megjelent Assassin's Creed Black Flag Resynced "csak" 1,6 millió példányt hozott.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/call-of-duty-black-ops-and-black-ops-2-playstation-ports-sold-over-11-million-copies-analyst-claims/
-- slug: a-moonlighter-2-szeptember-2-en-erkezik-az-elso-resz-ingyen
+- slug: megvan-a-moonlighter-2-megjelenesi-datuma-az-eredeti-pedig
   category: Játékhírek
-  title: A Moonlighter 2 szeptember 2-én érkezik, az első rész ingyen is megszerezhető
+  title: Megvan a Moonlighter 2 megjelenési dátuma, az eredeti pedig pár napig ingyenes
   body: |
-    A Moonlighter 2: The Endless Vault early access-ből szeptember 2-án lép ki 1.0-ba: az új verzió hozza a hetedik és egyben utolsó Endless Vault-ot, egy hardcore nehézségi fokozatot, illetve az üzlet már ötödik szintre is fejleszthető. Aki előbb beleolvasnának, kipróbálhatja az ingyenes demót. Ráadásul az első rész egészen augusztus 9-ig ingyenesen hozzáadható a Steam-könyvtárhoz.
+    A Digital Sun bejelentette, hogy a Moonlighter 2: The Endless Vault szeptember 2-án lép ki a korai hozzáférésből. Az 1.0-s verzió új fegyverekkel, a hetedik és egyben utolsó Endless Vault pályával, valamint egy hardcore nehézségi móddal bővül. Aki előbb kipróbálná, ingyenes demó is elérhető már most. Ráadásként az eredeti Moonlighter augusztus 9-ig teljesen ingyen hozzáadható Steam-könyvtárhoz.
   source: RPS
   url: https://www.rockpapershotgun.com/moonlighter-2-the-endless-vault-gets-a-10-date-and-demo-as-the-original-goes-temporarily-free
-- slug: a-harom-legnagyobb-ram-gyarto-2027-es-kapacitasa-is-mar-el
-  category: Hardware
-  title: A három legnagyobb RAM-gyártó 2027-es kapacitása is már el van adva
+- slug: ingyenes-quake-kampany-jelent-meg-a-30-evfordulora-a
+  category: Játékhírek
+  title: Ingyenes Quake-kampány jelent meg a 30. évfordulóra a MachineGamestől
   body: |
-    A DigiTimes iparági forrásokra hivatkozva arról számolt be, hogy a Samsung, a Micron és az SK Hynix nemcsak 2026-os, hanem teljes 2027-es gyártási kapacitását is lekötötték már a vevők, vagyis az olcsóbb PC-s alkatrészek reményét nagyjából 2028-ig el lehet felejteni. A DRAM mellett a NAND-alapú SSD-k is hasonló helyzetbe kerülhetnek, a mechanikus merevlemezek gyártása szintén előre el van adva. A fő kereslethajtó továbbra is az AI-ipar, amely simán felszívja az extra memóriakapacitást, mielőtt az a fogyasztói piacra juthatna.
+    Az eredeti Quake idén ünnepli a 30. születésnapját, és a MachineGames nem ment el szó nélkül mellette: ma megjelent a Quake: Dawn of the Machine, egy teljesen új, ingyenes epizód az 1996-os klasszikushoz. A kiegészítő 19 pályát, titkokat, új zenei anyagot és egy friss Deathmatch-térképet tartalmaz, és elérhető Xbox, PlayStation, Switch, Steam és Microsoft Store verziókon is, minden extra költség nélkül.
+  source: VGC
+  url: https://www.videogameschronicle.com/news/new-free-quake-campaign-from-machinegames-available-now-for-the-30th-anniversary/
+- slug: a-switch-2-tullepte-a-23-millios-eladast-a-nintendo-szerint
+  category: Hardware
+  title: A Switch 2 túllépte a 23 milliós eladást, a Nintendo szerint a számok rendben vannak
+  body: |
+    A Nintendo legfrissebb pénzügyi jelentése szerint a Switch 2 eddig 23,68 millió példányban kelt el, ezzel már a GameCube-ot is maga mögé utasította. Az első negyedévben 3,82 millió konzolt adtak el, ami éves szinten 34,4%-os visszaesés, de a Nintendo hangsúlyozza: az eredeti Switch-hez képest az elfogadási ütem így is kedvezőbb. A csökkenés részben a tavalyi rekordrajtnak, részben a japán áremelésnek tudható be. Szeptembertől a nyugati piacokon is drágább lesz a konzol.
+  source: NintendoLife
+  url: https://www.nintendolife.com/news/2026/08/switch-2-surpasses-23-million-units-as-nintendo-claims-sales-remain-solid
+- slug: a-harom-legnagyobb-ram-gyarto-2027-es-keszletet-is-eladta
+  category: Hardware
+  title: A három legnagyobb RAM-gyártó 2027-es készletét is eladta már
+  body: |
+    Rossz hír a PC-s alkatrészvásárlóknak: iparági bennfentesek szerint a Samsung, a Micron és az SK Hynix nemcsak idei, hanem 2027-es gyártási kapacitását is teljes egészében előre eladta, így az olcsóbb RAM és grafikus kártya reménye nagyjából 2028-ig elúszik. A NAND-alapú SSD-k helyzete kicsit jobb volt, de az is várhatóan napok alatt elfogy. A kínai CXMT gyártó növekvő kapacitása hosszú távon hozhat némi enyhülést, az AI-ipar viszont könnyedén felszívja az összes plusz készletet.
   source: RPS
   url: https://www.rockpapershotgun.com/the-three-biggest-ram-makers-have-already-sold-all-their-2027-output-report-says-potentially-stretching-price-woes-into-2028
-- slug: a-nintendo-switch-2-eladasai-fellendultek-az-aremeles-elott
+- slug: a-nintendo-switch-2-eladasai-ujra-lenduletet-kaptak
   category: Hardware
-  title: A Nintendo Switch 2 eladásai fellendültek az áremelés előtt
+  title: A Nintendo Switch 2 eladásai újra lendületet kaptak
   body: |
-    A Nintendo tegnap közzétett pénzügyi jelentése szerint 2026 második negyedévében 3,82 millió Switch 2 konzolt adtak el, ami 1,33 millióval több az előző negyedévnél. Az élettartam-eladások így 23,68 millióra nőttek, amivel a Switch 2 továbbra is a Nintendo valaha volt leggyorsabban fogyó konzolja. A lendületet részben az új játékok (köztük a Pokémon Pokopia) hajtják, de valószínűleg az is szerepet játszik benne, hogy szeptember 1-jén az Egyesült Államokban is emelkedik az ár: 450 dollárról 500 dollárra.
+    A Nintendo legfrissebb pénzügyi jelentése szerint a Switch 2 eladásai az idei második negyedévben (április–június) visszapattantak: 3,82 millió példány kelt el, ez nagyjából 1,3 millióval több az előző negyedévnél. Az életteljes eladások így már 23,68 milliónál járnak, amivel a konzol Nintendo történetének leggyorsabban fogyó gépe marad öt negyedév után. A növekedéshez valószínűleg a Pokémon Pokopia sikere mellett az is hozzájárult, hogy a Nintendo bejelentette az áremelést: szeptember 1-jétől a legtöbb piacon 450-ről 500 dollárra nő a gép ára.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/nintendo-switch-2-console-sales-up-1-3-million-units-versus-previous-quarter/
 - slug: az-xbox-mostantol-a-party-chatet-is-rogziti-a-gameplay
   category: Hardware
-  title: Az Xbox mostantól a party chatet is rögzíti a gameplay-klipekbe
+  title: Az Xbox mostantól a party chatet is rögzíti a gameplay-klipekben
   body: |
-    A Microsoft két napja jelentette be, hogy új funkciókat kap az Xbox Series X|S, amelyek egy része egyelőre csak az Xbox Insider Alpha Skip-Ahead tesztelőknél érhető el. A legkeresettebb újítás: a gameplay-felvételekbe mostantól belekerülhet a hangtársalgás is, és mindenki maga dönti el, hogy a saját hangját bele akarja-e venni. Emellett az achievementek rendezhetőbbek lettek, a wishlist kapacitása 301-ről 1000 játékra nőtt, a felhőmentések visszaállítása pedig hamarosan még több játékban elérhető lesz.
+    A Microsoft néhány napja több újítást is bejelentett Xbox Series X|S-re, amelyek egyelőre az Xbox Insider program korai tesztelői számára elérhetők. A leghasznosabb: a gameplay-felvételekbe mostantól bekerülhet a voice chat hangja is, így a barátok reakciói is megörökíthetők, külön capture kártya vagy streaming nélkül. Emellett az achievementek jobban szűrhetők és rendezhetők, a felhős mentésekbe visszaállítás is egyszerűsödött (egyelőre Forza Horizon 6-ban), a kívánságlistára pedig már 1000 játékot lehet felvenni a korábbi 301 helyett.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/xbox/xbox-will-finally-let-you-record-party-chat-in-gameplay-clips-and-more
-- slug: az-ea-felvasarlasa-lezarult-55-milliard-dollarert-vette-meg
+- slug: az-ea-felvasarlasa-lezarult-55-milliard-dollarert-kerul
   category: Stúdió & Üzlet
-  title: 'Az EA felvásárlása lezárult: 55 milliárd dollárért vette meg a szaúdi PIF'
+  title: 'Az EA felvásárlása lezárult: 55 milliárd dollárért kerül szaúdi kézbe'
   body: |
-    Két napja vált hivatalossá: az Electronic Arts felvásárlása befejeződött, a tranzakciót a szaúdi állami befektetési alap (PIF), a Silver Lake és az Affinity Partners konzorciuma hajtotta végre 55 milliárd dollárért, ami a történelem legnagyobb tőkeáttételes kivásárlása. A PIF 93,4%-os tulajdonrészt szerez, és a vételár 20 milliárd dollárját hitelből finanszírozzák. A befektetők nyíltan generatív AI-alapú fejlesztéseket és növekedést emlegetnek, miközben az EA az elmúlt időszakban százakat bocsátott el, és bezárta a Cliffhanger Games stúdiót is.
+    Két napja vált hivatalossá a történelem legnagyobb tőkeáttételes felvásárlása: az Electronic Arts 55 milliárd dollárért cserébe magánkézbe került, a vételár nagy részét a szaúd-arábiai állami befektetési alap, a PIF állja, amely 93,4%-os tulajdont szerzett. A deal eredetileg tavaly szeptemberben jelentették be, és fennakadás nélkül ment át a szabályozói vizsgálatokon. A felvásárlás árnyékában az EA több száz embert bocsátott el, bezárta a Cliffhanger Games stúdiót, és egyre agresszívebben tolja a generatív AI alkalmazását.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/electronic-arts-ea-completes-55-billion-private-acquisition/
-- slug: a-roblox-algoritmusvaltasa-9-milliard-dollart-torolt-a-ceg
+- slug: a-roblox-9-milliard-dollart-torolt-a-tozsden-azzal-hogy
   category: Stúdió & Üzlet
-  title: A Roblox algoritmusváltása 9 milliárd dollárt törölt a cég tőzsdei értékéből
+  title: A Roblox 9 milliárd dollárt törölt a tőzsdén azzal, hogy kevésbé agresszív játékokat
+    ajánl
   body: |
-    A Roblox tegnap közzétett negyedéves eredményei alapján a cég úgy döntött, hogy algoritmusát az agresszívan monetizált, virális játékok helyett inkább a hosszú távú visszatérést ösztönző élményekre hangolják. A Wall Street erre durván reagált: a részvények közel 27%-ot estek, a piaci kapitalizáció pedig 9 milliárd dollárral zsugorodott. A napi aktív felhasználók száma 123 millióra csökkent, és a 13 év alattiak körében különösen visszaesett a Robloxon belüli költés.
+    A Roblox megváltoztatta az ajánlóalgoritmusát: a platform mostantól a hosszabb megtartást célzó játékokat tolja előre, nem a rövid távon legtöbbet kereső, agresszívan monetizált vírusos játékokat. A Wall Street nem fogadta lelkesen a döntést: a részvények közel 27 százalékot estek, és a cég piaci értékéből nagyjából 9 milliárd dollár párolgott el. A napi aktív felhasználók száma 123 millióra csökkent, különösen a 13 év alatti korosztálynál apadt a költés.
   source: RPS
   url: https://www.rockpapershotgun.com/roblox-causes-wall-street-value-estimators-to-cry-themselves-a-9-billion-puddle-as-a-result-of-pushing-less-kids-towards-aggressively-monetised-viral-games
-- slug: elbocsatasok-a-halo-studiosnal-napokkal-a-campaign-evolved
+- slug: elbocsatasok-soportek-vegig-a-halo-studiosban-a-campaign
   category: Stúdió & Üzlet
-  title: Elbocsátások a Halo Studiosnál, napokkal a Campaign Evolved megjelenése után
+  title: Elbocsátások söpörtek végig a Halo Studiosban a Campaign Evolved megjelenése után
   body: |
-    Alig néhány nappal a Halo: Campaign Evolved kiadása után a Halo Studios is megkapta a Microsoft által korábban bejelentett 3200 fős leépítési hullám egy részét. Több érintett fejlesztő LinkedIn-en erősítette meg az elbocsátását. A rossz hír mellé rossz fejlesztési hírek is érkeztek: a játék fejlesztése állítólag végig problémás volt, egy külsős stúdiót le kellett váltani, és egy tervezett Halo multiplayer projekt is kútba esett.
+    Alig néhány nappal a Halo: Campaign Evolved kiadása után a Microsoft elbocsátásokat hajtott végre a Halo Studiosban, több dolgozó LinkedIn-en erősítette meg a hírt. A fejlesztés állítólag végig akadozott: a kisegítő Abstraction stúdiót le kellett váltani, az elvégzett munkát nagyrészt újra kellett építeni, és egy önálló Halo-multiplayer projekt is a kuka lett. Az elbocsátások a Microsoft korábban bejelentett 3200 fős leépítési hullámának részei.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/halo/halo-studios-is-the-latest-xbox-games-studio-to-be-hit-by-layoffs-just-days-after-campaign-evolved-launch-as-reports-reveal-troubled-development
-- slug: a-devolver-digital-kivonul-a-tozsderol-ot-evvel-a-londoni
+- slug: a-devolver-digital-kivonul-a-tozsderol-ot-evvel-a-bevezetes
   category: Stúdió & Üzlet
-  title: A Devolver Digital kivonul a tőzsdéről, öt évvel a londoni bevezetés után
+  title: A Devolver Digital kivonul a tőzsdéről, öt évvel a bevezetés után
   body: |
-    A Devolver Digital bejelentette, hogy le kíván lépni a londoni AIM tőzsdéről, és visszatér a magántulajdonosi formába. A kiadó szerint a tőzsde rövid távú növekedési elvárásai egyszerűen nem egyeztethetők össze egy indie-játékkiadó természetével, ahol a bevételek kiszámíthatatlanok és egy-egy cím sikerétől függenek. A részvényesek szeptember 8-án szavaznak a lépésről, 75%-os jóváhagyás szükséges. Nem kis kontextus: a cég 2021-es tőzsdei bevezetéskori értéke közel 950 millió dollár volt, ma nagyjából 40 millió dollár.
+    A Devolver Digital bejelentette, hogy le kíván lépni a londoni tőzsde AIM piacáról, ahol 2021 óta volt jelen. A kiadó szerint a tőzsdei lét nyomása, a negyedéves növekedési elvárások, egyszerűen nem összeegyeztethetők egy indie játékkiadó természetével. A részvényesek szeptember 8-án szavaznak a kérdésről, 75%-os többség kell az igen-hez. A cég tőzsdei értéke a bevezetéskori közel egymilliárd dollárról mára nagyjából 40 millió dollárra zsugorodott.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/devolver-digital-seeks-to-go-private-five-years-after-listing-on-london-stock-exchange/
-releases: []
+- slug: a-capcom-eladasainak-90-a-mar-digitalis-a-fizikai-piac
+  category: Stúdió & Üzlet
+  title: A Capcom eladásainak 90%-a már digitális, a fizikai piac visszaszorulása nem aggasztja
+  body: |
+    A Capcom nemrég közzétett pénzügyi gyorsjelentőjének Q&A részéből kiderült: az eladásaik körülbelül 90%-a már digitális formában történik, így a fizikai játékpiac zsugorodása a céget nem különösebben érinti. Ez némi kontextust ad a Sony januárban bejelentett döntéséhez is, miszerint 2028-tól leállítja a PS5-lemezek gyártását. A Capcomnak egyébként jól megy: a Resident Evil Requiem és a Pragmata is felülmúlta az eladási várakozásokat, szeptember 4-én pedig az Onimusha: Way of the Sword is megjelenik.
+  source: NintendoLife
+  url: https://www.nintendolife.com/news/2026/08/capcom-isnt-fussed-about-a-potential-all-digital-future
+releases:
+- title: Wild Blue Skies
+  platform: PS5, Xbox, PC
+  date: '08.13'
+- title: Grave Seasons
+  platform: PC, Xbox, PS5, Switch
+  date: '08.14'
+- title: 'Mafia: The Old Country – Man of Honor expansion'
+  platform: PC, Xbox, PS5
+  date: '08.14'
+- title: The Sinking City 2
+  platform: PC, PS5, Xbox
+  date: '08.18'
 ajanlo: []
 ---
