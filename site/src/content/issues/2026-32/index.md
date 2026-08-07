@@ -30,6 +30,7 @@ articles:
     A Larian Studios néhány napja meglepetésfrissítést adott ki a Baldur's Gate 3 Xbox-verziójához: a játék mostantól Xbox Play Anywhere-támogatással érkezik, ami azt jelenti, hogy egyetlen vásárlással Xbox Series X|S-en, Windows PC-n, felhős streaminggel és kézikonzolokon, például az Xbox Ally-n is játszható. Az ünneplés részeként a Larian korlátozott ideig 30%-os kedvezményt is bevezetett az Xbox-os verzióra.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/xbox-play-anywhere-secures-its-biggest-win-yet-with-baldurs-gate-3-and-it-being-30-percent-off-is-just-icing-on-the-cake
+  imageCredit: 'Kép: Larian'
 - slug: elozetesen-kiprobaltak-az-onimusha-way-of-the-sword-ot-es
   category: Játékhírek
   title: 'Előzetesen kipróbálták az Onimusha: Way of the Sword-ot, és nagyon ígéretes'
@@ -51,6 +52,7 @@ articles:
     A Rockstar Games bejelentette, hogy augusztus 27-én egy bővebb GTA VI-bemutatót közvetít, de szokatlan módon a műsor nem YouTube-on vagy a Rockstar weboldalán debütál először, hanem a Netflixen. A streaming-premiert hat órával később követi az ingyenes közzététel. Az eddigi két trailer, 2023 decemberéből és 2025 májusából, csak játékon belüli mozgóképeket mutatott, ezért sokan remélik, hogy ezúttal végre valódi gameplay-felvételt is láthatunk.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/netflix-honored-to-be-premiering-gta-vi-extended-look-broadcast/
+  imageCredit: 'Kép: Rockstar Games & Netflix'
 - slug: ujabb-zelda-filmszereplok-derultek-ki-koztuk-sam-neill-es
   category: Játékhírek
   title: Újabb Zelda-filmszereplők derültek ki, köztük Sam Neill és Ganondorf alakítója
@@ -86,6 +88,7 @@ articles:
     A House House multiplayer túrázós játéka, a Big Walk első ránézésre a Peak-szerű "barátos" co-op játékok közé sorolható, de jóval alaposabban kimunkált náluk: évek fejlesztési munka áll mögötte. A közelségi hangchat szándékosan szűk sugarú, így egy kis sziklakiszögellés is elég, hogy csendben maradj a társaid nélkül. A játék lényege pont ez: megtalálni, hogyan jutnak vissza egymáshoz az emberek, jelzőfáklyákkal, adóállomásokkal és pingvinfejű karakterek pislogó szemével.
   source: RPS
   url: https://www.rockpapershotgun.com/big-walk-simulates-the-strange-childlike-sensation-of-being-unexpectedly-separated-from-your-friends-and-the-joy-and-relief-of-finding-your-way-back
+  imageCredit: 'Kép: House House & Panic'
 - slug: jon-az-xbox-platina-achievement-iden-erkezik-a-100-os
   category: Játékhírek
   title: 'Jön az Xbox "platina" achievement: idén érkezik a 100%-os teljesítés jutalma'
@@ -95,7 +98,7 @@ articles:
   url: https://www.windowscentral.com/gaming/xbox/confirmed-xbox-platinum-completion-achievements-are-coming-later-this-year
 - slug: a-black-ops-es-black-ops-2-ps-portok-ket-het-alatt-11
   category: Játékhírek
-  title: Black Ops és Black Ops 2 PS-portok: két hét alatt 11 millió példányt adtak el
+  title: 'Black Ops és Black Ops 2 PS-portok: két hét alatt 11 millió példányt adtak el'
   body: |
     Az Alinea Analytics piacelemző cég becslései szerint a Call of Duty: Black Ops és Black Ops 2 PlayStation 4/5-ös portjai július 9-i megjelenésük óta összesen több mint 11 millió példányban keltek el, és nagyjából 435 millió dolláros bevételt termeltek. A Black Ops 2 egyedül 8,2 millió eladással vezette a júliusi PlayStation-eladási listát. Összehasonlításképpen: az ugyanaznap megjelent Assassin's Creed Black Flag Resynced "csak" 1,6 millió példányt hozott.
   source: ThisWeekInVideoGames
@@ -107,6 +110,7 @@ articles:
     A Digital Sun bejelentette, hogy a Moonlighter 2: The Endless Vault szeptember 2-án lép ki a korai hozzáférésből. Az 1.0-s verzió új fegyverekkel, a hetedik és egyben utolsó Endless Vault pályával, valamint egy hardcore nehézségi móddal bővül. Aki előbb kipróbálná, ingyenes demó is elérhető már most. Ráadásként az eredeti Moonlighter augusztus 9-ig teljesen ingyen hozzáadható Steam-könyvtárhoz.
   source: RPS
   url: https://www.rockpapershotgun.com/moonlighter-2-the-endless-vault-gets-a-10-date-and-demo-as-the-original-goes-temporarily-free
+  imageCredit: 'Kép: Digital Sun & 11 Bit Studios'
 - slug: ingyenes-quake-kampany-jelent-meg-a-30-evfordulora-a
   category: Játékhírek
   title: Ingyenes Quake-kampány jelent meg a 30. évfordulóra a MachineGamestől
