@@ -16,8 +16,7 @@ year: 2026
 week: 32
 date: '2026-08-08'
 title: EA elkelt 55 milliárdért, a Devolver tőzsdét vált
-standfirst: 'A szaúdi PIF vezette konzorcium lezárta az EA felvásárlását, miközben a Devolver
-  Digital épp az ellenkező utat választja: öt év után kivonul a londoni tőzsdéről.'
+standfirst: 'Az EA elkelt 55 milliárdért és elhagyja a tőzsdét. A Devolver Digital is hasonlóan cselekszik. Mi folyik itt?'
 draft: false
 cover: ./cover.jpg
 outro: ""
