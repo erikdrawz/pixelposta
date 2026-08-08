@@ -12,4 +12,9 @@ export const SITE_DESCRIPTION =
   'Heti válogatás a videójátékok világából, magyarul. Játékhírek, hardver, ' +
   'AI és stúdióhírek, megjelenési naptár és játékajánló, minden hétvégén.';
 
+/** The publication itself. Used as the Organization's `sameAs` in the
+ *  structured data, which wants the profile, not a form. */
 export const SUBSTACK_URL = 'https://pixelposta.substack.com';
+
+/** Where the Feliratkozom button goes — straight to the signup form. */
+export const SUBSTACK_SUBSCRIBE_URL = 'https://pixelposta.substack.com/subscribe';
