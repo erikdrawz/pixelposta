@@ -1,0 +1,54 @@
+name: Weekly calendar
+
+# Refreshes site/src/data/calendar.json from GamesRadar and commits it, which
+# is what redeploys /naptar/. No API keys and no LLM calls — the page is parsed
+# outright, so this run costs nothing.
+
+on:
+  schedule:
+    # Mondays 05:00 UTC (07:00 Budapest summer / 06:00 winter). Deliberately
+    # away from the Friday collect/draft flow so a calendar commit never lands
+    # in the middle of the editor's publishing day.
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+
+# Needed by the commit step below, same as weekly-draft.yml.
+permissions:
+  contents: write
+
+jobs:
+  calendar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Fails the run rather than writing a short file if GamesRadar's markup
+      # has changed — see MIN_DATED_ENTRIES in src/calendar_writer.py. A stale
+      # calendar is much better than an empty one.
+      - name: Refresh the release calendar
+        run: python -m scripts.update_calendar
+
+      - name: Commit the calendar
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain site/src/data/calendar.json)" ]; then
+            echo "Calendar unchanged."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/src/data/calendar.json
+          git commit -m "Refresh release calendar ($(date -u +%Y-%m-%d))"
+          git push

@@ -45,3 +45,23 @@ class ReleaseEntry:
     title: str
     platforms: list[str]  # original names, e.g. ["PlayStation 5", "Xbox", "PC"]
     release_date: date
+
+
+@dataclass(frozen=True)
+class CalendarEntry:
+    """A game on the site's year-round release calendar (`/naptar/`).
+
+    Separate from `ReleaseEntry` rather than an extension of it: that one is the
+    weekly newsletter's contract and always has a real date, while the calendar
+    also carries titles confirmed for the year with no date yet.
+
+    `year` is the year the game is filed under, which is why it is not simply
+    read off `release_date` — for a "TBC 2026" entry it is the only date signal
+    there is.
+    """
+
+    title: str
+    platforms: list[str]  # short labels, e.g. ["PC", "Xbox", "Switch 2"]
+    release_date: date | None
+    year: int | None
+    early_access: bool = False

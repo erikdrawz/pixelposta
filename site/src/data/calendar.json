@@ -1,0 +1,2544 @@
+{
+  "year": 2026,
+  "generated": "2026-08-10",
+  "dated": [
+    {
+      "title": "Quarantine Zone: The Last Check",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Animal Crossing: New Horizons Switch 2 Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "The Legend of Heroes: Trails Beyond the Horizon",
+      "platforms": [
+        "PC",
+        "PS5",
+        "PS4",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "2XKO",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-20",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Mio: Memories in Orbit",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-20",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Final Fantasy 7 Remake Intergrade",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-22",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Highguard",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-26",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Cairn",
+      "platforms": [
+        "PC",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Kyouran Makaism",
+      "platforms": [
+        "PS5",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Code Vein 2",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-01-30",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Dragon Quest 7 Reimagined",
+      "platforms": [
+        "Switch",
+        "Switch 2",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Nioh 3",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-06",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Mewgenics",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Romeo is a Dead Man",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-11",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Killer Inn",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Mario Tennis Fever",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Yakuza Kiwami 3 & Dark Ties",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "High on Life 2",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Reanimal",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Demon Tides",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-19",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Pokemon FireRed and Pokemon LeafGreen",
+      "platforms": [
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Resident Evil Requiem",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-02-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Marathon",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Planet of Lana 2: Children of the Leaf",
+      "platforms": [
+        "PC",
+        "PS5",
+        "PS4",
+        "Xbox",
+        "Xbox One",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Pokémon Pokopia",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Slay the Spire 2",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": true,
+      "date": "2026-03-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "John Carpenter's Toxic Commando",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Solasta 2",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Monster Hunter Stories 3: Twisted Reflection",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Shadow Tactics: Blades of the Shogun",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-18",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Crimson Desert",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-19",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Human Fall Flat - Nintendo Switch 2 Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-19",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Kena: Bridge of Spirits",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-23",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Life is Strange: Reunion",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-26",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Super Mario Bros. Wonder",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-26",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Sprint City",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-31",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Super Meat Boy 3D",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-03-31",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Starfield",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-07",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Pokemon Champions",
+      "platforms": [
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Replaced",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-14",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Cthulhu: The Cosmic Abyss",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-16",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Tomodachi Life: Living the Dream",
+      "platforms": [
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-16",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Pragmata",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-17",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-21",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Tides of Tomorrow",
+      "platforms": [
+        "PS5",
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-22",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Moomintroll: Winter's Warmth",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Aphelion",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-28",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Diablo 4: Lord of Hatred",
+      "platforms": [
+        "PC",
+        "PS5",
+        "PS4",
+        "Xbox",
+        "Xbox One"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-28",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Heroes of Might and Magic: Olden Era",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": true,
+      "date": "2026-04-30",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Invincible VS",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-30",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Saros",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-30",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Wax Heads",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Mixtape",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-07",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Directive 8020",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Indiana Jones and the Great Circle",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Subnautica 2",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "earlyAccess": true,
+      "date": "2026-05-14",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Forza Horizon 6",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-19",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Coffee Talk Tokyo",
+      "platforms": [
+        "PS5",
+        "PC",
+        "Switch",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-21",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Yoshi and the Mysterious Book",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-21",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "ZERO PARADES: For Dead Spies",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-21",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Lego Batman: Legacy of the Dark Knight",
+      "platforms": [
+        "PS5",
+        "Xbox",
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-22",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Paralives",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": true,
+      "date": "2026-05-25",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "007 First Light",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Mina The Hollower",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-05-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Final Fantasy 7 Rebirth",
+      "platforms": [
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Donkey Kong 64",
+      "platforms": [
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-04",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Gothic 1 Remake",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Xenoblade Chronicles Definitive Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-09",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Witchspire",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Starseeker: Astroneer Expeditions",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-11",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Little Nightmares 3 - The Backstage",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "Xbox One",
+        "PS5",
+        "PS4",
+        "Switch 2",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Gitaroo Man",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-16",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "The Adventures of Elliot: The Millennium Tales",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-18",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "EA Sports UFC 6",
+      "platforms": [
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-19",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Dead or Alive 6 Last Round",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-25",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Deltarune Chapter 5",
+      "platforms": [
+        "PC",
+        "PS5",
+        "PS4",
+        "Switch 2",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-25",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Star Fox",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-06-25",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Rhythm Heaven Groove",
+      "platforms": [
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-02",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Moonlight Peaks",
+      "platforms": [
+        "Switch",
+        "Switch 2",
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-07",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Assassin's Creed Black Flag Resynced",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-09",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Granblue Fantasy: Relink",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-09",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Echoes of Aincrad",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Palworld",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Xbox One"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Denshattack!",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Splatoon Raiders",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-23",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Halo: Campaign Evolved",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-28",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Mistfall Hunter",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Xenoblade Chronicles 2",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-30",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Beast of Reincarnation",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-04",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Big Walk",
+      "platforms": [
+        "PC",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-04",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Lies of P: Complete Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-06",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Marvel: TOKON Fighting Souls",
+      "platforms": [
+        "PC",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-06",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Grounded 2",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-11",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "The Elder Scrolls 4: Oblivion Remastered",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-11",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Agefield High: Rock the Schoo l",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Defender of the Crown: The Legend Returns",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Duskfade",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Hell Let Loose: Vietnam",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Rivage",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Servant of the Lake",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Starsand Island",
+      "platforms": [
+        "PC",
+        "Switch 2",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-18",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "The Sinking City 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-18",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Mortal Shell 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-20",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Over Requiemz",
+      "platforms": [
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-20",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Aliens: Fireteam Elite 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-25",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Brigandine Abyss",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-26",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Aggelos 2",
+      "platforms": [
+        "PC",
+        "PS4",
+        "PS5",
+        "Switch",
+        "Xbox",
+        "Xbox One"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Metal Gear Solid Collection Vol. 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Plague Tale Legacy Resonance",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Star Wars Zero Company",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Captain Tsubasa 2: World Fighters",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-28",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Elden Ring – Tarnished Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-28",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Crimson Moon",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-01",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Moonlighter 2: The Endless Vault",
+      "platforms": [
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-02",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Avatar Legends: The Fighting Game",
+      "platforms": [
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "BioEden",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Orbitals",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "SpeedRunners 2: King of Speed",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "The Blood of Dawnwalker",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Wo Long: Fallen Dynasty Complete Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "NBA 2K27",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-04",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Onimusha: Way of the Sword",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-04",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "WheelMates",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-07",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Halloween: The Game",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Valheim 1.0",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox",
+        "Xbox One"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-09",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Takeover 2",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "The Legend of Heroes: Trails from Zero",
+      "platforms": [
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "The Legend of Heroes: Trails to Azure",
+      "platforms": [
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Welcome to Elderfield",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Marvel's Wolverine",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Runescape: Dragonwilds",
+      "platforms": [
+        "Xbox",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Another Eden Begins",
+      "platforms": [
+        "PC",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-16",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Endless Legend 2",
+      "platforms": [
+        "Xbox",
+        "PS5",
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-17",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Fire Emblem: Fortune's Weave",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-17",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Trails in the Sky 2nd Chapter",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-17",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Warhammer 40,000: Dawn of War 4",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-17",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "LEGO Batman Legacy of the Dark Knight",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-18",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Moomintroll: Winter's Warmth",
+      "platforms": [
+        "Switch 2",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-18",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Dune Awakening",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-22",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Wind Runners",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-23",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Control Resonant",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-24",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Dragon Quest 11 S: Echoes of an Elusive Age Switch 2 Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-24",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Harvest Moon: Echoes of Teradea",
+      "platforms": [
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-24",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Hot Wheels Infinite Rush",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-24",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Shinobi: Art of Vengeance",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-24",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Silent Hill: Townfall",
+      "platforms": [
+        "PC",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-24",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Minecraft Dungeons 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Toem 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Don't Fret",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-01",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Dynasty Warriors 3 Remastered",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-01",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "End of Abyss",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-01",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Octopath Traveler 1 & 2",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-01",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Rayman Legends Retold",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-01",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Ace Combat 8: Wings of Theve",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-02",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Gears of War: E-Day",
+      "platforms": [
+        "Xbox",
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-06",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Star Wars: Galactic Racer",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-06",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Clive Barker's Hellraiser: Revival",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Forever Ago",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Kingdom Hearts Collection",
+      "platforms": [
+        "Switch 2",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Silver Pines",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Dragon's Dogma 2: Dark Arisen",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-09",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Planet Zoo 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Valor Mortis",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Castlevania: Belmont's Curse",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Ratatan",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Tales of Eternia",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-16",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Final Fantasy Resonance",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-22",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Nintendo Switch Sports Resort",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-22",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Call of Duty: Modern Warfare 4",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-23",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "One Piece: Grand Gourmet",
+      "platforms": [
+        "PC",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-23",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Anomalith",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-28",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Hello Kitty Party Land",
+      "platforms": [
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Phantom Blade Zero",
+      "platforms": [
+        "PC",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Steins;Gate Re:Boot",
+      "platforms": [
+        "PS5",
+        "PS4",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Crymelight",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-04",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Wielders of the Essence",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Metaphor: ReFantazio",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "GTA 6",
+      "platforms": [
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-19",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Dragon Quest Monsters: Withered World",
+      "platforms": [
+        "PC",
+        "Switch",
+        "Switch 2",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Xenoblade Chronicles 3",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-03",
+      "score": null,
+      "openCriticId": null
+    }
+  ],
+  "tbc": [
+    {
+      "title": "007 First Light",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "1666 Amsterdam",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Aion 2",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Aniimo",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Armatus",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Ascenders: Beyond the Peak",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "At Fate's End",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Attack on Titan 3",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Ballad of Antara",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Beautiful Light",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Blighted",
+      "platforms": [
+        "PC",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Bloodstained: The Scarlet Engagement",
+      "platforms": [
+        "PC",
+        "PS5"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Chronicles Medieval",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Chronoscript: The Endless End",
+      "platforms": [
+        "PC",
+        "PS5"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "DayZ",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Decrepit",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Edge of Memories",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Empulse",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Enginefall",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Erosion",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Fate Trigger",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Glaciered",
+      "platforms": [
+        "PC",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Grave Seasons",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5",
+        "Switch"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Instinction",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "InZOI",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Jujutsu Kaisen Rumble Survivaton",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Kena: Scars of Kosmora",
+      "platforms": [
+        "PC",
+        "PS5"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Kyoto Xanadu",
+      "platforms": [
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Lords of the Fallen 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Minecraft Switch 2 Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Mudang: Two Hearts",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Neath",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Neverway",
+      "platforms": [
+        "PC",
+        "Switch"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Order of the Sinking Star",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Out of Words",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Prison of Husks",
+      "platforms": [
+        "PC",
+        "PS5"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Professor Layton and the New World of Steam",
+      "platforms": [
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Remothered: Red Nun's Legacy",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Road Kings",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Serial World",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Spirit Crossing",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Star Trek: Outposts Unknown",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Starfinder: Afterlight",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": true
+    },
+    {
+      "title": "Stronghold 4",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Terminator: Survivors",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "The Duskbloods",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "The Legend of Zelda: Ocarina of Time Remake",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "There Are No Ghosts at the Grand",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "They Will Come",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Turok: Origins",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Usual June",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Virtue and a Sledgehammer",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Warhammer 40,000: Boltgun 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Warhammer 40,000: Space Marine 2",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Warhammer Survivors",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Well Dweller",
+      "platforms": [
+        "PC",
+        "Switch"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Witchbrook",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Woodo",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false
+    }
+  ]
+}

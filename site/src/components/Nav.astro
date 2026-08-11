@@ -12,15 +12,51 @@ const SKINS = [
   { id: 'winamp', label: 'Winamp' },
   { id: 'nostromo', label: 'Nostromo' },
 ];
+
+// One list, rendered twice: inline above the collapse breakpoint, inside the
+// hamburger below it. Duplicating three anchors in the DOM is cheaper than the
+// alternatives — a `<details>` cannot be reliably forced open across browsers
+// to serve as the desktop layout, because engines hide its contents with
+// content-visibility rather than display.
+//
+// `#hirlevel` stays a bare fragment so it scrolls to the subscribe block on the
+// page you are already on, rather than throwing you back to the landing page.
+// That holds because every content page ends with one — landing, issue, naptar
+// and info. The exception is 404.astro, where the link does nothing; adding a
+// subscribe block to an error page to fix that would be worse than the bug.
+const LINKS = [
+  { href: '#hirlevel', label: 'Hírlevél' },
+  { href: '/naptar/', label: 'Naptár' },
+  // INFÓ: uncomment once site/src/pages/info.astro has real copy in it. That
+  // one line is the publish button, the same idea as `draft: false` on an issue.
+  // { href: '/info/', label: 'Infó' },
+];
 ---
 
 <nav>
   <div class="nav-in">
     <a class="wordmark" href="/">PIXEL<span>POSTA</span></a>
-    <a class="nav-issue" href="#hirlevel">Hírlevél</a>
+
+    <div class="navlinks">
+      {LINKS.map((l) => <a class="nav-issue" href={l.href}>{l.label}</a>)}
+    </div>
 
     {/* Window chrome — decorative, only visible in the desktop skins. */}
     <div class="winbtns" aria-hidden="true"><i>_</i><i>□</i><i>✕</i></div>
+
+    {/* A native disclosure rather than a scripted dropdown, so the nav still
+        opens with JavaScript off. site/README.md states that nothing on the
+        site becomes unreachable without JS, and a scripted hamburger would
+        have made these links exactly that on a phone. The script below only
+        adds Escape and outside-click, which are enhancements, not the mechanism. */}
+    <details class="navpick" id="nav-disclosure">
+      <summary class="toggle" aria-label="Menü">
+        <span class="burger" aria-hidden="true"></span>
+      </summary>
+      <div class="navmenu">
+        {LINKS.map((l) => <a class="nav-issue" href={l.href}>{l.label}</a>)}
+      </div>
+    </details>
 
     <div class="skinpick">
       <button
@@ -71,6 +107,7 @@ const SKINS = [
     var el = document.documentElement;
     var trigger = document.getElementById('skin-trigger');
     var menu = document.getElementById('skin-menu');
+    var disclosure = document.getElementById('nav-disclosure');
     if (!trigger || !menu) return;
     var items = Array.prototype.slice.call(menu.querySelectorAll('[data-skin-id]'));
 
@@ -95,7 +132,12 @@ const SKINS = [
       }
     }
 
+    function closeNav() {
+      if (disclosure) disclosure.open = false;
+    }
     function open() {
+      // Two popovers in one small bar: opening either closes the other.
+      closeNav();
       menu.hidden = false;
       trigger.setAttribute('aria-expanded', 'true');
     }
@@ -119,13 +161,26 @@ const SKINS = [
       });
     });
 
+    if (disclosure) {
+      disclosure.addEventListener('toggle', function () {
+        if (disclosure.open) close();
+      });
+    }
+
     document.addEventListener('click', function (e) {
       if (!menu.hidden && !menu.contains(e.target) && e.target !== trigger) close();
+      if (disclosure && disclosure.open && !disclosure.contains(e.target)) closeNav();
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && !menu.hidden) {
+      if (e.key !== 'Escape') return;
+      if (!menu.hidden) {
         close();
         trigger.focus();
+      }
+      if (disclosure && disclosure.open) {
+        closeNav();
+        var s = disclosure.querySelector('summary');
+        if (s) s.focus();
       }
     });
   })();
@@ -163,6 +218,11 @@ const SKINS = [
   .wordmark span {
     color: var(--accent);
   }
+  .navlinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
   .nav-issue {
     font-family: var(--font-mono);
     font-size: 11.5px;
@@ -170,6 +230,7 @@ const SKINS = [
     text-transform: uppercase;
     color: var(--ink-muted);
     text-decoration: none;
+    white-space: nowrap;
   }
   .nav-issue:hover {
     color: var(--accent);
@@ -187,9 +248,85 @@ const SKINS = [
     color: var(--ink);
     border-color: var(--ink-muted);
   }
-  @media (max-width: 520px) {
-    .nav-issue {
+
+  /* ---- hamburger ---- */
+
+  /* Above the breakpoint the links are inline and this does not exist. */
+  .navpick {
+    display: none;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .navpick > summary {
+    /* Carries `.toggle`, so all four costume skins already style it. */
+    width: 34px;
+    height: 31px;
+    display: grid;
+    place-items: center;
+    list-style: none;
+  }
+  .navpick > summary::-webkit-details-marker {
+    display: none;
+  }
+  .navpick > summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  /* Drawn rather than typed: a glyph would pick up each skin's font and change
+     size and weight with it. currentColor keeps it in step with the button. */
+  .burger,
+  .burger::before,
+  .burger::after {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background: currentColor;
+  }
+  .burger {
+    position: relative;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+  .burger::before {
+    top: -5px;
+  }
+  .burger::after {
+    top: 5px;
+  }
+  /* The panel's box — position, surface, border, shadow — comes from the
+     shared `.skinmenu, .navmenu` rule in styles/skins.css, which is also where
+     each costume skin restyles it. Only the parts specific to a list of links
+     live here. */
+  .navmenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .navmenu .nav-issue {
+    padding: 10px 9px;
+    border-radius: 6px;
+    color: var(--ink);
+  }
+  .navmenu .nav-issue:hover {
+    background: var(--bg-band);
+  }
+
+  /* Below the breakpoint the links collapse into the hamburger. The skin picker
+     stays out of it — it is the most discoverable thing in the nav, and nesting
+     a six-item radio menu inside a disclosure would make it a two-level menu.
+     It sheds its label instead and rides as a swatch. */
+  @media (max-width: 560px) {
+    .navlinks {
       display: none;
+    }
+    .navpick {
+      display: block;
+    }
+    .nav-in {
+      gap: 10px;
     }
   }
 </style>

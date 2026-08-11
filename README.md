@@ -11,7 +11,9 @@ One repo for both, because `weekly-draft.yml` commits the generated issue file w
 `GITHUB_TOKEN` — no cross-repo PAT to create, rotate, or have silently expire.
 
 See [PROJECT_BRIEF.md](PROJECT_BRIEF.md), [NOTION_SCHEMA.md](NOTION_SCHEMA.md) and
-[site/README.md](site/README.md) for the full design.
+[site/README.md](site/README.md) for the full design, and
+**[STATUS.md](STATUS.md) for where things currently stand** — what is live, what
+is half-finished, and what is deliberately undecided.
 
 ## Setup
 
@@ -104,6 +106,20 @@ python -m scripts.smoke_site_writer            # writes a fake issue to site/
 python -m scripts.smoke_site_writer --clean    # removes it again
 ```
 
+**Release calendar** — refresh the year's release calendar for the website's
+`/naptar/` page from GamesRadar. No API keys and no LLM calls; the page is
+parsed outright. Writes `site/src/data/calendar.json`:
+
+```bash
+python -m scripts.update_calendar                  # current year
+python -m scripts.update_calendar --dry-run        # parse and report only
+python -m scripts.update_calendar --year 2027      # a different year
+```
+
+It refuses to write fewer than 60 dated entries and exits non-zero instead, so a
+GamesRadar layout change fails loudly rather than emptying the page. Use
+`--from-file PATH` to re-parse a saved copy while debugging.
+
 **Release table preview** — iterate on the release picker alone without
 re-running the 7-minute draft generator:
 
@@ -114,7 +130,7 @@ python -m scripts.preview_releases --today 2026-05-22     # any reference date
 
 ## GitHub Actions
 
-Two workflows live in `.github/workflows/`:
+Three workflows live in `.github/workflows/`:
 
 - **`weekly-collect.yml`** — runs every Friday at **06:00 UTC** (08:00 Budapest summer / 07:00 winter;
   Thursday 23:00 PDT US west coast — captures the full Thursday US news cycle) and also on manual
@@ -122,6 +138,11 @@ Two workflows live in `.github/workflows/`:
 - **`weekly-draft.yml`** — manual trigger only. Generates both outputs: uploads the
   Substack draft as a downloadable artifact on the run page, and commits the site
   content file straight to `main` (needs `permissions: contents: write`, already set).
+- **`weekly-calendar.yml`** — Mondays at **05:00 UTC**, and on manual trigger.
+  Refreshes the release calendar and commits `site/src/data/calendar.json`,
+  which is what redeploys `/naptar/`. Deliberately away from the Friday
+  collect/draft flow so a calendar commit never lands mid-publish. Needs no
+  secrets — it makes no API calls.
 
 Required GitHub Secrets (Settings → Secrets and variables → Actions):
 
@@ -136,10 +157,11 @@ Required GitHub Secrets (Settings → Secrets and variables → Actions):
 
 ```
 .
-├── .github/workflows/        # weekly-collect.yml, weekly-draft.yml
+├── .github/workflows/        # weekly-collect.yml, weekly-draft.yml, weekly-calendar.yml
 ├── src/
-│   ├── collectors/           # rss_sources.py, vgc_releases.py
+│   ├── collectors/           # rss_sources.py, vgc_releases.py, gamesradar_releases.py
 │   ├── prompts/              # filter, translator, release_picker, issue_title
+│   ├── calendar_writer.py    # site/src/data/calendar.json + the short-file guard
 │   ├── deduplicator.py       # URL dedup
 │   ├── draft_assembler.py    # Substack markdown assembly
 │   ├── filter.py             # Haiku pre-filter
@@ -154,6 +176,7 @@ Required GitHub Secrets (Settings → Secrets and variables → Actions):
 ├── scripts/
 │   ├── news_collector.py     # end-to-end collection pipeline
 │   ├── generate_draft.py     # weekly draft generator (both outputs)
+│   ├── update_calendar.py    # release calendar refresh (no API keys)
 │   ├── preview_releases.py   # release-table iteration helper
 │   ├── smoke_collect.py
 │   ├── smoke_filter.py
@@ -169,6 +192,51 @@ Required GitHub Secrets (Settings → Secrets and variables → Actions):
 The brief calls the Python half `pipeline/`; it stayed `src/` so the rename would not
 churn every import and both workflows for no behavioural gain.
 
+## Sources behind a bot challenge
+
+**NintendoLife, VGC and DigitalFoundry** sit behind Cloudflare's JavaScript bot
+challenge. Their article pages return `403` with `cf-mitigated: challenge` — no
+combination of headers passes it, by design. This started around 2026-08-06;
+those three yielded 6 articles in week 31 and 0 in week 32.
+
+Key facts, each established by measurement rather than assumption:
+
+- **It is intermittent, not permanent.** A given IP gets through sometimes and
+  not others. Week 32's second run fetched all three sources in full. Do not
+  conclude a source is "dead" from one failed request — that mistake was made
+  twice while diagnosing this.
+- **Their RSS feeds still work.** Collection is unaffected; only the draft-time
+  page fetch fails.
+- **The fallback:** `RSS summary` is stored in Notion at collect time, and
+  `generate_draft.py` rewrites from it when the page is blocked, above
+  `MIN_FALLBACK_CHARS` (350). Below that the article is dropped rather than
+  handed to Sonnet to pad — NintendoLife blurbs run ~540 chars and work; VGC
+  runs ~78 and cannot.
+- **Do not try to defeat the challenge.** Feeds are the publishers' own
+  syndication channel and the legitimate route.
+
+The VGC release-schedule page is behind the same challenge, so `Megjelenések`
+is empty whenever it fires.
+
+**GamesRadar's release-dates page is the replacement, and the parser now
+exists** — `src/collectors/gamesradar_releases.py`, built for the website's
+`/naptar/` calendar and covered by `tests/test_gamesradar.py`. It is reachable
+with ordinary browser headers, cleanly structured (month `<h3>`s over `<li>`
+entries), and parsed with BeautifulSoup, so it needs no AI call at all.
+
+The weekly `Megjelenések` table has **not** been moved over to it yet — that
+means changing `generate_draft.py` and retiring the Haiku release picker, and it
+was kept out of the calendar's change on purpose. See STATUS.md item 2.
+
+One thing to know if you touch the parser: the source is inconsistent in ways
+that are easy to reintroduce a bug around. Most entries separate title from date
+with an en dash, but roughly thirty use a plain hyphen, a few omit the space on
+one side, and one has no separator at all. Several titles *contain* a hyphen
+("Little Nightmares 3 - The Backstage"), so the parser anchors on the date at
+the end of the line rather than splitting on the separator. There are also two
+platform typos in the live data (`XBX`, `XO`) that are mapped rather than
+reported.
+
 ## Status
 
 - [x] Repo skeleton + RSS collectors (8 of 10 news sources)
@@ -182,7 +250,10 @@ churn every import and both workflows for no behavioural gain.
 - [x] Issue title + standfirst generator (Sonnet 4.6, loud fallback)
 - [x] Site content writer with Hungarian-aware slugs and editor-field preservation
 - [x] Astro website in `site/` — landing, issue pages, three rovatok, light/dark
-- [ ] Cloudflare Pages connected + `pixelposta.com` DNS
+- [x] Cloudflare deploy + `pixelposta.com` DNS (Workers, not Pages — see `site/README.md`)
+- [x] Release calendar at `/naptar/` — GamesRadar parser, weekly refresh, no LLM call
+- [ ] OpenCritic scores on the calendar (see STATUS.md item 4)
+- [ ] Move the weekly `Megjelenések` table onto the GamesRadar parser
 - [ ] Backfill the five issues already published on Patreon
 - [ ] Forbes / Bloomberg collectors (need Google News API or scraping fallback)
 - [ ] Weekly sweep (Sunday: Status=New → Archived after 7 days)

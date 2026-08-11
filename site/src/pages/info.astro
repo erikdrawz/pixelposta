@@ -1,0 +1,82 @@
+---
+// SHELL ONLY — not finished, not linked, not in the sitemap.
+//
+// The structure is here; the Hungarian copy is the editor's to write. Replace
+// every TODO below, then:
+//   1. uncomment the Infó entry in LINKS in components/Nav.astro
+//   2. remove the /info/ exclusion from the sitemap filter in astro.config.mjs
+// Those two lines together are the publish button, the same idea as flipping
+// `draft: false` on an issue.
+import Base from '../layouts/Base.astro';
+import SectionHead from '../components/SectionHead.astro';
+import SubscribeBlock from '../components/SubscribeBlock.astro';
+import { SITE_NAME, SUBSTACK_URL } from '../consts';
+
+const title = `Infó | ${SITE_NAME}`;
+const description = 'TODO: egy mondat a Pixelpostáról.';
+---
+
+<Base title={title} description={description}>
+  <section class="info-head">
+    <div class="wrap">
+      <div class="eyebrow">Infó</div>
+      <h1>TODO: cím</h1>
+      <p class="standfirst">TODO: egy bekezdés arról, mi a Pixelposta és kinek szól.</p>
+    </div>
+  </section>
+
+  <div class="band">
+    <section>
+      <div class="wrap">
+        <SectionHead label="A hírlevélről" />
+        <p>TODO: mi kerül bele egy számba, milyen rovatok, milyen gyakran jelenik meg.</p>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <SectionHead label="Ki készíti" />
+      <p>TODO: rólad néhány mondat.</p>
+    </div>
+  </section>
+
+  <div class="band">
+    <section>
+      <div class="wrap">
+        <SectionHead label="Kapcsolat" />
+        <p>
+          TODO: e-mail cím vagy egyéb elérhetőség. A hírlevél a
+          <a href={SUBSTACK_URL}>Substackon</a> olvasható.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <section id="hirlevel">
+    <div class="wrap">
+      <SubscribeBlock />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .info-head h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.1rem, 5vw, 3.1rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 10px 0 16px;
+  }
+  .standfirst {
+    font-size: 1.06rem;
+    line-height: 1.62;
+    max-width: var(--measure);
+    color: var(--ink);
+    margin: 0;
+  }
+  p {
+    max-width: var(--measure);
+  }
+</style>

@@ -98,7 +98,11 @@
 :root:root[data-skin='nostromo'] .skinpick > .toggle .sk-swatch {
   background: linear-gradient(135deg, #000000 50%, #ffb000 50%);
 }
-.skinmenu {
+/* Both nav popovers share one box, so a skin only has to dress it once. The
+   hamburger's `.navmenu` and the skin picker's `.skinmenu` are listed together
+   in every rule below for that reason — see the Nav component. */
+.skinmenu,
+.navmenu {
   position: absolute;
   right: 0;
   top: calc(100% + 8px);
@@ -109,6 +113,20 @@
   border-radius: var(--radius);
   padding: 6px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Below the nav's collapse breakpoint the picker sheds its label and rides as
+   a swatch, leaving room for the hamburger. Kept here rather than in the Nav
+   component because these are the elements this file owns. */
+@media (max-width: 560px) {
+  .skinpick > .toggle {
+    padding: 0 9px;
+    gap: 0;
+  }
+  .skinpick > .toggle .sk-label,
+  .skinpick > .toggle .sk-caret {
+    display: none;
+  }
 }
 .skinmenu button {
   display: flex;
@@ -607,7 +625,8 @@
 :root:root[data-skin='98'] .prev-wrap {
   padding: 20px 0 14px;
 }
-:root:root[data-skin='98'] .skinmenu {
+:root:root[data-skin='98'] .skinmenu,
+:root:root[data-skin='98'] .navmenu {
   background: #c0c0c0;
   border: 2px solid;
   border-color: #dfdfdf #000 #000 #dfdfdf;
@@ -1107,7 +1126,8 @@
 :root:root[data-skin='xp'] .prev-wrap {
   padding: 22px 0 16px;
 }
-:root:root[data-skin='xp'] .skinmenu {
+:root:root[data-skin='xp'] .skinmenu,
+:root:root[data-skin='xp'] .navmenu {
   background: #fff;
   border: 1px solid #7f9db9;
   border-radius: 4px;
@@ -1440,7 +1460,8 @@
   color: var(--accent);
   opacity: 0.5;
 }
-:root:root[data-skin='winamp'] .skinmenu {
+:root:root[data-skin='winamp'] .skinmenu,
+:root:root[data-skin='winamp'] .navmenu {
   background: #1e1e1e;
   border-color: #000;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.6), inset 1px 1px 0 #3a3a3a;
@@ -1941,7 +1962,8 @@
   color: var(--accent);
   opacity: 0.45;
 }
-:root:root[data-skin='nostromo'] .skinmenu {
+:root:root[data-skin='nostromo'] .skinmenu,
+:root:root[data-skin='nostromo'] .navmenu {
   background: #000;
   border: 1px solid var(--accent);
   border-radius: 0;

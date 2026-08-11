@@ -1,0 +1,153 @@
+---
+import { formatReleaseDate } from '../utils/format';
+import type { DatedRelease, UndatedRelease } from '../utils/calendar';
+
+interface Props {
+  releases: (DatedRelease | UndatedRelease)[];
+  /** ISO date of the build, so shipped titles can be dimmed. Omit for the TBC block. */
+  today?: string;
+  emptyText?: string;
+}
+
+const { releases, today, emptyText = 'Erre a hónapra nincs ismert megjelenés.' } = Astro.props;
+
+const hasDates = releases.some((r) => 'date' in r);
+
+// String comparison, not Date arithmetic: ISO dates sort lexicographically and
+// `new Date('2026-07-25')` is UTC midnight, which reads as the 24th west of
+// Greenwich. Same reasoning as utils/format.ts.
+const isPast = (r: DatedRelease | UndatedRelease) =>
+  today !== undefined && 'date' in r && r.date < today;
+---
+
+{
+  releases.length === 0 ? (
+    <p class="cal-empty">{emptyText}</p>
+  ) : (
+    <table>
+      <thead>
+        <tr>
+          <th>Cím</th>
+          <th class="col-plat">Platform</th>
+          {hasDates && <th class="col-date">Dátum</th>}
+        </tr>
+      </thead>
+      <tbody>
+        {releases.map((r) => (
+          <tr data-past={isPast(r) ? '' : undefined}>
+            <td class="cal-title">
+              {r.title}
+              {r.earlyAccess && <span class="ea">korai hozzáférés</span>}
+            </td>
+            <td class="meta col-plat">{r.platforms.join(', ')}</td>
+            {hasDates && (
+              <td class="meta col-date">{'date' in r ? formatReleaseDate(r.date) : ''}</td>
+            )}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}
+
+<style>
+  /* Hairlines plus padding, not boxes — the same table language and the same
+     Cím / Platform / Dátum column order as ReleaseTable.astro inside an issue,
+     so both read the same way. Kept as a separate component rather than sharing
+     one: that table is rendered in every published issue, and this one gains a
+     score column in a later pass. */
+  .cal-empty {
+    color: var(--ink-muted);
+    font-size: 0.96rem;
+    margin: 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-align: left;
+    padding: 0 0 10px;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  td {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  .cal-title {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.94rem;
+    padding-right: 14px;
+  }
+  td.meta {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--ink-muted);
+  }
+  .col-date {
+    width: 4.4em;
+    white-space: nowrap;
+    text-align: right;
+  }
+  /* Platform lists run long ("PC, PS5, Xbox, Switch 2"), so this column wraps
+     rather than forcing the title column narrow. Padding is set per element
+     type: a bare `.col-plat` rule would outrank the `th` selector above and
+     knock the header out of line with its column. */
+  .col-plat {
+    width: 34%;
+  }
+  th.col-plat,
+  td.col-plat {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Already out. Dimmed rather than hidden — the year so far is part of what
+     the page is for. This is also where the OpenCritic score will sit. */
+  tr[data-past] .cal-title {
+    color: var(--ink-muted);
+    font-weight: 400;
+  }
+
+  .ea {
+    display: inline-block;
+    margin-left: 8px;
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    border: 1px solid var(--rule-strong);
+    border-radius: 3px;
+    padding: 1px 5px;
+    vertical-align: 1px;
+    white-space: nowrap;
+  }
+
+  /* Narrow screens: the date has to stay on one line, so the platform column
+     gives up the width instead. */
+  @media (max-width: 560px) {
+    .col-plat {
+      width: 30%;
+    }
+    th.col-plat,
+    td.col-plat {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    td.meta {
+      font-size: 11px;
+    }
+  }
+</style>

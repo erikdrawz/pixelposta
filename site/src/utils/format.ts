@@ -2,10 +2,15 @@ import type { CollectionEntry } from 'astro:content';
 
 type Issue = CollectionEntry<'issues'>;
 
-const HU_MONTHS = [
+export const HU_MONTHS = [
   'január', 'február', 'március', 'április', 'május', 'június',
   'július', 'augusztus', 'szeptember', 'október', 'november', 'december',
 ];
+
+/** Capitalise a Hungarian month name — "Augusztus". */
+function capitalise(word: string): string {
+  return `${word[0]!.toUpperCase()}${word.slice(1)}`;
+}
 
 /** Words per minute for Hungarian editorial prose. */
 const WPM = 180;
@@ -31,8 +36,45 @@ export function formatHuDate(iso: string): string {
 /** "Július 18." — the short form for archive rows, where the year is a heading. */
 export function formatHuDateShort(iso: string): string {
   const { month, day } = parseIso(iso);
-  const name = HU_MONTHS[month - 1]!;
-  return `${name[0]!.toUpperCase()}${name.slice(1)} ${day}.`;
+  return `${capitalise(HU_MONTHS[month - 1]!)} ${day}.`;
+}
+
+/** "Augusztus" — a 1-based month number as a capitalised Hungarian name. */
+export function formatHuMonth(month: number): string {
+  return capitalise(HU_MONTHS[month - 1]!);
+}
+
+/** Adjectival suffix by final digit — "hat" → -os, "hét" → -es, "öt" → -ös. */
+const HU_DIGIT_SUFFIX = ['', 'es', 'es', 'as', 'es', 'ös', 'os', 'es', 'as', 'es'];
+/** Same, for round numbers, keyed on the tens — "húsz" → -as, "negyven" → -es. */
+const HU_TENS_SUFFIX = ['es', 'es', 'as', 'as', 'es', 'es', 'as', 'es', 'as', 'es'];
+
+/**
+ * The suffix that attaches a year to a noun — "2026-**os** év", "2027-**es** év".
+ *
+ * Hungarian picks this by how the number is pronounced, so it cannot be
+ * hardcoded on a page whose year advances by itself every January: 2026 takes
+ * -os but 2027 takes -es and 2030 takes -as. Correct for 2000-2099, which is
+ * all this site will ever need.
+ */
+export function huYearSuffix(year: number): string {
+  const last = year % 10;
+  if (last !== 0) return HU_DIGIT_SUFFIX[last]!;
+  const tens = Math.floor((year % 100) / 10);
+  return HU_TENS_SUFFIX[tens]!;
+}
+
+/**
+ * "08.13" — the compact form used in release tables.
+ *
+ * Matches the display strings the pipeline writes into an issue's `releases`
+ * rows, so the calendar and the weekly tables read the same way. Derived from
+ * the ISO string rather than stored pre-formatted, so nothing here can end up
+ * being sorted as text.
+ */
+export function formatReleaseDate(iso: string): string {
+  const { month, day } = parseIso(iso);
+  return `${String(month).padStart(2, '0')}.${String(day).padStart(2, '0')}`;
 }
 
 /** "2026 · 30. hét" */

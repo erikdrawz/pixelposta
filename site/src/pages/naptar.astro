@@ -1,0 +1,151 @@
+---
+import Base from '../layouts/Base.astro';
+import CalendarTable from '../components/CalendarTable.astro';
+import SectionHead from '../components/SectionHead.astro';
+import SubscribeBlock from '../components/SubscribeBlock.astro';
+import { calendarYear, generatedOn, months, undatedReleases } from '../utils/calendar';
+import { formatHuDate, huYearSuffix } from '../utils/format';
+import { SITE_NAME } from '../consts';
+
+const title = `Megjelenési naptár ${calendarYear} | ${SITE_NAME}`;
+// "nagyobb", matching the standfirst: GamesRadar's page is a selection of the
+// year's notable releases, not every release, so neither line should promise
+// completeness. The year suffix is computed because this page rolls over on its
+// own — "2026-os" but "2027-es".
+const description =
+  `A ${calendarYear}-${huYearSuffix(calendarYear)} év nagyobb ` +
+  `videójáték-megjelenései egy oldalon: cím, platform és dátum, hetente frissítve.`;
+
+// The build date, used to dim titles that are already out. The calendar
+// refreshes weekly, so this can lag by up to a week — a title that shipped on
+// Tuesday still reads as upcoming until Monday. Acceptable for a page that is
+// about the shape of the year, and it costs no client-side JS.
+const today = new Date().toISOString().slice(0, 10);
+
+const monthsWithReleases = months.filter((m) => m.releases.length > 0);
+---
+
+<Base title={title} description={description}>
+  <section class="cal-head">
+    <div class="wrap">
+      <div class="eyebrow">Megjelenési naptár</div>
+      <h1>{calendarYear}</h1>
+      <p class="standfirst">
+        Az év nagyobb játékmegjelenései egy oldalon. Forrás: GamesRadar+. Utoljára frissítve:{' '}
+        {formatHuDate(generatedOn)}
+      </p>
+
+      <nav class="monthnav" aria-label="Ugrás hónapra">
+        {
+          months.map((m) => (
+            <a href={`#${m.id}`} data-empty={m.releases.length === 0 ? '' : undefined}>
+              {m.name.slice(0, 3)}
+            </a>
+          ))
+        }
+      </nav>
+    </div>
+  </section>
+
+  {
+    monthsWithReleases.map((m, i) => (
+      <div class:list={['month', { band: i % 2 === 1 }]}>
+        <section id={m.id}>
+          <div class="wrap">
+            <SectionHead label={m.name} count={`${m.releases.length} cím`} />
+            <CalendarTable releases={m.releases} today={today} />
+          </div>
+        </section>
+      </div>
+    ))
+  }
+
+  {
+    undatedReleases.length > 0 && (
+      <div class:list={['month', { band: monthsWithReleases.length % 2 === 1 }]}>
+        <section id="datum-nelkul">
+          <div class="wrap">
+            <SectionHead
+              label={`Dátum nélkül — ${calendarYear}`}
+              count={`${undatedReleases.length} cím`}
+            />
+            <p class="tbc-note">
+              Ezek a címek az idei évre vannak bejelentve, de pontos dátum nélkül.
+            </p>
+            <CalendarTable releases={undatedReleases} />
+          </div>
+        </section>
+      </div>
+    )
+  }
+
+  <section id="hirlevel">
+    <div class="wrap">
+      <SubscribeBlock />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .cal-head {
+    padding-bottom: 34px;
+  }
+  /* The year is the headline. Smaller than an issue hero's h1 — this is a
+     reference page, not the front of an edition. */
+  .cal-head h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.1rem, 5vw, 3.1rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 10px 0 16px;
+  }
+  .standfirst {
+    font-size: 1.06rem;
+    line-height: 1.62;
+    max-width: var(--measure);
+    color: var(--ink);
+    margin: 0;
+  }
+
+  /* A fixed row of twelve. Empty months stay in place and stay clickable-
+     looking rather than shifting the row — they just do not link anywhere. */
+  .monthnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 24px;
+  }
+  .monthnav a {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-decoration: none;
+    border: 1px solid var(--rule-strong);
+    border-radius: 999px;
+    padding: 5px 10px;
+    line-height: 1;
+  }
+  .monthnav a:hover {
+    color: var(--ink);
+    border-color: var(--ink-muted);
+  }
+  .monthnav a[data-empty] {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  /* Sticky nav is 'var(--nav-h)' tall, so an anchored month would otherwise
+     land underneath it. */
+  .month section {
+    scroll-margin-top: calc(var(--nav-h) + 12px);
+  }
+
+  .tbc-note {
+    color: var(--ink-muted);
+    font-size: 0.94rem;
+    margin: 0 0 18px;
+  }
+</style>
