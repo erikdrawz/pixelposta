@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-08-10",
+  "generated": "2026-08-14",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -516,6 +516,16 @@
       "openCriticId": null
     },
     {
+      "title": "Snap and Grab",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-04-24",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Moomintroll: Winter's Warmth",
       "platforms": [
         "PC"
@@ -677,7 +687,7 @@
       "openCriticId": null
     },
     {
-      "title": "ZERO PARADES: For Dead Spies",
+      "title": "Zero Parades: For Dead Spies",
       "platforms": [
         "PC"
       ],
@@ -1173,6 +1183,16 @@
       "openCriticId": null
     },
     {
+      "title": "DayZ",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-20",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Mortal Shell 2",
       "platforms": [
         "PC",
@@ -1191,6 +1211,16 @@
       ],
       "earlyAccess": false,
       "date": "2026-08-20",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "1666 Amsterdam",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": true,
+      "date": "2026-08-25",
       "score": null,
       "openCriticId": null
     },
@@ -1292,6 +1322,18 @@
       ],
       "earlyAccess": false,
       "date": "2026-08-28",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Serious Sam: Shatterverse",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-31",
       "score": null,
       "openCriticId": null
     },
@@ -1552,16 +1594,6 @@
         "PS5",
         "Switch",
         "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-17",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Warhammer 40,000: Dawn of War 4",
-      "platforms": [
-        "PC"
       ],
       "earlyAccess": false,
       "date": "2026-09-17",
@@ -1959,6 +1991,16 @@
       "openCriticId": null
     },
     {
+      "title": "Minecraft Switch 2 Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Anomalith",
       "platforms": [
         "PC",
@@ -2063,12 +2105,35 @@
       "openCriticId": null
     },
     {
+      "title": "Warhammer 40,000: Dawn of War 4",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Xenoblade Chronicles 3",
       "platforms": [
         "Switch 2"
       ],
       "earlyAccess": false,
       "date": "2026-12-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Attack on Titan 3",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-10",
       "score": null,
       "openCriticId": null
     }
@@ -2078,13 +2143,6 @@
       "title": "007 First Light",
       "platforms": [
         "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "1666 Amsterdam",
-      "platforms": [
-        "PC"
       ],
       "earlyAccess": false
     },
@@ -2130,16 +2188,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Attack on Titan 3",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Ballad of Antara",
       "platforms": [
         "PS5"
@@ -2181,13 +2229,6 @@
       "platforms": [
         "PC",
         "PS5"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "DayZ",
-      "platforms": [
-        "Switch 2"
       ],
       "earlyAccess": false
     },
@@ -2267,13 +2308,6 @@
       "earlyAccess": false
     },
     {
-      "title": "InZOI",
-      "platforms": [
-        "PS5"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Jujutsu Kaisen Rumble Survivaton",
       "platforms": [
         "PC",
@@ -2295,23 +2329,6 @@
       "title": "Kyoto Xanadu",
       "platforms": [
         "Switch",
-        "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Lords of the Fallen 2",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Minecraft Switch 2 Edition",
-      "platforms": [
         "Switch 2"
       ],
       "earlyAccess": false
@@ -2344,15 +2361,6 @@
       "title": "Order of the Sinking Star",
       "platforms": [
         "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Out of Words",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
       ],
       "earlyAccess": false
     },
@@ -2423,15 +2431,6 @@
       "title": "Stronghold 4",
       "platforms": [
         "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Terminator: Survivors",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
       ],
       "earlyAccess": false
     },
@@ -2537,6 +2536,13 @@
         "Xbox",
         "Switch",
         "Switch 2"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Zero Parades: For Dead Spies",
+      "platforms": [
+        "PS5"
       ],
       "earlyAccess": false
     }
