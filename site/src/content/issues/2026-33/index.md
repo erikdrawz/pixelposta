@@ -22,126 +22,124 @@ draft: true
 outro: ""
 signature: — Erik · Pixelposta
 articles:
-- slug: az-atlus-remake-kent-szeretne-visszahozni-a-ps1-es-persona
+- slug: az-atlus-fontolgatja-a-korai-ps1-es-persona-jatekok-remake
   category: Játékhírek
-  title: Az Atlus remake-ként szeretné visszahozni a PS1-es Persona játékokat
+  title: Az Atlus fontolgatja a korai PS1-es Persona játékok remake-jét
   body: |
-    Egy Atlus producer, Wada Kazuhisa néhány napja egy interjúban elárulta, hogy személyesen fontosnak tartaná a korai Persona játékok, vagyis a Revelation: Persona, a Persona 2: Innocent Sin és az Eternal Punishment remake-jét. Konkrét bejelentés egyelőre nincs, de a nyilatkozat bizakodásra ad okot: ezek a PS1-es kultklasszikusok évtizedek óta nem kaptak semmilyen modern kiadást, a PSP-s portok óta nem sok minden történt velük.
+    Egy Atlus-producer, Wada Kazuhisa egy interjúban elárulta: személyesen úgy gondolja, hogy a cégnek mindenképpen el kellene készítenie a Revelation: Persona, a Persona 2: Innocent Sin és a Persona 2: Eternal Punishment remake-jét. Konkrét bejelentés egyelőre nincs, de a nyilatkozat reményt ad a rajongóknak, akik évtizedek óta várnak arra, hogy ezek a PSP-portok óta érintetlen PS1-es kultklaszszikusok modern formában visszatérjenek.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/atlus-is-interested-in-remaking-the-playstation-one-era-persona-games-something-that-after-waiting-for-many-years-i-hope-finally-happens-on-xbox-and-pc
-- slug: jon-a-hogwarts-legacy-2-a-warner-bros-megerositette-a
+- slug: a-warner-bros-megerositette-keszul-a-hogwarts-legacy-2
   category: Játékhírek
-  title: Jön a Hogwarts Legacy 2, a Warner Bros. megerősítette a folytatást
+  title: 'A Warner Bros. megerősítette: készül a Hogwarts Legacy 2'
   body: |
-    A Warner Bros. két napja, részvényeseknek írt levelében erősítette meg, hogy a Hogwarts Legacy 2 fejlesztése folyamatban van. Az eredeti játék az egyik legjobban fogyó cím lett a történelemben, több mint 40 millió eladott példánnyal, megjelenésekor még a Call of Duty: Modern Warfare 2-t is megelőzte az első héten. Konkrét részlet vagy trailer egyelőre nincs, a bejelentés inkább csak egy odavetett megjegyzés volt a levélben.
+    A Warner Bros. két napja, egy részvényeseknek írt levélben erősítette meg, hogy fejlesztés alatt áll a Hogwarts Legacy folytatása. A bejelentés meglehetősen informális volt, így hivatalos trailer vagy megjelenési dátum egyelőre nincs, és valószínűleg még éveket kell várni a részletekre. Az első rész 2023-ban jelent meg, és több mint 40 millió példányban kelt el, ami az egyik legjobb eredmény a játékipar történetében.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/hogwarts-legacy-is-getting-a-sequel-warner-bros-confirms
-- slug: darksiders-4-es-uj-kingdom-come-jon-2028-marciusaig-az
+- slug: az-embracer-megerositette-darksiders-4-es-uj-kingdom-come
   category: Játékhírek
-  title: Darksiders 4 és új Kingdom Come jön 2028 márciusáig az Embracertől
+  title: 'Az Embracer megerősítette: Darksiders 4 és új Kingdom Come jön 2028-ig'
   body: |
-    Az Embracer Group negyedéves pénzügyi jelentésében megerősítette, hogy a Darksiders 4 és a Kingdom Come sorozat következő része is megjelenik 2028 márciusáig. Egyik játékot sem jelentették be hivatalosan névvel, de a jelek biztatóak: a Kingdom Come Salvation védjegyként már bejegyezték az EU-ban, a Darksiders 4-et pedig a Gunfire Games fejleszti. Mindkét bejelentés érkezhet akár a Gamescom Opening Night Live-on, amely a közeljövőben lesz.
+    Az Embracer Group negyedéves pénzügyi jelentésében két nagy bejelentés is megbújt: a Darksiders 4 és a Kingdom Come sorozat következő része egyaránt 2028 márciusáig megjelenhet. Egyik játékot sem hirdették még hivatalosan, de a Kingdom Come esetében egy frissen bejegyzett "Salvation" védjegy és a hamarosan esedékes Gamescom Opening Night Live alapján közeleg a bejelentés. A Darksiders-t illetően hasonló a helyzet: a THQ Nordic már két éve előzetesített egy új részt.
   source: VGC
   url: https://www.videogameschronicle.com/news/darksiders-4-and-a-new-kingdom-come-are-planned-by-the-end-of-march-2028-embracer-says/
-- slug: a-pokemon-pokopia-negy-honap-alatt-ot-millio-eladott
+- slug: ot-millio-eladott-peldanynal-jar-a-pokemon-pokopia-negy
   category: Játékhírek
-  title: A Pokémon Pokopia négy hónap alatt öt millió eladott példánynál jár
+  title: Öt millió eladott példánynál jár a Pokémon Pokopia négy hónap alatt
   body: |
-    A Nintendo és a The Pokémon Company tegnap közölte, hogy a Switch 2-re márciusban megjelent Pokémon Pokopia, az életszimulációs Pokémon-spin-off, mindössze valamivel több mint négy hónap alatt öt millió példányban kelt el világszerte, fizikai és digitális formátumban egyaránt. A lendületet a nemrég megjelent 2.0.0-s frissítés és az első fizetős DLC, a Bubbly Basin is segíti, és a tervek szerint 2026 végén és 2027-ben is érkezik újabb tartalomcsomag.
+    A Nintendo és a The Pokémon Company bejelentette, hogy a Switch 2-re március 5-én megjelent Pokémon Pokopia valamivel több mint négy hónap alatt öt millió eladott példánynál jár világszerte, fizikai és digitális verziókkal együtt. A játékhoz nemrég érkezett a 2.0.0-s frissítés az ingyenes Dive mozdulattal, valamint az első fizetős DLC, a Bubbly Basin. A második rész még 2026 végén, a harmadik 2027-ben várható.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/08/pokemon-pokopia-sales-surpass-five-million-units-globally-in-just-over-four-months
 - slug: a-mortal-shell-2-nehezsegi-szintjet-kulonleges-targyakkal
   category: Játékhírek
-  title: A Mortal Shell 2 nehézségi szintjét különleges tárgyakkal szabályozhatjuk
+  title: A Mortal Shell 2 nehézségi szintjét különleges tárgyakkal lehet hangolni
   body: |
-    A Cold Symmetry nem hagyományos nehézségi fokozatokkal oldotta meg a kihívás testreszabását a Mortal Shell 2-ben, hanem különleges tárgyakkal. A Slayer Seal például az ellenségek kivégzéséből tölt vissza életerőt, cserébe viszont nem szerezhetők achievements. Ha valaki inkább több kihívásra vágyik, a Gloombound Flame nevű gyertya segítségével Night Mode aktiválható, ami kikapcsolja a napot, és új ellenfeleket, eseményeket, meg dungeon-öket hoz be a játékba.
+    A Cold Symmetry nem hagyományos nehézségi fokozatokat épített a Mortal Shell 2-be, hanem speciális tárgyakat, amelyekkel mindenki a saját ízlésére szabhatja a kihívást. A Slayer Seal például regenerálja az életerőt kivégzések után (cserébe letiltja az achievementeket), míg a Night Mode egy rejtett gyertya meggyújtásával kapcsolható be, ami sötétbe borítja a világot és új eseményeket, ellenfeleket meg dungeonöket szabadít rá a játékosra. Emellett a parír- és pajzsmechanikát is módosítani lehet különböző pecsétekkel.
   source: RPS
   url: https://www.rockpapershotgun.com/mortal-shell-2-will-let-you-lower-its-difficulty-by-making-executions-refill-your-health-or-up-the-challenge-by-turning-off-the-sun
-- slug: a-project-looking-glass-egy-asztraltestes-horror-amiben
+- slug: a-project-looking-glass-egy-asztralhorror-ahol-sajat
   category: Játékhírek
-  title: A Project Looking Glass egy asztráltestes horror, amiben rossz emlékeid térképén
-    járkálsz
+  title: A Project Looking Glass egy asztrálhorror, ahol saját emlékeid térképén teleportálsz
   body: |
-    A Project Looking Glass egy különös indie horrorjáték, amelyben egy gyászoló nő bőrébe bújva titkos hidegháborús asztrálprojekcós kísérleteken veszel részt. A katódsugárcsöves, szemcsés vizuális stílusban megjelenő játékban helyszínek között teleportálsz, audiológokat gyűjtesz, és nem mindennapi fejtörőket fejtek meg. Egy emberes projekt: a fejlesztő, MORPH elsősorban zenész és vizuális művész, ez a második önálló játéka. Az ingyenes demó negyven percnyi tartalmat kínál.
+    Az RPS egyik szerkesztője néhány napja belevetette magát a Project Looking Glass demójába, és kellemes meglepetésként érte. A játék egy szóló indie fejlesztő munkája: egy gyászoló nő bőrébe bújsz, aki titkos hidegháborús asztrálvetítési kísérleteken vesz részt. A katódsugárcsöves esztétika, a nyomasztó hangulat és a "Hatalmas Hiba" nevű helyszínek mind megvannak benne. A 40 perces demo ingyenesen elérhető Steamen.
   source: RPS
   url: https://www.rockpapershotgun.com/im-enjoying-leaving-my-body-behind-in-project-looking-glass-an-astral-horror-game-in-which-you-telewarp-around-a-map-of-your-terrible-memories
-- slug: fizikai-kiadast-kap-a-the-lord-of-the-rings-war-in-the-north
+- slug: a-lord-of-the-rings-war-in-the-north-fizikai-kiadast-is-kap
   category: Játékhírek
-  title: 'Fizikai kiadást kap a The Lord of the Rings: War in the North'
+  title: 'A Lord of the Rings: War in the North fizikai kiadást is kap a Limited Run-tól'
   body: |
-    Az Aspyr két napja jelentette be, hogy feléleszti a The Lord of the Rings: War in the North – Legacy Edition-t Switch-re, Switch 2-re és más platformokra, most pedig a Limited Run Games megerősítette, hogy fizikai kiadáson is dolgozik. A részletek még váratnak magukra, de a Switch-es verzió 60 FPS-támogatást, giroszkópos irányítást, automatikus mentést és felújított kezelőfelületet kap. Az Aspyr további Gyűrűk Ura-játékok visszatérését is kilátásba helyezte.
+    Két napja az Aspyr bejelentette A Gyűrűk Ura: War in the North Legacy Edition felújított változatát Switch-re, Switch 2-re és más platformokra, most pedig a Limited Run Games is beszállt: a játék fizikai kiadást is kap. A részletek egyelőre szűkösek, de a Limited Run korábban már együttműködött az Aspyr-rel Star Wars-játékoknál is, és az Aspyr több további Gyűrűk Ura-revival is ígért a jövőre.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/08/limited-run-announces-lord-of-the-rings-war-in-the-north-physical-release
-- slug: az-uncharted-egyik-tervezoje-nem-akar-remake-et-semmi
+- slug: az-uncharted-egyik-tervezoje-szerint-felesleges-lenne
   category: Játékhírek
-  title: 'Az Uncharted egyik tervezője nem akar remake-et: "semmi értelme"'
+  title: Az Uncharted egyik tervezője szerint felesleges lenne remake vagy remaster
   body: |
-    Benson Russell, az első három Uncharted játék egyik tervezője két napja nyilatkozott arról, hogy nem szeretne sem remake-et, sem remaster-t az eredeti részből. Érvelése szerint az Uncharted még mindig modern konzolokon is elérhető, így nincs értelme újracsomagolni, a történethez nyúlni pedig megváltoztatná a sorozat szellemét. Inkább egy teljesen új játékot látna szívesen, amely Drake korábbi kalandjaiba kalauzol vissza.
+    Benson Russell, aki az Uncharted 1-3 és az első The Last of Us tervezőjeként dolgozott a Naughty Dognál, két napja mondta el, miért nem rajong egy esetleges Uncharted-remake ötletéért. Szerinte az eredeti játék ma is elérhető modern konzolokon, így nincs értelme újracsomagolni. Inkább egy korábbi időszakban játszódó, teljesen új Uncharted-kalandot látna szívesen, amely megőrzi a sorozat szellemét, de friss történetet hoz.
   source: VGC
   url: https://www.videogameschronicle.com/news/uncharted-designer-says-he-doesnt-want-a-remake-or-remaster-because-it-doesnt-make-any-sense/
 - slug: a-sonic-frontiers-atlepte-az-5-millios-eladasi-hatart
   category: Játékhírek
   title: A Sonic Frontiers átlépte az 5 milliós eladási határt
   body: |
-    A Sega megerősítette, hogy a Sonic Frontiers már több mint 5 millió példányban kelt el az eredeti, 2022-es megjelenése óta. A legutóbbi adat, tavaly novemberből, még 4,57 milliót mutatott, tehát az ugrás részben a Switch 2-re júniusban megjelent Definitive Editionnek is köszönhető. A mérföldkő megünneplésére a Sega minden játékosnak elérhetővé tette az egyébként hírlevél-regisztrációhoz kötött Sonic Adventure 2-cipőt.
+    A Sega megerősítette, hogy a Sonic Frontiers összesített eladásai meghaladták az 5 millió példányt a 2022-es megjelenés óta. A legutóbbi adat tavaly novemberből származott, akkor még 4,57 millió volt az eladott példányok száma. A mérföldkő alkalmából a korábban csak hírlevél-feliratkozóknak elérhető Sonic Adventure 2 cipők most minden játékos számára ingyenesen elérhetők lettek a játékban.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/08/its-official-sonic-frontiers-has-now-sold-more-than-five-million-copies
-- slug: visszater-a-40-eves-amiga-klasszikus-a-defender-of-the-crown
+- slug: visszatert-a-40-eves-amiga-klasszikus-a-defender-of-the
   category: Játékhírek
-  title: Visszatér a 40 éves Amiga-klasszikus, a Defender of the Crown
+  title: Visszatért a 40 éves Amiga-klasszikus, a Defender of the Crown
   body: |
-    Négy évtized után kapott PC-s újrakiadást a Defender of the Crown, a középkori stratégiai klasszikus: a The Legend Returns egycsomagban tartalmazza az eredeti, pixeles Amiga-verziót, egy felújított, modern grafikájú változatot, és egy teljesen új roguelite módot is. Ez utóbbiban pakliépítés és kockaalapú harc keveredik, a pályák procedurálisan generálódnak, és futásonként egyre több képesség, ereklye és mechanika nyílik meg.
+    A középkori stratégiajáték, a Defender of the Crown negyvenéves évfordulójára megjelent The Legend Returns címen Steamen, és nem csak egy egyszerű port: a csomag tartalmazza az eredeti, pixeles Amiga-verziót, egy felújított grafikájú klasszikus módot, valamint egy teljesen új roguelite játékmódot is. Utóbbiban pakliépítés és kockaalapú harc keveredik eljárásosan generált térképeken, fokozatosan bővülő mechanikákkal.
   source: RPS
   url: https://www.rockpapershotgun.com/amiga-strategy-classic-defender-of-the-crown-is-back-with-both-old-and-fresh-graphics-and-an-all-new-roguelite-mode
-- slug: a-microsoft-azure-cto-ja-megcsinalta-a-doom-fut-a-windows
+- slug: a-microsoft-azure-cto-ja-megcsinaltatta-a-doom-ot-paint-ben
   category: Játékhírek
-  title: 'A Microsoft Azure CTO-ja megcsinálta: a DOOM fut a Windows Paintben'
+  title: A Microsoft Azure CTO-ja megcsináltatta a DOOM-ot Paint-ben
   body: |
-    Mark Russinovich, a Microsoft Azure műszaki igazgatója tizenegy napja tette közzé a DoomPaint nevű hobbiprojectjét, amellyel a klasszikus 1993-as DOOM valóban elindítható a Windows Paint alkalmazásban. A trükk lényege, hogy minden képkocka vágólapon keresztül kerül a Paint canvasére, tehát a Paint csak "monitorként" funkcionál, nem tényleges motorként. A framerate ingadozó, de ahogy a készítő fogalmazott: "a táblázatkezelős képfrissítés a charm része." Hang és zene is van, és mindössze Python telepítése szükséges a futtatáshoz.
+    Mark Russinovich, a Microsoft Azure technológiai igazgatója múlt héten publikálta DoomPaint nevű hobbi projektjét: a klasszikus 1993-as DOOM valóban fut a Windows Paint alkalmazásban. A trükk lényege, hogy minden képkockát a vágólapra másolva illeszt be a Paint canvasára, tehát a Paint voltaképp csak monitorként viselkedik, nem ő számít. Hang és zene is van, a képfrissítés viszont "táblázatkezelő-szintű", amit Russinovich maga nevez a projekt részének.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/pc-gaming/doom-runs-in-paint-built-by-azure-microsoft-executive
-- slug: a-static-hour-egy-80-as-evekbeli-hirszobasimulator
+- slug: a-static-hour-egy-retro-ujsagiro-thriller-ahol-te-dontod-el
   category: Játékhírek
-  title: A Static Hour egy '80-as évekbeli hírszobasimulátor erőszakhullámmal és rolodexszel
+  title: A Static Hour egy retró újságíró-thriller, ahol te döntöd el, mit higgyen a város
   body: |
-    A Barkbyte Interactive bejelentette a Static Hour-t, egy 1980-as évekbe helyezett narratív szimulátort, ahol éjszakai hírszerkesztőt játszol egy kisvárosban, amelyet valamilyen rejtélyes erőszakhullám kerített hatalmába. A kormányzati lezárás miatt a szerkesztőségben ragadva kell rolodexben keresgélni, riportereket irányítani és rádióadásokat szűrni, majd eldönteni, mit sugározz a hallgatóknak, akik az elhangzottak alapján cselekszenek. A játék 2027 harmadik negyedévében jelenik meg, Steamen már elérhető a lapja.
+    A Barkbyte Interactive bejelentette a Static Hour-t, egy 1980-as évekbe helyezett hangulatos narratív szimulációt, amelyben egy kisváros éjszakai hírszerkesztőjét irányítod. Rejtélyes erőszakhullám tör ki, te pedig kartotékozással, riporterek irányításával és rádiófrekvenciák pásztázásával próbálod kideríteni az igazságot, majd eldöntöd, mit közvetítesz a hallgatóknak. A játék 2027 harmadik negyedévében jelenik meg, Steamen már elérhető a leírása.
   source: RPS
   url: https://www.rockpapershotgun.com/tell-a-whole-town-what-to-believe-in-static-hour-a-rolodex-flipping-newsroom-thriller-about-investigating-a-strange-epidemic-of-violence
 - slug: oblivion-remastered-switch-2-vs-steam-deck-melyik
   category: Hardware
   title: 'Oblivion Remastered Switch 2 vs. Steam Deck: melyik kézikonzol teljesít jobban?'
   body: |
-    Néhány napja megjelent a The Elder Scrolls IV: Oblivion Remastered Nintendo Switch 2-re, és a NintendoLife videós összehasonlítást készített a Steam Deck-es verzióval. Az eredmény egyértelmű: a Switch 2 szinte minden téren fölénybe kerül, magasabb felbontással, jobb textúrákkal és stabilabb képsebességgel. A Steam Deck egyetlen területen veri a Switcht: a betöltési idők nála rövidebbek. A Bethesda-s teljesítménybugokra azért mindkét verzión számíthatsz.
+    Néhány napja megjelent a The Elder Scrolls IV: Oblivion Remastered Nintendo Switch 2-re, és a NintendoLife videós összehasonlítást készített a Steam Deck verzióval. Az eredmény elég egyértelmű: a Switch 2 szinte minden téren nyert, magasabb felbontással, jobb textúrákkal és stabilabb képfrissítéssel. A 30fps-es célérték alá néha azért ez is lemegy, de a Steam Deckhez képest egyértelműen fölényes. Egyetlen kivétel a betöltési idő, ott a Deck bizonyult gyorsabbnak.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/08/video-how-does-oblivion-remastered-on-switch-2-compare-to-the-steam-deck
-- slug: a-saber-elismerte-a-rideshare-stimulator-generativ-ai-t
+- slug: a-saber-elismerte-hogy-a-rideshare-stimulator-ai-generalt
   category: AI & Gaming
-  title: 'A Saber elismerte: a Rideshare "Stimulator" generatív AI-t használ, de tagadja,
-    hogy kirúgták az írót'
+  title: A Saber elismerte, hogy a Rideshare "Stimulator" AI-generált szövegeket tartalmaz
   body: |
-    A Rideshare "Stimulator" taxiszimulátorba több botrány is belefért egyszerre. A játék korábbi vezető írója, Stella Sacco néhány napja a Bluesky-n állította, hogy a Saber fejlesztőstúdió fejlesztés közben ChatGPT-re cserélte őt. A Saber tagadja ezt, de elismerte: a játék végtelen utast felvonultató szabad módja valóban LLM-alapú szöveg- és hangszintézissel működik. Gond, hogy erről a Steam-oldalon semmilyen kötelező AI-közzétevő nyilatkozat nem szerepel, ami ellentétes a Valve saját szabályzatával.
+    A Rideshare "Stimulator" taxiszimulátorral kapcsolatban a játék egykori vezető írója, Stella Sacco azt állította, hogy a Saber fejlesztés közben ChatGPT-re cserélte őt. A stúdió tagadja ezt, de elismerte: a játék végtelen utasokat kínáló "free-ride" módjában AI írja a párbeszédeket és AI-hangok szólalnak meg. Ráadásul ezt a Steam oldalon nem tüntették fel, ami ellentmond a Valve kötelező AI-közzétételi szabályzatának.
   source: RPS
   url: https://www.rockpapershotgun.com/saber-admit-ridershare-stimulator-features-generative-ai-writing-but-deny-they-replaced-taxi-games-lead-writer-with-chatgpt
 - slug: a-netflix-bezarta-az-oxenfree-fejlesztojet-a-night-school
   category: Stúdió & Üzlet
   title: A Netflix bezárta az Oxenfree fejlesztőjét, a Night School Studiót
   body: |
-    A Netflix tegnap bezárta a Night School Studiót, az Oxenfree és folytatása mögött álló fejlesztőcsapatot, valamint egy Moonloot nevű kisebb stúdiót is, amely egy Animal Crossing-ihlette játékon dolgozott. A döntés különösen pikáns, mert a Netflix korábban saját sikereként ünnepelte a Night School legutóbbi játékát, az Unhinged-et. A bezárás oka a vállalat stratégiai átfókuszálása: gyerekjátékokra, party játékokra és "mainstream" tartalomra koncentrálnak ezentúl. Az elbocsátottak pontos száma egyelőre nem ismert.
+    A Netflix tegnap bezárta a Night School Studiót, az Oxenfree és folytatása mögött álló fejlesztőcsapatot, valamint a Moonloot nevű kisebb stúdiót is, amely még egyetlen játékot sem adott ki. A leállítás azért is fájó, mert a Night School legutóbbi projektje, az Unhinged kifejezetten sikeres volt a Netflix saját értékelése szerint. A cég "prioritásainak újrafókuszálásával" magyarázza a döntést: ezentúl gyerekjátékokra, party games élményekre és mainstream tartalmakra koncentrálnak. Az elbocsátások száma egyelőre nem ismert.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/08/netflix-shuts-down-oxenfree-developer-night-school-studio
-- slug: a-supermassive-games-75-dolgozojat-bocsatja-el-ket-even
+- slug: a-supermassive-games-75-allast-szuntethet-meg-ket-even
   category: Stúdió & Üzlet
-  title: A Supermassive Games 75 dolgozóját bocsátja el, két éven belül harmadszor
+  title: A Supermassive Games 75 állást szüntethet meg, két éven belül harmadszor
   body: |
-    Az Until Dawn és a The Dark Pictures Anthology mögött álló Supermassive Games négy napja bejelentette, hogy legfeljebb 75 munkahelyet szüntet meg, mindössze három hónappal a Directive 8020 megjelenése után. Ez a brit stúdió harmadik leépítési hulláma két éven belül: 2024 elején nagyjából 90 embert bocsátottak el, majd 2025 júliusában újabb kör következett. A közlemény ezúttal is a „fenntarthatóság" szükségességére hivatkozott.
+    Az Until Dawn és a The Dark Pictures Anthology mögött álló Supermassive Games négy napja bejelentette, hogy leépítési egyeztetéseket kezd, amelyek akár 75 dolgozót érinthetnek. Ez a stúdió harmadik elbocsátási hulláma mindössze két év alatt: előbb 2024 elején, majd 2025 júliusában már volt hasonló kör. A mostani bejelentés ráadásul csupán három hónappal a legújabb játékuk, a Directive 8020 megjelenése után érkezett.
   source: RPS
   url: https://www.rockpapershotgun.com/supermassive-games-are-the-latest-studio-to-announce-layoff-plans-with-75-jobs-at-risk-just-three-months-after-directive-8020-launch
-- slug: a-valve-europai-logisztikai-partnere-kibertamadas-aldozata
+- slug: kibertamadas-erte-a-valve-europai-szallitopartneret-steam
   category: Stúdió & Üzlet
-  title: A Valve európai logisztikai partnere kibertámadás áldozata lett, személyes adatok
-    szivárogtak ki
+  title: Kibertámadás érte a Valve európai szállítópartnerét, Steam-vásárlók adatai kerültek
+    ki
   body: |
-    Öt napja derült ki, hogy a Valve európai szállítmányozási partnerét, a CEVA Logistics céget augusztus 7-én kibertámadás érte, és a Steam Machine-t, illetve az új Steam Controllert Európában megrendelők személyes adatai veszélybe kerülhettek. A kiszivárgott adatok között nevek, lakcímek, telefonszámok és e-mail-címek szerepelnek, jelszavak és fizetési adatok viszont nem érintettek. Valve óva int a gyanús utánkövetéstől: minden ilyen üzenetet kezelj hamisnak.
+    Öt napja derült ki, hogy a Valve európai szállítópartnerét, a CEVA Logistics nevű céget augusztus 7-én kibertámadás érte, és az érintett rendszerből Steam Machine, illetve Steam Controller vásárlók személyes adatai szivároghattak ki. Nevek, lakcímek, telefonszámok és e-mail-címek kerülhettek illetéktelen kezekbe, viszont a jó hír: jelszavak, bankkártya-adatok és Steam-fiókok nem érintettek. Az amerikai vásárlókat a CEVA európai működési területe miatt nem érinti az incidens. Valve arra figyelmeztet, hogy az érintetteknek érdemes gyanakodniuk minden olyan üzenetre, ami pénzt vagy adatokat kér tőlük.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/pc-gaming/valve-ceva-logistics-cyberattack-leaks-steam-machine-controller-shipping-data
 releases:
