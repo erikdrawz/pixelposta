@@ -15,8 +15,7 @@ cover: ./cover.jpg
 year: 2026
 week: 33
 date: '2026-08-15'
-title: A Doom már fut Microsoft Paint-ben is, az Alan Wake II-ből pedig elkelt 3 millió
-  példány!
+title: Pixelposta - 2026. 33. hét
 standfirst: A Doom már fut Microsoft Paint-ben is, az Alan Wake II-ből pedig elkelt
   3 millió példány!
 draft: false
