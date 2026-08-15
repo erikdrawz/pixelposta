@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -15,10 +15,11 @@
 year: 2026
 week: 33
 date: '2026-08-15'
-title: Hogwarts Legacy 2 jön, a Night School Studio bezárt
-standfirst: A Warner Bros. részvényesi levélben erősítette meg az open-world varázslós RPG
-  folytatását, miközben a Netflix csendben bezárta az Oxenfree mögött álló stúdiót.
-draft: true
+title: A Doom már fut Microsoft Paint-ben is, az Alan Wake II-ből pedig elkelt 3 millió
+  példány!
+standfirst: A Doom már fut Microsoft Paint-ben is, az Alan Wake II-ből pedig elkelt
+  3 millió példány!
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -99,6 +100,7 @@ articles:
     Mark Russinovich, a Microsoft Azure technológiai igazgatója múlt héten publikálta DoomPaint nevű hobbi projektjét: a klasszikus 1993-as DOOM valóban fut a Windows Paint alkalmazásban. A trükk lényege, hogy minden képkockát a vágólapra másolva illeszt be a Paint canvasára, tehát a Paint voltaképp csak monitorként viselkedik, nem ő számít. Hang és zene is van, a képfrissítés viszont "táblázatkezelő-szintű", amit Russinovich maga nevez a projekt részének.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/pc-gaming/doom-runs-in-paint-built-by-azure-microsoft-executive
+  imageCredit: 'Kép: Windows Central'
 - slug: a-static-hour-egy-retro-ujsagiro-thriller-ahol-te-dontod-el
   category: Játékhírek
   title: A Static Hour egy retró újságíró-thriller, ahol te döntöd el, mit higgyen a város
@@ -106,6 +108,22 @@ articles:
     A Barkbyte Interactive bejelentette a Static Hour-t, egy 1980-as évekbe helyezett hangulatos narratív szimulációt, amelyben egy kisváros éjszakai hírszerkesztőjét irányítod. Rejtélyes erőszakhullám tör ki, te pedig kartotékozással, riporterek irányításával és rádiófrekvenciák pásztázásával próbálod kideríteni az igazságot, majd eldöntöd, mit közvetítesz a hallgatóknak. A játék 2027 harmadik negyedévében jelenik meg, Steamen már elérhető a leírása.
   source: RPS
   url: https://www.rockpapershotgun.com/tell-a-whole-town-what-to-believe-in-static-hour-a-rolodex-flipping-newsroom-thriller-about-investigating-a-strange-epidemic-of-violence
+  imageCredit: 'Kép: Barkbyte Interactive'
+- slug: a-no-man-s-sky-tizedik-eveben-volt-a-legtobb-jatekos-a
+  category: Játékhírek
+  title: A No Man's Sky tizedik évében volt a legtöbb játékos a megjelenés óta
+  body: |
+    A No Man's Sky öt napja, augusztus 9-én lett tízéves, és Sean Murray, a Hello Games ügyvezetője szerint az elmúlt tizenkét hónapban volt a legtöbb játékosa a 2016-os megjelenés óta. A sajtónak küldött üzenetében Murray több tízmillió játékosról és több százmillió eljátszott óráról ír, hozzátéve, hogy a bolygóknak még mindig kevesebb mint 1%-át fedezték fel. A játék rajtja annak idején katasztrofális volt, gyenge értékelésekkel és brit reklámfelügyeleti vizsgálattal, azóta viszont negyven nagy ingyenes frissítés érkezett hozzá.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/no-mans-skys-10th-year-saw-highest-player-numbers-since-launch/
+  imageCredit: 'Kép: Hello Games'
+- slug: lassu-rajt-utan-atlepte-a-3-millio-peldanyt-az-alan-wake-2
+  category: Játékhírek
+  title: Lassú rajt után átlépte a 3 millió példányt az Alan Wake 2
+  body: |
+    A Remedy féléves jelentéséből az is kiderült, hogy az Alan Wake 2 a második negyedév során lépte át a 3 millió eladott példányt. A legutóbbi adat tavaly februárból származott, akkor 2 milliónál járt a játék, és épp csak nyereségessé vált. Az Alan Wake 2 a stúdió leggyorsabban fogyó játéka volt, a rajtnál mégis csak egymillió példány kelt el belőle, így évekbe telt, mire behozta a fejlesztési költségeit. A játék az Epic finanszírozásának köszönhetően PC-n máig Epic Games Store-exkluzív, és sokak szerint épp a Steamről való hiánya fogta vissza az eladásokat. A Control Resonant körüli várakozás egyébként az első Control eladásait is meglökte a negyedévben.
+  source: Eurogamer
+  url: https://www.eurogamer.net/alan-wake-2-lifetime-sales-3-million
 - slug: oblivion-remastered-switch-2-vs-steam-deck-melyik
   category: Hardware
   title: 'Oblivion Remastered Switch 2 vs. Steam Deck: melyik kézikonzol teljesít jobban?'
@@ -142,6 +160,14 @@ articles:
     Öt napja derült ki, hogy a Valve európai szállítópartnerét, a CEVA Logistics nevű céget augusztus 7-én kibertámadás érte, és az érintett rendszerből Steam Machine, illetve Steam Controller vásárlók személyes adatai szivároghattak ki. Nevek, lakcímek, telefonszámok és e-mail-címek kerülhettek illetéktelen kezekbe, viszont a jó hír: jelszavak, bankkártya-adatok és Steam-fiókok nem érintettek. Az amerikai vásárlókat a CEVA európai működési területe miatt nem érinti az incidens. Valve arra figyelmeztet, hogy az érintetteknek érdemes gyanakodniuk minden olyan üzenetre, ami pénzt vagy adatokat kér tőlük.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/pc-gaming/valve-ceva-logistics-cyberattack-leaks-steam-machine-controller-shipping-data
+- slug: a-remedy-tudatos-dontese-volt-hogy-vonzo-aron-tartja-a
+  category: Stúdió & Üzlet
+  title: A Remedy tudatos döntése volt, hogy vonzó áron tartja a Control Resonantot
+  body: |
+    A Remedy Entertainment négy napja tette közzé a 2026-os pénzügyi év második negyedéves és féléves eredményeit, és mindkét időszak komoly bevételesést mutat. A negyedéves bevétel 10,2 millió euró lett, ami éves szinten 40%-os visszaesés, a működési veszteség pedig 500 ezer euróról 3,9 millió euróra nőtt. Féléves szinten 23,3 millió euró folyt be, 23,1%-kal kevesebb a tavalyinál. Jean-Charles Gaudechon vezérigazgató ugyanakkor bizakodó a szeptember 24-én érkező Control Resonant kapcsán: a fogadtatás szerinte eddig "nagyon erős", a játék 1,5 millió kívánságlistára került fel, és tudatosan árazták vonzóbban a zsúfolt őszi mezőny többi címénél.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/remedy-made-a-conscious-decision-to-keep-control-resonant-attractively-priced/
+  imageCredit: 'Kép: Remedy Entertainment'
 releases:
 - title: The Sinking City 2
   platform: PC, PS5, Xbox
@@ -161,5 +187,22 @@ releases:
 - title: 'Elden Ring: Tarnished Edition'
   platform: Switch 2
   date: '08.28'
-ajanlo: []
+ajanlo:
+  - title: 'Agent 64: Spies Never Die'
+    genre: FPS
+    appid: 1574480
+    description: >-
+      Egy retró kém FPS, melyet az N64 korszak ihletett. Tűzz fegyverekkel akciódús lövöldözésekben, lopj el titkos terveket, és teljesíts célokat, miközben meghiúsítod a gonosztevők terveit titkos ügynökként szóló vagy kooperatív kampányban. Harcolj barátaiddal helyi osztott képernyős többjátékos módban és online is akár 8 ellenféllel.
+
+  - title: Future Knight
+    genre: Akció
+    appid: 4235410
+    description: >-
+      Őrült akció és LCD esztétika! Ebben a 2D-s lövöldözős játékban válts egy robothős és jóindulatú daganata között, hogy megállíts egy bizarr szektát. 8 órád van megmenteni az emberiség emlékét: győzd le a groteszk főellenségeket, lovagold meg az eget a Jövő tábládon, és uralkodj a káoszon egy retro-futurisztikus Tokióban.
+
+  - title: Twisted Tower
+    genre: FPS
+    appid: 1575990
+    description: >-
+      Puffogtasd át magad egy elhagyatott, 1950-es évekbeli vidámparkon, amely tele van mesebeli kabalákkal, bonyolult fejtörőkkel és halálos csapdákkal. Fedezd fel múltad sötét titkait, miközben a csúcsra száguldsz, hogy visszaszerezd életed szerelmét.
 ---
