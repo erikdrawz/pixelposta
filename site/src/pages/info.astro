@@ -1,57 +1,93 @@
 ---
-// SHELL ONLY — not finished, not linked, not in the sitemap.
-//
-// The structure is here; the Hungarian copy is the editor's to write. Replace
-// every TODO below, then:
-//   1. uncomment the Infó entry in LINKS in components/Nav.astro
-//   2. remove the /info/ exclusion from the sitemap filter in astro.config.mjs
-// Those two lines together are the publish button, the same idea as flipping
-// `draft: false` on an issue.
+// The editor's own copy, set as prose rather than pulled from a content file:
+// it is one page that changes rarely, and the site has no markdown renderer for
+// body text (article bodies go through utils/format.ts `paragraphs`, which is
+// plain text by design). Emphasis is written as <strong>/<em> directly.
 import Base from '../layouts/Base.astro';
-import SectionHead from '../components/SectionHead.astro';
 import SubscribeBlock from '../components/SubscribeBlock.astro';
-import { SITE_NAME, SUBSTACK_URL } from '../consts';
+import { SITE_NAME } from '../consts';
+
+// Built from a list rather than written inline: in the markup a line ending in
+// "," followed by a line starting with <em> loses the space between them, so
+// hand-formatted prose full of emphasis silently renders as "Resident Evil,Alan
+// Wake". Driving the separators from code keeps the punctuation independent of
+// how the file happens to be wrapped.
+const FAVOURITES: { title: string; note?: string }[] = [
+  { title: 'Resident Evil' },
+  { title: 'Alan Wake' },
+  { title: 'Silent Hill' },
+  { title: 'Marvel’s Spider-Man' },
+  { title: 'The Order 1886' },
+  { title: 'Night in the Woods' },
+  { title: 'Star Wars Battlefront', note: 'DICE' },
+  { title: 'Broken Sword' },
+  { title: 'Still Life' },
+  { title: 'Zelda: Breath of the Wild' },
+  { title: 'DREDGE' },
+  { title: 'Metroid Dread' },
+  { title: 'Star Wars Jedi: Fallen Order' },
+  { title: 'Forza Horizon 4' },
+  { title: 'The Last of Us' },
+  { title: 'Terep2' },
+];
 
 const title = `Infó | ${SITE_NAME}`;
-const description = 'TODO: egy mondat a Pixelpostáról.';
+const description =
+  'A Pixelposta egy hírgyűjtő és -lokalizáló weboldal, amely hetente egy csokorba ' +
+  'gyűjti az elmúlt napok legérdekesebb videójátékos híreit.';
 ---
 
 <Base title={title} description={description}>
   <section class="info-head">
     <div class="wrap">
       <div class="eyebrow">Infó</div>
-      <h1>TODO: cím</h1>
-      <p class="standfirst">TODO: egy bekezdés arról, mi a Pixelposta és kinek szól.</p>
-    </div>
-  </section>
+      <h1>A Pixelpostáról</h1>
 
-  <div class="band">
-    <section>
-      <div class="wrap">
-        <SectionHead label="A hírlevélről" />
-        <p>TODO: mi kerül bele egy számba, milyen rovatok, milyen gyakran jelenik meg.</p>
-      </div>
-    </section>
-  </div>
+      <p class="lead">
+        A <strong>Pixelposta</strong> egy hírgyűjtő és -lokalizáló weboldal, amely hetente egy
+        csokorba gyűjti az elmúlt napok legérdekesebb videójátékos híreit.
+      </p>
 
-  <section>
-    <div class="wrap">
-      <SectionHead label="Ki készíti" />
-      <p>TODO: rólad néhány mondat.</p>
-    </div>
-  </section>
-
-  <div class="band">
-    <section>
-      <div class="wrap">
-        <SectionHead label="Kapcsolat" />
+      <div class="prose">
         <p>
-          TODO: e-mail cím vagy egyéb elérhetőség. A hírlevél a
-          <a href={SUBSTACK_URL}>Substackon</a> olvasható.
+          Az oldalt eredetileg magamnak készítettem – Blaski Dani <em>Heti Vágólap</em> című tech
+          hírleveléből inspirálódva. Egyszerűen ráuntam arra, milyen nehéz érdemi híreket
+          szemezgetni a különféle platformokról (közösségi média, weboldalak, YouTube). Ki vagyunk
+          szolgáltatva az algoritmusoknak, a kattintásvadász bulvárnak és a mesterségesen
+          felduzzasztott cikkeknek, amiknek csak az a céljuk, hogy minél több hirdetést
+          jelenítsenek meg. <em>(Note to self: Az ilyen kijelentések szoktak rosszul öregedni, de
+          egye fene.)</em>
         </p>
+
+        <p>
+          Ezért minden szombaton átfésülöm a sajtót, és kiválasztom azt a 15–20 hírt, ami szerintem
+          valóban számít, vagy érdekes, de nem kapott nagy figyelmet. Kizárólag minőségi
+          forrásokból dolgozom, és a cikkek végén mindig ott találod az eredeti hivatkozást is –
+          sőt, kifejezetten biztatlak, hogy olvass bele az eredeti anyagokba is!
+        </p>
+
+        <p>
+          A célom egyszerű: ha gyorsan és sallangmentesen szeretnél képbe kerülni a heti
+          újdonságokkal, itt könnyedén megtehesd.
+        </p>
+
+        <p>
+          Én is gamer vagyok, a személyes kedvenceim között ott van a{' '}
+          {
+            FAVOURITES.map((g, i) => (
+              <>
+                {i === 0 ? '' : i === FAVOURITES.length - 1 ? ' és a ' : ', '}
+                <em>{g.title}</em>
+                {g.note ? ` (${g.note})` : ''}
+              </>
+            ))
+          }.
+        </p>
+
+        <div class="sig">– Erik</div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <section id="hirlevel">
     <div class="wrap">
@@ -61,22 +97,40 @@ const description = 'TODO: egy mondat a Pixelpostáról.';
 </Base>
 
 <style>
+  /* Matches the calendar page's head: this is a reference page, not the front
+     of an edition, so the h1 sits below an issue hero's scale. */
   .info-head h1 {
     font-family: var(--font-display);
     font-weight: 800;
     font-size: clamp(2.1rem, 5vw, 3.1rem);
     line-height: 1;
     letter-spacing: -0.03em;
-    margin: 10px 0 16px;
+    margin: 10px 0 20px;
   }
-  .standfirst {
-    font-size: 1.06rem;
+  .lead {
+    font-size: 1.14rem;
     line-height: 1.62;
     max-width: var(--measure);
     color: var(--ink);
-    margin: 0;
+    margin: 0 0 26px;
   }
-  p {
+  .prose {
     max-width: var(--measure);
+  }
+  .prose p {
+    margin: 0 0 20px;
+  }
+  .prose em {
+    font-style: italic;
+  }
+  /* Same closing rule as an issue's outro signature. */
+  .sig {
+    font-family: var(--font-mono);
+    font-size: var(--text-meta);
+    letter-spacing: 0.04em;
+    color: var(--ink-muted);
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
   }
 </style>

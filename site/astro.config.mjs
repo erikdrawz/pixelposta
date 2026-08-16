@@ -10,14 +10,9 @@ export default defineConfig({
   // Emits sitemap-index.xml + sitemap-0.xml, referenced from public/robots.txt.
   // 404 is excluded: it is a real page in the build output but must never be
   // offered to a crawler as content.
-  //
-  // /info/ is excluded for now because it is still a shell of TODOs — remove
-  // that clause and uncomment the Infó link in components/Nav.astro once it has
-  // real copy in it.
   integrations: [
     sitemap({
-      filter: (page) =>
-        !page.endsWith('/404/') && !page.endsWith('/404.html') && !page.endsWith('/info/'),
+      filter: (page) => !page.endsWith('/404/') && !page.endsWith('/404.html'),
     }),
   ],
   build: {
