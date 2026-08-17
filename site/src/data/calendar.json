@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-08-14",
+  "generated": "2026-08-17",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -1081,6 +1081,19 @@
       "title": "The Elder Scrolls 4: Oblivion Remastered",
       "platforms": [
         "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-08-11",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "The Lord of the Rings: War in the North - Legacy Edition",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-08-11",
