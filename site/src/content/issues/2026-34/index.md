@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -15,10 +15,10 @@
 year: 2026
 week: 34
 date: '2026-08-22'
-title: Warren Spector visszavonul, a Compulsion Games szabadul
-standfirst: A Deus Ex atyja lezárja karrierjét, miközben a South of Midnight stúdiója kivásárolta
-  magát az Xboxból és visszaszerezte összes IP-jét.
-draft: true
+title: Pixelposta - 2026. 34. hét
+standfirst: 'Újabb GTA 6-szivárgás rázta meg a Rockstart, a Simpsons: Hit & Run pedig
+  valamilyen formában visszatérhet.'
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -29,6 +29,7 @@ articles:
     A GSC Game World múlt szerdán kiadta a S.T.A.L.K.E.R. 2: Heart of Chornobyl ingyenes 2.0-s frissítését, amelyet "Back to the Zone" névre kereszteltek. Az update felújított grafikát, jobb NPC-viselkedést, egyedi nehézségi beállításokat, ködmechanikát, távcső-típusokat és több új fegyvert hozott. Az A-Life rendszer is bővült: az NPC-k és mutánsok most aktívabban élnek a Zónában, a játékos jelenléte nélkül is. A frissítés a Hope of Despair DLC-vel egyszerre jelent meg.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/s-t-a-l-k-e-r-2-has-shown-off-its-free-2-0-update-with-a-gameplay-trailer-and-it-makes-it-feel-almost-like-a-new-game-even-without-the-upcoming-dlc
+  imageCredit: 'Kép: GSC Game World'
 - slug: ujabb-gta-6-szivargas-ezuttal-egy-digitalis-jogokert-kuzdo
   category: Játékhírek
   title: Újabb GTA 6-szivárgás, ezúttal egy digitális jogokért küzdő csoport jóvoltából
@@ -50,6 +51,7 @@ articles:
     A The Wild Gentlemen és a Kwalee néhány napja bejelentette, hogy a RetroSpace október 1-jén jelenik meg PC-n. A játékban egy klónozott takarítót irányítasz egy retró, '70-es évekbeli dizájnú űrállomáson, amelyet egy öntudatos fekete lyuk nyelt el. A túléléshez lopakodás, harc és különleges mutációs képességek kellenek, az elhalálozás után pedig egy friss klónban ébredsz fel, igaz, esetleg kellemetlen mellékhatásokkal.
   source: RPS
   url: https://www.rockpapershotgun.com/immersive-sim-retrospace-aka-70s-system-shock-gets-an-october-release-date-plus-a-trailer-full-of-funky-guns-and-sentient-black-holes
+  imageCredit: 'Kép: The Wild Gentlemen'
 - slug: a-007-first-light-4-millio-eladasnal-jar-switch-2-re-is
   category: Játékhírek
   title: A 007 First Light 4 millió eladásnál jár, Switch 2-re is megérkezik
@@ -64,6 +66,14 @@ articles:
     A megbízhatónak tartott Dealabs szivárogtatóra hivatkozva indonéz és tajvani forrásokból érkező pletykák szerint a Diablo 4 Switch 2-es verziójának bejelentése a Blizzconhoz kötődik, amely szeptember 12-én rajtol. A megjelenés várhatóan szeptember 15-én lett volna. A csomag az alapjátékot és mindkét nagyobb kiegészítőt tartalmazza $70-os áron, ami elég kedvező. Fizikai kiadás is készül, de csak kód-a-dobozban formában, nem igazi kazettán.
   source: DigitalFoundry
   url: https://www.digitalfoundry.net/news/2026/08/report-diablo-4-switch-2-port-rumoured-for-blizzcon-debut
+- slug: matt-groening-szerint-valamilyen-formaban-visszater-a
+  category: Játékhírek
+  title: 'Matt Groening szerint valamilyen formában visszatér a Simpsons: Hit & Run'
+  body: |
+    A Simpson család megalkotója, Matt Groening a D23 2026 egyik panelbeszélgetésén elszólta magát: arra a kérdésre, hogy készül-e újabb Simpsons: Hit & Run, azt felelte, szerinte az eredeti játék "valamilyen formában visszatér". Matt Selman jelenlegi showrunner rögtön hozzátette, hogy "vagy nem", ami alapján Groening könnyen lehet, hogy olyasmit mondott ki, amit még nem kellett volna. Hivatalos bejelentés egyelőre nincs, de a megfogalmazás inkább remasterre vagy remake-re utal, és egybecseng egy korábbi értesüléssel, amely szerint a felújítás már készül az iparág egyik legnagyobb stúdiójánál.
+  source: NintendoLife
+  url: https://www.nintendolife.com/news/2026/08/the-simpsons-hit-and-run-could-be-making-a-return-in-some-form
+  imageCredit: 'Kép: Rubes'
 - slug: az-rtx-5090-onalloan-dragabb-mint-egy-teljes-pc-ugyanazzal
   category: Hardware
   title: Az RTX 5090 önállóan drágább, mint egy teljes PC ugyanazzal a kártyával
@@ -85,6 +95,7 @@ articles:
     Miközben a GTA VI körüli szivárgásokból nehéz kimaradni, érdemes figyelni arra, ami a GTA IV-gyel történt: az xoxor4d nevű modder RTX Remix alapú munkája, amely path tracinget és 4K textúrákat visz a 2008-as játékba, két napja frissült 1.4.2-es verzióra. Az eredmény megdöbbentő, Liberty City szinte felismerhetetlen a dinamikus fények és árnyékok révén. Csúcsgép kell hozzá, RTX 5090-en is előfordul, hogy 60 FPS alá esik a képfrissítés.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/pc-gaming/grand-theft-auto-4-rtx-remix-4k-texure-mods
+  imageCredit: 'Kép: xoxor4d'
 - slug: ron-gilbert-elmeselte-hogyan-talalta-meg-a-thimbleweed-park
   category: Stúdió & Üzlet
   title: Ron Gilbert elmesélte, hogyan találta meg a Thimbleweed Park 2 finanszírozóját
@@ -113,6 +124,7 @@ articles:
     A Guerrilla Games Horizon Hunters Gathering című, eredetileg live service-ként tervezett spin-offját a Sony alapjaiban átszabja: a Bloomberg forrásai szerint eltávolítják belőle az élő szolgáltatás elemeit, és inkább egy hagyományosabb, sztorival is rendelkező kooperatív játékot csinálnak belőle. A fejlesztőcsapatnak decemberig kell meggyőzniük a Sony vezetőit az új irányról. A következő "igazi", egyjátékos Horizon folytatás egyelőre még évekre van.
   source: RPS
   url: https://www.rockpapershotgun.com/sony-are-rebooting-their-live-service-horizon-game-as-a-more-traditional-co-op-affair-claim-sources-with-a-proper-horizon-forbidden-west-sequel-still-years-away
+  imageCredit: 'Kép: Guerrilla Games'
 - slug: ea-alkalmazottak-a-szaudi-felvasarlas-erkolcsi-csod
   category: Stúdió & Üzlet
   title: 'EA-alkalmazottak: a szaúdi felvásárlás erkölcsi csőd eredménye'
@@ -127,6 +139,7 @@ articles:
     A Sony 2028 januárjától leállítja a PS5 és PS6 fizikai lemezeinek gyártását, miközben egy tiltakozó petíció már 350 000 aláírást gyűjtött be. A The Game Business adatai szerint a Resident Evil Requiem eladásainak Franciaországban 55, Japánban 51 százaléka volt fizikai, Nagy-Britanniában és Ausztráliában pedig 40-43 százalék, sőt az USA-ban az alacsony 22 százalékos arányat részben a lemezek kifogyása magyarázza. A Sony szerint mindez nem befolyásolja az üzletmenetét, de a lépést egy rövid blogbejegyzéssel kommunikálták, közvetlen párbeszéd nélkül.
   source: DigitalFoundry
   url: https://www.digitalfoundry.net/news/2026/08/do-resident-evil-requiems-healthy-disc-sales-call-sonys-all-digital-ps6-strategy-into-question
+  imageCredit: 'Kép: VGC'
 - slug: a-compulsion-games-kivasarolta-magat-az-xboxbol-es
   category: Stúdió & Üzlet
   title: A Compulsion Games kivásárolta magát az Xboxból, és visszaszerezte IP-jeit
@@ -134,6 +147,13 @@ articles:
     A South of Midnight fejlesztője, a Compulsion Games augusztus 11-én sikeresen lezárta a menedzsment-kivásárlást az Xboxtól, és ezzel visszakapta az összes korábbi játékának jogait, köztük a We Happy Few-ét és a South of Midnight-ét. A stúdió a Microsoft nagy leállítási hullámának esett volna áldozatul, de a csapat inkább az önállóságot választotta. Ahogy a vezérigazgató fogalmazott: a csapat inkább követ enne és benzint inna, mint hogy szétváljon. Most egy már fejlesztés alatt lévő projekttel folytatják, és partnereket keresnek.
   source: VGC
   url: https://www.videogameschronicle.com/news/we-would-rather-eat-rocks-and-drink-gasoline-than-be-split-up-compulsion-games-has-completed-its-buyout-from-xbox/
+- slug: a-rockstarnal-minden-langol-az-ujabb-gta-6-szivargas-utan
+  category: Stúdió & Üzlet
+  title: A Rockstarnál minden lángol az újabb GTA 6-szivárgás után
+  body: |
+    A Bloomberg értesülései szerint a Rockstar egyelőre sem a kiszivárogtatót nem azonosította, sem azt nem tudja, hogyan történt a kiszivárgás, a cégen belül viszont "minden kéz a fedélzeten" alapon keresik a felelőst. A Take-Two jogászai a Microsofttól és a Discordtól próbálnak adatokat szerezni, a marketingterv viszont nem változik: az augusztus 27-i, Netflixen érkező játékmenet-előzetes marad. A felháborodás azért is nagy, mert ez a második nagy GTA 6-szivárgás: a 2022-es eset után a Rockstar heti öt irodai napra kötelezte a fejlesztőket, felszámolva a távmunkát – és sokan épp azt élik meg keserűen, hogy ez sem akadályozta meg az újabb incidenst. A játék november 19-én jelenik meg.
+  source: Bloomberg
+  url: https://www.bloomberg.com/news/newsletters/2026-08-21/rockstar-rattled-as-grand-theft-auto-vi-leaks-again
 releases:
 - title: 'Metal Gear Solid: Master Collection Vol. 2'
   platform: PS5, Switch, Switch 2, Xbox, PC
@@ -159,5 +179,16 @@ releases:
 - title: 'Onimusha: Way of the Sword'
   platform: PS5, Xbox, PC, Switch 2
   date: '09.04'
-ajanlo: []
+ajanlo:
+  - title: Bills Must Be Paid
+    genre: Inkrementális
+    appid: 4421010
+    description: >-
+      Le vagy égve, a számlákat pedig fizetni kell: törd fel a malacperselyeket, és szedd össze a pénzt! Rövid, pörgős inkrementális játék, amelyben fejlesztésekkel jutsz egyre feljebb, amíg végül ki nem mászol az adósságból.
+
+  - title: Servant of the Lake
+    genre: Point & Click kaland
+    appid: 3636770
+    description: >-
+      Kezdd el új munkádat szolgálóként a rejtélyes Vanderboom-birtokon. Fejtsd meg a rejtvényeket, szolgáld ki a családot, és tárd fel a sötét alkímiai titkaikat a Rusty Lake sorozat új, egyjátékos point-and-click kalandjátékában.
 ---
