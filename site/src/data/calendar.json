@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-08-17",
+  "generated": "2026-08-24",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -1545,6 +1545,16 @@
       "openCriticId": null
     },
     {
+      "title": "Truck-kun is Supporting Me From Another World?!",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-14",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Marvel's Wolverine",
       "platforms": [
         "PS5"
@@ -1758,9 +1768,12 @@
       "openCriticId": null
     },
     {
-      "title": "Dynasty Warriors 3 Remastered",
+      "title": "Dynasty Warriors 3: Complete Edition Remastered",
       "platforms": [
-        "PS5"
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-10-01",
@@ -2006,6 +2019,19 @@
     {
       "title": "Minecraft Switch 2 Edition",
       "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Remothered: Red Nun's Legacy",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
         "Switch 2"
       ],
       "earlyAccess": false,
@@ -2305,8 +2331,8 @@
       "title": "Grave Seasons",
       "platforms": [
         "PC",
-        "Xbox",
         "PS5",
+        "Xbox",
         "Switch"
       ],
       "earlyAccess": false
@@ -2394,16 +2420,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Remothered: Red Nun's Legacy",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Road Kings",
       "platforms": [
         "PC",
@@ -2462,6 +2478,16 @@
       "earlyAccess": false
     },
     {
+      "title": "The Wolf Among Us Remastered",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
       "title": "There Are No Ghosts at the Grand",
       "platforms": [
         "PC",
@@ -2481,8 +2507,8 @@
       "platforms": [
         "PC",
         "PS5",
-        "Xbox",
-        "Switch 2"
+        "Switch 2",
+        "Xbox"
       ],
       "earlyAccess": false
     },
@@ -2535,9 +2561,9 @@
       "title": "Witchbrook",
       "platforms": [
         "PC",
-        "Xbox",
         "Switch",
-        "Switch 2"
+        "Switch 2",
+        "Xbox"
       ],
       "earlyAccess": false
     },
@@ -2546,9 +2572,9 @@
       "platforms": [
         "PC",
         "PS5",
-        "Xbox",
         "Switch",
-        "Switch 2"
+        "Switch 2",
+        "Xbox"
       ],
       "earlyAccess": false
     },
