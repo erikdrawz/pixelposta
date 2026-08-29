@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -15,11 +15,11 @@
 year: 2026
 week: 35
 date: '2026-08-29'
-title: Witcher 4 dátuma és a GTA 6 csak 30 fps-sel
+title: Pixelposta - 2026. 35. hét
 standfirst: A CD Projekt Red 2028-ra tűzte ki a Witcher 4-et és ingyenes remastert hoz a Witcher
   3-hoz, miközben a Rockstar megerősítette, hogy a GTA 6 konzolokon induláskor 60 fps-es mód
   nélkül jelenik meg.
-draft: true
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -37,6 +37,7 @@ articles:
     A CD Projekt Red néhány napja bejelentette, hogy a The Witcher 3 szeptember 29-én ingyenes remaster-frissítést kap, amelyhez a Hearts of Stone és a Blood and Wine bővítmények is díjmentesen járnak. A csomag modernizált világítást, csiszolt harcrendszert, új kivégzőmozdulatokat, átalakított skillfát, transzmogrifációt és bővített fotómódot tartalmaz. Ez a játék második nagyobb felújítása, az előző 2022-ben érkezett.
   source: RPS
   url: https://www.rockpapershotgun.com/cd-projekt-red-sweeten-the-witcher-3-songs-of-the-past-honeypot-with-a-free-base-game-remaster-and-oh-yeah-both-original-expansions-too
+  imageCredit: 'Kép: CD Projekt Red'
 - slug: a-heroes-of-might-magic-3-remake-hu-maradt-az-eredetihez
   category: Játékhírek
   title: A Heroes of Might & Magic 3 remake hű maradt az eredetihez
@@ -44,6 +45,7 @@ articles:
     Az Ubisoft néhány napja mutatta meg a Heroes of Might & Magic 3 teljes 3D-s remake-jét, és az első benyomások szerint a fejlesztők ragaszkodtak az eredetihez: az összes kilenc frakció, az eredeti kampány és mindkét kiegészítő benne van. A legnagyobb bónusz, hogy a játék importálja a 25 év alatt felhalmozott egyéni pályákat is. A minőségi fejlesztések között szerepel egy építési sor a várakhoz, kényelmesebb csapatfelvétel és egy praktikus mozgástartomány-jelző a csatákban.
   source: RPS
   url: https://www.rockpapershotgun.com/im-not-a-fan-of-heroes-of-might-magic-3-but-i-can-recognise-that-ubisoft-have-done-a-faithful-job-of-recreating-the-much-loved-turn-based-strategy-rpg
+  imageCredit: 'Kép: Ubisoft'
 - slug: a-state-of-decay-3-el-es-virul-zart-betatesztet-tartanak
   category: Játékhírek
   title: 'A State of Decay 3 él és virul: zárt bétatesztet tartanak idén'
@@ -86,6 +88,7 @@ articles:
     A Digital Foundry néhány napja kipróbálhatta a Metro 2039-et Gamescom előtt, GeForce Now-on keresztül, RTX 5080-as egyenértékű gépen, ultra beállításokon, 4K-ban. A 4A Engine ezúttal is ray traced globális megvilágítást és hibrid RT-tükröződéseket kapott, a részletgazdagság pedig lenyűgöző. Néhány foliage-popint és alkalmi 60fps alá esést jegyeztek fel, de a megjelenésig még nagyjából hat hónap van hátra.
   source: DigitalFoundry
   url: https://www.digitalfoundry.net/previews/metro-2039s-extreme-detail-and-smart-visual-feature-set-has-us-wanting-more
+  imageCredit: 'Kép: 4A Games'
 - slug: a-gta-6-indulaskor-30-fps-sel-fut-konzolokon-60-fps-es-mod
   category: Játékhírek
   title: A GTA 6 induláskor 30 fps-sel fut konzolokon, 60 fps-es mód egyelőre nincs
@@ -93,6 +96,7 @@ articles:
     A Rockstar Games fejlesztési vezetője, Rob Nelson megerősítette, hogy a GTA 6 jelenleg 30 képkocka per másodperccel fut konzolokon, és egyelőre nem tudni, lesz-e 60 fps-es mód a megjelenéskor. A 60 fps kérdése szerinte még a technikai csapattal való egyeztetéstől függ. PC-s verzióról még nincs szó, de az várhatóan az első platform lesz, ahol magasabb képkockaráta is elérhető majd.
   source: VGC
   url: https://www.videogameschronicle.com/news/gta-6-is-confirmed-to-be-30-frames-per-second-at-launch-no-performance-mode-at-launch/
+  imageCredit: 'Kép: Rockstar Games'
 - slug: the-witcher-3-remastered-switch-2-n-felbontas-es
   category: Játékhírek
   title: 'The Witcher 3 Remastered Switch 2-n: felbontás és képsebesség kiderült'
@@ -114,6 +118,7 @@ articles:
     A Glee-Cheese fejlesztette és a Wired Productions kiadja a Mr. Records című ritmusjátékot, amelyben George lemezboltos bőrébe bújhatunk. A játékmenet két részből áll: pszichedelikus, álomszerű szinteken futunk, ugrálunk és csúszkálunk a zenére, napközben pedig a boltba betérő különleges vásárlókkal csevegünk, és megpróbáljuk kitalálni, melyik lemez lenne nekik a tökéletes. Több mint 40 kézzel készített pályát, eredeti zenéket és egy érzelmes történetet ígérnek, pontos megjelenési dátum egyelőre nincs.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/08/mr-records-could-be-the-next-indie-sleeper-hit-on-switch-2
+  imageCredit: 'Kép: Glee-Cheese Studio'
 - slug: a-division-2-uj-dlc-t-kap-ezuttal-a-central-park-lesz-a
   category: Játékhírek
   title: A Division 2 új DLC-t kap, ezúttal a Central Park lesz a helyszín
@@ -121,20 +126,6 @@ articles:
     Az Ubisoft a múlt héten, a kölni Gamescom keretében jelentette be a The Division 2 következő fizetős bővítményét. Az "Echoes of Central Park" New York egyik legikonikusabb helyszínére visz, ami eddig nem szerepelt a szériában. A korábbi részeknél sötétebb, horrorral átitatott hangvétel ígérete a legérdekesebb újdonság. A teljes bemutatóra szeptember 24-én kerül sor, akkor látjuk majd az új térképet és a gameplayt is.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/the-division-2-continues-to-grow-with-the-echoes-of-central-park-expansion-taking-us-to-another-unseen-part-of-new-york-city
-- slug: a-nintendo-harom-nagy-sikerrel-uralja-a-japan-eladasi-listat
-  category: Játékhírek
-  title: A Nintendo három nagy sikerrel uralja a japán eladási listát
-  body: |
-    A Famitsu heti japán dobozos eladási adatai szerint a Nintendo továbbra is vezeti a toplistát: a Rhythm Heaven Groove, a Splatoon Raiders és a Tomodachi Life: Living the Dream együtt foglalja el az élmezőnyt. Az újoncok közül a STEINS;GATE RE:BOOT debütált rögtön három helyen (Switch, Switch 2 és PS5 verzióban), és meglepő módon a Switch 2-es kiadat fogyott a legjobban. Hardware-fronton a Switch 2 vezet 20 734 eladott darabbal, míg a PlayStation összes változata összesítve 6397, az eredeti Switch pedig 6111 példányt tett ki.
-  source: NintendoLife
-  url: https://www.nintendolife.com/news/2026/08/japanese-charts-nintendos-trio-of-2026-smash-hits-keep-it-on-top
-- slug: the-wolf-among-us-remastered-oktober-29-en-jon-fekete-feher
-  category: Játékhírek
-  title: The Wolf Among Us Remastered október 29-én jön, fekete-fehér Noir móddal
-  body: |
-    Két napja derült ki a megjelenési dátum: a The Wolf Among Us Remastered október 29-én érkezik PC-re, PS5-re, Xbox Series konzolokra és Nintendo Switch-re. A PM Studios és a Telltale közös felújítása egy teljesen új Noir móddal bővül, ami a klasszikus detektívfilmek hangulatát idézi. A játékot a Summer Game Fest idén júniusi bejelentésekor a régóta várt The Wolf Among Us 2 is elkísérte.
-  source: VGC
-  url: https://www.videogameschronicle.com/news/the-wolf-among-us-remastered-gets-a-new-noir-mode-when-it-launches-this-october/
 - slug: nehany-pc-s-jatekos-sajat-maga-keszit-lemezeket-digitalis
   category: Játékhírek
   title: Néhány PC-s játékos saját maga készít lemezeket digitális játékaiból
@@ -142,6 +133,13 @@ articles:
     Miközben az Xbox és a PlayStation egyre inkább a fizikai adathordozók kivezetésén dolgozik, néhány PC-s játékos pont az ellenkező irányba indult: saját maga ég lemezre digitális játékokat. A folyamat viszonylag egyszerű, és GOG-os játékoknál különösen kényelmes, hiszen a platform DRM-mentes offline telepítőket kínál. Kell hozzá Blu-ray-író, néhány lemez, valamint az ImgBurn és a MakeMKV szoftver. A téma hátterében a játékmegőrzés egyre aktuálisabb kérdése áll, amit csak felerősít, hogy a PlayStation 2028-tól leállítja az új fizikai kiadásokat.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/pc-gaming/as-xbox-and-playstation-look-towards-a-world-beyond-physical-media-some-pc-gamers-have-started-making-their-own-discs
+- slug: lego-varosepitot-jelentettek-be-a-cities-skylines-ii
+  category: Játékhírek
+  title: 'Lego-városépítőt jelentettek be a Cities: Skylines II fejlesztői'
+  body: |
+    A gamescom Opening Night Live-on mutatkozott be a Lego Skylines, egy Lego-kockákból épülő városépítő, amelyben sárga minifigurák népesítik be a települést. A fejlesztő az Iceflake Studios, amely jelenleg a Cities: Skylines II-t is viszi: az eredeti fejlesztő Colossal Order 2025 novemberében vált el a kiadó Paradox Interactive-tól, a márka viszont a Paradoxnál maradt. A játékban az áram, az élelmiszer és a víz biztosításától a kórházakon és a szemétszállításon át a fánkboltokig mindenről a játékos dönt. Megjelenési dátum egyelőre nincs; a játék PS5-re, Xboxra, Switch 2-re és PC-re érkezik.
+  source: GameInformer
+  url: https://gameinformer.com/gamescom-2026/2026/08/25/lego-skylines-is-a-brick-based-city-builder-from-cities-skyline-ii-devs
 - slug: az-apple-bemutatta-az-m6-ot-es-az-m5-ultrat-uj-mac-mini-es
   category: Hardware
   title: Az Apple bemutatta az M6-ot és az M5 Ultrát új Mac Mini és Mac Studio gépekben
@@ -173,5 +171,22 @@ releases:
 - title: 'Halloween: The Game'
   platform: PS5, Xbox, PC
   date: '09.08'
-ajanlo: []
+ajanlo:
+  - title: Divinum
+    genre: Metroidvania
+    appid: 1148130
+    description: >-
+      A Divinum egy akció-kaland, amely stílusos, kifejező harcrendszert ötvöz az élvezetes felfedezéssel. Sajátítsd el a pusztító kombókat és alkoss egyedi építményeket, hogy elűzd a titokzatos betolakodókat és feltárd szigeted rejtett igazságát.
+
+  - title: Fading Afternoon
+    genre: Akció-dráma
+    appid: 1687000
+    description: >-
+      Seiji Maruyama egy középkorú jakuza, akit nemrég szabadult a börtönből. "Gozuki"-ként (a buddhista mitológia egyik démonvezére) ismert, és ő az az erő, amire oyabunja számít. De van egy dolog, amit az anikija nem vesz figyelembe: Maruyama öregszik.
+
+  - title: Hearth and Hamlet
+    genre: Idle városépítő
+    appid: 4315040
+    description: >-
+      Kezdj egy tábortűzzel. Építs egy királyságot. A Hearth and Hamlet egy középkori városépítős kattintgatós játék, amely ötvözi az erőforrás-gazdálkodást, a részletes fejlesztési fákat és a pihentető tétlen játékmenetet. Építsd fel birodalmadat új technológiák kutatásával, új törvények elfogadásával, távoli vidékekkel való kereskedéssel és sok mással.
 ---
