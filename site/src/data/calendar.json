@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-08-24",
+  "generated": "2026-08-31",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -1489,6 +1489,18 @@
       "openCriticId": null
     },
     {
+      "title": "Mewgenics",
+      "platforms": [
+        "Switch 2",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Valheim 1.0",
       "platforms": [
         "PC",
@@ -1535,6 +1547,16 @@
       "openCriticId": null
     },
     {
+      "title": "WARDOGS",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": true,
+      "date": "2026-09-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Welcome to Elderfield",
       "platforms": [
         "PC"
@@ -1573,6 +1595,18 @@
       ],
       "earlyAccess": false,
       "date": "2026-09-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Aniimo",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-16",
       "score": null,
       "openCriticId": null
     },
@@ -1624,6 +1658,18 @@
       "openCriticId": null
     },
     {
+      "title": "Train Sim World 7",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-17",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "LEGO Batman Legacy of the Dark Knight",
       "platforms": [
         "Switch 2"
@@ -1645,9 +1691,37 @@
       "openCriticId": null
     },
     {
+      "title": "The Walking Dead: Streets of Survival",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-18",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Dune Awakening",
       "platforms": [
         "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-22",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Graveyard Keeper 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch",
+        "Switch 2"
       ],
       "earlyAccess": false,
       "date": "2026-09-22",
@@ -1744,11 +1818,36 @@
       "openCriticId": null
     },
     {
+      "title": "The Witcher 3 : Wild Hunt Remastered",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Toem 2",
       "platforms": [
         "PC",
         "PS5",
         "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Transport Fever 3",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-09-29",
@@ -1824,6 +1923,16 @@
       ],
       "earlyAccess": false,
       "date": "2026-10-02",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "AION 2",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-05",
       "score": null,
       "openCriticId": null
     },
@@ -1968,6 +2077,16 @@
       "openCriticId": null
     },
     {
+      "title": "Star Trek: Outposts Unknown",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-20",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Final Fantasy Resonance",
       "platforms": [
         "PC",
@@ -2087,6 +2206,19 @@
       "openCriticId": null
     },
     {
+      "title": "The Wolf Among Us Remastered",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Crymelight",
       "platforms": [
         "PC",
@@ -2109,12 +2241,33 @@
       "openCriticId": null
     },
     {
+      "title": "Moomin: Midsummer Madness",
+      "platforms": [
+        "PC",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-11",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Metaphor: ReFantazio",
       "platforms": [
         "Switch 2"
       ],
       "earlyAccess": false,
       "date": "2026-11-12",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Trees Hate You",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-16",
       "score": null,
       "openCriticId": null
     },
@@ -2175,6 +2328,30 @@
       "date": "2026-12-10",
       "score": null,
       "openCriticId": null
+    },
+    {
+      "title": "Stage Tour",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Path of Exile",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-11",
+      "score": null,
+      "openCriticId": null
     }
   ],
   "tbc": [
@@ -2182,21 +2359,6 @@
       "title": "007 First Light",
       "platforms": [
         "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Aion 2",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Aniimo",
-      "platforms": [
-        "PC",
-        "Xbox"
       ],
       "earlyAccess": false
     },
@@ -2279,6 +2441,13 @@
       "earlyAccess": false
     },
     {
+      "title": "DNA NEMESIS",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
       "title": "Edge of Memories",
       "platforms": [
         "PC",
@@ -2334,6 +2503,27 @@
         "PS5",
         "Xbox",
         "Switch"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Gravehounds",
+      "platforms": [],
+      "earlyAccess": false
+    },
+    {
+      "title": "Guns of Eschaton",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "Hillthorn",
+      "platforms": [
+        "PC"
       ],
       "earlyAccess": false
     },
@@ -2404,6 +2594,13 @@
       "earlyAccess": false
     },
     {
+      "title": "Petit Planet",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
       "title": "Prison of Husks",
       "platforms": [
         "PC",
@@ -2420,15 +2617,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Road Kings",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Serial World",
       "platforms": [
         "PC"
@@ -2437,13 +2625,6 @@
     },
     {
       "title": "Spirit Crossing",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Star Trek: Outposts Unknown",
       "platforms": [
         "PC"
       ],
@@ -2474,16 +2655,6 @@
       "title": "The Legend of Zelda: Ocarina of Time Remake",
       "platforms": [
         "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "The Wolf Among Us Remastered",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Switch",
-        "Xbox"
       ],
       "earlyAccess": false
     },
@@ -2546,6 +2717,15 @@
       "title": "Warhammer Survivors",
       "platforms": [
         "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
+      "title": "We Were Here Tomorrow",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
       ],
       "earlyAccess": false
     },
