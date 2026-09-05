@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -15,10 +15,10 @@
 year: 2026
 week: 36
 date: '2026-09-05'
-title: GTA 6 megrázta a piacot, és a Don't Nod bajban
-standfirst: A GTA 6 Netflix-bemutatója egyharmadával növelte a konzoleladásokat, miközben
-  a Life is Strange stúdiója, a Don't Nod leépítésekre készül pénzügyi gondjai miatt.
-draft: true
+title: Pixelposta - 2026. 36. hét
+standfirst: Kiszivárgott 12 terabájtnyi korai Steam-adat, benne kiadatlan játékbuildekkel,
+  a GTA 6 Netflix-bemutatója pedig egyharmadával lökte meg a konzoleladásokat.
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -43,6 +43,7 @@ articles:
     A Creative Assembly a két nappal ezelőtti Gamescom-bemutatón részletesen elmesélte, miért ragaszkodik az Alien: Isolation 2 kizárólag Ridley Scott 1979-es filmjéhez, még úgy is, hogy a folytatás egy bolygófelszíni kolóniára visz, ami Cameron Aliens-ére emlékeztet. A fejlesztők a 20th Century Fox archívumát túrják fel: korabeli fotókból, kellékes technikákból és anyagokból dolgoznak, hogy a világ hiteles maradjon. LCD panel, LED-lámpa nincs, csak zsíros vinil, CRT-monitor és kétségbeesés, mert a xenomorf továbbra sem löhető le.
   source: RPS
   url: https://www.rockpapershotgun.com/im-a-massive-fan-of-aliens-but-it-is-a-very-different-beast-why-creative-assembly-are-still-ignoring-every-movie-but-the-original-in-alien-isolation-2-despite-heading-planetside
+  imageCredit: 'Kép: Creative Assembly'
 - slug: uj-trailer-erkezett-a-castlevania-belmont-s-curse-hoz
   category: Játékhírek
   title: 'Új trailer érkezett a Castlevania: Belmont''s Curse-höz, veteránoknak kötelező'
@@ -50,6 +51,7 @@ articles:
     Két napja jelent meg a Castlevania: Belmont's Curse legújabb trailere, és komoly nosztalgiabombát dob a régi rajongóknak: a háttérben az ikonikus Bloody Tears szól, egy nagyon szép új feldolgozásban. A gameplay alapján a sorozat egyik legsebességesebb részét kaphatjuk, rengeteg harci és mozgási lehetőséggel, de az Igavania-feeling megmaradt. A játék október 15-én jelenik meg Nintendo Switch-re, Switch 2 verzióról egyelőre nincs szó.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/09/castlevania-belmonts-curse-trailer-will-give-veteran-fans-goosebumps
+  imageCredit: 'Kép: Evil Empire'
 - slug: state-of-decay-3-negyszer-akkora-vilag-es-allithato
   category: Játékhírek
   title: 'State of Decay 3: négyszer akkora világ és állítható nehézség 2027-re'
@@ -113,6 +115,22 @@ articles:
     Michał Nowakowski, a CD Projekt Red egyik vezérigazgatója néhány napja adott interjút, amelyben a stúdió jövőjéről és fejlesztési szemléletéről beszélt. Elmondta: a minőség mindig megelőzi a költségeket, és aki takarékoskodást tesz az első helyre, az nem tud olyan játékot csinálni, mint a The Witcher 4. A stúdió jelenleg egyszerre három nagy projekten dolgozik: a The Witcher 4-en (2028-ra várható), egy Cyberpunk-folytatáson és a Project Hadar nevű új IP-n. A váltáshoz elhagyják a saját REDengine-t, és Unreal Engine 5-re térnek át.
   source: TheGameBusiness
   url: https://www.thegamebusiness.com/p/cd-projekt-red-if-you-want-a-cost
+  imageCredit: 'Kép: CD Projekt Red'
+- slug: kiszivargott-12-terabajtnyi-korai-steam-adat-benne
+  category: Stúdió & Üzlet
+  title: Kiszivárgott 12 terabájtnyi korai Steam-adat, benne kiadatlan buildekkel
+  body: |
+    Több mint 12 terabájtnyi, a Steamen 2003 és 2013 között terjesztett fájl kezdett el keringeni a neten, amit a forrásmappa után "Steam2 Teraleak" néven emlegetnek. A csomagban a Valve és külsős kiadók trailerei, demói és kiadás előtti PC-s buildjei vannak, köztük a Portal, a Left 4 Dead és a Dota 2 korai prototípusai; végleges, bolti verziók a jelentések szerint nincsenek benne. Az ügyet elsőként nyilvánosságra hozó Gabe Follower szerint nem hackelés történt, az adatok "egy nyilvánosan elérhető végpontról" származnak. A kiszivárogtatásért egyelőre senki nem vállalta a felelősséget, a Valve pedig nem kommentálta az esetet.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/steam-data-exposure-steam2-teraleak-pre-release-game-builds/
+- slug: filmet-forgat-a-sony-pictures-a-the-drifterbol
+  category: Stúdió & Üzlet
+  title: Filmet forgat a Sony Pictures a The Drifterből
+  body: |
+    A Sony Pictures és a Story Kitchen megszerezte a The Drifter élőszereplős filmjogait. A játék az ausztrál, mindössze kétfős Powerhoof stúdió munkája: a főhős végignéz egy brutális gyilkosságot, mire high-tech katonák vízbe fojtják, ő pedig egy sötét összeesküvés kellős közepén ébred. A cím 2025-ben elnyerte az Australian Game Developer Awards fődíját, és a látvány, a narratíva és a hangzás kategóriájában is győzött. Ritkaság, hogy egy ilyen kis független játék körül ekkora hollywoodi érdeklődés alakuljon ki: a Deadline szerint neves írók és rendezők már jelentkeztek az ötleteikkel.
+  source: Deadline
+  url: https://deadline.com/2026/09/sony-pictures-story-kitchen-the-drifter-1237065760/
+  imageCredit: 'Kép: Powerhoof'
 releases:
 - title: 'Halloween: The Game'
   platform: PS5, Xbox, PC
@@ -132,5 +150,16 @@ releases:
 - title: 'Lego Batman: Legacy of the Dark Knight'
   platform: Switch 2
   date: '09.18'
-ajanlo: []
+ajanlo:
+  - title: The Painscreek Killings
+    genre: Nyomozós kaland
+    appid: 624270
+    description: >-
+      Janet, a fiatal és feltörekvő újságíró szerepében a szerkesztőd felkér, hogy nyomozz ki egy egykor élénk város rejtélyes elhagyatottságát. A városlakók haláláról szóló média által közzétett információk alapján belépsz a városba, abban a reményben, hogy találsz egy érdekes történetet, amit közzétehetsz, de olyan titkokra bukkansz, amelyeknek örökre rejtve kellett volna maradniuk.
+
+  - title: The Girl in the Window
+    genre: Rejtvényes horror
+    appid: 4700560
+    description: >-
+      Egy lány jelenik meg egy elhagyatott ház ablakában, amely 20 éve érintetlen maradt. Lépj be a hátborzongató szobákba, oldj meg rejtvényeket, fedezz fel rejtett nyomokat, és fedezd fel a sötét titkot, amely elindította a Rejtett Város rejtélyeit.
 ---
