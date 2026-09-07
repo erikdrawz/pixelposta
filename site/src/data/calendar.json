@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-08-31",
+  "generated": "2026-09-07",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -1047,16 +1047,6 @@
       "openCriticId": null
     },
     {
-      "title": "Lies of P: Complete Edition",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-06",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Marvel: TOKON Fighting Souls",
       "platforms": [
         "PC",
@@ -1064,75 +1054,6 @@
       ],
       "earlyAccess": false,
       "date": "2026-08-06",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Grounded 2",
-      "platforms": [
-        "PS5"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-11",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "The Elder Scrolls 4: Oblivion Remastered",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-11",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "The Lord of the Rings: War in the North - Legacy Edition",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Switch 2",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-11",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Agefield High: Rock the Schoo l",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-12",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Defender of the Crown: The Legend Returns",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Switch",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-13",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Duskfade",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Switch 2",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-13",
       "score": null,
       "openCriticId": null
     },
@@ -1149,41 +1070,6 @@
       "openCriticId": null
     },
     {
-      "title": "Rivage",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-13",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Servant of the Lake",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-13",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Starsand Island",
-      "platforms": [
-        "PC",
-        "Switch 2",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-18",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "The Sinking City 2",
       "platforms": [
         "PC",
@@ -1196,31 +1082,11 @@
       "openCriticId": null
     },
     {
-      "title": "DayZ",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-20",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Mortal Shell 2",
       "platforms": [
         "PC",
         "PS5",
         "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-20",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Over Requiemz",
-      "platforms": [
-        "Switch"
       ],
       "earlyAccess": false,
       "date": "2026-08-20",
@@ -1246,34 +1112,6 @@
       ],
       "earlyAccess": false,
       "date": "2026-08-25",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Brigandine Abyss",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-26",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Aggelos 2",
-      "platforms": [
-        "PC",
-        "PS4",
-        "PS5",
-        "Switch",
-        "Xbox",
-        "Xbox One"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-27",
       "score": null,
       "openCriticId": null
     },
@@ -1316,37 +1154,12 @@
       "openCriticId": null
     },
     {
-      "title": "Captain Tsubasa 2: World Fighters",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-28",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Elden Ring – Tarnished Edition",
       "platforms": [
         "Switch 2"
       ],
       "earlyAccess": false,
       "date": "2026-08-28",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Serious Sam: Shatterverse",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-08-31",
       "score": null,
       "openCriticId": null
     },
@@ -1577,6 +1390,16 @@
       "openCriticId": null
     },
     {
+      "title": "Destroy All Humans! 2: Reprobed",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Marvel's Wolverine",
       "platforms": [
         "PS5"
@@ -1616,6 +1439,20 @@
         "PC",
         "Switch",
         "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-16",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Woodo",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch",
+        "Switch 2",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-09-16",
@@ -1722,6 +1559,20 @@
         "Xbox",
         "Switch",
         "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-22",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Well Dweller",
+      "platforms": [
+        "PC",
+        "Switch",
+        "Switch 2",
+        "PS5",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-09-22",
@@ -1997,6 +1848,16 @@
       "openCriticId": null
     },
     {
+      "title": "Order of the Sinking Star",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Silver Pines",
       "platforms": [
         "PC",
@@ -2040,6 +1901,20 @@
       ],
       "earlyAccess": false,
       "date": "2026-10-13",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "The Witch's Bakery",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-14",
       "score": null,
       "openCriticId": null
     },
@@ -2136,6 +2011,16 @@
       "openCriticId": null
     },
     {
+      "title": "Hunter's Moon",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-26",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Minecraft Switch 2 Edition",
       "platforms": [
         "Switch 2"
@@ -2164,6 +2049,16 @@
         "PC",
         "PS5",
         "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-28",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Usual June",
+      "platforms": [
+        "PC"
       ],
       "earlyAccess": false,
       "date": "2026-10-28",
@@ -2241,19 +2136,20 @@
       "openCriticId": null
     },
     {
-      "title": "Moomin: Midsummer Madness",
+      "title": "Metaphor: ReFantazio",
       "platforms": [
-        "PC",
-        "Switch"
+        "Switch 2"
       ],
       "earlyAccess": false,
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "score": null,
       "openCriticId": null
     },
     {
-      "title": "Metaphor: ReFantazio",
+      "title": "Moomin: Midsummer Madness",
       "platforms": [
+        "PC",
+        "Switch",
         "Switch 2"
       ],
       "earlyAccess": false,
@@ -2363,16 +2259,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Armatus",
-      "platforms": [
-        "PC",
-        "Xbox",
-        "PS5",
-        "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Ascenders: Beyond the Peak",
       "platforms": [
         "PC"
@@ -2411,21 +2297,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Bloodstained: The Scarlet Engagement",
-      "platforms": [
-        "PC",
-        "PS5"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Chronicles Medieval",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Chronoscript: The Endless End",
       "platforms": [
         "PC",
@@ -2453,20 +2324,6 @@
         "PC",
         "PS5",
         "Xbox"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Empulse",
-      "platforms": [
-        "PS5"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Enginefall",
-      "platforms": [
-        "PC"
       ],
       "earlyAccess": false
     },
@@ -2587,13 +2444,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Order of the Sinking Star",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Petit Planet",
       "platforms": [
         "PC"
@@ -2684,13 +2534,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Usual June",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Virtue and a Sledgehammer",
       "platforms": [
         "PC"
@@ -2730,28 +2573,9 @@
       "earlyAccess": false
     },
     {
-      "title": "Well Dweller",
-      "platforms": [
-        "PC",
-        "Switch"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Witchbrook",
       "platforms": [
         "PC",
-        "Switch",
-        "Switch 2",
-        "Xbox"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Woodo",
-      "platforms": [
-        "PC",
-        "PS5",
         "Switch",
         "Switch 2",
         "Xbox"
