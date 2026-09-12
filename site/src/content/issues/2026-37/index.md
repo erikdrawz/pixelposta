@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -15,10 +15,10 @@
 year: 2026
 week: 37
 date: '2026-09-12'
-title: Physint Xboxnál, Double Fine buszos szimulátora
-standfirst: Kojima Productions játéka váratlanul az Xbox kiadójához kerül, miközben a Double
-  Fine egy abszurd buszos szimulátorral tér vissza az önálló fejlesztéshez.
-draft: true
+title: Pixelposta - 2026. 37. hét
+standfirst: 'Kojima Physintjét a PlayStation után az Xbox adja ki, a Zelda: Ocarina of
+  Time remake pedig november 5-én érkezik.'
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -29,6 +29,7 @@ articles:
     Néhány hónappal az Xboxtól való különválás után a Double Fine bejelentette első független projektjét: a Thank You Bus Driver egy laza busszimulátor, ahol utasokat kell a céljukhoz juttatni, és ha valaki megszegi a szabályokat (nem szabad aludni, körömvágni vagy bűzleni), simán pofon lehet vágni őket. A kihívás abban rejlik, hogy a sofőrnek egyszerre kell figyelni a menetrendre és az utasokra, miközben egy visszapillantó tükörbe sandít, és elfordulhat egy kis kiosztásra. Megjelenési dátum egyelőre nincs, Steam-en már lehet kívánságlistára tenni.
   source: RPS
   url: https://www.rockpapershotgun.com/double-fines-first-game-post-xbox-split-is-a-goofy-bus-driving-sim-all-about-slapping-passengers-who-dont-follow-the-rules-and-doing-a-good-job
+  imageCredit: 'Kép: Double Fine'
 - slug: steam-achievement-listak-szivarogtak-ki-szamos-be-nem
   category: Játékhírek
   title: Steam achievement-listák szivárogtak ki számos be nem jelentett játékból
@@ -51,6 +52,7 @@ articles:
     A Kinggath Creations moddercsapat által készített Kallax Storageborn nem egy sima reklámberakás: a Bethesda által jóváhagyott, ingyenes Skyrim-kiegészítő egy teljesen bejárható Dwemer áruházat, néhány egyedi dungeont és egy Matt Berry hangján szóló, IKEA-polcból lett társat kínál. Az RPS újságírója kétkedve indult neki, de végül elismerte: a self-aware humor, az apró poénok és a gondos kivitelezés együtt olyan eredményt hoztak, amit más márkáknak nemigen lesz könnyű lemásolni.
   source: RPS
   url: https://www.rockpapershotgun.com/skyrims-official-ikea-crossover-mod-might-be-the-most-deftly-assembled-elder-scrolls-gag-ever-if-not-an-ad-blueprint-other-corps-should-follow
+  imageCredit: 'Kép: Bethesda'
 - slug: a-nintendo-vasarloi-akcioval-koszoni-meg-az-amerikai
   category: Játékhírek
   title: A Nintendo vásárlói akcióval köszöni meg az amerikai játékosoknak a türelmet
@@ -65,6 +67,15 @@ articles:
     Két napja kiszivárgott az első kép arról a Lego Astro Bot szettről, amelyet a közelgő Lego PlayStation mellé lehet majd ingyen megszerezni. A 276 darabos figura pózolható, és a szemei is cserélhetők. A GWP-promóció várhatóan csak a Lego webshopban érvényes, korlátozott ideig. Maga a PlayStation-szett október 1-jén jelenik meg, 179,99 dolláros áron, 1 911 darabból áll, és Gran Turismo, illetve Ape Escape diorámákat is tartalmaz.
   source: VGC
   url: https://www.videogameschronicle.com/news/the-first-images-of-the-lego-playstations-free-pre-order-lego-astro-bot-gift-have-been-leaked/
+  imageCredit: 'Kép: VGC'
+- slug: november-5-en-jon-a-zelda-ocarina-of-time-remake
+  category: Játékhírek
+  title: 'November 5-én jön a Zelda: Ocarina of Time remake'
+  body: |
+    A Nintendo négy napja tartott Zelda 40. évfordulós Directjén kiderült, hogy a The Legend of Zelda: Ocarina of Time remake november 5-én jelenik meg. A bemutatón új trailer és nagyjából 15 percnyi játékmenet is szerepelt: a felújított látvánnyal a fiatal Link a Kokiri-erdőben, a Nagy Deku Fa odújában, Hyrule mezején és Hyrule városában is feltűnt, az okarinát pedig Switch 2-n a mikrofonba dúdolva is meg lehet szólaltatni. A Direct emellett bejelentette a Zelda-film 2027. április 30-i premierjét, egy januárban induló évfordulós világ körüli koncertturnét, új fiatal Link és Zelda amiibókat, valamint évfordulós Switch 2-kiadásokat.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/the-legend-of-zelda-ocarina-of-time-remake-gets-5-november-release-date/
+  imageCredit: 'Kép: Nintendo'
 - slug: az-xbox-disc-to-digital-programhoz-mar-1400-kompatibilis
   category: Hardware
   title: Az Xbox Disc-to-Digital programhoz már 1400 kompatibilis játékot katalogizáltak a
@@ -101,6 +112,7 @@ articles:
     Két napja robbant a hír: Hideo Kojima kémakció-játéka, a Physint nem PlayStation-exkluzív lesz, hanem az Xbox adja ki. Kojima elmondása szerint júniusban értesítette a PlayStation Studios, hogy törli a projektet, mire a stúdió három hónap alatt talált új partnert. A Sony ezzel szemben "közös döntésként" kommunikálta a válást. A váltásnak egy lényeges következménye is van: az Xbox általában PC-re is megjelenteti a single player játékait, szóval a Physint nagy eséllyel Steam-re is megérkezik majd.
   source: RPS
   url: https://www.rockpapershotgun.com/hideo-kojima-spy-action-game-physint-switches-publishing-allegiance-from-playstation-to-xbox-probably-increasing-the-chances-itll-hit-pc
+  imageCredit: 'Kép: Sony / PlayStation'
 - slug: az-ea-szaudi-tulajdonosai-a-savvy-games-szel-valo
   category: Stúdió & Üzlet
   title: Az EA szaúdi tulajdonosai a Savvy Games-szel való összeolvadást fontolgatják
@@ -123,6 +135,14 @@ articles:
     Kurt Kuhlmann, a Starfield vezető rendszertervezője egy friss interjúban elismerte, hogy a játék nem érte el az eredeti víziót. A Bethesda eddigi legnagyobb projektje közel 500 fejlesztővel készült, a Fallout 4 csapatának háromszorosával, ennek ellenére Kuhlmann szerint még ez sem volt elég: Todd Howard elképzeléséhez sokkal több ember kellett volna. "Nem az erősségünk volt" – fogalmazott, kiemelve, hogy a stúdió soha korábban nem készített se járművöket, se űrcsatákat.
   source: VGC
   url: https://www.videogameschronicle.com/news/starfield-developer-says-it-was-not-our-forte-and-needed-way-more-people-to-do-it-properly/
+- slug: a-don-t-nod-jovoje-2027-januarjan-tul-is-kerdeses
+  category: Stúdió & Üzlet
+  title: A Don't Nod jövője 2027 januárján túl is kérdéses
+  body: |
+    A Life is Strange fejlesztője, a Don't Nod nyolc napja tette közzé 2026 első félévének számait, és a kép csúnya: a működési bevétel 56%-kal, 13,8 millió euróról 6,1 millió euróra esett, az összbevétel pedig 14%-kal csökkent. A stúdió készpénzállománya júliusra 8 millió euróra apadt a tavaly év végi 15,4 millióról. A cég maga fogalmazott úgy, hogy "lényegi bizonytalanság" van azzal kapcsolatban, hogy 2027. január 31-e után folytatni tudja-e a működést, mivel az további külső finanszírozáson múlik. A Don't Nod egyetlen gyártósor köré szervezi át a franciaországi működését, a transzformációs terv pedig akár 90 állást is érinthet.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/life-is-strange-creator-may-not-be-able-to-operate-past-january-2027/
+  imageCredit: 'Kép: Don''t Nod'
 releases:
 - title: 'Destroy All Humans 2: Reprobed'
   platform: Switch 2
@@ -154,5 +174,16 @@ releases:
 - title: Silent Hill Townfall
   platform: PS5, PC
   date: '09.24'
-ajanlo: []
+ajanlo:
+  - title: 'Halloween: The Game'
+    genre: Aszimmetrikus horror
+    appid: 3219630
+    description: >-
+      1978 Halloweenjének éjszakáján senki sincs biztonságban Michael Myers elől. Bújj a Mumus bőrébe, vagy szállj szembe magával a megtestesült gonosszal a Halloweenben.
+
+  - title: 'Resonance: A Plague Tale Legacy'
+    genre: Akció-kaland
+    appid: 2713000
+    description: >-
+      Vágj bele egy eredeti történetbe, amely a díjnyertes A Plague Tale játékok előzménye. Sophia szerepében utazz el a Minótaurosz szigetére, járj túl halálos ellenségeid eszén, fejts meg ősi titkokat, és nézz szembe egy mitikus lénnyel, amely egy pusztító átok középpontjában áll.
 ---
