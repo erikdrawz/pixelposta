@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-09-14",
+  "generated": "2026-09-21",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -1400,6 +1400,16 @@
       "openCriticId": null
     },
     {
+      "title": "Diablo 4 : Age of Hatred Collection",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Marvel's Wolverine",
       "platforms": [
         "PS5"
@@ -1753,19 +1763,6 @@
       "openCriticId": null
     },
     {
-      "title": "Rayman Legends Retold",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Switch 2",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-10-01",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Ace Combat 8: Wings of Theve",
       "platforms": [
         "PC",
@@ -1922,6 +1919,18 @@
         "Xbox",
         "Switch",
         "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-14",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Warhammer 40,000: Boltgun 2",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-10-14",
@@ -2347,6 +2356,19 @@
       "openCriticId": null
     },
     {
+      "title": "Rayman Legends Retold",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Warhammer 40,000: Dawn of War 4",
       "platforms": [
         "PC"
@@ -2426,13 +2448,6 @@
     }
   ],
   "tbc": [
-    {
-      "title": "007 First Light",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false
-    },
     {
       "title": "Ascenders: Beyond the Peak",
       "platforms": [
@@ -2689,15 +2704,6 @@
       "title": "Virtue and a Sledgehammer",
       "platforms": [
         "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Warhammer 40,000: Boltgun 2",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
       ],
       "earlyAccess": false
     },
