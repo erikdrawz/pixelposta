@@ -7,19 +7,19 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
 
 year: 2026
-week: 39
-date: '2026-09-26'
+week: 38
+date: '2026-09-19'
 title: Diablo 5 bejelentve, és a Resident Evil film rekordot döntött
 standfirst: A Blizzard 2029-re ígéri a Diablo 5-öt teljesen új megközelítéssel, miközben a
   Zach Cregger-féle Resident Evil adaptáció 97%-os értékeléssel minden idők legjobban fogadott
   videójátékos filmje lett.
-draft: true
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -30,6 +30,7 @@ articles:
     Tíz napja derült ki, hogy a Diablo 5 2029-ben érkezik, és a Blizzard fejlesztői egy rövid interjúban el is magyarázták a döntést. A játék 100 évvel a Diablo 4 után játszódik: Diablo legyőzte Sanctuaryt, te pedig egy posztapokaliptikus világban, Westmarch örököseként próbálod visszafoglalni az elveszített királyságot. A csapat ígérete szerint a karavánrendszeren keresztül visszatér az emlékezetes mellékkarakterek hagyománya is, amit a Diablo 4 nem igazán tudott hozni.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/diablo5-interview
+  imageCredit: 'Kép: Blizzard'
 - slug: a-lies-of-p-folytatasa-wonders-of-o-cimen-futhat-az-oz-a
   category: Játékhírek
   title: A Lies of P folytatása Wonders of O címen futhat, az Óz a nagy varázsló ihlette
@@ -65,6 +66,7 @@ articles:
     A Valve Steam Frame-et az RPS az eddigi legjobb VR-headsetek közé sorolja: könnyű, vezeték nélküli, éles 2160x2160-as kijelzőkkel, szemkövetéssel és okos foveated streamingel, amit a Meta Quest 3 sem tud. A standalone módban még a Half-Life: Alyx is elfut rajta egy speciálisan portolt verzión. A gond az ár: a komponenshiány miatt a belépő £889-tól ($1059) kezdődik, ami a legtöbb érdeklődőnek komoly akadály. Az akkumulátor-élettartam (standalone módban kb. egy óra) szintén hagy kívánni valót maga után.
   source: RPS
   url: https://www.rockpapershotgun.com/steam-frame-review
+  imageCredit: 'Kép: Valve'
 - slug: az-xbox-disc-to-digital-funkcioja-15-eves-tervek-gyumolcse
   category: Hardware
   title: Az Xbox disc-to-digital funkciója 15 éves tervek gyümölcse
@@ -124,5 +126,16 @@ releases:
 - title: 'Star Wars: Galactic Racer'
   platform: PC, Xbox, PS5
   date: '10.06'
-ajanlo: []
+ajanlo:
+  - title: Well Dweller
+    genre: Metroidvania
+    appid: 3699590
+    description: >-
+      A Well Dweller egy sötét mesevilágban játszódó metroidvania, amely egy nyomorúságos királyságban élő, bájos karakterekkel van tele. A játékban Glimmert – egy gyufaszállal felfegyverzett apró madarat – irányíthatod, akinek el kell égetnie a gonosz királynőt, hogy megmentse a családját.
+
+  - title: Little Ghost
+    genre: Metroidvania
+    appid: 1587380
+    description: >-
+      Nyugodt hangulatú metroidvania, amely a nemlineáris felfedezésre és a fejtörőkkel tarkított ügyességi játékmenetre helyezi a hangsúlyt. Gyakori ellenőrzőpontok, nincs fizetőeszköz és nincsenek harcok. Barátokra és képességekre tehetsz szert. Gyűjthető tartalmak – köztük tarot-kártyák, különös podcastok és több mint 20 zenekar dalai – egy szürreális, papírhajtogatás-stílusú világban.
 ---
