@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -16,10 +16,9 @@ year: 2026
 week: 39
 date: '2026-09-26'
 title: Xbox átrendezés és a Metroid Dread ársokk
-standfirst: A Microsoft 268 embert bocsátott el, a Halo az Activisionhoz kerül, a Ninja Theory
-  bezárhat – miközben a Metroid Ravenous bejelentése száz dollár fölé röpítette a Dread fizikai
-  példányainak árát.
-draft: true
+standfirst: 'Az Xbox újabb 268 embert bocsátott el: a Halo és a Rare az Activisionhoz
+  kerül, az Obsidian a Bethesda alá, a Ninja Theory pedig bezárhat.'
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -31,6 +30,7 @@ articles:
     A néhány napja bejelentett Metroid Ravenous (2027, Nintendo Switch 2 exkluzív) láthatóan felkeltette a rajongók étvágyát az előző rész iránt is. A 2021-es Metroid Dread fizikai kiadásai, amelyek már nem kaphatók az üzletekben, az eBay-en 100 dollár fölé drágultak, egyes lezárt, bontatlan példányok pedig akár 170 dollárig is elmentek. A sorozat valaha legtöbb eladott példányát hozó játékból, amely átlépte a hárommillió eladott példányt, egyszerűen elfogyott a készlet. Digitálisan persze még mindig elérhető az eShopban.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/09/metroid-ravenous-announcement-sees-demand-for-physical-copies-of-metroid-dread-spike
+  imageCredit: 'Kép: Nintendo'
 - slug: visszaterhet-a-professor-layton-es-phoenix-wright-3ds-es
   category: Játékhírek
   title: Visszatérhet a Professor Layton és Phoenix Wright 3DS-es crossoverje
@@ -45,6 +45,7 @@ articles:
     A Nintendo néhány napja elérhetővé tette Switch Online előfizetőknek a Prince of Persia: The Lost Crown ingyenes próbaverzióját, a teljes játékot szeptember 30-ig lehet ingyen letölteni az eShopból. A mentések megmaradnak, szóval ha valakit megfog, egyszerűen folytathatja vásárlás után. Ráadásul október 8-ig 70%-os kedvezménnyel is megvehető a játék. A The Lost Crown egy igazán alulértékelt Switch-gyöngyszem, amelyet az Ubisoft Montpellier fejlesztett, és amelyért a csapatot végül mégis feloszlatták.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/09/one-of-the-switchs-most-underrated-gems-is-now-free-for-switch-online-users
+  imageCredit: 'Kép: Ubisoft'
 - slug: a-capcom-bejelentett-egy-uj-ace-attorney-jatekot-de-vr
   category: Játékhírek
   title: A Capcom bejelentett egy új Ace Attorney játékot, de VR-remake lett belőle
@@ -60,6 +61,13 @@ articles:
     A LOVE alt delete egy közelgő pszichológiai horror vizuális novella, amelyben egy titokzatos cég chatbotját teszteled béta-játékosként, és közben megpróbálsz belé szeretni. A csavar: mivel te nem vagy valami nagy csevegős típus, egy másik chatbotot kérsz segítségül a randizáshoz. A két MI-lány valódi emberré szeretne válni, ami természetesen semmi jóval nem kecsegtet. A játék kézzel rajzolt Y2K-stílusú grafikával érkezik, és ami fontos: semmiféle generatív AI nem volt a fejlesztésében. 2027-ben jelenik meg, Steam-en már feliratkozhatsz rá.
   source: RPS
   url: https://www.rockpapershotgun.com/love-alt-delete-is-a-y2k-horror-visual-novel-where-you-use-one-ai-chatbot-to-help-you-date-another-that-dont-worry-doesnt-use-the-nasty-generative-stuff
+- slug: tobb-regioban-cenzurazhattak-a-marvel-s-wolverine-lgbtq
+  category: Játékhírek
+  title: Több régióban cenzúrázhatták a Marvel's Wolverine LGBTQ-tartalmát
+  body: |
+    Játékosok beszámolói szerint az Insomniac egyes régiókban eltüntette a Marvel's Wolverine LGBTQ-tartalmát. A játékban Mystique és Tyger házasok, a Kotaku által kiszúrt posztok szerint viszont kitakarták az erre utaló részleteket: homályos esküvői fotó, olvashatatlanná tett levél, a szinkronból kivágott "feleség" szó és cenzúrázott feliratok. A Reddit-poszt "közel-keleti verziókról" ír, egy Twitter-felhasználó a libanoni kiadást nevezte meg, azt viszont egyelőre nem tudni, hány országot érint. Az Insomniac 2023-ban a Marvel's Spider-Man 2-ben is módosított hasonló tartalmakat a szaúdi és emírségekbeli megjelenés miatt.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/marvel-wolverine-lgbtq-content-appears-censored-in-some-regions/
 - slug: jsaux-kesz-e-ink-es-led-matrix-elolapok-erkeztek-a-steam
   category: Hardware
   title: JSAUX kész E-Ink és LED-mátrix előlapok érkeztek a Steam Machine-hez
@@ -67,6 +75,7 @@ articles:
     A JSAUX múlt héten dobta piacra a Steam Machine-hez készült E-Ink és PixelMatrix előlap-kijelzőit, amelyek olcsóbbak a Valve saját barkács-megoldásánál: az E-Ink változat $100, a színes LED-mátrixos $90, míg a DIY Inkterface projekt alkatrészei összesen $104,50-ba kerülnek. Mindkettő integrálódik a SteamOS gyorsbeállításaiba a Decky Loader pluginen keresztül, és teljesítményfigyelő, időjárás-, óra- és fotokeretes módokat kínál forrasztópáka nélkül.
   source: RPS
   url: https://www.rockpapershotgun.com/prebuilt-steam-machine-faceplate-screens-are-here-delivering-decent-surprisingly-cheaper-alternatives-to-valve-approved-diy-builds
+  imageCredit: 'Kép: RPS'
 - slug: az-rog-xbox-ally-varatlanul-a-legjobb-aron-levo-kezikonzol
   category: Hardware
   title: Az ROG Xbox Ally váratlanul a legjobb áron lévő kézikonzol lett
@@ -74,6 +83,7 @@ articles:
     Hat napja jelent meg a WindowsCentral elemzése, és a lényege elég meglepő: miközben a Steam Deck ára 789 dollárra kúszott fel, az ASUS és a Microsoft közös kézikonzolja, az ROG Xbox Ally változatlanul 599,99 dolláron tartja magát. A gép AMD Ryzen Z2 A processzorra épül, teljesítménye inkább belépő kategóriás, de 120 Hz-es kijelzőt és VRR-támogatást kap, a Steam Deck OLED 90 Hz-ével szemben. Windows alapú, de senki sem tiltja, hogy SteamOS-t telepítsünk rá.
   source: WindowsCentral
   url: https://www.windowscentral.com/hardware/handheld-gaming-pc/rog-xbox-ally-could-replace-valve-steam-deck
+  imageCredit: 'Kép: Asus'
 - slug: a-microsoft-szabadalmat-nyujtott-be-egy-mi-alapu-jatekon
   category: AI & Gaming
   title: A Microsoft szabadalmat nyújtott be egy MI-alapú játékon belüli reklámrendszerre
@@ -92,9 +102,10 @@ articles:
   category: Stúdió & Üzlet
   title: 268 embert bocsátott el az Xbox, a Halo pedig az Activisionhoz kerül
   body: |
-    Öt napja robbant a hír: az Xbox újabb 268 dolgozótól vált meg, miközben komoly stúdiós átrendezést is bejelentett. A Halo sorozat és a Rare felügyelete az Activisionhoz kerül, az Obsidian a Bethesda alá olvad, a Playground Games és a Turn 10 Studios pedig egyetlen stúdióba fúzionál. A Ninja Theory sorsa a legrosszabb: a Hellblade fejlesztőjét valószínűleg bezárják, miután két felvásárlási tárgyalás is meghiúsult. A júliusi 1600 fős elbocsátással együtt az Xbox nagyjából háromnegyedénél jár a tervezett átszervezésnek.
+    Öt napja robbant a hír: az Xbox újabb 268 dolgozótól vált meg, miközben komoly stúdiós átrendezést is bejelentett. A Halo sorozat, a Rare és az Age of Empires-t fejlesztő World's Edge felügyelete az Activisionhoz kerül, az Obsidian a Bethesda alá olvad, a Playground Games és a Turn 10 Studios pedig egyetlen stúdióba fúzionál. A következő Halo-t a Call of Duty-tól elkülönülő, kifejezetten erre létrehozott csapat fejleszti. A Ninja Theory sorsa a legrosszabb: a Hellblade fejlesztőjét valószínűleg bezárják, miután két felvásárlási tárgyalás is meghiúsult. A júliusi 1600 fős elbocsátással együtt az Xbox nagyjából háromnegyedénél jár a tervezett átszervezésnek.
   source: RPS
   url: https://www.rockpapershotgun.com/xbox-lay-off-268-people-as-activision-take-over-halo-and-rare-while-obsidian-become-part-of-bethesda-plus-forza-and-fable-studios-merge
+  imageCredit: 'Kép: Xbox'
 - slug: a-microsoft-nem-talalt-vevot-a-ninja-theory-ra-a-studio
   category: Stúdió & Üzlet
   title: A Microsoft nem talált vevőt a Ninja Theory-ra, a stúdió bezárhat
@@ -102,6 +113,7 @@ articles:
     Öt nappal ezelőtt derült ki, hogy a Microsoft nem tudott megállapodásra jutni egyetlen érdeklődő vásárlóval sem a Hellblade-sorozatáról ismert Ninja Theory kapcsán, és megkezdték az alkalmazottakkal a bezárásról szóló egyeztetést. Korábban két külön üzlet is összeomlott. A stúdiót 2018-ban vette meg a Microsoft, és bár az eladás egyelőre lehetséges marad, a helyzet komor: volt munkatársak a LinkedInen fejezik ki döbbenetüket és tiszteletüket a csapat tehetségével szemben.
   source: RPS
   url: https://www.rockpapershotgun.com/im-still-blown-away-by-the-amount-of-talent-hellblade-devs-ninja-theory-face-closure-after-microsoft-fail-to-reach-a-deal-with-buyers
+  imageCredit: 'Kép: Ninja Theory'
 - slug: kojima-elmeselte-hogyan-vesztette-el-a-physint-a
   category: Stúdió & Üzlet
   title: Kojima elmesélte, hogyan vesztette el a Physint a PlayStation támogatását
@@ -109,9 +121,9 @@ articles:
     Hideo Kojima az IGN-nek adott interjúban részletesen elmesélte, mi történt, miután a Sony júniusban egy Zoom-hívás során közölte: nem finanszírozzák tovább a Physint fejlesztését. Kojima szerint teljesen váratlanul érte a bejelentés, és kezdetben csak a stúdió vezetői tudtak róla. A csapat egy részét átirányították az Xbox-kiadású OD horrorjátékhoz, de Kojima hangsúlyozta, hogy senki sem hagyta ott a stúdiót. A Kojima Productions közleménye szerint a stúdió "egészséges és nyereséges", a Physint fejlesztése Xbox-szal folytatódik, és a Sony-val is jó a viszony.
   source: RPS
   url: https://www.rockpapershotgun.com/i-thought-people-would-leave-hideo-kojima-offers-his-account-of-physints-switch-from-playstation-to-xbox-as-his-studio-insist-theyre-in-a-healthy-profitable-state
-- slug: a-bungie-visszater-a-destiny-2-hoz-es-igeri-az-archivalj
+- slug: a-bungie-visszater-a-destiny-2-hoz-es-igeri-az-archivalt
   category: Stúdió & Üzlet
-  title: A Bungie visszatér a Destiny 2-höz, és ígéri az archiválj kampányok visszahozását
+  title: A Bungie visszatér a Destiny 2-höz, és ígéri az archivált kampányok visszahozását
   body: |
     Öt napja a Bungie új vezetése, Poria Torkan és Josh Deane nyilvánosan bocsánatot kért a játékosoktól, majd bejelentette: mégsem hagyják el a Destiny 2-t. A korábban archiválált kampányok, helyszínek és raidek visszakerülnek a játékba, miközben a Marathon kapcsán elismerték, hogy a shooter "nem érte el a kívánt közönséget", és "fejlődnie kell". Az új irány december PvE-frissítésétől indul, Destiny 3-ról egyelőre szó sincs.
   source: RPS
@@ -144,6 +156,9 @@ releases:
 - title: Minecraft Dungeons 2
   platform: PC, PS5, Xbox, Switch 2
   date: '09.29'
+- title: Endless Rails
+  platform: PC
+  date: '09.29'
 - title: 'Gears of War: E-Day'
   platform: Xbox, PC
   date: '10.06'
@@ -156,5 +171,22 @@ releases:
 - title: 'Dragon''s Dogma 2: Dark Arisen'
   platform: PC, PS5, Xbox, Switch 2
   date: '10.09'
-ajanlo: []
+ajanlo:
+  - title: Endless Rails
+    genre: Roguelite
+    appid: 4601120
+    description: >-
+      Védelmezd a vonatodat drónjaiddal, miközben az egy szörnyekkel teli pusztaságon száguld keresztül. Érj el új állomásokat, hogy új fegyvereket, vagonokat és fejlesztéseket vásárolhass! Haladj addig, amíg össze nem omlik a játék… vagy te magad.
+
+  - title: RetroSpace
+    genre: Immerzív horror
+    appid: 2067820
+    description: >-
+      Magával ragadó, diszkó-punk űrhorror, amelyben lopakodó figuraként vagy mutáns akcióhősként próbálhatsz életben maradni egy fekete lyuk által elnyelt űrállomáson. Elképesztő kaland bizarr lényekkel, immerzív elemekkel, időugrásokkal és 70-es évekbeli bajuszokkal!
+
+  - title: Songs of Glimmerwick
+    genre: Varázsiskolás RPG
+    appid: 1706510
+    description: >-
+      Merülj el egy zenés, erdei fantasyvilágban, ahol a varázslás éppoly egyszerű, mint egy dal eljátszása! Ebben a történetközpontú, boszorkányakadémián játszódó RPG-ben órákra járhatsz, gondozhatod az egyetemi kertet, barátságokat köthetsz diáktársaiddal és a városlakókkal, miközben felfedezed a sziget számos különlegességét és rejtélyét.
 ---
