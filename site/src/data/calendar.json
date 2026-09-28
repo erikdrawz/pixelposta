@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-09-21",
+  "generated": "2026-09-28",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -815,12 +815,12 @@
       "title": "Little Nightmares 3 - The Backstage",
       "platforms": [
         "PC",
-        "Xbox",
-        "Xbox One",
         "PS5",
         "PS4",
         "Switch 2",
-        "Switch"
+        "Switch",
+        "Xbox",
+        "Xbox One"
       ],
       "earlyAccess": false,
       "date": "2026-06-12",
@@ -1039,6 +1039,7 @@
       "title": "Big Walk",
       "platforms": [
         "PC",
+        "PS5",
         "Switch 2"
       ],
       "earlyAccess": false,
@@ -1552,6 +1553,16 @@
       "openCriticId": null
     },
     {
+      "title": "Dressmaker",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-09-21",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Dune Awakening",
       "platforms": [
         "PS5"
@@ -1775,16 +1786,6 @@
       "openCriticId": null
     },
     {
-      "title": "AION 2",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false,
-      "date": "2026-10-05",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Gears of War: E-Day",
       "platforms": [
         "Xbox",
@@ -1884,6 +1885,17 @@
       ],
       "earlyAccess": false,
       "date": "2026-10-09",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Deep Dish Dungeon",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-13",
       "score": null,
       "openCriticId": null
     },
@@ -2031,6 +2043,18 @@
       "openCriticId": null
     },
     {
+      "title": "We Were Here Tomorrow",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-20",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Fatal Fury: City of the Wolves",
       "platforms": [
         "Switch 2"
@@ -2123,6 +2147,16 @@
       "openCriticId": null
     },
     {
+      "title": "Virtue and a Sledgehammer",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Anomalith",
       "platforms": [
         "PC",
@@ -2193,6 +2227,27 @@
       "openCriticId": null
     },
     {
+      "title": "Gravhounds",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "earlyAccess": true,
+      "date": "2026-11-02",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Zero Parades: For Dead Spies",
+      "platforms": [
+        "PS5"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Crymelight",
       "platforms": [
         "PC",
@@ -2211,6 +2266,18 @@
       ],
       "earlyAccess": false,
       "date": "2026-11-04",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Edge of Memories",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-05",
       "score": null,
       "openCriticId": null
     },
@@ -2449,13 +2516,6 @@
   ],
   "tbc": [
     {
-      "title": "Ascenders: Beyond the Peak",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "At Fate's End",
       "platforms": [
         "PC",
@@ -2479,14 +2539,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Blighted",
-      "platforms": [
-        "PC",
-        "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Decrepit",
       "platforms": [
         "PC"
@@ -2494,18 +2546,9 @@
       "earlyAccess": false
     },
     {
-      "title": "DNA NEMESIS",
+      "title": "DNA Nemesis",
       "platforms": [
         "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Edge of Memories",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
       ],
       "earlyAccess": false
     },
@@ -2546,11 +2589,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Gravehounds",
-      "platforms": [],
-      "earlyAccess": false
-    },
-    {
       "title": "Guns of Eschaton",
       "platforms": [
         "PC",
@@ -2562,7 +2600,8 @@
     {
       "title": "Hillthorn",
       "platforms": [
-        "PC"
+        "PC",
+        "Switch"
       ],
       "earlyAccess": false
     },
@@ -2572,16 +2611,6 @@
         "PC",
         "PS5",
         "Xbox"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Jujutsu Kaisen Rumble Survivaton",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch 2"
       ],
       "earlyAccess": false
     },
@@ -2614,14 +2643,6 @@
       "title": "Neath",
       "platforms": [
         "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Neverway",
-      "platforms": [
-        "PC",
-        "Switch"
       ],
       "earlyAccess": false
     },
@@ -2676,6 +2697,13 @@
       "earlyAccess": false
     },
     {
+      "title": "The Journey Home",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false
+    },
+    {
       "title": "There Are No Ghosts at the Grand",
       "platforms": [
         "PC",
@@ -2685,23 +2713,6 @@
     },
     {
       "title": "They Will Come",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Turok: Origins",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Switch 2",
-        "Xbox"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Virtue and a Sledgehammer",
       "platforms": [
         "PC"
       ],
@@ -2722,28 +2733,12 @@
       "earlyAccess": false
     },
     {
-      "title": "We Were Here Tomorrow",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Witchbrook",
       "platforms": [
         "PC",
         "Switch",
         "Switch 2",
         "Xbox"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Zero Parades: For Dead Spies",
-      "platforms": [
-        "PS5"
       ],
       "earlyAccess": false
     }
