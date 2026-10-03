@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -18,17 +18,10 @@ date: '2026-10-03'
 title: 'Gears of War: E-Day és a Resident Evil jövője'
 standfirst: Az E-Day kritikái szinte egységesen pozitívak, miközben a Capcom elárulja, hogy
   a Resident Evil remake-sorozat 2028 körül elfogy, és utána crossover-tervek következnek.
-draft: true
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
-- slug: a-capcom-mar-tervezi-mi-legyen-a-resident-evil-remake-ek
-  category: Játékhírek
-  title: A Capcom már tervezi, mi legyen a Resident Evil remake-ek után
-  body: |
-    Jun Takeuchi executive producer két napja árulta el, hogy a Capcom koránt sincs felkészületlenül arra a pillanatra, amikor a Resident Evil remake-sorozat "beéri" az új részeket. A stúdió a Village óta tudatosan épít egyfajta "crossover" előkészítésre: az Umbrella és Spencer nevének visszatérése, illetve a Raccoon City megjelenése a Requiemben mind ennek részei. A terv szerint a két fejlesztési vonal, az új részek és a remake-ek, valamikor összeér, de erre még nagyjából egy évtizedet várni kell.
-  source: NintendoLife
-  url: https://www.nintendolife.com/news/2026/10/capcom-has-an-intriguing-plan-for-when-its-resident-evil-remakes-catch-up-with-the-new-games
 - slug: a-capcom-mar-tervezi-mi-jon-a-resident-evil-remake-ek-utan
   category: Játékhírek
   title: A Capcom már tervezi, mi jön a Resident Evil remake-ek után
@@ -36,6 +29,7 @@ articles:
     A Capcom egyre közelebb kerül ahhoz, hogy kifogyjanak az újracsinálható Resident Evil részekből: a Code Veronica 2027-ben, a Resident Evil 0 2028-ban érkezik, utána már csak az 5-ös és 6-os rész marad. Jun Takeuchi producer azonban egy évfordulós könyvinterjúban elárulta, hogy a stúdió erre már régen készül: egyszer a remake-sorozat utolér az eredeti szériát, és erre terveznek egy "crossovert". A Village és a Requiem Umbrella-utalásai szerinte mind ennek az előkészítése.
   source: RPS
   url: https://www.rockpapershotgun.com/capcom-arent-just-running-out-of-resident-evil-games-to-remake-theyre-banking-on-it-with-a-mysterious-crossover-planned-when-the-timelines-collide
+  imageCredit: 'Kép: Capcom'
 - slug: a-gears-of-war-e-day-kritikai-megerkeztek-es-a-jatek-szinte
   category: Játékhírek
   title: 'A Gears of War: E-Day kritikái megérkeztek, és a játék szinte mindenhol jól szerepel'
@@ -57,6 +51,14 @@ articles:
     A Metro Redux, a Metro 2033 és a Metro Last Light remastere, ingyenes grafikai frissítést kap PC-re és jelenlegi generációs konzolokra, miután a sorozat átlépte az 50 milliós eladási határt. A frissítés október 22-én érkezik PC-re, egy héttel később, október 29-én konzolokra. PS5 Pro-n PSSR, Xbox Series X-en TSR felskálázás javítja a képminőséget, mindkét platformon 4K/60fps és 4K/120fps mód is elérhető. PC-n DLSS-támogatás és térhangzás is bekerül a csomagba.
   source: DigitalFoundry
   url: https://www.digitalfoundry.net/news/2026/10/free-metro-redux-update-coming-for-ps5-ps5-pro-xbox-series-xs-and-pc
+- slug: ket-uj-the-last-of-us-projekt-keszul-az-intergalacticrol
+  category: Játékhírek
+  title: Két új The Last of Us projekt készül, az Intergalacticról 2027-ig nem lesz hír
+  body: |
+    A Naughty Dog a szeptember 26-i The Last of Us Day alkalmából jelentette be, hogy "pár" új, a The Last of Us világához kötődő projekt van készülőben, mindkettő "nagyon korai fázisban". Neil Druckmann stúdióvezető nem árulta el, játékokról, képernyős adaptációkról vagy valami másról van-e szó, csak annyit, hogy "mindkét projekt a Part I-en és a Part II-n túlra tágítja a kánont". Ugyanitt derült ki az is, hogy a stúdió következő játékáról, az Intergalactic: The Heretic Prophetről az év hátralévő részében nem lesz hír: "2027-ben ez megváltozik, teljes egészében bemutatjuk" – írta Druckmann. A 2024-ben bejelentett játék korábbi nyilatkozata szerint 2020 óta készül, Jason Schreier szerint viszont csak a The Last of Us Online 2023-as törlése után kapta meg a stúdió erőforrásainak többségét.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/naughty-dog-discloses-two-new-last-of-us-projects-no-updates-on-intergalactic-until-2027/
+  imageCredit: 'Kép: Naughty Dog'
 - slug: a-sony-qssr-ai-upscalinget-hoz-az-alap-ps5-re-is
   category: Hardware
   title: A Sony QSSR AI-upscalinget hoz az alap PS5-re is
@@ -78,6 +80,7 @@ articles:
     Az 8BitDo két napja bejelentette limitált Gears of War: E-Day periféria szettjét, amelyet az Xbox partnerségük keretében készítettek. A jellegzetes piros-fekete, robosztus dizájnú csomag egy tenkeyless mechanikus billentyűzetből és egy gaming egérből áll: előbbi 119,99, utóbbi 59,99 dollárba kerül. Az egér PixArt PAW 3395 szenzorral és 8000Hz-es polling rate-tel érkezik, a billentyűzet pedig akár 300 órányi akkuélettartamot ígér. Szállítás október 30-tól várható, előrendelhető most.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/8bitdo-have-outdone-themselves-with-this-gorgeous-gears-of-war-e-day-keyboard-and-mouse
+  imageCredit: 'Kép: 8BitDo'
 - slug: az-xbox-vezere-szerint-a-divizio-nem-elado-az-elbocsatasok
   category: Stúdió & Üzlet
   title: Az Xbox vezére szerint a divízió nem eladó, az elbocsátások ellenére sem
@@ -85,6 +88,21 @@ articles:
     Asha Sharma, az Xbox vezérigazgatója a New York Timesnak szögezi le: az Xbox nem eladó. Ez azért érdekes, mert a cikk megjelenése előtt a The Information arról számolt be, hogy Satya Nadella és Amy Hood egy esetleges leválasztáson vagy átszervezésen gondolkodott. Közben az Xbox 268 főt bocsátott el a pénzügyi év tervezett leépítési körein belül, és a stúdiókat egyre kevesebb, nagyobb egység alá szervezi, az Activision és a Bethesda égisze alatt.
   source: RPS
   url: https://www.rockpapershotgun.com/xbox-is-not-for-sale-despite-all-of-the-layoffs-and-neat-repackaging-of-studios-within-microsofts-corporate-structure-ceo-asha-sharma-says
+- slug: a-coalition-fejlesztoi-elbocsatasoktol-tartanak-a-gears-of
+  category: Stúdió & Üzlet
+  title: 'A Coalition fejlesztői elbocsátásoktól tartanak a Gears of War: E-Day után'
+  body: |
+    A Gears of War: E-Day fejlesztői attól tartanak, hogy még a játék kritikai fogadtatásához kötött bónuszok kifizetése előtt kirúgják őket – írja az Eurogamer több névtelen forrásra hivatkozva. A hangulat a szeptember 22-i, második Xbox-leépítési hullám után romlott meg: a kör elsőre a Halo Studiosra látszott koncentrálni, később viszont kiderült, hogy az E-Day story directorát, Juan Vacát is elbocsátották, alig két héttel a játék október 6-i megjelenése előtt. Egy forrás szerint a stúdióban addig "óvatos optimizmus" uralkodott, Vaca távozását viszont "nagyon demoralizálónak" nevezték, és az elmúlt hetekben több kollégát is "csendben elengedtek" – mindezt úgy, hogy a csapat állítólag keményen crunchol a megjelenésig. A bónusz a Metacritic-átlaghoz kötött, és csak az kapja meg, aki a kifizetés napján – a stúdióvezetés szerint október végén – még főállású alkalmazott. A dolgozók között ez mostanra "morbid viccé" vált.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/the-coalition-developers-fear-layoffs-after-allegedly-crunching-hard-on-gears-of-war-e-day-report/
+  imageCredit: 'Kép: The Coalition'
+- slug: a-devolver-digital-ismet-maganceg
+  category: Stúdió & Üzlet
+  title: A Devolver Digital ismét magáncég
+  body: |
+    A Devolver Digital kivezette magát a londoni tőzsde AIM almarketéről: a szeptember 8-i szavazáson a részvényesek 90%-a támogatta a privatizációt, a kivezetés pedig szeptember 16-án lépett életbe. A kiadó 2021-ben ment tőzsdére 694,6 millió fontos (kb. 950 millió dolláros) értékeléssel, és olyan kisebbségi befektetőket vonzott, mint a NetEase és a Sony Interactive Entertainment – a részvényárfolyam azonban a kilépésig 90%-ot zuhant. Az igazgatóság indoklása szerint egy indie kiadó teljesítménye természeténél fogva az egyes címek időzítéséhez kötődik, ami nem fér össze a piac "kiszámítható, lineáris növekedést" váró elvárásaival. A három alapító, Harry Miller, Graeme Struthers és Nigel Lowrie egy 5 millió dolláros részvény-visszavásárlás után együtt 33%-ot birtokol, a cég pedig évi 1,6 millió dollárt spórol a tőzsdei jelenlét költségein. A privatizáció után pár héttel a Devolver és belső stúdiója, a Nerial közös megegyezéssel bejelentette a fejlesztő bezárását.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/devolver-digital-is-a-private-company-again/
 - slug: a-steam-fooldala-algoritmus-alapu-ajanlasokra-valt-az
   category: Stúdió & Üzlet
   title: A Steam főoldala algoritmus-alapú ajánlásokra vált az akciók szekcióban
@@ -144,5 +162,16 @@ releases:
 - title: Tales of Eternia Remastered
   platform: PS5, PS4, Xbox, PC, Switch, Switch 2
   date: '10.16'
-ajanlo: []
+ajanlo:
+  - title: 'Super Chillers: The Chat Room'
+    genre: Point-and-click horror
+    appid: 3129150
+    description: >-
+      Utazz vissza a 90-es évekbe ebben a túlzó stílusú, point-and-click horror-kalandjátékban, amelyet az olyan klasszikus ifjúsági horror-könyvsorozatok ihlettek, mint a Fear Street és a Point Horror.
+
+  - title: Silver Pines
+    genre: Horror metroidvania
+    appid: 2333000
+    description: >-
+      A Silver Pines egy amerikai kisvárosban játszódó, túlélőhorror elemeket tartalmazó metroidvania játék. Küzdj meg rémálomszerű szörnyetegekkel és oldj meg fejtörőket, miközben gondosan gazdálkodsz szűkös erőforrásaiddal, és feltárod azokat a rejtélyeket, amelyek a megváltás kulcsát jelenthetik.
 ---
