@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-09-28",
+  "generated": "2026-10-05",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -1165,72 +1165,6 @@
       "openCriticId": null
     },
     {
-      "title": "Crimson Moon",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-01",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Moonlighter 2: The Endless Vault",
-      "platforms": [
-        "PS5",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-02",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Avatar Legends: The Fighting Game",
-      "platforms": [
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-03",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "BioEden",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-03",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Orbitals",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-03",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "SpeedRunners 2: King of Speed",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-03",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "The Blood of Dawnwalker",
       "platforms": [
         "PC",
@@ -1239,29 +1173,6 @@
       ],
       "earlyAccess": false,
       "date": "2026-09-03",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Wo Long: Fallen Dynasty Complete Edition",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-03",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "NBA 2K27",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-04",
       "score": null,
       "openCriticId": null
     },
@@ -1279,18 +1190,6 @@
       "openCriticId": null
     },
     {
-      "title": "WheelMates",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-07",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Halloween: The Game",
       "platforms": [
         "PC",
@@ -1299,64 +1198,6 @@
       ],
       "earlyAccess": false,
       "date": "2026-09-08",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Mewgenics",
-      "platforms": [
-        "Switch 2",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-08",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Valheim 1.0",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Switch 2",
-        "Xbox",
-        "Xbox One"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-09",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Takeover 2",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-10",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "The Legend of Heroes: Trails from Zero",
-      "platforms": [
-        "PS5",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-10",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "The Legend of Heroes: Trails to Azure",
-      "platforms": [
-        "PS5",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-10",
       "score": null,
       "openCriticId": null
     },
@@ -1371,114 +1212,12 @@
       "openCriticId": null
     },
     {
-      "title": "Welcome to Elderfield",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-10",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Truck-kun is Supporting Me From Another World?!",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-14",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Destroy All Humans! 2: Reprobed",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-15",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Diablo 4 : Age of Hatred Collection",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-15",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Marvel's Wolverine",
       "platforms": [
         "PS5"
       ],
       "earlyAccess": false,
       "date": "2026-09-15",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Runescape: Dragonwilds",
-      "platforms": [
-        "Xbox",
-        "PS5",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-15",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Aniimo",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-16",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Another Eden Begins",
-      "platforms": [
-        "PC",
-        "Switch",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-16",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Woodo",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Switch",
-        "Switch 2",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-16",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Endless Legend 2",
-      "platforms": [
-        "Xbox",
-        "PS5",
-        "PC"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-17",
       "score": null,
       "openCriticId": null
     },
@@ -1506,53 +1245,6 @@
       "openCriticId": null
     },
     {
-      "title": "Train Sim World 7",
-      "platforms": [
-        "PC",
-        "Xbox",
-        "PS5"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-17",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "LEGO Batman Legacy of the Dark Knight",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-18",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Moomintroll: Winter's Warmth",
-      "platforms": [
-        "Switch 2",
-        "PS5"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-18",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "The Walking Dead: Streets of Survival",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-18",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Dressmaker",
       "platforms": [
         "PC"
@@ -1563,102 +1255,11 @@
       "openCriticId": null
     },
     {
-      "title": "Dune Awakening",
-      "platforms": [
-        "PS5"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-22",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Graveyard Keeper 2",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-22",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Well Dweller",
-      "platforms": [
-        "PC",
-        "Switch",
-        "Switch 2",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-22",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Wind Runners",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-23",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Control Resonant",
       "platforms": [
         "PC",
         "PS5",
         "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-24",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Dragon Quest 11 S: Echoes of an Elusive Age Switch 2 Edition",
-      "platforms": [
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-24",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Harvest Moon: Echoes of Teradea",
-      "platforms": [
-        "Switch",
-        "Switch 2"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-24",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Hot Wheels Infinite Rush",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-24",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Shinobi: Art of Vengeance",
-      "platforms": [
-        "Switch 2"
       ],
       "earlyAccess": false,
       "date": "2026-09-24",
@@ -1699,42 +1300,6 @@
       ],
       "earlyAccess": false,
       "date": "2026-09-29",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Toem 2",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Switch"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-29",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Transport Fever 3",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-09-29",
-      "score": null,
-      "openCriticId": null
-    },
-    {
-      "title": "Don't Fret",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false,
-      "date": "2026-10-01",
       "score": null,
       "openCriticId": null
     },
@@ -2493,6 +2058,7 @@
       "title": "Stage Tour",
       "platforms": [
         "PC",
+        "PS5",
         "Xbox",
         "Switch 2"
       ],
@@ -2539,25 +2105,9 @@
       "earlyAccess": false
     },
     {
-      "title": "Decrepit",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "DNA Nemesis",
       "platforms": [
         "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Erosion",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
       ],
       "earlyAccess": false
     },
@@ -2579,16 +2129,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Grave Seasons",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox",
-        "Switch"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Guns of Eschaton",
       "platforms": [
         "PC",
@@ -2602,23 +2142,6 @@
       "platforms": [
         "PC",
         "Switch"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Instinction",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Kena: Scars of Kosmora",
-      "platforms": [
-        "PC",
-        "PS5"
       ],
       "earlyAccess": false
     },
@@ -2640,24 +2163,9 @@
       "earlyAccess": false
     },
     {
-      "title": "Neath",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Petit Planet",
       "platforms": [
         "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Prison of Husks",
-      "platforms": [
-        "PC",
-        "PS5"
       ],
       "earlyAccess": false
     },
