@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-10-05",
+  "generated": "2026-10-12",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -1351,6 +1351,16 @@
       "openCriticId": null
     },
     {
+      "title": "Aion 2",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Gears of War: E-Day",
       "platforms": [
         "Xbox",
@@ -1378,7 +1388,8 @@
       "platforms": [
         "PC",
         "PS5",
-        "Xbox"
+        "Xbox",
+        "Switch 2"
       ],
       "earlyAccess": false,
       "date": "2026-10-08",
@@ -1413,7 +1424,8 @@
     {
       "title": "Order of the Sinking Star",
       "platforms": [
-        "PC"
+        "PC",
+        "Switch 2"
       ],
       "earlyAccess": false,
       "date": "2026-10-08",
@@ -1436,7 +1448,21 @@
     {
       "title": "Dragon's Dogma 2: Dark Arisen",
       "platforms": [
-        "Switch 2"
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-09",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Paperhead",
+      "platforms": [
+        "PC",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-10-09",
@@ -1554,6 +1580,16 @@
       ],
       "earlyAccess": false,
       "date": "2026-10-15",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Penguin Colony",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-16",
       "score": null,
       "openCriticId": null
     },
@@ -1744,6 +1780,16 @@
       "openCriticId": null
     },
     {
+      "title": "Danchi Days",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Hello Kitty Party Land",
       "platforms": [
         "Switch",
@@ -1792,6 +1838,19 @@
       "openCriticId": null
     },
     {
+      "title": "Queen's Domain",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-30",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Gravhounds",
       "platforms": [
         "PC",
@@ -1803,7 +1862,7 @@
       "openCriticId": null
     },
     {
-      "title": "Zero Parades: For Dead Spies",
+      "title": "Zero Parades: Director's Cut",
       "platforms": [
         "PS5"
       ],
@@ -1921,8 +1980,10 @@
     {
       "title": "Sonic Pico Park",
       "platforms": [
+        "PC",
+        "PS5",
         "Switch 2",
-        "Switch"
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-11-12",
@@ -1951,6 +2012,16 @@
       "openCriticId": null
     },
     {
+      "title": "Am I Nima",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Hela: Of Mice and Magic",
       "platforms": [
         "Switch 2",
@@ -1960,6 +2031,16 @@
       ],
       "earlyAccess": false,
       "date": "2026-12-01",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Apple Crumble",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-03",
       "score": null,
       "openCriticId": null
     },
@@ -2068,7 +2149,7 @@
       "openCriticId": null
     },
     {
-      "title": "Path of Exile",
+      "title": "Path of Exile 2",
       "platforms": [
         "PC",
         "PS5",
@@ -2082,11 +2163,9 @@
   ],
   "tbc": [
     {
-      "title": "At Fate's End",
+      "title": "About Fishing",
       "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
+        "PC"
       ],
       "earlyAccess": false
     },
