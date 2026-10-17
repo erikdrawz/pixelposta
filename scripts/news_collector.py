@@ -35,6 +35,14 @@ from src.notion_client import ArticlePayload, NotionArticles
 
 logger = logging.getLogger("news_collector")
 
+# How many per-article filter failures a run may absorb before it is called
+# broken: 2% of the batch, but never fewer than two. A ~190-article run can
+# therefore lose three articles to Haiku flakes and still pass, while a
+# systematic breakage (a bad prompt, a model change, an expired key) blows
+# straight through the limit and still fails loudly.
+FILTER_ERROR_RATE = 0.02
+FILTER_ERROR_FLOOR = 2
+
 # Feed blurbs arrive as HTML fragments. Strip to plain text before storing, so
 # the value is readable in Notion and clean when it is fed to Sonnet.
 _TAG_RE = re.compile(r"<[^>]+>")
@@ -233,7 +241,23 @@ def main() -> int:
         print(f"  Notion errors:  {notion_errors}")
 
     # Exit non-zero if anything failed, so a CI cron can flag it.
-    if failures or filter_errors or notion_errors:
+    #
+    # Filter errors are the exception: each one costs a single article out of
+    # ~190 and the rest of the run is unaffected, so a handful is noise rather
+    # than a broken pipeline. Failing the job on one of them trained the editor
+    # to ignore a red weekly run, which is worse than not alerting at all.
+    # Source and Notion errors stay hard failures — those mean a feed or the
+    # database is down, and the whole run is suspect.
+    tolerated = max(FILTER_ERROR_FLOOR, int(len(new_articles) * FILTER_ERROR_RATE))
+    if filter_errors > tolerated:
+        print(
+            f"  ! {filter_errors} filter errors exceeds the tolerated {tolerated} "
+            f"({FILTER_ERROR_RATE:.0%} of {len(new_articles)} articles)"
+        )
+    elif filter_errors:
+        print(f"  ({filter_errors} filter error(s) tolerated, limit {tolerated})")
+
+    if failures or notion_errors or filter_errors > tolerated:
         return 1
     return 0
 

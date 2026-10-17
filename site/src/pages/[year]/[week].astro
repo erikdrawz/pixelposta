@@ -30,7 +30,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 const { issue, prev } = Astro.props;
-const { year, week, date, title, standfirst, cover, outro, signature } = issue.data;
+const { year, week, weekFrom, date, title, standfirst, cover, outro, signature } = issue.data;
 const counts = issueCounts(issue);
 
 // Category sections keep the fixed order; articles keep frontmatter order
@@ -94,7 +94,7 @@ const jsonLd = {
   <header class="masthead">
     <div class="wrap">
       <a class="back" href="/">← Összes szám</a>
-      <p class="eyebrow">{weekLabel(year, week)}</p>
+      <p class="eyebrow">{weekLabel(year, week, weekFrom)}</p>
       {/* TRIAL: visible issue title switched off — see IssueHero.astro. */}
       {/* <h1>{title}</h1> */}
       <h1 class="visually-hidden">{title}</h1>

@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import Cover from './Cover.astro';
-import { formatHuDateShort, issueCounts, issueUrl, weekLabel } from '../utils/format';
+import { formatHuDateShort, issueCounts, issueUrl, weekLabel, weekRange } from '../utils/format';
 
 interface Props {
   issue: CollectionEntry<'issues'>;
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const { issue, extra = false } = Astro.props;
-const { year, week, date, title, standfirst, cover } = issue.data;
+const { year, week, weekFrom, date, title, standfirst, cover } = issue.data;
 const counts = issueCounts(issue);
 ---
 
@@ -23,12 +23,12 @@ const counts = issueCounts(issue);
   <Cover
     cover={cover}
     mark="PP"
-    submark={`${week}. HÉT`}
+    submark={`${weekRange(week, weekFrom)}. HÉT`}
     widths={[168, 336]}
     sizes="(max-width: 600px) 280px, 168px"
   />
   <div>
-    <div class="row-week">{weekLabel(year, week)}</div>
+    <div class="row-week">{weekLabel(year, week, weekFrom)}</div>
     {/* TRIAL: visible issue title switched off — see IssueHero.astro. */}
     {/* <h3 class="row-title">{title}</h3> */}
     <h3 class="visually-hidden">{title}</h3>

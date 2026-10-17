@@ -7,18 +7,19 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
 
 year: 2026
 week: 42
+weekFrom: 41
 date: '2026-10-17'
 title: GTA 6 launch trailer és a Machinarium 2 bejelentése
 standfirst: A Rockstar kiadta a GTA 6 hivatalos launch trailerét a Justice zenekar dalával,
   miközben az Amanita Design 17 év után bejelentette a Machinarium folytatását.
-draft: true
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -36,6 +37,7 @@ articles:
     A cseh Amanita Design múlt héten bejelentette a Machinarium 2-t, a 2009-es rajongói kedvenc pont-és-kattint kalandjáték folytatását. Josef és Berta robotok ezúttal egy rejtett völgybe kényszerleszállást követően kalandoznak, a játékos pedig felváltva irányítja mindkettőt, képességeiket kombinálva. A stílusos, szöveg nélküli vizuális világ ezúttal reneszánsz tájfestészetet idéz, és visszatér az eredeti zeneszerzője is. Konkrét megjelenési dátum egyelőre nincs.
   source: RPS
   url: https://www.rockpapershotgun.com/were-not-getting-any-younger-and-the-world-seems-to-be-ending-amanita-reveal-machinarium-2-sequel-to-2009s-prettiest-robot-adventure
+  imageCredit: 'Kép: Amanita Design'
 - slug: a-gta-6-radioallomasait-is-leleplezte-a-rockstar-gyalog-is
   category: Játékhírek
   title: A GTA 6 rádióállomásait is leleplezte a Rockstar, gyalog is hallgatható lesz
@@ -57,6 +59,7 @@ articles:
     A Bandai Namco Ace Combat 8: Wings of Theve-je a megjelenés után alig egy héttel átlépte az egymillió eladott példányt, ezzel a sorozat legjobban startolő részévé vált. A játék a Metacriticen 87 pontos értékelést gyűjtött, amivel az Ace Combat 4: Shattered Skies után a széria második legjobban fogadott része. A cím PC-re, PS5-re és Xbox Series X/S-re jelent meg.
   source: VGC
   url: https://www.videogameschronicle.com/news/ace-combat-8-is-the-fastest-selling-entry-in-the-series-after-hitting-1-million-sales/
+  imageCredit: 'Kép: Bandai Namco'
 - slug: a-gta-6-szivarogtatok-kriptovalutat-gyujtenek-egy-jatszhato
   category: Játékhírek
   title: A GTA 6-szivárogtatók kriptovalutát gyűjtenek egy játszható build kiadásáért
@@ -66,11 +69,12 @@ articles:
   url: https://www.rockpapershotgun.com/oh-lord-now-those-gta-6-leakers-are-saying-if-enough-of-you-give-them-money-theyll-leak-a-playable-build-of-the-game
 - slug: burn-with-me-kezzel-rajzolt-demones-kartyajatek-veges
   category: Játékhírek
-  title: 'Burn With Me: kézzel rajzolt démones kártyajáték véges játékidővel'
+  title: 'Burn With Me: kézzel rajzolt démonos kártyajáték véges játékidővel'
   body: |
     A Burn With Me egy okkult témájú kártyapuzzler, amelyben Eva Manuilovich alkotó saját keze is szerepel, élőszereplőként osztja a lapokat. A játékban ördögi egyetemet járó diákokat irányítasz, és pentagrammák köré helyezett lénykártyákkal kell lelki energiát gyűjtened. A mechanika Balatro-szerű, de a készítők nem a végtelen replayabilityre hajtanak: a Steam értékelések alapján kb. 6-8 óra alatt végigjátszható, saját sztorival.
   source: RPS
   url: https://www.rockpapershotgun.com/burn-with-me-is-a-hand-drawn-demon-card-game-featuring-the-artists-own-hand-and-also-a-refreshingly-finite-alternative-to-yer-balatro-likes
+  imageCredit: 'Kép: Eva Manuilovich'
 - slug: a-007-first-light-switch-2-es-verzioja-vegre-konkret
   category: Játékhírek
   title: A 007 First Light Switch 2-es verziója végre konkrét megjelenési dátumot kapott
@@ -85,6 +89,7 @@ articles:
     A Feral Interactive jövő csütörtökön, október 22-én teszi elérhetővé a Hitman: Absolution Nintendo Switch 2 Edition-t az eShop-ban. Az új verzió 60 fps-es teljesítménymódot, magasabb felbontást és egérkompatibilitást hoz, handheld és dokkolva egyaránt. A Switch-verzió meglévő tulajdonosai november 5-ig ingyen frissíthetnek, utána az upgrade pack $9,99-ba kerül. Újoncoknak november 5-ig 25% kedvezménnyel, $29,99-ért elérhető a játék.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/10/hitman-absolution-finally-sneaks-onto-switch-2-next-week
+  imageCredit: 'Kép: IO Interactive'
 - slug: star-wars-galactic-racer-teszt-tempos-podracer-de-egyetlen
   category: Játékhírek
   title: 'Star Wars: Galactic Racer teszt – tempós podracer, de egyetlen build ural mindent'
@@ -115,11 +120,18 @@ articles:
   url: https://www.rockpapershotgun.com/no-more-hand-written-code-epic-reportedly-impose-ai-first-model-on-creators-of-new-disney-shooter-with-marvel-and-star-wars-characters
 - slug: a-microsoft-xbox-labs-nevvel-indit-k-f-csapatot-regi
   category: AI & Gaming
-  title: A Microsoft Xbox Labs névvel indít K+F csapatot régi játékok AI-os felélesztésére
+  title: A Microsoft Xbox Labs néven indít R&D csapatot a kísérleti ötletekre
   body: |
-    Asha Sharma, az Xbox játékokért felelős vezetője két napja bejelentette az Xbox Labs nevű új kutatás-fejlesztési kezdeményezést. A kis csapat mérnökökből és fejlesztőkből áll, és olyan kísérleteket karolna fel, mint a böngészőben futó Halo vagy a más játékok forráskódjába ültetett klasszikusok, amelyeket AI-alapú dekompilációval tártak fel. A Microsoft egyelőre konkrét terveket nem közölt, a kritikusok pedig szkeptikusak: úgy vélik, az egész inkább marketingfogás, mint valódi innováció.
+    Asha Sharma, az Xbox vezetője bejelentette az Xbox Labs nevű kutatás-fejlesztési csapatot, amelyet Scott Van Vliet technológiai igazgató vezet, és "játékkészítők, mérnökök és tudósok kis csoportja" alkot. A kezdeményezést olyan kísérletek hívták életre, mint a böngészőben futó Halo. Az Xbox szóvivője ugyanakkor a GamesIndustry.biz-nek leszögezte: a csapatnak nincs külön AI-ra vonatkozó előírása. A bejelentés alig egy héttel az Xbox XP, a Kayleen Walters vezette film- és tévés divízió indulása után érkezett.
   source: RPS
   url: https://www.rockpapershotgun.com/asha-sharma-announces-xbox-labs-project-to-explore-new-technology-which-sure-sounds-like-tinkering-with-old-games-through-ai
+- slug: a-capcom-felujitja-a-re-engine-t-es-tobb-ai-eszkozt-epit
+  category: AI & Gaming
+  title: A Capcom felújítja a RE Engine-t, és több AI-eszközt épít bele
+  body: |
+    A Capcom REX Project néven kezdett többlépcsős átalakításba a 2014 óta használt saját motorja, az RE Engine korszerűsítésére. Satoshi Ishida programozó a japán GameBiz által ismertetett előadásán három gondot nevezett meg: a játékok mérete már a legapróbb módosítás ellenőrzését is lelassítja, hiányoznak a nagy csapatoknak való fejlesztői rendszerek, és a stúdió AI-t szeretne a munkafolyamatokba. A cél egy "AI-generációs játékmotor", amely maga írja és teszteli a kódot.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/capcom-plans-re-engine-overhaul-aims-to-integrate-more-ai-tools/
 - slug: az-xbox-vezere-uj-franchise-ok-nelkul-nem-maradhat-eletben
   category: Stúdió & Üzlet
   title: 'Az Xbox vezére: új franchise-ok nélkül nem maradhat életben az Xbox'
@@ -127,6 +139,13 @@ articles:
     Asha Sharma, az Xbox vezérigazgatója egy belső dolgozói gyűlésen elmondta: a divízió nem fog életben maradni, ha csak a meglévő franchise-okra támaszkodik. Sharma ugyan megerősítette, hogy a Fallout, a Call of Duty és a többi nagy márka prioritást élvez, de hangsúlyozta, hogy új, tartós szellemi tulajdonok nélkül nincs jövő. Mindezt azon a héten mondta, amikor az Xbox amúgy is komoly leépítések és stúdióbezárások után keresi a helyét.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/xbox/despite-cuts-xbox-ceo-asha-sharma-wants-to-keep-building-enduring-new-ip-with-a-warning-in-tow
+- slug: az-xbox-allitolag-a-konzolexkluzivitasrol-kerdezi-a
+  category: Stúdió & Üzlet
+  title: Az Xbox állítólag a konzolexkluzivitásról kérdezi a játékosokat
+  body: |
+    Az Xbox a jelek szerint azt méri, hogyan fogadnák a játékosok a határozottabb konzolexkluzivitást. A Windows Central által hitelesített kérdőív-képernyőképek szerint a felmérést az Insider Programban részt vevő, több konzolt is használó felhasználók kapták meg. Az egyik kérdés azt kéri, képzeljék el, hogy a Call of Duty kivételével minden Xbox-fejlesztésű franchise Xbox-konzolexkluzív lenne. A kérdőív a The Elder Scrolls, a Doom, a Fallout és a Physint sorsára is rákérdez.
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/xbox-reportedly-surveys-players-on-console-exclusivity/
 - slug: az-ubisoft-bezarja-a-redlynx-studiot-es-leepit-szingapurban
   category: Stúdió & Üzlet
   title: Az Ubisoft bezárja a Redlynx stúdiót és leépít Szingapúrban
@@ -141,6 +160,7 @@ articles:
     Az Activision marketingigazgatója, Tyler Bahl egy interjúban nyíltan bevallotta, hogy a Black Ops 7 nem hozta azt, amit a játékosok vártak: "nem olyat keresett a közösségünk." A cég most a Modern Warfare 4-gyel próbálja visszanyerni a bizalmat, visszatérve a földhözragadt, hiteles katonai lövöldözős stílushoz. A sikerességet ezúttal nem konkrét eladási számokhoz kötik, hanem ahhoz, hogy a játékosoknak tényleg tetsszen a végeredmény.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/call-of-duty/activision-marketing-chief-admits-black-ops-7-missed-the-mark-it-was-not-something-that-our-community-was-looking-for
+  imageCredit: 'Kép: Activision'
 - slug: az-undead-labs-fonoke-szerint-a-befektetok-kivarnak-es-a
   category: Stúdió & Üzlet
   title: Az Undead Labs főnöke szerint a befektetők kivárnak, és a munkaerőköltség a fő gond
@@ -155,6 +175,13 @@ articles:
     Az Epic Games két napja mutatta be új launcherjének előzetes verzióját, amelyet saját bevallásuk szerint "vibe coding"-gal, azaz AI-asszisztált, laza kódolással raktak össze, mert "a programozás nehéz". Az új kliens Windows-ra, macOS-re és Linux-ra is elérhető, gyorsabb betöltést és kisebb háttérerőforrás-igényt ígér. A bejelentés hangvétele meglehetősen laza volt, konkrét technikai részletek nélkül, ami nem meglepő egy olyan cégtől, amelynek CEO-ja nemrég "maximális AI-gyorsítást" hirdetett meg.
   source: RPS
   url: https://www.rockpapershotgun.com/we-vibe-coded-a-new-epic-games-launcher-because-programming-is-hard-announce-company-were-somehow-supposed-to-see-as-a-serious-steam-competitor
+- slug: a-big-walk-nem-jelenik-meg-xboxon-a-fejleszto-a-microsoft
+  category: Stúdió & Üzlet
+  title: A Big Walk nem jelenik meg Xboxon, a fejlesztő a Microsoft-bojkotthoz csatlakozik
+  body: |
+    A House House bejelentette, hogy a Big Walk nem jelenik meg Xboxon mindaddig, amíg "a Microsoftot és/vagy az Xboxot el nem távolítják a BDS bojkottcéljai közül". A júniusban PC-re, Switch 2-re és PS5-re bejelentett játék Xbox-kiadása a fejlesztő október 15-i közleménye szerint a palesztin vezetésű BDS-mozgalom Microsoft-bojkottra szóló felhívásával összhangban maradt el. A stúdió elismerte, hogy a döntés szembemegy a saját szándékaikkal: "megértjük, milyen csalódást okozunk."
+  source: ThisWeekInVideoGames
+  url: https://thisweekinvideogames.com/news/big-walk-not-coming-to-xbox-as-developer-backs-microsoft-boycott-movement/
 releases:
 - title: Resident Evil 2
   platform: Switch 2
@@ -195,5 +222,16 @@ releases:
 - title: Hello Kitty Party Land
   platform: Switch, Switch 2
   date: '10.29'
-ajanlo: []
+ajanlo:
+  - title: Tenebris Somnia
+    genre: Retró túlélőhorror
+    appid: 2121510
+    description: >-
+      A Tenebris Somnia egy 2D-s, retró stílusú túlélőhorror-kalandjáték, amelyben élőszereplős átvezető jelenetek láthatók; az alkotók egy díjnyertes argentin filmes stáb tagjai. Fedezd fel egy nyugtalanító történet mélységeit rejtvények megoldásával és rémséges lények elleni küzdelemmel. ...Mi van, ha ezek nem csupán rémálmok?
+
+  - title: over the hill
+    genre: Offroad kaland
+    appid: 2929250
+    description: >-
+      Fedezd fel a világot az offroad aranykorában! Vezess ikonikus 4x4-es járműveket a 60-as, 70-es és 80-as évekből – egyedül vagy barátaiddal –, miközben kihívásokkal teli ösvényeken és gyönyörű tájakon haladsz keresztül.
 ---

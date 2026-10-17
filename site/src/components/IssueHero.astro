@@ -1,28 +1,28 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import Cover from './Cover.astro';
-import { issueCounts, issueUrl, weekLabel } from '../utils/format';
+import { issueCounts, issueUrl, weekLabel, weekRange } from '../utils/format';
 
 interface Props {
   issue: CollectionEntry<'issues'>;
 }
 
 const { issue } = Astro.props;
-const { year, week, title, standfirst, cover } = issue.data;
+const { year, week, weekFrom, title, standfirst, cover } = issue.data;
 const url = issueUrl(issue);
 const counts = issueCounts(issue);
 ---
 
 <header class="hero">
   <div class="wrap">
-    <p class="eyebrow">Legfrissebb szám · {weekLabel(year, week)}</p>
+    <p class="eyebrow">Legfrissebb szám · {weekLabel(year, week, weekFrom)}</p>
 
     <a class="hero-link" href={url}>
       <Cover
         cover={cover}
         alt={`${title} — borító`}
         mark="PIXELPOSTA"
-        submark={`${year} · ${week}. HÉT`}
+        submark={`${year} · ${weekRange(week, weekFrom)}. HÉT`}
       />
       {/* TRIAL: visible issue title switched off — cover + standfirst only.
           Delete the .visually-hidden h1 and uncomment this to restore. */}

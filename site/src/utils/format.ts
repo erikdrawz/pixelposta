@@ -77,9 +77,19 @@ export function formatReleaseDate(iso: string): string {
   return `${String(month).padStart(2, '0')}.${String(day).padStart(2, '0')}`;
 }
 
-/** "2026 · 30. hét" */
-export function weekLabel(year: number, week: number): string {
-  return `${year} · ${week}. hét`;
+/**
+ * "30" normally, "41\u201342" for an issue covering two weeks.
+ *
+ * An en dash rather than a hyphen: this is a range, and the hyphen reads as
+ * part of a number in the mono face the submarks are set in.
+ */
+export function weekRange(week: number, weekFrom?: number): string {
+  return weekFrom === undefined ? String(week) : `${weekFrom}\u2013${week}`;
+}
+
+/** "2026 · 30. hét", or "2026 · 41–42. hét" across a skipped week. */
+export function weekLabel(year: number, week: number, weekFrom?: number): string {
+  return `${year} · ${weekRange(week, weekFrom)}. hét`;
 }
 
 /** Issue permalink. Trailing slash matches astro.config's trailingSlash. */

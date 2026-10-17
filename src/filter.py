@@ -29,6 +29,11 @@ Decision = Literal["include", "exclude"]
 
 VALID_CATEGORIES = {"Játékhírek", "Hardware", "AI & Gaming", "Stúdió & Üzlet"}
 
+# One retry per article. The failure mode this guards against is a per-call
+# flake, not a systematic one, so a second attempt is enough — a longer chain
+# would only slow a 190-article run down for no extra recoveries.
+FILTER_ATTEMPTS = 2
+
 TOOL_NAME = "submit_classification"
 CLASSIFICATION_TOOL = {
     "name": TOOL_NAME,
@@ -98,6 +103,28 @@ class HaikuFilter:
         self.system_prompt = PROMPT_PATH.read_text(encoding="utf-8")
 
     def filter_article(self, article: CollectedArticle) -> FilterResult:
+        """Classify one article, retrying once if the tool input comes back malformed.
+
+        Haiku very occasionally returns a tool call with a field missing or
+        empty — roughly one article in two hundred. The call is independent and
+        stateless, so a second attempt almost always succeeds; without the retry
+        a single flake failed the whole weekly run.
+        """
+        last_error: FilterParseError | None = None
+        for attempt in range(1, FILTER_ATTEMPTS + 1):
+            try:
+                return self._classify_once(article)
+            except FilterParseError as e:
+                last_error = e
+                if attempt < FILTER_ATTEMPTS:
+                    logger.warning(
+                        "filter parse error on %s (attempt %d/%d), retrying: %s",
+                        article.url, attempt, FILTER_ATTEMPTS, e,
+                    )
+        assert last_error is not None
+        raise last_error
+
+    def _classify_once(self, article: CollectedArticle) -> FilterResult:
         response = self.client.messages.create(
             model=HAIKU_MODEL,
             max_tokens=500,
@@ -131,7 +158,17 @@ class HaikuFilter:
                 f"Haiku did not call the tool. Stop reason: {response.stop_reason!r}; "
                 f"content blocks: {[getattr(b, 'type', '?') for b in response.content]}"
             )
-        return _parse_tool_input(tool_block.input)
+        try:
+            return _parse_tool_input(tool_block.input)
+        except FilterParseError as e:
+            # stop_reason distinguishes a truncated tool call ('max_tokens',
+            # meaning max_tokens is too low) from the model simply emitting a
+            # bad field ('tool_use'). Without it the log cannot tell them apart.
+            raise FilterParseError(
+                f"{e} [stop_reason={response.stop_reason!r}, "
+                f"output_tokens={usage.output_tokens}, "
+                f"keys={sorted(tool_block.input)}]"
+            ) from e
 
 
 def _format_article(article: CollectedArticle) -> str:

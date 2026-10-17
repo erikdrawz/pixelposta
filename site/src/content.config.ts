@@ -26,6 +26,13 @@ const issues = defineCollection({
       year: z.number().int(),
       week: z.number().int().min(1).max(53),
 
+      // Set only when one issue covers more than one ISO week (a skipped week
+      // folded into the next). `week` stays the last week covered, so it keeps
+      // driving the folder name, the URL and the archive order; this is purely
+      // the left-hand end of the label, e.g. weekFrom 41 + week 42 → "41–42.
+      // hét". Validated below so it cannot sit after `week`.
+      weekFrom: z.number().int().min(1).max(53).optional(),
+
       // ISO date — the Saturday of this ISO week. Kept as a string and parsed
       // by hand in utils/format.ts: `new Date('2026-07-25')` is UTC midnight
       // and would render as the 24th for anyone west of Greenwich.
@@ -82,6 +89,10 @@ const issues = defineCollection({
           }),
         )
         .default([]),
+    })
+    .refine((d) => d.weekFrom === undefined || d.weekFrom < d.week, {
+      message: 'weekFrom must be earlier than week',
+      path: ['weekFrom'],
     }),
 });
 
