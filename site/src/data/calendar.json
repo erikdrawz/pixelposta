@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-10-12",
+  "generated": "2026-10-19",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -1770,16 +1770,6 @@
       "openCriticId": null
     },
     {
-      "title": "Usual June",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false,
-      "date": "2026-10-28",
-      "score": null,
-      "openCriticId": null
-    },
-    {
       "title": "Danchi Days",
       "platforms": [
         "PC"
@@ -2112,6 +2102,18 @@
       "openCriticId": null
     },
     {
+      "title": "Guns of Eschaton",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Attack on Titan 3",
       "platforms": [
         "PC",
@@ -2204,15 +2206,6 @@
       "platforms": [
         "PC",
         "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Guns of Eschaton",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
       ],
       "earlyAccess": false
     },
