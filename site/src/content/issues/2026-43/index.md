@@ -7,18 +7,18 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
 
 year: 2026
-week: 44
-date: '2026-10-31'
+week: 43
+date: '2026-10-24'
 title: EA bezárta a BioWare-t, és indie fejlesztők AI-klónozástól félnek
 standfirst: A legendás RPG-stúdió leállásával a Mass Effect sorozat is véget ér, miközben
   független fejlesztők lemondják demóikat, mert AI-eszközök másolhatják le kiadatlan játékaikat.
-draft: true
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -29,6 +29,7 @@ articles:
     A BioWare bezárása után néhány nappal egy korábbi alkalmazott Redditen tette közzé a soha el nem készült Mass Effect Universe trailerét. A felvétel egy kémthrillerbe illő történetet villantott fel: a főhős egy galaktikus kaland keretében éjszakai klubban vadászik bűnözőkre, biotikus erőket vet be, és a trailer végén visszatér a rajongók kedvence, Liara T'Soni is, ezúttal idősebben. A WindowsCentral saját forrásai megerősítették, hogy a trailer valódi.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/former-bioware-developer-has-released-a-trailer-for-what-couldve-been-mass-effect-5-as-if-the-legendary-studios-closure-didnt-hurt-enough
+  imageCredit: 'Kép: BioWare'
 - slug: feltortek-a-nintendo-switch-2-t-a-nintendo-mar-reagalt-is
   category: Játékhírek
   title: Feltörték a Nintendo Switch 2-t, a Nintendo már reagált is
@@ -50,13 +51,6 @@ articles:
     Egy hete bukkant fel egy érdekes Sony szabadalom az amerikai adatbázisban: a "Generation Super Sampling" névre keresztelt technológia a keretinterpolációt (frame generation) vezérlő inputokkal egészíti ki, így a generált képkockák pontosabbak lehetnek, a késleltetés pedig kisebb. Az AMD, az Intel és az Nvidia hasonló megoldásai eddig csak mozgásvektorokra támaszkodtak. Mark Cerny, a Sony rendszerarchitektje korábban megerősítette, hogy a frame generation 2026 után érkezik PlayStation hardverre, de a PS6 egyelőre hivatalosan nem létezik, és nem minden szabadalomból lesz végtermék.
   source: DigitalFoundry
   url: https://www.digitalfoundry.net/news/2026/10/sony-patents-generation-super-sampling-next-gen-frame-generation-with-controller-inputs-perfect-for-ps6
-- slug: a-moonlighter-fejlesztoi-ai-klonozastol-felve-halasztjak-el
-  category: AI & Gaming
-  title: A Moonlighter fejlesztői AI-klónozástól félve halasztják el a ReVamp demóját
-  body: |
-    A Digital Sun Games, a Moonlighter és a Cataclismo mögött álló indie stúdió, a múlt héten bejelentette, hogy elhalasztja a ReVamp nyilvános Steam playtestjét. Indoklásuk szerint egyre több fejlesztőt ért az a tapasztalat, hogy kiadás előtti buildjeikből mások generatív AI segítségével gyorsan klónjátékokat készítenek. A zárt Discord-teszt október 29-én kezdődik, a nyilvános playtest pedig csak januárra csúszik. A stúdió arra is felszólított platformokat, hogy erősítsék az eredeti alkotások védelmét.
-  source: RPS
-  url: https://www.rockpapershotgun.com/too-big-a-risk-moonlighter-devs-delay-new-games-demo-for-fear-of-genai-cloning-calling-on-platforms-to-keep-strengthening-protections-for-original-work
 - slug: ket-indie-studio-visszavonta-nyilvanos-demojat-az-ai
   category: AI & Gaming
   title: Két indie stúdió visszavonta nyilvános demóját az AI-klónozástól félve
@@ -64,6 +58,7 @@ articles:
     A Moonlighter fejlesztője, a Digital Sun, valamint az Alliance Arts és Who You páros a múlt héten visszavonták vagy lezárták közelgő játékaik nyilvános demóit, mert attól tartanak, hogy mesterséges intelligenciával lemásolják és hamarabb kiadják a játékaikat, mint az eredetit. A Digital Sun a ReVamp playtestjét Discord-közösségre korlátozta, az Alliance Arts pedig a Drunken Goddess Reflux-hoz csak zárt, előre regisztrált közönségnek tart tesztmeneteket.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/indie-game-developers-cancel-public-playtests-over-ai-clone-concerns-revamp-drunken-goddess-reflux/
+  imageCredit: 'Kép: Digital Sun'
 - slug: miyamoto-szerint-az-ai-nem-teszi-feleslegesse-az-emberi
   category: AI & Gaming
   title: Miyamoto szerint az AI nem teszi feleslegessé az emberi kreativitást
@@ -71,6 +66,7 @@ articles:
     Shigeru Miyamoto, a Mario és a Zelda atyja néhány napja egy japán állami kitüntetés átvételekor fejtette ki véleményét a generatív AI-ról. Szerinte ahogy a technológia átveszi a rutinmunkát, az alkotók egyéni víziója csak fontosabbá válik. Ugyanakkor figyelmeztetett: sokan összetévesztik a munkafolyamat örömét a valódi alkotói teljesítménnyel, és ez az AI térnyerésével egyre nagyobb csapda lehet.
   source: VGC
   url: https://www.videogameschronicle.com/news/shigeru-miyamoto-explains-why-ai-wont-make-human-creativity-obsolete/
+  imageCredit: 'Kép: Nintendo'
 - slug: egy-iparagi-jelentes-szerint-a-fejlesztok-94-a-mar-hasznal
   category: AI & Gaming
   title: Egy iparági jelentés szerint a fejlesztők 94%-a már használ AI-t
@@ -78,13 +74,6 @@ articles:
     A Vivrato játékipari tanácsadó cég 101 észak-amerikai és európai stúdióvezetővel készített interjúk alapján megállapította, hogy a megkérdezettek 94%-a aktívan alkalmaz valamilyen mesterséges intelligenciát a fejlesztési folyamatban. A legelterjedtebb terület a kód és a fejlesztőmunka (86%), de a narratívától a QA-ig szinte minden területen megjelent az AI. A mélység egyelőre alacsony: a résztvevők több mint fele 10-ből csupán 3-asra értékelte a tényleges integráció szintjét.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/industry-report-says-94-of-na-and-eu-leaders-use-ai-in-game-production-pipeline/
-- slug: az-ea-bezarta-a-bioware-t-a-legendas-rpg-studiot
-  category: Stúdió & Üzlet
-  title: Az EA bezárta a BioWare-t, a legendás RPG-stúdiót
-  body: |
-    Négy napja az Electronic Arts bejelentette a BioWare bezárását, véget vetve a legendás kanadai RPG-fejlesztő több mint 30 éves történetének. A stúdió, amely olyan sorozatokat adott a világnak, mint a Mass Effect, a Dragon Age, a Baldur's Gate és a Knights of the Old Republic, 2008 óta volt az EA részét. A lépés az EA újabb körös költségcsökkentésének része: nagyjából 400 elbocsátással akár 700 millió dollárt spórolna a kiadó. A BioWare utolsó játéka a 2024-es Dragon Age: The Veilguard volt, amely nem hozta az EA által elvárt eredményeket, a következő Mass Effect projekt fejlesztése pedig már meg sem valósult.
-  source: NintendoLife
-  url: https://www.nintendolife.com/news/2026/10/ea-shuts-down-legendary-rpg-developer-bioware
 - slug: a-bioware-bezarasa-mellett-a-maxis-a-full-circle-es-a
   category: Stúdió & Üzlet
   title: A BioWare bezárása mellett a Maxis, a Full Circle és a Ripple Effect is elbocsátásokkal
@@ -107,6 +96,7 @@ articles:
     A Star Wars: Galactic Racer és a Zero Company váratlanul meleg fogadtatása után a Lucasfilm Games alelnöke, Douglas Reilly nyíltan kiállt a kisebb léptékű Star Wars projektek mellett. Reilly szerint nem kell feltétlenül a legnagyobb kiadókhoz fordulni egy jó Star Wars játékhoz, és a stúdió tapasztalt, de nem feltétlenül óriási csapatokkal keres partnerséget. A Disney–EA exkluzív korszak után ez érzékelhető szemléletváltás.
   source: RPS
   url: https://www.rockpapershotgun.com/it-doesnt-have-to-always-be-triple-a-galactic-racer-and-zero-companys-success-has-lucasfilms-wanting-more-smaller-scale-star-wars-games
+  imageCredit: 'Kép: Lucasfilm Games'
 - slug: a-beyond-good-evil-2-meg-mindig-pre-produkcion-van-18-evvel
   category: Stúdió & Üzlet
   title: A Beyond Good & Evil 2 még mindig pre-produkción van, 18 évvel a bejelentés után
@@ -129,6 +119,7 @@ articles:
     Ken Kutaragi, a PlayStation sorozat atyjaként emlegetett egykori Sony-vezér múlt héten megszólalt a Sony azon döntéséről, miszerint 2028 januárjától nem gyártanak fizikai lemezeket új PlayStation-játékokhoz. Szerinte a felháborodott játékosok "szemléletmód-problémával" küzdenek: a fizikai lemez az "enyém a játék" érzésének metaforájává vált, de okostelefonoknál senki sem hiányolja a fizikai adathordozót. A megjegyzés különösen érdekes annak fényében, hogy egy másik korábbi SIE-vezér, Shawn Layden már korábban "komoly márkaépítési hibának" nevezte ugyanezt a döntést.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/father-of-playstation-says-players-upset-over-sonys-move-to-discless-may-be-a-mentality-issue/
+  imageCredit: 'Kép: Sony'
 releases:
 - title: Phantom Blade 0
   platform: PS5, PC
@@ -148,5 +139,22 @@ releases:
 - title: Stellar Blade
   platform: Switch 2
   date: '11.06'
-ajanlo: []
+ajanlo:
+  - title: Forever Ago
+    genre: Road trip kaland
+    appid: 1215940
+    description: >-
+      Egy tragikus sorscsapás után Alfred észak felé indul, hogy megváltást találjon – ebben az egyszemélyes, road trip hangulatú kalandjátékban az ő útját kíséred végig.
+
+  - title: No Murders in Grimwick
+    genre: Point-and-click krimi
+    appid: 5198670
+    description: >-
+      Nyomozz egy gyilkosság után Grimwick aratóünnepén ebben a kézzel rajzolt, point-and-click rejtélyjátékban. Faggasd ki a gyanús helyieket, gyűjts nyomokat, vesd be a tárgyaidat, és deríts fényt az igazságra egy városban, amely váltig állítja, hogy nem történt gyilkosság.
+
+  - title: Deadly Days Roadtrip
+    genre: Zombis bullet heaven
+    appid: 3026450
+    description: >-
+      Fosztogass, lövöldözz és arass a zombihordák között ebben a bullet heaven lázálomban. Indulj útnak, döntsd el, mikor menekülj ki, és rendezd a hátizsákodat elképesztően erős buildekké – amikor pedig az új zsákmány pont beleillik, jöhet az a bizonyos édes kis elégedettség.
 ---
