@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-10-19",
+  "generated": "2026-10-26",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -980,6 +980,17 @@
       "openCriticId": null
     },
     {
+      "title": "Culdcept Begins",
+      "platforms": [
+        "Switch",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-07-16",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Splatoon Raiders",
       "platforms": [
         "Switch 2"
@@ -1725,6 +1736,16 @@
       "openCriticId": null
     },
     {
+      "title": "Culdcept Begins",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Minecraft Switch 2 Edition",
       "platforms": [
         "Switch 2"
@@ -1854,7 +1875,9 @@
     {
       "title": "Zero Parades: Director's Cut",
       "platforms": [
-        "PS5"
+        "PS5",
+        "Switch 2",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-11-03",
@@ -1932,6 +1955,27 @@
       ],
       "earlyAccess": false,
       "date": "2026-11-05",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Hillthorn",
+      "platforms": [
+        "PC",
+        "Switch"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Warhammer Survivors",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-10",
       "score": null,
       "openCriticId": null
     },
@@ -2072,6 +2116,20 @@
       "openCriticId": null
     },
     {
+      "title": "The Road of Dust and Sorrow",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Warhammer 40,000: Dawn of War 4",
       "platforms": [
         "PC"
@@ -2102,6 +2160,16 @@
       "openCriticId": null
     },
     {
+      "title": "Stronghold 4",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-07",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Guns of Eschaton",
       "platforms": [
         "PC",
@@ -2110,6 +2178,16 @@
       ],
       "earlyAccess": false,
       "date": "2026-12-08",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "4:AM",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-10",
       "score": null,
       "openCriticId": null
     },
@@ -2210,14 +2288,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Hillthorn",
-      "platforms": [
-        "PC",
-        "Switch"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Kyoto Xanadu",
       "platforms": [
         "Switch",
@@ -2256,20 +2326,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Starfinder: Afterlight",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": true
-    },
-    {
-      "title": "Stronghold 4",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "The Duskbloods",
       "platforms": [
         "Switch 2"
@@ -2302,13 +2358,6 @@
       "title": "Warhammer 40,000: Space Marine 2",
       "platforms": [
         "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Warhammer Survivors",
-      "platforms": [
-        "PC"
       ],
       "earlyAccess": false
     },
