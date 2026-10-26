@@ -19,13 +19,12 @@ const SKINS = [
 // to serve as the desktop layout, because engines hide its contents with
 // content-visibility rather than display.
 //
-// `#hirlevel` stays a bare fragment so it scrolls to the subscribe block on the
-// page you are already on, rather than throwing you back to the landing page.
-// That holds because every content page ends with one — landing, issue, naptar
-// and info. The exception is 404.astro, where the link does nothing; adding a
-// subscribe block to an error page to fix that would be worse than the bug.
+// All three are real routes now. The first used to be `#hirlevel`, a bare
+// fragment that scrolled to the subscribe block further down whichever page you
+// were on; the newsletter is parked, and the block in that slot now points at
+// the Indie Radar, which is a page of its own.
 const LINKS = [
-  { href: '#hirlevel', label: 'Hírlevél' },
+  { href: '/indie-radar/', label: 'Indie Radar' },
   { href: '/naptar/', label: 'Naptár' },
   { href: '/info/', label: 'Infó' },
 ];

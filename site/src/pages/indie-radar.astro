@@ -1,0 +1,85 @@
+---
+// Every ajánló recommendation on one page, newest first. The list is derived
+// from the issues at build time (see utils/radar.ts), so publishing an issue
+// grows it with nothing else to edit.
+//
+// Deliberately no RadarBlock at the foot: this page is what that block points
+// at, and sending a reader from the radar to the radar is a dead end. It is the
+// one content page without it.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import GemCard from '../components/GemCard.astro';
+import SectionHead from '../components/SectionHead.astro';
+import { radarEntries } from '../utils/radar';
+import { SITE_NAME } from '../consts';
+
+const entries = radarEntries(await getCollection('issues'));
+
+const title = `Indie Radar | ${SITE_NAME}`;
+const description =
+  'A Pixelposta indie játékajánlói egy helyen: minden hét ajánlott címe, ' +
+  'műfajjal, rövid leírással és Steam-linkkel.';
+---
+
+<Base title={title} description={description}>
+  <section class="radar-head">
+    <div class="wrap">
+      <div class="eyebrow">Indie Radar</div>
+      <h1>Különleges indie játékot keresel?</h1>
+      <p class="standfirst">
+        Jó helyen jársz! Szemezgess a Pixelposta által nagy odafigyeléssel és szeretettel gyűjtött
+        indie játék csokorból. Minden héten új címekkel bővül.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <SectionHead label="Ajánlott játékok" count={`${entries.length} játék`} />
+
+      {
+        entries.length > 0 ? (
+          entries.map((g) => (
+            <GemCard
+              title={g.title}
+              genre={g.genre}
+              description={g.description}
+              appid={g.appid}
+              image={g.image}
+              issueLabel={g.issueLabel}
+              issueUrl={g.issueUrl}
+            />
+          ))
+        ) : (
+          <p class="empty">Még nincs ajánlott játék. Nézz vissza a következő szám után!</p>
+        )
+      }
+    </div>
+  </section>
+</Base>
+
+<style>
+  /* Matches the calendar and info pages: a reference page, so the h1 sits
+     below an issue hero's scale. */
+  .radar-head {
+    padding-bottom: 34px;
+  }
+  .radar-head h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.1rem, 5vw, 3.1rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 10px 0 16px;
+  }
+  .standfirst {
+    font-size: 1.06rem;
+    line-height: 1.62;
+    max-width: var(--measure);
+    color: var(--ink);
+    margin: 0;
+  }
+  .empty {
+    color: var(--ink-muted);
+  }
+</style>

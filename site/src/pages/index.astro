@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import IssueHero from '../components/IssueHero.astro';
 import IssueRow from '../components/IssueRow.astro';
 import SectionHead from '../components/SectionHead.astro';
-import SubscribeBlock from '../components/SubscribeBlock.astro';
+import RadarBlock from '../components/RadarBlock.astro';
 import { publishedIssues } from '../utils/format';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SUBSTACK_URL } from '../consts';
 
@@ -109,9 +109,9 @@ const jsonLd = {
     )
   }
 
-  <section id="hirlevel">
+  <section id="indie-radar">
     <div class="wrap">
-      <SubscribeBlock />
+      <RadarBlock />
     </div>
   </section>
 </Base>

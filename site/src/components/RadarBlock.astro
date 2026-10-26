@@ -1,0 +1,50 @@
+---
+// Sits where the newsletter signup block used to, at the foot of every content
+// page. SubscribeBlock.astro is kept alongside it, unused, because the
+// newsletter is parked rather than retired — see the note in that file.
+//
+// Shares SubscribeBlock's box so the foot of the page is unchanged apart from
+// the words: the layout was already tuned against the nav, the measure and all
+// six skins.
+---
+
+<div class="sub">
+  {/* Rendered uppercase by CSS — written in sentence case here. */}
+  <div class="sub-label">Indie Radar</div>
+  <h2>Különleges indie játékot keresel? Jó helyen jársz!</h2>
+  <p>
+    Szemezgess a Pixelposta által nagy odafigyeléssel és szeretettel gyűjtött indie játék
+    csokorból!
+  </p>
+  <a class="btn" href="/indie-radar/">Megnézem →</a>
+</div>
+
+<style>
+  .sub {
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius);
+    padding: 28px 30px;
+    max-width: var(--measure);
+  }
+  .sub-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-micro);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 11px;
+  }
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -0.015em;
+    margin: 0 0 10px;
+  }
+  p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    color: var(--ink-muted);
+  }
+</style>

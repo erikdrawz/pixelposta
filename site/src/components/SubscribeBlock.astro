@@ -1,4 +1,12 @@
 ---
+// PARKED, not retired. Nothing imports this: the slot at the foot of every
+// content page is RadarBlock.astro for now, because running the newsletter is
+// more work than the editor wants to take on at the moment.
+//
+// To bring it back, swap RadarBlock for SubscribeBlock in index.astro,
+// info.astro, naptar.astro and [year]/[week].astro, and restore the nav's first
+// entry in Nav.astro. Everything it needs — the component, the box styles and
+// SUBSTACK_SUBSCRIBE_URL in consts.ts — is still here and still correct.
 import { SUBSTACK_SUBSCRIBE_URL } from '../consts';
 ---
 

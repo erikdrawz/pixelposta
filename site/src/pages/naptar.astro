@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import CalendarTable from '../components/CalendarTable.astro';
 import SectionHead from '../components/SectionHead.astro';
-import SubscribeBlock from '../components/SubscribeBlock.astro';
+import RadarBlock from '../components/RadarBlock.astro';
 import { calendarYear, generatedOn, months, undatedReleases } from '../utils/calendar';
 import { formatHuDate, huYearSuffix } from '../utils/format';
 import { SITE_NAME } from '../consts';
@@ -79,9 +79,9 @@ const monthsWithReleases = months.filter((m) => m.releases.length > 0);
     )
   }
 
-  <section id="hirlevel">
+  <section id="indie-radar">
     <div class="wrap">
-      <SubscribeBlock />
+      <RadarBlock />
     </div>
   </section>
 </Base>

@@ -4,7 +4,7 @@
 // body text (article bodies go through utils/format.ts `paragraphs`, which is
 // plain text by design). Emphasis is written as <strong>/<em> directly.
 import Base from '../layouts/Base.astro';
-import SubscribeBlock from '../components/SubscribeBlock.astro';
+import RadarBlock from '../components/RadarBlock.astro';
 import { SITE_NAME } from '../consts';
 
 // Built from a list rather than written inline: in the markup a line ending in
@@ -89,9 +89,9 @@ const description =
     </div>
   </section>
 
-  <section id="hirlevel">
+  <section id="indie-radar">
     <div class="wrap">
-      <SubscribeBlock />
+      <RadarBlock />
     </div>
   </section>
 </Base>

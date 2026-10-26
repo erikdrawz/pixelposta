@@ -8,9 +8,17 @@ interface Props {
   appid: number;
   /** Committed capsule art, named `ajanlo-<appid>.jpg` in the issue folder. */
   image?: ImageMetadata;
+  /**
+   * Which issue first recommended this, e.g. "2026 · 43. hét". Passed only by
+   * the Indie Radar, where the cards are pooled from every issue and provenance
+   * is the one thing the issue page does not need to state — there the
+   * surrounding page already is the issue.
+   */
+  issueLabel?: string;
+  issueUrl?: string;
 }
 
-const { title, genre, description, appid, image } = Astro.props;
+const { title, genre, description, appid, image, issueLabel, issueUrl } = Astro.props;
 
 // Capsule art is committed alongside the issue rather than hotlinked. Steam's
 // asset URLs were derivable from the appid alone for older titles, but newer
@@ -49,6 +57,16 @@ const storeUrl = `https://store.steampowered.com/app/${appid}/`;
 
   <p class="src-line">
     <a class="src" href={storeUrl} target="_blank" rel="noopener">Steam →</a>
+    {
+      issueLabel && issueUrl && (
+        <>
+          <span class="sep" aria-hidden="true">·</span>
+          <a class="src issue-ref" href={issueUrl}>
+            {issueLabel}
+          </a>
+        </>
+      )
+    }
   </p>
 </div>
 
@@ -96,6 +114,15 @@ const storeUrl = `https://store.steampowered.com/app/${appid}/`;
   }
   .gem p.src-line {
     margin: 0;
+  }
+  /* Only ever rendered on the Indie Radar, where the Steam link is followed by
+     the issue the game came from. */
+  .sep {
+    color: var(--ink-muted);
+    margin: 0 9px;
+  }
+  .issue-ref {
+    color: var(--ink-muted);
   }
   .capsule {
     aspect-ratio: 616 / 353;

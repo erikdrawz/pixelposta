@@ -9,7 +9,7 @@ import PrevIssue from '../../components/PrevIssue.astro';
 import ReleaseTable from '../../components/ReleaseTable.astro';
 import RovatBar, { type Rovat } from '../../components/RovatBar.astro';
 import SectionHead from '../../components/SectionHead.astro';
-import SubscribeBlock from '../../components/SubscribeBlock.astro';
+import RadarBlock from '../../components/RadarBlock.astro';
 import { articleImage, gemImage } from '../../utils/images';
 import { SITE_NAME, SUBSTACK_URL } from '../../consts';
 import { issueCounts, paragraphs, publishedIssues, weekLabel } from '../../utils/format';
@@ -187,12 +187,12 @@ const jsonLd = {
 
   {prev && <PrevIssue issue={prev} />}
 
-  {/* Issue-level, below the panels: whoever just finished reading an issue is
-      the likeliest subscriber, and it gives the nav's Hírlevél link an
-      in-page target on this route too. */}
-  <section id="hirlevel">
+  {/* Issue-level, below the panels: whoever just finished an issue is the
+      likeliest person to want more of the same, and the Ajánló they just read
+      is exactly what the radar collects. */}
+  <section id="indie-radar">
     <div class="wrap">
-      <SubscribeBlock />
+      <RadarBlock />
     </div>
   </section>
 </Base>
