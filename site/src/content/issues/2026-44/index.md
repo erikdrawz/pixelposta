@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -15,10 +15,11 @@
 year: 2026
 week: 44
 date: '2026-10-31'
-title: 'Elder Scrolls VI: Sentinel és a Don''t Nod csődje'
-standfirst: A Bethesda következő nagy RPG-je állítólag Sentinelben játszódik, miközben a Life
-  is Strange stúdiója, a Don't Nod francia csődvédelmi eljárás alatt küzd a fennmaradásáért.
-draft: true
+title: A BioWare bezárásának valódi oka, és jelszólopó PS5-emulátorok
+standfirst: Jason Schreier szerint az EA azért zárta be a BioWare-t, mert a következő Mass
+  Effect helyett új Star Wars Battlefrontba invesztál, eközben pedig hamis
+  PS5-emulátorok lopják a jelszavakat a GitHubon.
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -29,6 +30,7 @@ articles:
     A The Verge veterán újságírója, Tom Warren értesülése szerint a Bethesda következő nagy RPG-je a The Elder Scrolls VI: Sentinel nevet kapja, és a játék Hammerfellben játszódik majd, az Elder Scrolls univerzum egyik kevésbé feldolgozott tartományában. Bennfentes források szerint a hivatalos bejelentés akár jövő hónapban is megérkezhet, ami egybeesne a Skyrim megjelenésének 15. évfordulójával. A játék már több mint nyolc éve fejlesztés alatt áll, de megjelenési dátumot és platformokat egyelőre nem közöltek.
   source: NintendoLife
   url: https://www.nintendolife.com/news/2026/10/bethesda-is-reportedly-ready-to-reveal-the-official-title-of-the-elder-scrolls-vi
+  imageCredit: 'Kép: Bethesda'
 - slug: a-mass-effect-trilogia-egyik-zeneszerzoje-ujrakeretezi-a
   category: Játékhírek
   title: A Mass Effect-trilógia egyik zeneszerzője újrakeretezi a kiszivárgott ME5-trailert
@@ -57,6 +59,7 @@ articles:
     A FromSoftware tegnap megerősítette, hogy a Switch 2-exkluzív The Duskbloods nem jelenik meg idén: a multiplayer akciójáték kiadási ablakát 2027-re tolták. A stúdió az augusztusi hálózati teszt visszajelzéseire hivatkozott, mondván, a játékszabályok és a balansz finomhangolásához több időre van szükség. A csúszás nem volt meglepetés, sokan számítottak rá, mivel konkrét dátumot korábban sem neveztek meg.
   source: VGC
   url: https://www.videogameschronicle.com/news/fromsoftwares-switch-2-exclusive-the-duskbloods-has-been-delayed-to-2027/
+  imageCredit: 'Kép: FromSoftware'
 - slug: a-celeste-es-a-towerfall-fejlesztoje-kivonta-jatekait-az
   category: Játékhírek
   title: A Celeste és a TowerFall fejlesztője kivonta játékait az Xboxról a BDS-bojkott keretében
@@ -92,6 +95,7 @@ articles:
     Néhány napja a Times Square egyik digitális kijelzőjére is felkerült a #SaveMassEffect kampány hirdetése, miután a Change.org-os petíció átlépte a 216 000 aláírást. A WeAreMassEffect csapat és Kala Elizabeth content creator szervezte az akciót: a billboard minden óra 35. percétől 15 másodpercig látható az 1560 Broadway-en. A kampány akkor indult be igazán, amikor az EA bezárta a BioWare-t és törölte a következő Mass Effect-játékot, amelynek kiszivárgott előzetese egy "Galaktikus Hidegháborús" RPG-t mutatott be.
   source: WindowsCentral
   url: https://www.windowscentral.com/gaming/save-mass-effect-is-now-live-in-times-square-as-petition-surges-past-216-000-signatures
+  imageCredit: 'Kép: WindowsCentral'
 - slug: egy-veteran-metroid-mernok-szerint-a-motoros-szakaszok-csak
   category: Játékhírek
   title: Egy veterán Metroid-mérnök szerint a motoros szakaszok csak erőforráspazarlás volt
@@ -107,6 +111,7 @@ articles:
     A Silent Hill: Townfall után egy másik játék is a brit part mentén keresi a rémületet: a Ritual Tides egy névtelen nő szemével tár fel egy titokzatos, térképen nem szereplő szigetet a cornwalli partok közelében, viktoriánus korban. A Vertpaint stúdió első saját fejlesztése első személyes horror lesz, amelynek ihletői közt a Silent Hill, a Resident Evil, Lovecraft és a DayZ egyaránt szerepel. A játék idén végén jelenik meg.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/feature/ritual-tides-is-next-in-line-to-turn-the-uk-coast-into-a-bleak-horror-game-backdrop/
+  imageCredit: 'Kép: Vertpaint'
 - slug: a-mouthwashing-filmet-kap-a-sonytol-karyn-kusama
   category: Játékhírek
   title: A Mouthwashing filmet kap a Sonytól, Karyn Kusama rendezésében
@@ -114,6 +119,13 @@ articles:
     A Sony Pictures Screen Gems stúdiója megvette a Mouthwashing mozis adaptációjának jogait. A rendezői székbe Karyn Kusama kerül, akit a Jennifer's Body kultklasszikusáért ismerünk, és aki nem idegen a játék sötét, erőszakos témáitól. A producerek között Scott Derrickson neve is feltűnik, az írópáros (Matt Manfredi és Phil Hay) azonban vegyes életművel rendelkezik. Hogy mindez jó ötlet-e, az más kérdés: a játék erősen épít az első személyes nézőpontra és az interaktivitásra.
   source: RPS
   url: https://www.rockpapershotgun.com/mouthwashing-is-getting-a-feature-film-adaptation-from-sony-and-i-need-all-of-you-to-be-normal-about-it-whenever-it-comes-out
+- slug: hamis-ps5-emulatorok-terjesztenek-jelszolopo-kartevot-a
+  category: Játékhírek
+  title: Hamis PS5-emulátorok terjesztenek jelszólopó kártevőt a GitHubon
+  body: |
+    A NordVPN fenyegetéselemző csapata olyan GitHub-tárolókra bukkant, amelyek PS5-emulátornak álcázzák magukat: a népszerű Kyttyps5 és AnyPS5 nevét és kinézetét másolják. A letöltött program valójában kizárást állít be a Microsoft Defenderben, hogy a víruskereső soha ne vizsgálja át, majd egy infostealert telepít, amely jelszavakat és más személyes adatokat gyűjt – végül egy takarítószkript törli a saját nyomait, így a felhasználó akár észre sem veszi. Marijus Briedis, a NordVPN technológiai igazgatója szerint a szoftver "nem emulátor", hanem adatlopó. Az emulátorok iránti kereslet azóta nőtt meg, hogy a Sony idén bejelentette: nem portolja tovább PC-re a saját játékait.
+  source: Engadget
+  url: https://www.engadget.com/2299912/fake-ps5-emulators-on-github-are-spreading-password-stealing-malware/
 - slug: a-valve-elismerte-az-ai-klonok-es-a-gyenge-jatekok
   category: AI & Gaming
   title: A Valve elismerte az AI-klónok és a gyenge játékok problémáját a Steam Next Festen
@@ -121,6 +133,7 @@ articles:
     Két napja egy dél-koreai fejlesztői panelen a Valve két munkatársa, Tom Giardino és Marc Wilkinson elismerte, hogy az októberi Steam Next Festen komoly gondot okoztak az AI-klónok és a gyenge minőségű játékok. Az eseményen több mint 7 300 demo volt elérhető. A Valve egyelőre nem tervez szigorúbb belépési feltételeket, inkább a platform okosabb ajánlórendszerén dolgozna, és a fejlesztőket arra biztatja, hogy a saját kreativitásukkal tegyék eladhatatlanná a klónokat.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/valve-fully-aware-of-ai-clones-and-low-effort-games-during-steam-next-fest/
+  imageCredit: 'Kép: Steam'
 - slug: a-meta-szerint-az-ai-alapu-jatekkeszites-komoly-uzleti
   category: AI & Gaming
   title: A Meta szerint az AI-alapú játékkészítés komoly üzleti lehetőség
@@ -128,6 +141,13 @@ articles:
     A Meta Horizon nevű platformján szöveges promptokkal lehet játékokat készíteni és azonnal publikálni Instagramon vagy Facebookon. A Horizon VP-je, Saxs Persson, aki korábban a Minecraft és az Unreal Editor for Fortnite mögött állt, szerint ez nem AAA-stúdióknak szól, hanem egy új indie-generációnak. A platform fő ereje a rugalmasság: nincs kötelező vizuális stílus, az IP-k szabadon megjeleníthetők, és a kiadás szinte súrlódásmentes.
   source: TheGameBusiness
   url: https://www.thegamebusiness.com/p/can-you-build-a-legitimate-video
+- slug: a-bloomberg-megirta-miert-zarta-be-az-ea-a-bioware-t
+  category: Stúdió & Üzlet
+  title: A Bloomberg megírta, miért zárta be az EA a BioWare-t
+  body: |
+    Jason Schreier forrásai szerint a BioWare bezárásának fő oka egy Lucasfilmmel nyíló lehetőség volt: az EA egy harmadik Star Wars Battlefront játékot kapott az asztalára. A kiadó eközben a Szaúd-Arábia állami alapja vezette, augusztusban lezárt 55 milliárd dolláros kivásárlás után 18 milliárd dolláros adósságot cipel. A portfólió átnézésekor két, egyenként több százmillió dollárra becsült sci-fi akciójáték maradt versenyben – a Battlefront III és a következő Mass Effect –, és az EA a kevésbé kockázatosnak ítélt Star Warst választotta. Közrejátszott az is, hogy a Dragon Age: The Veilguard 50%-kal maradt el az eladási tervektől, a stúdióban pedig a bezáráskor már csak ötvenen dolgoztak.
+  source: Bloomberg
+  url: https://www.bloomberg.com/news/newsletters/2026-10-30/why-electronic-arts-shut-down-bioware-and-cancelled-mass-effect
 - slug: a-don-t-nod-fizeteskeptelenseg-szelen-all-tomeges
   category: Stúdió & Üzlet
   title: A Don't Nod fizetésképtelenség szélén áll, tömeges elbocsátások jönnek
@@ -135,6 +155,7 @@ articles:
     A Life is Strange és a Lost Records alkotójaként ismert Don't Nod stúdió a csőd szélére került: a francia szakszervezet, az STJV múlt heti közleménye szerint a cég már az előre eltervezett végkielégítések kifizetésére sem rendelkezik elegendő forrással. A kirúgások szinte az összes nem vezető beosztású dolgozót érintik, az animátoroktól a programozókig. A stúdió a fennmaradáshoz masszív kiszervezésre épít, amit a szakszervezet teljesen életidegennek nevez. November 25-én érkezhetnek a felmondólevelek.
   source: RPS
   url: https://www.rockpapershotgun.com/life-is-strange-makers-dont-nod-face-layoffs-and-possible-insolvency-french-workers-union-stjv-state
+  imageCredit: 'Kép: Don''t Nod'
 - slug: elbocsatasok-a-sucker-punch-nal-24-en-veszitettek-el
   category: Stúdió & Üzlet
   title: 'Elbocsátások a Sucker Punch-nál: 24-en veszítették el állásukat'
@@ -163,6 +184,7 @@ articles:
     A TheGameBusiness szerint a Gears of War: E-Day fejlesztési költsége elérte az 500 millió dollárt, ami a lap szerint egyszerűen nem fenntartható egy ilyen franchise esetén. A Gears of War egy mérsékelten népszerű sorozat, és ahhoz, hogy egy ekkora büdzsé megtérüljön, nagyjából 10 millió teljes áras eladásra lenne szükség. Ez különösen nehezen kivitelezhető a Game Pass korában, ahol a Xbox-játékosok java nem fizet külön a first-party játékokért.
   source: TheGameBusiness
   url: https://www.thegamebusiness.com/p/500-million-gears-of-war-cannot-happen
+  imageCredit: 'Kép: The Coalition'
 - slug: a-nagy-kiadok-tonkreteszik-az-early-access-t-a-kisebb
   category: Stúdió & Üzlet
   title: A nagy kiadók tönkreteszik az Early Access-t a kisebb fejlesztők számára
@@ -183,5 +205,16 @@ releases:
 - title: 'Pikmin 4: Nintendo Switch 2 Edition + Dandori Academy'
   platform: Switch 2
   date: '11.12'
-ajanlo: []
+ajanlo:
+  - title: Ghost in the SQL Data
+    genre: SQL-nyomozás
+    appid: 5072430
+    description: >-
+      Egy hívás 14 perccel azelőtt jelentett iskolatüzet, hogy az első szemtanú meglátta volna a lángokat. Derítsd ki SQL-lekérdezésekkel, ki telefonált – egy teljes évnyi párizsi segélyhívás adatai között kutatva.
+
+  - title: Legends of Rock
+    genre: Zenekar-szimulátor
+    appid: 4227560
+    description: >-
+      Kezdd nincstelen zenészként! Építsd fel a rockzenekarodat, tanulj meg dalt írni, járj próbákra és adj koncerteket, közben pedig egy polgári állással fizesd a számlákat. Vásárolj lemezeket, hangszereket és élelmiszert, toborozz zenésztársakat, és küzdd be magad a Hall of Fame-be.
 ---
