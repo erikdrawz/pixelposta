@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-10-26",
+  "generated": "2026-11-02",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -1836,6 +1836,16 @@
       "openCriticId": null
     },
     {
+      "title": "Sword of the Sea",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-10-29",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "The Wolf Among Us Remastered",
       "platforms": [
         "PC",
@@ -1970,9 +1980,49 @@
       "openCriticId": null
     },
     {
+      "title": "Raccoin: Chaos Max Edition",
+      "platforms": [
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Shrek 2 Remastered",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Tanuki: Pon's Summer",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Warhammer Survivors",
       "platforms": [
-        "PC"
+        "PC",
+        "PS5",
+        "Switch",
+        "Switch 2",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-11-10",
@@ -2025,6 +2075,17 @@
       "openCriticId": null
     },
     {
+      "title": "Spirit Crossing",
+      "platforms": [
+        "PC",
+        "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-16",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Trees Hate You",
       "platforms": [
         "PC"
@@ -2056,6 +2117,18 @@
       "openCriticId": null
     },
     {
+      "title": "Arkheron",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "earlyAccess": true,
+      "date": "2026-11-27",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Hela: Of Mice and Magic",
       "platforms": [
         "Switch 2",
@@ -2065,6 +2138,16 @@
       ],
       "earlyAccess": false,
       "date": "2026-12-01",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Blind Descent",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": true,
+      "date": "2026-12-02",
       "score": null,
       "openCriticId": null
     },
@@ -2160,6 +2243,16 @@
       "openCriticId": null
     },
     {
+      "title": "Petit Planet",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-04",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Stronghold 4",
       "platforms": [
         "PC"
@@ -2182,6 +2275,16 @@
       "openCriticId": null
     },
     {
+      "title": "Hookeye",
+      "platforms": [
+        "PC"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-09",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "4:AM",
       "platforms": [
         "PC"
@@ -2198,6 +2301,18 @@
         "PS5",
         "Xbox",
         "Switch 2"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-10",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Cronos: Lazarus [DLC]",
+      "platforms": [
+        "PC",
+        "PS5",
+        "Xbox"
       ],
       "earlyAccess": false,
       "date": "2026-12-10",
@@ -2250,9 +2365,9 @@
       "earlyAccess": false
     },
     {
-      "title": "Ballad of Antara",
+      "title": "Acts of Blood",
       "platforms": [
-        "PS5"
+        "PC"
       ],
       "earlyAccess": false
     },
@@ -2305,30 +2420,9 @@
       "earlyAccess": false
     },
     {
-      "title": "Petit Planet",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Serial World",
       "platforms": [
         "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Spirit Crossing",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "The Duskbloods",
-      "platforms": [
-        "Switch 2"
       ],
       "earlyAccess": false
     },
@@ -2358,16 +2452,6 @@
       "title": "Warhammer 40,000: Space Marine 2",
       "platforms": [
         "Switch 2"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Witchbrook",
-      "platforms": [
-        "PC",
-        "Switch",
-        "Switch 2",
-        "Xbox"
       ],
       "earlyAccess": false
     }
