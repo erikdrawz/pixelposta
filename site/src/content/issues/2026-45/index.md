@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -16,10 +16,10 @@ year: 2026
 week: 45
 date: '2026-11-07'
 title: 'Zelda: Ocarina of Time 96 ponton, és az Arkane Lyon sorsa'
-standfirst: A Switch 2-re újraépített klasszikus JRPG a 2026-os év legjobb kritikai fogadtatású
-  játéka lett, miközben az Arkane Lyon dolgozói Microsoftot vádolnak szándékos szabotázzsal,
-  és legalább három kiadó licitál a stúdióért.
-draft: true
+standfirst: 'A Switch 2-re újraépített Zelda: Ocarina of Time a 2026-os év eddigi legjobb
+  kritikai fogadtatású játéka lett, miközben az Arkane Lyon dolgozói Microsoftot vádolnak
+  szándékos szabotázzsal, és legalább három kiadó licitál a stúdióért.'
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -37,6 +37,7 @@ articles:
     Hat napja jelent meg egy állítólagos Persona 1 remake gameplay-szivárgás a GamingLeaksAndRumours subredditen: a közel kétperces felvételen az iskolai folyosókon sétáló főhős és egy körökre osztott csata látható, az egész átitatta a Persona 5 óta megszokott vizuális stílus, most lila színvilágban. Hitelességét erősíti, hogy a sorozat producere korábban maga mondta: a Persona 1 és 2 remake előbb-utóbb biztosan el fog készülni.
   source: RPS
   url: https://www.rockpapershotgun.com/it-looks-like-footage-of-a-persona-1-remake-has-leaked-and-if-its-legit-i-really-hope-you-dont-hate-the-colour-purple
+  imageCredit: 'Kép: Atlus'
 - slug: a-gta-6-letoltesi-merete-212-gb-az-elotoltes-mar-elkezdodott
   category: Játékhírek
   title: A GTA 6 letöltési mérete 212 GB, az előtöltés már elkezdődött
@@ -51,6 +52,7 @@ articles:
     A Probably Stolen – Cyberpunk Shopkeeper Sim három napja még 162 000 egyidejű játékossal csúcsolt a Steamen, ami azért is meglepő, mert a játék eredetileg egy teljesen más köntösben, Deepspace Emporium névvel futott. Annak demója mindössze 28 egyidejű játékost vonzott. A tinyBuild kiadó mégis hitt a koncepcióban, új vizuális iránnyal és cyberpunk hangulattal szabták újra a Questing Goose fejlesztőivel, és a fogadás bejött.
   source: RPS
   url: https://www.rockpapershotgun.com/smash-hit-cyberpunk-storekeeper-probably-stolen-was-originally-a-different-non-cyberpunk-game-that-seemed-destined-to-sink-without-trace
+  imageCredit: 'Kép: Probably Stolen'
 - slug: a-nintendo-szerint-a-switch-2-es-remakeek-meg-csak-most
   category: Játékhírek
   title: A Nintendo szerint a Switch 2-es remakeek még csak most kezdődnek
@@ -72,6 +74,7 @@ articles:
     A Microsoft múlt kedden dobta piacra az Xbox Nano Controllert $49,99 dolláros áron. A zsebméretű kontroller nagyjából ugyanolyan széles, mint a hagyományos Xbox pad, de jóval rövidebb, így könnyen hordható, és kisebb kezű, fiatalabb játékosoknak is ideális. Rezgőmotorok nem kerültek bele, és a telepeket sem lehet cserélni, viszont beépített akkumulátora van. Az igazán érdekes újdonság egy egyelőre rejtett funkció: a kontroller Wi-Fi direct kapcsolatot is támogat a Cloud Gaminghöz, ami kisebb késleltetést ígér a Bluetooth-nál.
   source: WindowsCentral
   url: https://www.windowscentral.com/accessories/the-xbox-nano-controller-is-here-and-its-incredibly-cute-and-hides-a-surprise
+  imageCredit: 'Kép: Xbox'
 - slug: a-switch-2-mar-26-millio-eladott-peldanynal-jar-de-a-tempo
   category: Hardware
   title: A Switch 2 már 26 millió eladott példánynál jár, de a tempó lassul
@@ -93,6 +96,7 @@ articles:
     A Microsoft tegnap bejelentette az Xbox PC-s alkalmazásának nagyobb frissítését. Az új verzió az ígéretek szerint 60%-kal gyorsabban indul, a főbb oldalak (Home, Store, Game Pass) 50%-kal, a felugró ablakok pedig 65%-kal reagálnak gyorsabban. A könyvtár is rendezettebb lett, a baráti lista és a közösségi funkciók kijebb kerültek a főnavigációba. Az Xbox Insiders tagok már most kipróbálhatják, mindenki más egy későbbi időpontban kapja meg.
   source: VGC
   url: https://www.videogameschronicle.com/news/xbox-is-updating-its-pc-app-promising-60-faster-boot-times-and-an-easier-to-use-game-library/
+  imageCredit: 'Kép: Xbox'
 - slug: a-cachyos-lett-a-legnepszerubb-linux-disztribucio-a-steamen
   category: Hardware
   title: A CachyOS lett a legnépszerűbb Linux-disztribúció a Steamen
@@ -170,5 +174,16 @@ releases:
 - title: Grand Theft Auto 6
   platform: PS5, Xbox
   date: '11.19'
-ajanlo: []
+ajanlo:
+  - title: Death at Fleming Manor
+    genre: Törvényszéki krimi
+    appid: 3758950
+    description: >-
+      "A te dolgod a halotti bizonyítvány kiállítása." Egy rejtélyes halálesetet vizsgálsz egy brit kúriában, 1959-ben: nyomasztó helyszíneket jársz be, bizonyítékokat elemzel, majd halotti bizonyítványokat és jelentéseket töltesz ki. Törvényszéki krimi, amelynek látványvilágát a hatvanas évek európai detektívképregényei ihlették.
+
+  - title: Underkeep
+    genre: Körökre osztott dungeon crawler
+    appid: 2411200
+    description: >-
+      Fedezz fel egy veszélyes fantasyvilágot ebben a szerepjátékos dungeon crawlerben, amelyben taktikus, körökre osztott harc vár rád. Állíts össze egy kalandozócsapatot, fejleszd a felszerelésedet, és járd be a teljes egészében kézzel megépített világot.
 ---
