@@ -5,6 +5,7 @@
 // plain text by design). Emphasis is written as <strong>/<em> directly.
 import Base from '../layouts/Base.astro';
 import RadarBlock from '../components/RadarBlock.astro';
+import PodcastBlock from '../components/PodcastBlock.astro';
 import { SITE_NAME } from '../consts';
 
 // Built from a list rather than written inline: in the markup a line ending in
@@ -92,6 +93,12 @@ const description =
   <section id="indie-radar">
     <div class="wrap">
       <RadarBlock />
+    </div>
+  </section>
+
+  <section id="podcast">
+    <div class="wrap">
+      <PodcastBlock />
     </div>
   </section>
 </Base>

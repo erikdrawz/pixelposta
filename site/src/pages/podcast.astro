@@ -1,0 +1,103 @@
+---
+// The podcast, embedded from Spotify.
+//
+// This is the first third-party frame on the site — everything else is built
+// and served from our own origin. It is confined to this one page rather than
+// riding along on every page, so a reader only loads Spotify when they came
+// here for it.
+//
+// Deliberately carries RadarBlock and not PodcastBlock: this page is what that
+// block points at.
+import Base from '../layouts/Base.astro';
+import PlatformLinks from '../components/PlatformLinks.astro';
+import RadarBlock from '../components/RadarBlock.astro';
+import { PODCAST_NAME, PODCAST_SPOTIFY_SHOW_ID, SITE_NAME } from '../consts';
+
+// Built from the show id rather than pasted whole, so the embed and the
+// platform links cannot drift apart. `theme=0` is Spotify's dark player, which
+// sits better against every skin than the white one.
+const embedSrc =
+  `https://open.spotify.com/embed/show/${PODCAST_SPOTIFY_SHOW_ID}` +
+  '?utm_source=generator&theme=0';
+
+const title = `Podcast | ${SITE_NAME}`;
+const description =
+  `Indie, AA és történet-alapú videójátékok, gamer nosztalgia és Resident Evil ` +
+  `a ${PODCAST_NAME} csapatától. Hallgasd meg a legfrissebb adásokat.`;
+---
+
+<Base title={title} description={description}>
+  <section class="pod-head">
+    <div class="wrap">
+      <div class="eyebrow">Podcast</div>
+      <h1>Podcastot hallgatnál?</h1>
+      <p class="standfirst">
+        Indie, AA, történet-alapú videójátékok, gamer nosztalgia, Resident Evil és az élet dolgai a
+        {' '}{PODCAST_NAME} csapatától.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="player">
+        <iframe
+          data-testid="embed-iframe"
+          src={embedSrc}
+          width="100%"
+          height="352"
+          allowfullscreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          title={`${PODCAST_NAME} — Spotify`}></iframe>
+      </div>
+
+      {/* Doubles as the no-JS path: the Spotify player needs JavaScript, and
+          the site's rule is that nothing becomes unreachable without it, so
+          these plain links are always there under the frame. */}
+      <PlatformLinks />
+    </div>
+  </section>
+
+  <section id="indie-radar">
+    <div class="wrap">
+      <RadarBlock />
+    </div>
+  </section>
+</Base>
+
+<style>
+  /* Matches the calendar, info and radar pages: a reference page, so the h1
+     sits below an issue hero's scale. */
+  .pod-head {
+    padding-bottom: 34px;
+  }
+  .pod-head h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.1rem, 5vw, 3.1rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 10px 0 16px;
+  }
+  .standfirst {
+    font-size: 1.06rem;
+    line-height: 1.62;
+    max-width: var(--measure);
+    color: var(--ink);
+    margin: 0;
+  }
+  /* Spotify rounds its own player to 12px; the wrapper carries the radius so
+     the corners stay clipped whatever the iframe does, and matches the site's
+     own cards. */
+  .player {
+    max-width: var(--measure);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .player iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+  }
+</style>

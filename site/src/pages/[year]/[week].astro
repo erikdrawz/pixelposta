@@ -10,6 +10,7 @@ import ReleaseTable from '../../components/ReleaseTable.astro';
 import RovatBar, { type Rovat } from '../../components/RovatBar.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import RadarBlock from '../../components/RadarBlock.astro';
+import PodcastBlock from '../../components/PodcastBlock.astro';
 import { articleImage, gemImage } from '../../utils/images';
 import { SITE_NAME, SUBSTACK_URL } from '../../consts';
 import { issueCounts, paragraphs, publishedIssues, weekLabel } from '../../utils/format';
@@ -193,6 +194,12 @@ const jsonLd = {
   <section id="indie-radar">
     <div class="wrap">
       <RadarBlock />
+    </div>
+  </section>
+
+  <section id="podcast">
+    <div class="wrap">
+      <PodcastBlock />
     </div>
   </section>
 </Base>
