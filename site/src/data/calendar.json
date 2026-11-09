@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "generated": "2026-11-02",
+  "generated": "2026-11-09",
   "dated": [
     {
       "title": "Quarantine Zone: The Last Check",
@@ -2107,6 +2107,18 @@
       "openCriticId": null
     },
     {
+      "title": "Gothic 3 Classic",
+      "platforms": [
+        "PS5",
+        "Switch 2",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-11-24",
+      "score": null,
+      "openCriticId": null
+    },
+    {
       "title": "Am I Nima",
       "platforms": [
         "PC"
@@ -2169,6 +2181,16 @@
         "Switch 2",
         "PS5",
         "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-03",
+      "score": null,
+      "openCriticId": null
+    },
+    {
+      "title": "Dumpster Gang",
+      "platforms": [
+        "PC"
       ],
       "earlyAccess": false,
       "date": "2026-12-03",
@@ -2354,6 +2376,17 @@
       "date": "2026-12-11",
       "score": null,
       "openCriticId": null
+    },
+    {
+      "title": "There Are No Ghosts at the Grand",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "earlyAccess": false,
+      "date": "2026-12-16",
+      "score": null,
+      "openCriticId": null
     }
   ],
   "tbc": [
@@ -2366,13 +2399,6 @@
     },
     {
       "title": "Acts of Blood",
-      "platforms": [
-        "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "Beautiful Light",
       "platforms": [
         "PC"
       ],
@@ -2411,15 +2437,6 @@
       "earlyAccess": false
     },
     {
-      "title": "Mudang: Two Hearts",
-      "platforms": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ],
-      "earlyAccess": false
-    },
-    {
       "title": "Serial World",
       "platforms": [
         "PC"
@@ -2430,14 +2447,6 @@
       "title": "The Journey Home",
       "platforms": [
         "PC"
-      ],
-      "earlyAccess": false
-    },
-    {
-      "title": "There Are No Ghosts at the Grand",
-      "platforms": [
-        "PC",
-        "Xbox"
       ],
       "earlyAccess": false
     },
