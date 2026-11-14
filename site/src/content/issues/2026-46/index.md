@@ -7,7 +7,7 @@
 #
 # To add the cover: drop cover.jpg into this folder and uncomment the line
 # below. Leaving it pointed at a file that does not exist fails the build.
-# cover: ./cover.jpg
+cover: ./cover.jpg
 #
 # To add an article image: drop <slug>.jpg into this folder, using the article's
 # own slug as the filename. No frontmatter change needed. Missing file, no image.
@@ -15,11 +15,10 @@
 year: 2026
 week: 46
 date: '2026-11-14'
-title: GTA VI rekordot dönt, és jön a Wolfenstein 3
-standfirst: A Grand Theft Auto VI mindkét nagy platform előrendelési történetének csúcsát
-  megdöntötte, miközben a MachineGames hivatalosan is bejelentette a Wolfenstein-trilógia
-  záró részét.
-draft: true
+title: A Requiem viszi a Golden Joystickot, a PS5 átlépte a 100 milliót
+standfirst: A Resident Evil Requiem vitte haza a Golden Joystick fődíját, a PlayStation 5
+  pedig átlépte a 100 millió eladott darabot.
+draft: false
 outro: ""
 signature: — Erik · Pixelposta
 articles:
@@ -27,9 +26,10 @@ articles:
   category: Játékhírek
   title: A GTA VI mindkét nagy bolt történetének legtöbbet előrendelt játéka
   body: |
-    A PlayStation Store és a Microsoft Store egyaránt bejelentette, hogy a GTA VI az áruházaik történetének legtöbbet előrendelt játéka. A Sensor Tower adatai szerint a Rockstar új címe már közel 9,7 millió előrendelésnél jár, amelynek háromnegyede PlayStation-ön. A játék múlt szerdán, november 19-én jelent meg konzolokra. PS5 Pro-n PSSR és ray-traced árnyékok érhetők el, az Xbox-os verzió pedig Cloud Gaminggel is streamelhető, Series és One konzolokra egyaránt, bár PC-re és mobilra nem.
+    A PlayStation Store és a Microsoft Store egyaránt bejelentette, hogy a GTA VI az áruházaik történetének legtöbbet előrendelt játéka. A Sensor Tower adatai szerint a Rockstar új címe már közel 9,7 millió előrendelésnél jár, amelynek háromnegyede PlayStation-ön. A játék jövő csütörtökön, november 19-én jelenik meg konzolokra. PS5 Pro-n PSSR és ray-traced árnyékok érhetők el, az Xbox-os verzió pedig Cloud Gaminggel is streamelhető, Series és One konzolokra egyaránt, bár PC-re és mobilra nem.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/playstation-and-xbox-confirm-grand-theft-auto-vi-is-most-pre-ordered-game-in-their-storefronts-histories/
+  imageCredit: 'Kép: Rockstar Games'
 - slug: a-zelda-ocarina-of-time-japan-eladasainak-nagy-reszet-a
   category: Játékhírek
   title: 'A Zelda: Ocarina of Time japán eladásainak nagy részét a fizikai kiadás hozta'
@@ -44,6 +44,7 @@ articles:
     A két napja megrendezett 44. Golden Joystick Awards gálán a Resident Evil Requiem vitte haza az Ultimate Game of the Year díjat, és összességében négy elismerést szerzett. Nagy este volt a Capcomnak: a stúdió az Év Stúdiója díjat is megkapta, az Onimusha: Way of the Sword pedig legjobb hangterv lett. Az indie mezőnyben a Meccha Chameleon jeleskedett szintén négy díjjal, PC-s játék kategóriában pedig a Crimson Desert győzött. A legtöbb kategóriát közönségszavazással döntötték el.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/golden-joystick-awards-2026-all-the-winners-and-finalists/
+  imageCredit: 'Kép: Capcom'
 - slug: 25-eredeti-xbox-jatek-erheto-el-pc-n-koztuk-a-knights-of
   category: Játékhírek
   title: 25 eredeti Xbox-játék érhető el PC-n, köztük a Knights of the Old Republic
@@ -65,6 +66,29 @@ articles:
     Tegnap az Xbox vezérigazgatója, Asha Sharma egy X-bejegyzésben officialisan is megerősítette, hogy a Wolfenstein 3 fejlesztés alatt áll a MachineGamesnél. A svéd stúdió saját posztjában szintén visszaigazolta a hírt, és a közzétett képekből az is kiderül, hogy a főhős BJ Blazkowicz visszatér, sőt Brian Bloom és Debra Wilson is újra magukra veszik a szerepüket. Megjelenési dátumot egyelőre nem közöltek, de a stúdió korábban elmondta, hogy a sorozatot kezdettől trilógiának tervezték.
   source: VGC
   url: https://www.videogameschronicle.com/news/machinegames-has-finally-officially-confirmed-that-wolfenstein-3-is-in-development/
+- slug: a-disney-eloben-kozvetiti-az-idei-the-game-awardsot
+  category: Játékhírek
+  title: A Disney+ élőben közvetíti az idei The Game Awardsot
+  body: |
+    A Disney+ bejelentette, hogy élőben közvetíti a 2026-os The Game Awardsot: a gála december 10-én, csütörtökön 19:30-kor (keleti parti idő) kezdődik a Los Angeles-i Peacock Theaterben, magyar idő szerint tehát péntek hajnali fél 2-kor. A díjak mellett világpremierek és élő zenei fellépések is lesznek, a nyertesekre pedig a jelölések kihirdetése után a thegameawards.com-on lehet szavazni. A megszokott partnerek — a YouTube, a Twitch, az X és a TikTok — idén is streamelik az eseményt, amely tavaly több mint 171 millió élő megtekintést hozott. A Disney a saját játékcímeiből is nagy bejelentéseket ígér.
+  source: Disney+
+  url: https://press.disneyplus.com/news/the-game-awards
+  imageCredit: 'Kép: Getty Images'
+- slug: a-ps5-atlepte-a-100-millio-eladott-darabot
+  category: Hardware
+  title: A PS5 átlépte a 100 millió eladott darabot
+  body: |
+    November 10-ig a PlayStation 5 több mint 100 millió példányban kelt el világszerte. Összehasonlításként: a PS4 116 millióig, a PS2 pedig 160 millióig jutott. A mérföldkő azért is figyelemre méltó, mert a konzol 2020 novemberében, a COVID és a chiphiány kellős közepén indult, vagyis sokkal nehezebb startja volt, mint a PS4-nek. A Forbes szerzője ugyanakkor emlékeztet, hogy a Sony kommunikációja az utóbbi időben gyengélkedik: elég a következő konzol fizikai adathordozóinak kivezetésére vagy arra az állításra gondolni, hogy a játékosok nem birtokolják a megvásárolt játékaikat. Szerinte a 100 milliós bázist kár lenne olyan döntésekre elpazarolni, amelyeket a vásárlók nem támogatnak.
+  source: Forbes
+  url: https://www.forbes.com/sites/olliebarder/2026/11/11/playstation-5-sales-top-100-million-but-sony-still-needs-to-listen-to-gamers/
+- slug: jensen-huang-lemondott-es-ez-a-pc-s-jatekosoknak-sem-jo-hir
+  category: Hardware
+  title: Jensen Huang lemondott, és ez a PC-s játékosoknak sem jó hír
+  body: |
+    Jensen Huang két napja lemondott az Nvidia vezérigazgatói posztjáról; ideiglenesen Colette Kress pénzügyi igazgató veszi át a céget, amíg az állandó utódját keresik. A PC Gamer szerzője szerint a játékosok egy része ünnepli a hírt, ő viszont épp az ellenkezőjét gondolja. A 2026-os pénzügyi évben az Nvidia bevételének mindössze 7,4%-a jött a gamingből: 16 milliárd dollár, szemben az adatközpontok 193,7 milliárd dollárjával — pedig a cég a PC-s videókártyapiac nagyjából 90%-át birtokolja. Huang ugyan az AI-forradalom egyik arca lett, de a 3D-grafika iránti nosztalgiából máig kiállt a PC-s gaming mellett, és a szerző szerint az utódja aligha fog így tenni.
+  source: PCGamer
+  url: https://www.pcgamer.com/hardware/graphics-cards/jensen-huang-leaving-nvidia-is-not-a-good-thing-for-pc-gaming-and-ill-tell-you-why/
+  imageCredit: 'Kép: PCGamer'
 - slug: a-big-walk-fejlesztoi-elismertek-hogy-generativ-ai-t
   category: AI & Gaming
   title: A Big Walk fejlesztői elismerték, hogy generatív AI-t használtak a fejlesztés során
@@ -100,9 +124,29 @@ articles:
     Két napja terjedtek el törletlen posztok arról, hogy a Skydance Games Marvel 1943: Rise of Hydra projektje kukába került, de a stúdió vezetői gyorsan megcáfolták a pletykákat a belső Slack-csatornán. A Kotaku forrásai szerint a játék közeledik az Alpha mérföldkőhöz, és "majdnem kész", bár a cikk komoly gondokat is feltár: a projekt messze túllépte a büdzsét, az eredeti tervekhez képest jelentősen megvágták, és a gameplay állítólag meglehetősen szegényes. A stúdiót a közelmúltban 26 elbocsátás is sújtotta.
   source: ThisWeekInVideoGames
   url: https://thisweekinvideogames.com/news/marvel-1943-rise-of-hydra-developers-reassured-amid-cancellation-rumours-report/
+  imageCredit: 'Kép: Skydance Games'
 releases:
 - title: Grand Theft Auto 6
   platform: PS5, Xbox
   date: '11.19'
-ajanlo: []
+ajanlo:
+  - title: Vultures - Scavengers of Death
+    genre: Körökre osztott túlélőhorror
+    appid: 2537470
+    description: >-
+      A kilencvenes évek túlélőhorror-klasszikusainak hangulatát ülteti át körökre
+      osztott taktikai harcba. VULTURE-ügynökként egy fertőzéstől megroppant
+      nagyvárost kell átfésülnöd: Leopoldóval és Amberrel küldetésről küldetésre
+      gyűjtöd az anyagokat és az információt, amiből kinyerhető az ellenszer — a
+      mutálódott fertőzöttek ellen viszont minden lépést előre ki kell számolnod.
+
+  - title: Ground Zero
+    genre: Retró túlélőhorror
+    appid: 2340130
+    description: >-
+      Egy meteorbecsapódás elpusztította Dél-Koreát, és minden élőlényt szörnnyé
+      változtatott. Két hónappal később egy koreai elitügynök és kanadai társa indul
+      el kideríteni, mi történt valójában. Fixkamerás, PS1-korszakot idéző
+      túlélőhorror, amelyben fejtörőket oldasz meg, fejleszted a felszerelésedet, és
+      minden egyes töltényre vigyáznod kell.
 ---
